@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+{{ if eq .Kind "home" }}
+  {{/* Series menu — lists all sections */}}
+  <section class="series-menu">
+    <h1 class="page-title">The Series</h1>
+    <p class="page-intro">Each series is a path. Choose where to begin.</p>
+    <div class="series-grid">
+      {{ range .Site.Sections }}
+      <a href="{{ .Permalink }}" class="series-card">
+        <div class="series-card-inner">
+          <h2>{{ .Title }}</h2>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+          <span class="series-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+{{ else }}
+  {{/* Individual series index — lists parts in order */}}
+  <section class="series-index">
+    <div class="series-header">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="series-description">{{ . }}</p>{{ end }}
+    </div>
+
+    {{ $pages := .Pages.ByParam "part" }}
+    {{ if $pages }}
+    <div class="parts-list">
+      {{ range $pages }}
+      <a href="{{ .Permalink }}" class="part-card">
+        <span class="part-number">{{ .Params.part }}</span>
+        <div class="part-info">
+          <h3>{{ .Title }}</h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+          <time>{{ .Date.Format "January 2, 2006" }}</time>
+        </div>
+        <span class="part-arrow">→</span>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ $first := index ($pages) 0 }}
+    {{ if $first }}
+    <div class="series-cta">
+      <a href="{{ $first.Permalink }}" class="enter-btn">Start from Part 1</a>
+    </div>
+    {{ end }}
+  </section>
+{{ end }}
+
+{{ end }}

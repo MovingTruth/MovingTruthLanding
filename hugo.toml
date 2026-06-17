@@ -1,0 +1,12 @@
+baseURL = "https://movingtruth.com"
+locale = "en-us"
+title = "Moving Truth"
+theme = "temple"
+
+[params]
+  author        = "Skylaur Roe"
+  tagline       = "Questions we were never encouraged to ask."
+  landingImage  = "images/temple-bg.png"
+  ambientAudio  = ""
+  accentColour  = "#C9A84C"
+  showSubtitle  = true

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Site.Title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ "css/temple.css" | relURL }}" />
+</head>
+<body class="landing">
+
+  <div class="landing-bg" style="background-image: url('{{ .Site.Params.landingImage | relURL }}');"></div>
+  <div class="landing-overlay"></div>
+
+  <main class="landing-content">
+    <h1 class="landing-title">{{ .Site.Title }}</h1>
+    {{ if .Site.Params.showSubtitle }}
+    <p class="landing-author">by {{ .Site.Params.author }}</p>
+    {{ end }}
+    <p class="landing-tagline">{{ .Site.Params.tagline }}</p>
+    <a href="{{ "series" | relURL }}" class="enter-btn">Enter your Inner Temple</a>
+  </main>
+
+  {{ if .Site.Params.ambientAudio }}
+  <div class="audio-control">
+    <button id="audioToggle" onclick="toggleAudio()" aria-label="Toggle ambient sound">♪</button>
+  </div>
+  <audio id="ambient" loop>
+    <source src="{{ .Site.Params.ambientAudio | relURL }}" type="audio/mpeg" />
+  </audio>
+  <script src="{{ "js/audio.js" | relURL }}"></script>
+  {{ end }}
+
+</body>
+</html>

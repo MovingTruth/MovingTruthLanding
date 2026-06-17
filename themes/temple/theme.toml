@@ -1,0 +1,6 @@
+name = "Temple"
+license = "MIT"
+licenselink = ""
+description = "Custom theme for Moving Truth by Skylaur Roe"
+homepage = "https://movingtruth.com"
+min_version = "0.110.0"
