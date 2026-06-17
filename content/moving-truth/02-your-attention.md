@@ -2,7 +2,7 @@
 title: "Your Attention"
 series: "Moving Truth"
 part: 2
-date: 2026-06-15
+date: 2026-06-15T10:00:00
 description: "How your focus became a product being harvested — and what it costs you."
 ---
 

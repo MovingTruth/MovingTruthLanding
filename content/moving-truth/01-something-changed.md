@@ -2,7 +2,7 @@
 title: "Something Changed"
 series: "Moving Truth"
 part: 1
-date: 2026-06-15
+date: 2026-06-15T09:00:00
 description: "Three generations of money, time, and burnout — and an agreement nobody announced was broken."
 ---
 

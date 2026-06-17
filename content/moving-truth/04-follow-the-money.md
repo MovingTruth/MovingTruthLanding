@@ -2,7 +2,7 @@
 title: "Follow the Money"
 series: "Moving Truth"
 part: 4
-date: 2026-06-16
+date: 2026-06-16T10:00:00
 description: "The numbers behind thirty years. Who got richer while everyone else ran harder. The ledger nobody showed you."
 ---
 

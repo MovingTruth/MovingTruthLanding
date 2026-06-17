@@ -2,7 +2,7 @@
 title: "What You Used to Own"
 series: "Moving Truth"
 part: 3
-date: 2026-06-16
+date: 2026-06-16T09:00:00
 description: "The quiet removal of ownership from everyday life — music, movies, software, memories — one convenience at a time."
 ---
 
