@@ -16,7 +16,10 @@
   </div>
 
   <nav class="piece-nav">
-    {{ with .NextInSection }}
+    {{ $currentPart := .Params.part }}
+    {{ $allPages := .CurrentSection.Pages }}
+
+    {{ with index (where $allPages ".Params.part" (sub $currentPart 1)) 0 }}
     <a href="{{ .Permalink }}" class="piece-nav-prev">
       <span class="nav-label">← Previous</span>
       <span class="nav-title">{{ .Title }}</span>
@@ -27,7 +30,7 @@
 
     <a href="{{ .Parent.Permalink }}" class="piece-nav-series">All Parts</a>
 
-    {{ with .PrevInSection }}
+    {{ with index (where $allPages ".Params.part" (add $currentPart 1)) 0 }}
     <a href="{{ .Permalink }}" class="piece-nav-next">
       <span class="nav-label">Next →</span>
       <span class="nav-title">{{ .Title }}</span>
