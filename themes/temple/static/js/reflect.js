@@ -73,10 +73,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (overlayContinue) {
               overlayContinue.style.display = 'inline-block';
               overlayContinue.addEventListener('click', function () {
-                overlay.classList.add('mt-reflect-overlay--fade');
+                if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
                 setTimeout(function () {
-                  overlay.style.display = 'none';
-                  overlay.classList.remove('mt-reflect-overlay--fade');
+                  if (overlay) {
+                    overlay.style.display = 'none';
+                    overlay.classList.remove('mt-reflect-overlay--fade');
+                  }
                 }, 600);
               });
             }
@@ -116,10 +118,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (overlayContinue) {
       overlayContinue.addEventListener('click', function () {
-        overlay.classList.add('mt-reflect-overlay--fade');
+        if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
         setTimeout(function () {
-          overlay.style.display = 'none';
-          overlay.classList.remove('mt-reflect-overlay--fade');
+          if (overlay) {
+            overlay.style.display = 'none';
+            overlay.classList.remove('mt-reflect-overlay--fade');
+          }
         }, 600);
       });
     }
@@ -186,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && !started) {
           stickyBtn.style.display = 'block';
+          bodyEndObserver.disconnect();
         }
       });
     }, { threshold: 0 });

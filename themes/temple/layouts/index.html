@@ -23,7 +23,7 @@
     :root { --landing-bg-image: url('{{ .Site.Params.landingImage | relURL }}'); }
     [data-theme="light"] { --landing-bg-image: url('{{ .Site.Params.landingImageLight | relURL }}'); }
   </style>
-  <script>(function(){var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+  <script>(function(){try{var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 <body class="landing">
 
@@ -31,7 +31,7 @@
   <div class="landing-overlay"></div>
 
   <svg class="landing-pyramid" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <polygon points="50,5 2,97 98,97" fill="none" stroke="#E07820" stroke-width="0.5" vector-effect="non-scaling-stroke" />
+    <polygon points="50,5 2,97 98,97" fill="none" stroke="#E07820" stroke-width="1.5" vector-effect="non-scaling-stroke" />
   </svg>
 
   <div id="mt-theme-picker" class="mt-theme-picker" style="display:none;" role="dialog" aria-modal="true" aria-label="Choose your theme">

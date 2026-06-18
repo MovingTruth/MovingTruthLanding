@@ -2,31 +2,43 @@
   var THEME_KEY  = 'mt_theme';
   var REMEMBER_KEY = 'mt_theme_remember';
 
+  function storageGet(storage, key) {
+    try { return storage.getItem(key); } catch (e) { return null; }
+  }
+
+  function storageSet(storage, key, val) {
+    try { storage.setItem(key, val); } catch (e) {}
+  }
+
+  function storageRemove(storage, key) {
+    try { storage.removeItem(key); } catch (e) {}
+  }
+
   function applyTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
   }
 
   function getTheme() {
-    return localStorage.getItem(THEME_KEY) || sessionStorage.getItem(THEME_KEY);
+    return storageGet(localStorage, THEME_KEY) || storageGet(sessionStorage, THEME_KEY);
   }
 
   function isRemembered() {
-    return !!localStorage.getItem(REMEMBER_KEY);
+    return !!storageGet(localStorage, REMEMBER_KEY);
   }
 
   function pickTheme(t, remember) {
-    sessionStorage.setItem(THEME_KEY, t);
+    storageSet(sessionStorage, THEME_KEY, t);
     if (remember) {
-      localStorage.setItem(THEME_KEY, t);
-      localStorage.setItem(REMEMBER_KEY, '1');
+      storageSet(localStorage, THEME_KEY, t);
+      storageSet(localStorage, REMEMBER_KEY, '1');
     } else {
-      localStorage.removeItem(THEME_KEY);
-      localStorage.removeItem(REMEMBER_KEY);
+      storageRemove(localStorage, THEME_KEY);
+      storageRemove(localStorage, REMEMBER_KEY);
     }
     applyTheme(t);
   }
 
-  // Apply immediately — runs from <head> before first paint
+  // Apply stored theme immediately (before first paint)
   var stored = getTheme();
   if (stored) applyTheme(stored);
 
@@ -35,7 +47,7 @@
     // ── Theme picker (landing page only) ──────────────────────
     var picker = document.getElementById('mt-theme-picker');
     if (picker) {
-      var shouldShow = !sessionStorage.getItem(THEME_KEY) && !isRemembered();
+      var shouldShow = !storageGet(sessionStorage, THEME_KEY) && !isRemembered();
 
       if (!shouldShow) {
         applyTheme(getTheme() || 'dark');
@@ -65,9 +77,9 @@
     if (changeLink) {
       changeLink.addEventListener('click', function (e) {
         e.preventDefault();
-        localStorage.removeItem(THEME_KEY);
-        localStorage.removeItem(REMEMBER_KEY);
-        sessionStorage.removeItem(THEME_KEY);
+        storageRemove(localStorage, THEME_KEY);
+        storageRemove(localStorage, REMEMBER_KEY);
+        storageRemove(sessionStorage, THEME_KEY);
         window.location.href = changeLink.getAttribute('href');
       });
     }

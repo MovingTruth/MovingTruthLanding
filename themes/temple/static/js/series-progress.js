@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
       for (var i = 1; i <= total + 5; i++) {
         MT.remove(prefix + i);
       }
+      MT.remove('mt_' + slug + '_closing');
       window.location.reload();
     });
   }
