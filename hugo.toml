@@ -6,8 +6,8 @@ theme = "temple"
 [params]
   author        = "Skylaur Roe"
   tagline       = "Questions we were never encouraged to ask."
-  landingImage      = "images/temple-bg.png"
-  landingImageLight = "images/temple-bg-light.png"
+  landingImage      = "images/temple-bg.jpg"
+  landingImageLight = "images/temple-bg-light.jpg"
   ambientAudio  = ""
   accentColour  = "#C9A84C"
   showSubtitle  = true
