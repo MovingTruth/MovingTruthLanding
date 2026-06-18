@@ -20,7 +20,7 @@
 
 {{ else }}
   {{/* Individual series index — lists parts in order */}}
-  <section class="series-index">
+  <section class="series-index" data-series="{{ .Slug }}">
     <div class="series-header">
       <h1 class="page-title">{{ .Title }}</h1>
       {{ with .Description }}<p class="series-description">{{ . }}</p>{{ end }}
@@ -30,7 +30,7 @@
     {{ if $pages }}
     <div class="parts-list">
       {{ range $pages }}
-      <a href="{{ .Permalink }}" class="part-card">
+      <a href="{{ .Permalink }}" class="part-card" data-part="{{ .Params.part }}">
         <span class="part-number">{{ .Params.part }}</span>
         <div class="part-info">
           <h3>{{ .Title }}</h3>
@@ -38,17 +38,27 @@
           <time>{{ .Date.Format "January 2, 2006" }}</time>
         </div>
         <span class="part-arrow">→</span>
+        <span class="part-status" aria-hidden="true"></span>
       </a>
       {{ end }}
     </div>
     {{ end }}
 
+    <div class="series-progress" id="series-progress" style="display:none">
+      <span class="progress-text" id="progress-text"></span>
+      <button class="reset-btn" id="reset-progress">Reset my progress</button>
+    </div>
+
     {{ $first := index ($pages) 0 }}
-    {{ if $first }}
+    {{ if and $first (gt (len $pages) 1) }}
     <div class="series-cta">
       <a href="{{ $first.Permalink }}" class="enter-btn">Start from Part 1</a>
     </div>
     {{ end }}
+
+    <div class="back-home-wrap">
+      <a href="{{ "/" | relURL }}" class="back-home">← Back to Main</a>
+    </div>
   </section>
 {{ end }}
 

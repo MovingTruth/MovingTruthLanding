@@ -5,15 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.tagline }}{{ end }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}" />
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.tagline }}{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ "logo.png" | absURL }}" />
+  <meta name="twitter:card" content="summary" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ "css/temple.css" | relURL }}" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 </head>
 <body class="inner">
 
+<div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" aria-live="polite">
+  <div class="mt-reflect-box">
+    <p class="mt-reflect-title">Something in you already knew this.</p>
+    <p class="mt-reflect-sub">The part that brought you here.</p>
+    <p class="mt-reflect-instruction">Stay with it. Let it move through you.</p>
+    <div class="mt-reflect-timer" id="mt-reflect-timer">30</div>
+    <p class="mt-reflect-unlock">The next piece unlocks when this reaches zero.</p>
+    <p class="mt-reflect-ready" id="mt-reflect-ready" style="display:none;">Now you can't unknow it.</p>
+    <button class="mt-reflect-continue" id="mt-reflect-continue" style="display:none;">Continue</button>
+  </div>
+</div>
+
+<div id="mt-notice" class="mt-notice" style="display:none;" aria-modal="true" role="dialog">
+  <div class="mt-notice-box">
+    <p class="mt-notice-title">Before you begin</p>
+    <p class="mt-notice-body">These stories are written to be read in order. Each series is its own path — you can begin any series whenever you choose, but within a series you follow the pieces from the first.</p>
+    <p class="mt-notice-body">When you reach the end of a piece, you'll be asked to sit with it for thirty seconds before moving on. Once you've read a series through, you're free to return to any part of it at any time.</p>
+    <p class="mt-notice-body">You can always reset your progress and go through it again.</p>
+    <button class="mt-notice-btn" id="mt-notice-btn">I'm ready</button>
+  </div>
+</div>
+
   <header class="site-header">
-    <a href="{{ "/" | relURL }}" class="site-logo">{{ .Site.Title }}</a>
+    <a href="{{ "/" | relURL }}" class="site-logo">
+      <img src="/logo.png" alt="" class="site-logo-img" aria-hidden="true" />
+      {{ .Site.Title }}
+    </a>
     <nav>
       <a href="{{ "series" | relURL }}">Series</a>
     </nav>
@@ -25,7 +60,23 @@
 
   <footer class="site-footer">
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a></p>
   </footer>
 
+  <script src="{{ "js/mt-storage.js" | relURL }}"></script>
+  <script src="{{ "js/mt-notice.js" | relURL }}"></script>
+  <script src="{{ "js/reflect.js" | relURL }}"></script>
+  <script src="{{ "js/series-progress.js" | relURL }}"></script>
+  <script>
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('http') || link.target === '_blank') return;
+    e.preventDefault();
+    document.body.classList.add('fading');
+    setTimeout(function () { window.location.href = href; }, 260);
+  });
+  </script>
 </body>
 </html>

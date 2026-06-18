@@ -6,6 +6,7 @@
     <div class="piece-meta">
       <span class="piece-series"><a href="{{ .Parent.Permalink }}">{{ .Params.series }}</a></span>
       {{ with .Params.part }}<span class="piece-number">Part {{ . }}</span>{{ end }}
+      <span class="piece-reading-time">{{ .ReadingTime }} min read</span>
     </div>
     <h1 class="piece-title">{{ .Title }}</h1>
     <time class="piece-date">{{ .Date.Format "January 2, 2006" }}</time>
@@ -14,8 +15,9 @@
   <div class="piece-body">
     {{ .Content }}
   </div>
+  <div id="piece-body-end"></div>
 
-  <nav class="piece-nav">
+  <nav class="piece-nav" data-part="{{ .Params.part }}" data-series="{{ .CurrentSection.Slug }}"{{ if .Params.closingReflection }} data-closing="true"{{ end }}>
     {{ $currentPart := .Params.part }}
     {{ $allPages := .CurrentSection.Pages }}
 
@@ -31,12 +33,26 @@
     <a href="{{ .Parent.Permalink }}" class="piece-nav-series">All Parts</a>
 
     {{ with index (where $allPages ".Params.part" (add $currentPart 1)) 0 }}
-    <a href="{{ .Permalink }}" class="piece-nav-next">
-      <span class="nav-label">Next →</span>
-      <span class="nav-title">{{ .Title }}</span>
-    </a>
+    <div class="piece-nav-next-wrap">
+      <a data-href="{{ .Permalink }}" class="piece-nav-next piece-nav-next--locked">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">{{ .Title }}</span>
+      </a>
+      <div class="reflect-prompt">
+        <span class="reflect-message">Something in you already knew this.</span>
+        <span class="reflect-countdown"></span>
+      </div>
+    </div>
     {{ end }}
   </nav>
+
+  {{ with index (where .CurrentSection.Pages ".Params.part" (add .Params.part 1)) 0 }}
+  <button class="sticky-next" id="sticky-next" data-href="{{ .Permalink }}" style="display:none;">Next →</button>
+  {{ end }}
+
+  <div class="back-home-wrap">
+    <a href="{{ "/" | relURL }}" class="back-home">← Back to Main</a>
+  </div>
 
 </article>
 
