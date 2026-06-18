@@ -19,15 +19,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ "css/temple.css" | relURL }}" />
+  <style>
+    :root { --landing-bg-image: url('{{ .Site.Params.landingImage | relURL }}'); }
+    [data-theme="light"] { --landing-bg-image: url('{{ .Site.Params.landingImageLight | relURL }}'); }
+  </style>
+  <script>(function(){var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body class="landing">
 
-  <div class="landing-bg" style="background-image: url('{{ .Site.Params.landingImage | relURL }}');"></div>
+  <div class="landing-bg"></div>
   <div class="landing-overlay"></div>
 
   <svg class="landing-pyramid" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <polygon points="50,5 2,97 98,97" fill="none" stroke="#E07820" stroke-width="0.5" vector-effect="non-scaling-stroke" />
   </svg>
+
+  <div id="mt-theme-picker" class="mt-theme-picker" style="display:none;" role="dialog" aria-modal="true" aria-label="Choose your theme">
+    <div class="mt-theme-picker-box">
+      <p class="mt-theme-picker-title">How would you like to arrive?</p>
+      <div class="mt-theme-options">
+        <button class="mt-theme-btn" data-theme="light" id="mt-pick-light">
+          <span class="mt-theme-btn-label">Light</span>
+          <span class="mt-theme-btn-sub">Open sky. Warm stone.</span>
+        </button>
+        <button class="mt-theme-btn" data-theme="dark" id="mt-pick-dark">
+          <span class="mt-theme-btn-label">Dark</span>
+          <span class="mt-theme-btn-sub">Still water. Deep earth.</span>
+        </button>
+      </div>
+      <label class="mt-theme-remember" for="mt-theme-remember">
+        <input type="checkbox" id="mt-theme-remember" class="mt-theme-remember-check" />
+        <span>Remember my choice</span>
+      </label>
+    </div>
+  </div>
 
   <main class="landing-content">
     <h1 class="landing-title">{{ .Site.Title }}</h1>
@@ -37,6 +62,8 @@
     <p class="landing-tagline">{{ .Site.Params.tagline }}</p>
     <a href="{{ "series" | relURL }}" class="enter-btn">Enter your Inner Temple</a>
   </main>
+
+  <script src="{{ "js/mt-theme.js" | relURL }}"></script>
 
   {{ if .Site.Params.ambientAudio }}
   <div class="audio-control">
