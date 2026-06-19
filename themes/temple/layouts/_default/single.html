@@ -17,6 +17,18 @@
   </div>
   <div id="piece-body-end"></div>
 
+  {{ with index (where .CurrentSection.Pages ".Params.part" (add .Params.part 1)) 0 }}
+  <div class="piece-action-wrap" id="piece-action-wrap" style="display:none;">
+    <button class="piece-action-btn" id="piece-action-btn">Continue</button>
+  </div>
+  {{ end }}
+
+  {{ if .Params.closingReflection }}
+  <div class="piece-action-wrap" id="piece-closing-wrap" style="display:none;">
+    <button class="piece-action-btn" id="piece-closing-btn">Continue</button>
+  </div>
+  {{ end }}
+
   <nav class="piece-nav" data-part="{{ .Params.part }}" data-series="{{ .CurrentSection.Slug }}"{{ if .Params.closingReflection }} data-closing="true"{{ end }}>
     {{ $currentPart := .Params.part }}
     {{ $allPages := .CurrentSection.Pages }}
@@ -45,10 +57,6 @@
     </div>
     {{ end }}
   </nav>
-
-  {{ with index (where .CurrentSection.Pages ".Params.part" (add .Params.part 1)) 0 }}
-  <button class="sticky-next" id="sticky-next" data-href="{{ .Permalink }}" style="display:none;">Next →</button>
-  {{ end }}
 
   <div class="back-home-wrap">
     <a href="{{ "/" | relURL }}" class="back-home">← Back to Main</a>

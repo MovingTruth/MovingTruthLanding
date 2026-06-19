@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var overlayUnlock = overlay ? overlay.querySelector('.mt-reflect-unlock') : null;
   var overlayReady = document.getElementById('mt-reflect-ready');
   var overlayContinue = document.getElementById('mt-reflect-continue');
-  var stickyBtn = document.getElementById('sticky-next');
   var duration = 30;
-  var startDelay = 2000;
   var started = false;
 
   var storageKey = isClosing
@@ -40,63 +38,69 @@ document.addEventListener('DOMContentLoaded', function () {
       if (started) return;
       started = true;
 
-      setTimeout(function () {
-        // Configure overlay text for the closing spell
-        if (overlayTitle) overlayTitle.textContent = 'Let it work.';
-        if (overlaySub) overlaySub.textContent = 'The words have been spoken.';
-        if (overlayInstruction) overlayInstruction.textContent = 'Give them thirty seconds.';
-        if (overlayUnlock) overlayUnlock.style.display = 'none';
-        if (overlayReady) overlayReady.style.display = 'none';
-        if (overlayContinue) {
-          overlayContinue.style.display = 'none';
-          overlayContinue.textContent = 'I am free.';
-          overlayContinue.classList.add('mt-reflect-continue--closing');
-        }
+      if (overlayTitle) overlayTitle.textContent = 'Let it work.';
+      if (overlaySub) overlaySub.textContent = 'The words have been spoken.';
+      if (overlayInstruction) overlayInstruction.textContent = 'Give them thirty seconds.';
+      if (overlayUnlock) overlayUnlock.style.display = 'none';
+      if (overlayReady) overlayReady.style.display = 'none';
+      if (overlayContinue) {
+        overlayContinue.style.display = 'none';
+        overlayContinue.textContent = 'I am free.';
+        overlayContinue.classList.add('mt-reflect-continue--closing');
+      }
 
-        if (overlay) overlay.style.display = 'flex';
-        if (overlayTimer) overlayTimer.textContent = duration;
+      if (overlay) overlay.style.display = 'flex';
+      if (overlayTimer) overlayTimer.textContent = duration;
 
-        var remaining = duration;
-        var interval = setInterval(function () {
-          remaining -= 1;
-          if (overlayTimer) overlayTimer.textContent = remaining;
+      var remaining = duration;
+      var interval = setInterval(function () {
+        remaining -= 1;
+        if (overlayTimer) overlayTimer.textContent = remaining;
 
-          if (remaining <= 0) {
-            clearInterval(interval);
-            MT.set(storageKey);
-            MT.set('mt_' + series + '_reflected_' + currentPart);
-            if (overlayTimer) overlayTimer.style.display = 'none';
-            if (overlayReady) {
-              overlayReady.textContent = 'You are free.';
-              overlayReady.style.display = 'block';
-            }
-            if (overlayContinue) {
-              overlayContinue.style.display = 'inline-block';
-              overlayContinue.addEventListener('click', function () {
-                if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
-                setTimeout(function () {
-                  if (overlay) {
-                    overlay.style.display = 'none';
-                    overlay.classList.remove('mt-reflect-overlay--fade');
-                  }
-                }, 600);
-              });
-            }
+        if (remaining <= 0) {
+          clearInterval(interval);
+          MT.set(storageKey);
+          MT.set('mt_' + series + '_reflected_' + currentPart);
+          if (overlayTimer) overlayTimer.style.display = 'none';
+          if (overlayReady) {
+            overlayReady.textContent = 'You are free.';
+            overlayReady.style.display = 'block';
           }
-        }, 1000);
-      }, startDelay);
+          if (overlayContinue) {
+            overlayContinue.style.display = 'inline-block';
+            overlayContinue.addEventListener('click', function () {
+              if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+              setTimeout(function () {
+                if (overlay) {
+                  overlay.style.display = 'none';
+                  overlay.classList.remove('mt-reflect-overlay--fade');
+                }
+              }, 600);
+            });
+          }
+        }
+      }, 1000);
     }
 
-    var closingObserver = new IntersectionObserver(function (entries) {
+    var closingWrap = document.getElementById('piece-closing-wrap');
+    var closingBtn = document.getElementById('piece-closing-btn');
+    if (closingBtn) {
+      closingBtn.addEventListener('click', function () {
+        showClosingOverlay();
+      });
+    }
+
+    var closingEndObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          showClosingOverlay();
-          closingObserver.disconnect();
+          if (closingWrap) closingWrap.style.display = 'flex';
+          closingEndObserver.disconnect();
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0 });
 
-    closingObserver.observe(nav);
+    var bodyEnd = document.getElementById('piece-body-end');
+    if (bodyEnd) closingEndObserver.observe(bodyEnd);
     return;
   }
 
@@ -137,11 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
       var prompt = nextWrap.querySelector('.reflect-prompt');
       if (prompt) prompt.style.display = 'none';
     }
-    if (stickyBtn) {
-      stickyBtn.addEventListener('click', function () {
-        window.location.href = stickyBtn.dataset.href;
-      });
-    }
     return;
   }
 
@@ -149,47 +148,44 @@ document.addEventListener('DOMContentLoaded', function () {
     if (started) return;
     started = true;
 
-    if (stickyBtn) stickyBtn.style.display = 'none';
+    var remaining = duration;
 
-    setTimeout(function () {
-      var remaining = duration;
+    if (overlayTitle) overlayTitle.textContent = 'Something in you already knew this.';
+    if (overlaySub) overlaySub.textContent = 'The part that brought you here.';
+    if (overlayInstruction) overlayInstruction.textContent = 'Stay with it. Let it move through you.';
+    if (overlayUnlock) overlayUnlock.style.display = '';
+    if (overlayContinue) overlayContinue.textContent = 'Continue';
 
-      // Ensure inter-piece overlay text is set correctly
-      if (overlayTitle) overlayTitle.textContent = 'Something in you already knew this.';
-      if (overlaySub) overlaySub.textContent = 'The part that brought you here.';
-      if (overlayInstruction) overlayInstruction.textContent = 'Stay with it. Let it move through you.';
-      if (overlayUnlock) overlayUnlock.style.display = '';
-      if (overlayContinue) overlayContinue.textContent = 'Continue';
+    if (overlay) overlay.style.display = 'flex';
+    if (overlayTimer) overlayTimer.textContent = remaining;
+    if (countdownEl) countdownEl.textContent = remaining + 's';
 
-      if (overlay) overlay.style.display = 'flex';
+    var interval = setInterval(function () {
+      remaining -= 1;
       if (overlayTimer) overlayTimer.textContent = remaining;
       if (countdownEl) countdownEl.textContent = remaining + 's';
 
-      var interval = setInterval(function () {
-        remaining -= 1;
-        if (overlayTimer) overlayTimer.textContent = remaining;
-        if (countdownEl) countdownEl.textContent = remaining + 's';
-
-        if (remaining <= 0) {
-          clearInterval(interval);
-          unlock();
-        }
-      }, 1000);
-    }, startDelay);
+      if (remaining <= 0) {
+        clearInterval(interval);
+        unlock();
+      }
+    }, 1000);
   }
 
-  if (stickyBtn) {
-    stickyBtn.addEventListener('click', function () {
+  var actionWrap = document.getElementById('piece-action-wrap');
+  var actionBtn = document.getElementById('piece-action-btn');
+  if (actionBtn) {
+    actionBtn.addEventListener('click', function () {
       startCountdown();
     });
   }
 
   var bodyEnd = document.getElementById('piece-body-end');
-  if (stickyBtn && bodyEnd) {
+  if (actionWrap && bodyEnd) {
     var bodyEndObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && !started) {
-          stickyBtn.style.display = 'block';
+          actionWrap.style.display = 'flex';
           bodyEndObserver.disconnect();
         }
       });
@@ -197,14 +193,4 @@ document.addEventListener('DOMContentLoaded', function () {
     bodyEndObserver.observe(bodyEnd);
   }
 
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        startCountdown();
-        observer.disconnect();
-      }
-    });
-  }, { threshold: 0.5 });
-
-  observer.observe(nav);
 });

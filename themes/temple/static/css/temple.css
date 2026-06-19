@@ -67,6 +67,10 @@ a:hover { color: var(--accent-dim); }
   opacity: 0.75;
 }
 
+[data-theme="light"] .landing-pyramid polygon {
+  stroke: #a06520;
+}
+
 [data-theme="light"] .enter-btn {
   background: var(--accent);
   color: #fdf8ed;
@@ -817,27 +821,34 @@ body.fading .inner-content {
 
 .back-home:hover { color: var(--accent); }
 
-/* ── STICKY NEXT BUTTON ───────────────────────────────────── */
+/* ── INLINE ACTION BUTTON (Continue) ──────────────────────── */
 
-.sticky-next {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: var(--bg);
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.6rem 1.4rem;
-  cursor: pointer;
-  z-index: 100;
-  transition: background 0.2s, color 0.2s;
+@keyframes continueGlow {
+  0%, 100% { box-shadow: 0 0 14px var(--accent), 0 0 4px var(--accent); }
+  50%       { box-shadow: 0 0 34px var(--accent), 0 0 14px var(--accent); }
 }
 
-.sticky-next:hover {
+.piece-action-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 1.5rem;
+}
+
+.piece-action-btn {
   background: var(--accent);
+  border: none;
   color: var(--bg);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  animation: continueGlow 2.5s ease-in-out infinite;
+  transition: transform 0.15s;
+}
+
+.piece-action-btn:hover {
+  transform: scale(1.04);
 }
 
 /* ── FOOTER LINK ──────────────────────────────────────────── */
