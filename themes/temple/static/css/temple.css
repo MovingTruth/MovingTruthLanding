@@ -802,6 +802,28 @@ body.fading .inner-content {
   color: var(--text-muted);
 }
 
+/* ── SUPPORT LINK ─────────────────────────────────────────── */
+
+.support-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.support-link {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-decoration: none;
+  font-style: italic;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.support-link:hover { opacity: 1; }
+
 /* ── BACK TO MAIN ─────────────────────────────────────────── */
 
 .back-home-wrap {
