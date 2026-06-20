@@ -15,7 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ "css/temple.css" | relURL }}" />
+  {{ $css := resources.Get "css/temple.css" | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" />
   <script>(function(){try{var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" href="/favicon.png" />
@@ -64,11 +65,16 @@
     <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "/" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a></p>
   </footer>
 
-  <script src="{{ "js/mt-theme.js" | relURL }}"></script>
-  <script src="{{ "js/mt-storage.js" | relURL }}"></script>
-  <script src="{{ "js/mt-notice.js" | relURL }}"></script>
-  <script src="{{ "js/reflect.js" | relURL }}"></script>
-  <script src="{{ "js/series-progress.js" | relURL }}"></script>
+  {{ $theme   := resources.Get "js/mt-theme.js"        | fingerprint }}
+  {{ $storage := resources.Get "js/mt-storage.js"      | fingerprint }}
+  {{ $notice  := resources.Get "js/mt-notice.js"       | fingerprint }}
+  {{ $reflect := resources.Get "js/reflect.js"         | fingerprint }}
+  {{ $progress := resources.Get "js/series-progress.js" | fingerprint }}
+  <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
+  <script src="{{ $storage.Permalink }}"  integrity="{{ $storage.Data.Integrity }}"></script>
+  <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>
+  <script src="{{ $reflect.Permalink }}"  integrity="{{ $reflect.Data.Integrity }}"></script>
+  <script src="{{ $progress.Permalink }}" integrity="{{ $progress.Data.Integrity }}"></script>
   <script>
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href]');
