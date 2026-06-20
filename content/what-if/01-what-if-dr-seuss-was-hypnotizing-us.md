@@ -65,3 +65,13 @@ Just the ancient human ability to capture attention so completely that, for a mo
 And if that is true, then maybe Dr. Seuss was not hypnotizing us at all.
 
 Maybe he was reminding us that imagination is one of the most powerful forces in the human mind.
+
+---
+
+*The next Dr. Seuss book you read — to a child, or alone, or aloud in a quiet room — stay with it a moment after the last page.*
+
+*What did it leave behind? What did it quietly suggest about the world, or about people, or about what matters?*
+
+*Write down one line. Just one.*
+
+*You might be surprised what the story was actually telling you.*
