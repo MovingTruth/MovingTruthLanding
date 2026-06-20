@@ -135,6 +135,15 @@ document.addEventListener('DOMContentLoaded', function () {
               overlay.style.display = 'none';
               overlay.classList.remove('mt-reflect-overlay--fade');
             }
+            var supportLink = document.querySelector('.support-link');
+            if (supportLink) {
+              supportLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              void supportLink.offsetWidth;
+              supportLink.classList.add('support-link--pulse');
+              supportLink.addEventListener('animationend', function () {
+                supportLink.classList.remove('support-link--pulse');
+              }, { once: true });
+            }
           }
         }, 600);
       });

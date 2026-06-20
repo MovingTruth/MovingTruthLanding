@@ -851,6 +851,16 @@ body.fading .inner-content {
 
 .support-link:hover { opacity: 1; }
 
+@keyframes supportPulse {
+  0%   { transform: scale(1);    box-shadow: none;                                         opacity: 0.85; }
+  25%  { transform: scale(1.06); box-shadow: 0 0 22px var(--accent), 0 0 50px var(--accent); opacity: 1;    }
+  100% { transform: scale(1);    box-shadow: none;                                         opacity: 0.85; }
+}
+
+.support-link--pulse {
+  animation: supportPulse 1.4s ease-out forwards;
+}
+
 /* ── BACK TO MAIN ─────────────────────────────────────────── */
 
 .back-home-wrap {
