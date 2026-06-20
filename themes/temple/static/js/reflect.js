@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var series = nav.dataset.series;
   var currentPart = parseInt(nav.dataset.part, 10);
   var isClosing = nav.dataset.closing === 'true';
+  var isFinal = nav.dataset.final === 'true';
+  var seriesPage = nav.dataset.seriesPage || '/series';
   var nextWrap = nav.querySelector('.piece-nav-next-wrap');
   var nextLink = nav.querySelector('.piece-nav-next--locked');
 
-  if (!nextLink && !isClosing) return;
+  if (!nextLink && !isClosing && !isFinal) return;
 
   var countdownEl = nav.querySelector('.reflect-countdown');
   var messageEl = nav.querySelector('.reflect-message');
@@ -104,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  // ── INTER-PIECE REFLECTION MODE ────────────────────────────
+  // ── INTER-PIECE / FINAL REFLECTION MODE ────────────────────────────
 
   function unlock() {
     MT.set(storageKey);
@@ -117,16 +119,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (overlayReady) overlayReady.style.display = 'block';
     if (overlayContinue) overlayContinue.style.display = 'inline-block';
 
-    nextLink.href = nextLink.dataset.href;
-    nextLink.classList.remove('piece-nav-next--locked');
+    if (!isFinal && nextLink) {
+      nextLink.href = nextLink.dataset.href;
+      nextLink.classList.remove('piece-nav-next--locked');
+    }
 
     if (overlayContinue) {
       overlayContinue.addEventListener('click', function () {
         if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
         setTimeout(function () {
-          if (overlay) {
-            overlay.style.display = 'none';
-            overlay.classList.remove('mt-reflect-overlay--fade');
+          if (isFinal) {
+            window.location.href = seriesPage;
+          } else {
+            if (overlay) {
+              overlay.style.display = 'none';
+              overlay.classList.remove('mt-reflect-overlay--fade');
+            }
           }
         }, 600);
       });
@@ -135,11 +143,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Already reflected — unlock immediately, hide prompt
   if (MT.get(storageKey)) {
-    nextLink.href = nextLink.dataset.href;
-    nextLink.classList.remove('piece-nav-next--locked');
-    if (nextWrap) {
-      var prompt = nextWrap.querySelector('.reflect-prompt');
-      if (prompt) prompt.style.display = 'none';
+    if (!isFinal && nextLink) {
+      nextLink.href = nextLink.dataset.href;
+      nextLink.classList.remove('piece-nav-next--locked');
+      if (nextWrap) {
+        var prompt = nextWrap.querySelector('.reflect-prompt');
+        if (prompt) prompt.style.display = 'none';
+      }
     }
     return;
   }
@@ -153,11 +163,19 @@ document.addEventListener('DOMContentLoaded', function () {
     if (overlayTitle) overlayTitle.textContent = 'Something in you already knew this.';
     if (overlaySub) overlaySub.textContent = 'The part that brought you here.';
     if (overlayInstruction) overlayInstruction.textContent = 'Stay with it. Let it move through you.';
-    if (overlayUnlock) overlayUnlock.style.display = '';
+    if (overlayUnlock) {
+      overlayUnlock.textContent = isFinal
+        ? 'Take a moment. Then we\'ll bring you back to choose your next path.'
+        : 'The next piece unlocks when this reaches zero.';
+      overlayUnlock.style.display = '';
+    }
     if (overlayContinue) overlayContinue.textContent = 'Continue';
 
     if (overlay) overlay.style.display = 'flex';
-    if (overlayTimer) overlayTimer.textContent = remaining;
+    if (overlayTimer) {
+      overlayTimer.textContent = remaining;
+      overlayTimer.style.display = '';
+    }
     if (countdownEl) countdownEl.textContent = remaining + 's';
 
     var interval = setInterval(function () {
