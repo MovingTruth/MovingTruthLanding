@@ -53,6 +53,7 @@
     </a>
     <nav>
       <a href="{{ "series" | relURL }}">Series</a>
+      <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">Support the work</a>
     </nav>
   </header>
 
@@ -62,7 +63,7 @@
 
   <footer class="site-footer">
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
-    <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "/" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a></p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "/" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">Reset progress</a></p>
   </footer>
 
   {{ $theme   := resources.Get "js/mt-theme.js"        | fingerprint }}

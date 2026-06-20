@@ -29,4 +29,16 @@ document.addEventListener('DOMContentLoaded', function () {
       showNotice();
     });
   }
+
+  var resetAll = document.getElementById('mt-reset-all');
+  if (resetAll) {
+    resetAll.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!confirm('Reset all reading progress across every series? You\'ll start fresh.')) return;
+      MT.keysStartingWith('mt_').forEach(function (k) {
+        if (k !== 'mt_theme' && k !== 'mt_theme_remember') MT.remove(k);
+      });
+      window.location.reload();
+    });
+  }
 });
