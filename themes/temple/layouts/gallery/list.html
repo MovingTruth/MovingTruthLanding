@@ -42,7 +42,7 @@ var MT_GALLERY = [{{ range $pages }}{"src":{{ .Params.image | jsonify | safeJS }
 
 {{ end }}
 
-{{ $gallery := resources.Get "js/gallery.js" | fingerprint }}
+{{ $gallery := resources.Get "js/gallery.js" | minify | fingerprint }}
 <script src="{{ $gallery.Permalink }}" integrity="{{ $gallery.Data.Integrity }}"></script>
 
 {{ end }}

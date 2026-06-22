@@ -64,7 +64,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
-  {{ $css := resources.Get "css/temple.css" | fingerprint }}
+  {{ $css := resources.Get "css/temple.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" />
   <script>(function(){try{var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -122,8 +122,20 @@
     <nav class="mt-menu-nav" aria-label="Site navigation">
       <p class="mt-menu-section-label">Navigate</p>
       <a href="{{ "/" | relURL }}" class="mt-menu-link">Home</a>
-      <a href="{{ "series" | relURL }}" class="mt-menu-link">All Series</a>
+      {{/*
+        Gallery and All Series are hardcoded here (not from .Site.Sections) so their
+        order is fixed: Gallery → All Series → individual series names.
+        Gallery content is a Hugo section but has menuOnly: true so it doesn't
+        also appear in the range below.
+      */}}
       <a href="{{ "gallery" | relURL }}" class="mt-menu-link">Gallery</a>
+      <a href="{{ "series" | relURL }}" class="mt-menu-link">All Series</a>
+      {{/*
+        menuOnly: true in a section's _index.md hides it from this list.
+        Use it for sections that have their own nav entry above (Gallery)
+        or that shouldn't appear as series in the menu (Messages).
+        Sections WITHOUT menuOnly appear here as individual series links.
+      */}}
       {{ range .Site.Sections }}
       {{ if not .Params.menuOnly }}
       <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ .Title }}</a>
@@ -154,11 +166,11 @@
     <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "choose" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">Reset progress</a></p>
   </footer>
 
-  {{ $theme   := resources.Get "js/mt-theme.js"        | fingerprint }}
-  {{ $storage := resources.Get "js/mt-storage.js"      | fingerprint }}
-  {{ $notice  := resources.Get "js/mt-notice.js"       | fingerprint }}
-  {{ $reflect := resources.Get "js/reflect.js"         | fingerprint }}
-  {{ $progress := resources.Get "js/series-progress.js" | fingerprint }}
+  {{ $theme   := resources.Get "js/mt-theme.js"        | minify | fingerprint }}
+  {{ $storage := resources.Get "js/mt-storage.js"      | minify | fingerprint }}
+  {{ $notice  := resources.Get "js/mt-notice.js"       | minify | fingerprint }}
+  {{ $reflect := resources.Get "js/reflect.js"         | minify | fingerprint }}
+  {{ $progress := resources.Get "js/series-progress.js" | minify | fingerprint }}
   <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
   <script src="{{ $storage.Permalink }}"  integrity="{{ $storage.Data.Integrity }}"></script>
   <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>

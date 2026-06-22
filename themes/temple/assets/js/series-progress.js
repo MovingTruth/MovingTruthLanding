@@ -1,3 +1,22 @@
+/*
+  series-progress.js
+  Runs on series index pages (.series-index[data-series]).
+  Reads localStorage (via MT helper) to mark parts as reflected or locked.
+
+  Storage keys per part:
+    mt_{slug}_reflected_{part}  — set by reflect.js after the 30-second timer completes,
+                                  or by the blessing flow after "Accept this blessing."
+
+  Part states applied at runtime (CSS classes on .part-card):
+    part-card--reflected  — reader has completed this part
+    part-card--locked     — prerequisite part not yet reflected; href is removed
+
+  freeAccess mode (data-free-access="true" on .series-index):
+    Set via freeAccess: true in the section _index.md front matter.
+    Skips sequential locking entirely — all parts remain clickable regardless of progress.
+    Used for Blessings (and any future sections where order doesn't matter).
+    DO NOT set freeAccess on ordered narrative series — it would bypass the intended gating.
+*/
 document.addEventListener('DOMContentLoaded', function () {
   var section = document.querySelector('.series-index[data-series]');
   if (!section) return;
@@ -8,13 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var total = cards.length;
   var reflected = 0;
+  // freeAccess: set via data-free-access on the section element (from freeAccess: true in _index.md).
+  // Skips sequential locking so all parts are accessible in any order (e.g. Blessings).
+  var freeAccess = section.dataset.freeAccess === 'true';
 
   cards.forEach(function (card) {
     var part = parseInt(card.dataset.part, 10);
     var key = 'mt_' + slug + '_reflected_' + part;
     var prevKey = 'mt_' + slug + '_reflected_' + (part - 1);
     var isReflected = MT.get(key);
-    var prereqMet = part === 1 || MT.get(prevKey);
+    var prereqMet = freeAccess || part === 1 || MT.get(prevKey);
 
     if (isReflected) {
       reflected++;

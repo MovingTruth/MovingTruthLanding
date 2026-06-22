@@ -17,16 +17,34 @@
   </div>
   <div id="piece-body-end"></div>
 
+  {{/*
+    piece-action-wrap: the "Continue" button that appears when the reader scrolls to the end.
+    Clicking it triggers the 30-second reflect overlay (reflect.js).
+    Only shown for standard (non-blessing, non-closing) pieces.
+  */}}
   <div class="piece-action-wrap" id="piece-action-wrap" style="display:none;">
     <button class="piece-action-btn" id="piece-action-btn">Continue</button>
   </div>
 
+  {{/*
+    closingReflection: front-matter flag (closingReflection: true) marks the final piece of a series.
+    Shows a different button/overlay — "I am free." — and marks the full series as complete.
+    After completion, navigates back to the series page rather than to a next piece.
+  */}}
   {{ if .Params.closingReflection }}
   <div class="piece-action-wrap" id="piece-closing-wrap" style="display:none;">
     <button class="piece-action-btn" id="piece-closing-btn">Continue</button>
   </div>
   {{ end }}
 
+  {{/*
+    blessing: front-matter flag (blessing: true) marks a piece as a blessing (e.g. Blessings series).
+    Replaces the reflect/lock flow with an "Accept this blessing" button.
+    The 30-second overlay says "Let it in." instead of the standard reflect text.
+    After the timer, navigates back to the series page — not to a next piece.
+    IMPORTANT: blessing pieces also skip the next-link lock (see nav block below).
+    DO NOT add closingReflection and blessing to the same piece — they conflict.
+  */}}
   {{ if .Params.blessing }}
   <div class="piece-action-wrap piece-blessing-wrap" id="piece-blessing-wrap" style="display:none;">
     <button class="piece-action-btn piece-blessing-btn" id="piece-blessing-btn">Accept this blessing</button>
@@ -57,6 +75,12 @@
 
     {{ with index (where $allPages ".Params.part" (add $currentPart 1)) 0 }}
     <div class="piece-nav-next-wrap">
+      {{/*
+        blessing pieces get a live href — the next link is never locked.
+        All other pieces use data-href and the piece-nav-next--locked class;
+        reflect.js replaces data-href → href after the 30-second timer completes.
+        DO NOT change this branch without updating reflect.js to match.
+      */}}
       {{ if $.Params.blessing }}
       <a href="{{ .Permalink }}" class="piece-nav-next">
         <span class="nav-label">Next →</span>

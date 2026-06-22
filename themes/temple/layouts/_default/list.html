@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ if eq .Kind "home" }}
-  {{/* Series menu — lists all sections */}}
+  {{/* Series menu — lists all sections (used by the /series page) */}}
   <section class="series-menu">
     <h1 class="page-title">The Series</h1>
     <p class="page-intro">Each series is a path. Choose where to begin.</p>
@@ -19,13 +19,28 @@
   </section>
 
 {{ else }}
-  {{/* Individual series index — lists parts in order */}}
-  <section class="series-index" data-series="{{ .Slug }}">
+  {{/*
+    Individual series index — lists all parts for a single section.
+
+    data-series: the section slug, used by series-progress.js to read/write localStorage keys.
+    data-free-access: set when freeAccess: true in the section _index.md front matter.
+      Tells series-progress.js to skip sequential locking — all parts are accessible in any order.
+      Use this for sections like Blessings where order doesn't matter.
+      Default (no flag): parts lock sequentially until the previous part is reflected on.
+
+    part-card locking is handled entirely in series-progress.js — do not add locking logic here.
+    part-card--reflected / part-card--locked classes are applied by JS at runtime.
+  */}}
+  <section class="series-index" data-series="{{ .Slug }}"{{ if .Params.freeAccess }} data-free-access="true"{{ end }}>
     <div class="series-header">
       <h1 class="page-title">{{ .Title }}</h1>
       {{ with .Description }}<p class="series-description">{{ . }}</p>{{ end }}
     </div>
 
+    {{/*
+      Pages sorted by the `part` front-matter integer.
+      All pieces in a section MUST have a unique `part` number or they will be omitted/mis-ordered.
+    */}}
     {{ $pages := .Pages.ByParam "part" }}
     {{ $sectionIcon := .Params.icon }}
     {{ if $pages }}
@@ -42,17 +57,20 @@
           <time>{{ .Date.Format "January 2, 2006" }}</time>
         </div>
         <span class="part-arrow">→</span>
+        {{/* part-status is populated by series-progress.js (checkmark / lock icon) */}}
         <span class="part-status" aria-hidden="true"></span>
       </a>
       {{ end }}
     </div>
     {{ end }}
 
+    {{/* Progress bar — hidden until JS finds at least one reflected part */}}
     <div class="series-progress" id="series-progress" style="display:none">
       <span class="progress-text" id="progress-text"></span>
       <button class="reset-btn" id="reset-progress">Reset my progress</button>
     </div>
 
+    {{/* "Start from Part 1" CTA — only shown for multi-part series */}}
     {{ $first := index ($pages) 0 }}
     {{ if and $first (gt (len $pages) 1) }}
     <div class="series-cta">
