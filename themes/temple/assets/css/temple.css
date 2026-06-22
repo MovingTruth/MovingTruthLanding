@@ -1034,6 +1034,40 @@ body.fading .inner-content {
 
 .back-home:hover { color: var(--accent); }
 
+/* ── STANDALONE PAGES (About, etc.) ───────────────────────── */
+
+.standalone-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+}
+
+.standalone-header {
+  margin-bottom: 2.5rem;
+}
+
+.standalone-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0;
+}
+
+.standalone-body p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text);
+  margin: 0 0 1.2rem;
+}
+
+.standalone-body p:last-child { margin-bottom: 0; }
+
+.standalone-body strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* ── INLINE ACTION BUTTON (Continue) ──────────────────────── */
 
 @keyframes continueGlow {
