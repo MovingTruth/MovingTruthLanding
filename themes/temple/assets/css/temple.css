@@ -267,7 +267,7 @@ body.landing-doorway {
   }
 
   .ld-content {
-    padding-bottom: 4rem;
+    padding-bottom: calc(10vh + 3rem);
   }
 }
 
