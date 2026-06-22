@@ -72,6 +72,40 @@
       }
     }
 
+    // ── Hamburger menu ────────────────────────────────────────
+    var menuBtn     = document.getElementById('mt-menu-btn');
+    var menuPanel   = document.getElementById('mt-menu-panel');
+    var menuOverlay = document.getElementById('mt-menu-overlay');
+    var menuClose   = document.getElementById('mt-menu-close');
+
+    function openMenu() {
+      menuPanel.classList.add('mt-menu-panel--open');
+      menuOverlay.classList.add('mt-menu-overlay--open');
+      menuBtn.classList.add('mt-menu-btn--open');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      menuPanel.setAttribute('aria-hidden', 'false');
+      menuOverlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      menuPanel.classList.remove('mt-menu-panel--open');
+      menuOverlay.classList.remove('mt-menu-overlay--open');
+      menuBtn.classList.remove('mt-menu-btn--open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuPanel.setAttribute('aria-hidden', 'true');
+      menuOverlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    if (menuBtn)     menuBtn.addEventListener('click', openMenu);
+    if (menuClose)   menuClose.addEventListener('click', closeMenu);
+    if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+
     // ── Random pulse on header support button ─────────────────
     var navSupport = document.querySelector('.nav-support');
     if (navSupport) {

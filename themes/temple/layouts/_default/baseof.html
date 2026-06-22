@@ -1,4 +1,4 @@
-<!--
+{{ `<!--
 
   ✦ ✦ ✦
 
@@ -46,7 +46,7 @@
 
   ✦ ✦ ✦
 
--->
+-->` | safeHTML }}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,8 +103,45 @@
     <nav>
       <a href="{{ "series" | relURL }}">Series</a>
       <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">Support the work</a>
+      <button class="mt-menu-btn" id="mt-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mt-menu-panel">
+        <span class="mt-menu-btn__bar"></span>
+        <span class="mt-menu-btn__bar"></span>
+        <span class="mt-menu-btn__bar"></span>
+      </button>
     </nav>
   </header>
+
+  <div class="mt-menu-overlay" id="mt-menu-overlay" aria-hidden="true"></div>
+
+  <aside class="mt-menu-panel" id="mt-menu-panel" aria-label="Site menu" aria-hidden="true">
+    <button class="mt-menu-close" id="mt-menu-close" aria-label="Close menu">&#x2715;</button>
+
+    <nav class="mt-menu-nav" aria-label="Site navigation">
+      <p class="mt-menu-section-label">Navigate</p>
+      <a href="{{ "/" | relURL }}" class="mt-menu-link">Home</a>
+      <a href="{{ "series" | relURL }}" class="mt-menu-link">All Series</a>
+      {{ range .Site.Sections }}
+      <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ .Title }}</a>
+      {{ end }}
+    </nav>
+
+    <div class="mt-menu-divider"></div>
+
+    <div class="mt-menu-about">
+      <p class="mt-menu-section-label">About this site</p>
+      <div class="mt-menu-about-body">
+        <p>Moving Truth exists because people deserve to be taken seriously.</p>
+        <p>Not managed. Not distracted. Not talked past.</p>
+        <p>These pieces are written for the ones who feel something — who carry a quiet sense that the world is more complicated than anyone is admitting, and that they are not wrong for noticing. They are written with love for this world and every person in it. For the ones who are tired. For the ones paying attention in the dark, not sure whether what they see is real. For the ones who gave up asking questions because the questions never seemed to go anywhere.</p>
+        <p>They went somewhere. They led here.</p>
+        <p>One morning I woke up and saw the world differently than I once did. Not worse. Not better. Just — more clearly. And I could not unsee it. This site is what came from that.</p>
+        <p>Each piece is short. Written carefully. Not here to tell you what to think — here to stand beside what you already sense, and give it a name.</p>
+        <p>There are no conclusions in these pages. Only mirrors, and doors left open for the ones who are ready.</p>
+        <p>The series are written under the name <strong>Skylaur Roe</strong>. There is no biography. The work is the point.</p>
+        <p>If something here moves you — pass it on. Find the person who needs it. That is the whole ask.</p>
+      </div>
+    </div>
+  </aside>
 
   <main class="inner-content">
     {{ block "main" . }}{{ end }}
