@@ -2,7 +2,7 @@
 title: "What If Your Favourite Song Is Rewriting Your Brain?"
 series: "What If"
 part: 2
-date: 2026-06-20T00:00:00
+date: 2026-06-21T00:00:00
 description: "Not as a metaphor. Literally. And the question of what we've been feeding ourselves all along."
 ---
 
