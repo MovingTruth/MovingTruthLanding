@@ -47,7 +47,8 @@
     var REMEMBER_KEY = 'mt_theme_remember';
     function sGet(s, k) { try { return s.getItem(k); } catch (e) { return null; } }
     if (sGet(localStorage, THEME_KEY) && sGet(localStorage, REMEMBER_KEY)) {
-      window.location.replace('{{ "series" | relURL }}');
+      var btn = document.querySelector('.ld-enter-btn');
+      if (btn) btn.href = '{{ "series" | relURL }}';
     }
   })();
   </script>
