@@ -685,6 +685,66 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   letter-spacing: 0.02em;
 }
 
+/* ── SUBSTACK SIGNUP ─────────────────────────────────────── */
+
+.substack-signup {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.substack-label {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.03em;
+}
+
+.substack-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.substack-input {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 2px;
+  width: 240px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.substack-input::placeholder { color: var(--text-muted); opacity: 0.6; }
+.substack-input:focus { border-color: var(--accent); }
+
+.substack-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.substack-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
 /* ── SERIES MENU ──────────────────────────────────────────── */
 
 .series-grid {
