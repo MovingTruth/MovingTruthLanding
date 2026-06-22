@@ -74,11 +74,18 @@ document.addEventListener('DOMContentLoaded', function () {
               if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
               setTimeout(function () {
                 window.location.href = seriesPage;
+                setTimeout(function () {
+                  if (overlay) {
+                    overlay.style.display = 'none';
+                    overlay.classList.remove('mt-reflect-overlay--fade');
+                  }
+                }, 800);
               }, 600);
-            });
+            }, { once: true });
           }
         }
       }, 1000);
+      window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
     }
 
     var closingWrap = document.getElementById('piece-closing-wrap');
@@ -127,6 +134,12 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
           if (isFinal) {
             window.location.href = seriesPage;
+            setTimeout(function () {
+              if (overlay) {
+                overlay.style.display = 'none';
+                overlay.classList.remove('mt-reflect-overlay--fade');
+              }
+            }, 800);
           } else {
             if (overlay) {
               overlay.style.display = 'none';
@@ -143,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           }
         }, 600);
-      });
+      }, { once: true });
     }
   }
 
@@ -194,6 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
         unlock();
       }
     }, 1000);
+    window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
   }
 
   var actionWrap = document.getElementById('piece-action-wrap');

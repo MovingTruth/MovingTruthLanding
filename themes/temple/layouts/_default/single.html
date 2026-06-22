@@ -31,7 +31,7 @@
   <nav class="piece-nav"
     data-part="{{ .Params.part }}"
     data-series="{{ .CurrentSection.Slug }}"
-    data-series-page="{{ "series" | relURL }}"
+    data-series-page="{{ .Parent.Permalink }}"
     {{ if not $nextPiece }}data-final="true"{{ end }}
     {{ if .Params.closingReflection }}data-closing="true"{{ end }}>
     {{ $currentPart := .Params.part }}
