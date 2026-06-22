@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     img.onload = function () { img.style.opacity = '1'; };
     img.src = item.src;
     img.alt = item.title || '';
+    img.setAttribute('aria-label', (current + 1) + ' of ' + MT_GALLERY.length + (item.title ? ': ' + item.title : ''));
     if (img.complete && img.naturalWidth) img.style.opacity = '1';
 
     titleEl.textContent   = item.title || '';

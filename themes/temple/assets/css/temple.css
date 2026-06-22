@@ -21,6 +21,37 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ── ACCESSIBILITY ────────────────────────────────────────── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  z-index: 10000;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+  transition: top 0.1s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 html { font-size: 18px; scroll-behavior: smooth; }
 
 body {
@@ -717,14 +748,51 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   color: var(--text);
 }
 
+.part-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 2.5rem;
+  flex-shrink: 0;
+}
+
 .part-number {
   font-family: var(--font-serif);
   font-size: 2rem;
   color: var(--accent);
   opacity: 0.6;
-  min-width: 2.5rem;
   text-align: center;
+}
+
+.part-icon-wrap .series-icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  margin-top: 0.25rem;
+  opacity: 0.7;
+}
+
+/* ── SERIES ICON ─────────────────────────────────────────── */
+
+.series-icon {
+  display: block;
+  color: var(--accent);
   flex-shrink: 0;
+  line-height: 1;
+}
+
+.series-card .series-icon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  margin: 0 auto 0.75rem;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.series-card:hover .series-icon {
+  opacity: 1;
 }
 
 .part-info { flex: 1; }

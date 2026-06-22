@@ -5,7 +5,7 @@
 {{ $pages := .Pages.ByParam "order" }}
 
 {{ if $pages }}
-<div class="gallery-page" id="gallery-page">
+<div class="gallery-page" id="gallery-page" role="region" aria-label="Image gallery">
 
   <div class="gallery-stage">
     <button class="gallery-arrow gallery-arrow--prev" id="gallery-prev" aria-label="Previous image">&#8592;</button>
@@ -15,7 +15,7 @@
     <button class="gallery-arrow gallery-arrow--next" id="gallery-next" aria-label="Next image">&#8594;</button>
   </div>
 
-  <div class="gallery-info" id="gallery-info">
+  <div class="gallery-info" id="gallery-info" aria-live="polite" aria-atomic="true">
     <p class="gallery-item-title" id="gallery-item-title"></p>
     <p class="gallery-item-caption" id="gallery-item-caption"></p>
   </div>

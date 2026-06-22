@@ -37,13 +37,25 @@ document.addEventListener('DOMContentLoaded', function () {
   if (isBlessing) {
     var blessingWrap = document.getElementById('piece-blessing-wrap');
     var blessingBtn  = document.getElementById('piece-blessing-btn');
-    var blessingStarted = false;
+    var blessingInterval = null;
 
     var alreadyAccepted = MT.get(storageKey);
 
+    function onBlessingContinue() {
+      if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+      setTimeout(function () {
+        window.location.href = seriesPage;
+        setTimeout(function () {
+          if (overlay) {
+            overlay.style.display = 'none';
+            overlay.classList.remove('mt-reflect-overlay--fade');
+          }
+        }, 800);
+      }, 600);
+    }
+
     function showBlessingOverlay() {
-      if (blessingStarted) return;
-      blessingStarted = true;
+      if (blessingInterval) clearInterval(blessingInterval);
 
       if (overlayTitle)       overlayTitle.textContent = 'Let it in.';
       if (overlaySub)         overlaySub.textContent = 'You are being held.';
@@ -53,19 +65,22 @@ document.addEventListener('DOMContentLoaded', function () {
       if (overlayContinue) {
         overlayContinue.style.display = 'none';
         overlayContinue.textContent = 'I receive this.';
+        overlayContinue.removeEventListener('click', onBlessingContinue);
       }
 
-      if (overlay)      overlay.style.display = 'flex';
-      if (overlayTimer) overlayTimer.textContent = 30;
+      if (overlay)      { overlay.style.display = 'flex'; overlay.focus(); }
+      if (overlayTimer) { overlayTimer.textContent = 30; overlayTimer.style.display = ''; }
 
       var remaining = 30;
-      var interval = setInterval(function () {
+      blessingInterval = setInterval(function () {
         remaining -= 1;
         if (overlayTimer) overlayTimer.textContent = remaining;
 
         if (remaining <= 0) {
-          clearInterval(interval);
+          clearInterval(blessingInterval);
+          blessingInterval = null;
           MT.set(storageKey);
+          MT.set('mt_' + series + '_reflected_' + currentPart);
           if (overlayTimer) overlayTimer.style.display = 'none';
           if (overlayReady) {
             overlayReady.textContent = 'This blessing is yours.';
@@ -73,22 +88,12 @@ document.addEventListener('DOMContentLoaded', function () {
           }
           if (overlayContinue) {
             overlayContinue.style.display = 'inline-block';
-            overlayContinue.addEventListener('click', function () {
-              if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
-              setTimeout(function () {
-                window.location.href = seriesPage;
-                setTimeout(function () {
-                  if (overlay) {
-                    overlay.style.display = 'none';
-                    overlay.classList.remove('mt-reflect-overlay--fade');
-                  }
-                }, 800);
-              }, 600);
-            }, { once: true });
+            overlayContinue.focus();
+            overlayContinue.addEventListener('click', onBlessingContinue);
           }
         }
       }, 1000);
-      window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
+      window.addEventListener('pagehide', function () { clearInterval(blessingInterval); }, { once: true });
     }
 
     var bodyEndObserver = new IntersectionObserver(function (entries) {
@@ -108,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
         blessingBtn.textContent = 'Accept this blessing again';
       }
       blessingBtn.addEventListener('click', function () {
-        blessingStarted = false;
         showBlessingOverlay();
       });
     }
@@ -138,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
         overlayContinue.classList.add('mt-reflect-continue--closing');
       }
 
-      if (overlay) overlay.style.display = 'flex';
+      if (overlay) { overlay.style.display = 'flex'; overlay.focus(); }
       if (overlayTimer) overlayTimer.textContent = duration;
 
       var remaining = duration;
@@ -157,6 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
           if (overlayContinue) {
             overlayContinue.style.display = 'inline-block';
+            overlayContinue.focus();
             overlayContinue.addEventListener('click', function () {
               if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
               setTimeout(function () {
@@ -208,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (overlayTimer) overlayTimer.style.display = 'none';
     if (overlayUnlock) overlayUnlock.style.display = 'none';
     if (overlayReady) overlayReady.style.display = 'block';
-    if (overlayContinue) overlayContinue.style.display = 'inline-block';
+    if (overlayContinue) { overlayContinue.style.display = 'inline-block'; overlayContinue.focus(); }
 
     if (!isFinal && nextLink) {
       nextLink.href = nextLink.dataset.href;
@@ -277,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (overlayContinue) overlayContinue.textContent = 'Continue';
 
-    if (overlay) overlay.style.display = 'flex';
+    if (overlay) { overlay.style.display = 'flex'; overlay.focus(); }
     if (overlayTimer) {
       overlayTimer.textContent = remaining;
       overlayTimer.style.display = '';

@@ -27,11 +27,15 @@
     </div>
 
     {{ $pages := .Pages.ByParam "part" }}
+    {{ $sectionIcon := .Params.icon }}
     {{ if $pages }}
     <div class="parts-list">
       {{ range $pages }}
       <a href="{{ .Permalink }}" class="part-card" data-part="{{ .Params.part }}">
-        <span class="part-number">{{ .Params.part }}</span>
+        <div class="part-lead">
+          <span class="part-number">{{ .Params.part }}</span>
+          {{ if $sectionIcon }}<span class="part-icon-wrap">{{ partial "icon.html" $sectionIcon }}</span>{{ end }}
+        </div>
         <div class="part-info">
           <h3>{{ .Title }}</h3>
           {{ with .Description }}<p>{{ . }}</p>{{ end }}
