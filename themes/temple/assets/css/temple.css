@@ -270,8 +270,9 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
 .site-header nav a:hover { color: var(--accent); }
 
 @keyframes supportGlow {
-  0%, 100% { box-shadow: 0 0 6px var(--accent), 0 0 14px var(--accent); opacity: 0.85; }
-  50%       { box-shadow: 0 0 18px var(--accent), 0 0 36px var(--accent); opacity: 1; }
+  0%   { box-shadow: none; opacity: 0.85; }
+  50%  { box-shadow: 0 0 18px var(--accent), 0 0 36px var(--accent); opacity: 1; }
+  100% { box-shadow: none; opacity: 0.85; }
 }
 
 .nav-support {
@@ -283,7 +284,7 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
 }
 
 .nav-support--pulsing {
-  animation: supportGlow 2.5s ease-in-out 3;
+  animation: supportGlow 1.75s ease-in-out 3;
 }
 
 .nav-support:hover {
