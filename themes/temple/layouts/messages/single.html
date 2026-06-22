@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<article class="standalone-page">
+  <header class="standalone-header">
+    <h1 class="standalone-title">{{ .Title }}</h1>
+    <time class="standalone-date">{{ .Date.Format "January 2, 2006" }}</time>
+  </header>
+  <div class="standalone-body">
+    {{ .Content }}
+  </div>
+  <div class="back-home-wrap">
+    <a href="{{ .Parent.Permalink }}" class="back-home">← All Messages</a>
+  </div>
+</article>
+
+{{ end }}

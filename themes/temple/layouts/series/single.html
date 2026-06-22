@@ -4,11 +4,13 @@
   <p class="page-intro">Each series is a path. Choose where to begin.</p>
   <div class="series-grid">
     {{ range .Site.Sections }}
+    {{ if not .Params.menuOnly }}
     <a href="{{ .Permalink }}" class="series-card">
       <h2>{{ .Title }}</h2>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
       <span class="series-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</span>
     </a>
+    {{ end }}
     {{ end }}
   </div>
 </section>

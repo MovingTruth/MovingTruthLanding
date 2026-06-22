@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Path — {{ .Site.Title }}</title>
+  <link rel="preload" as="image" href="/images/temple-bg.jpg" />
+  <link rel="preload" as="image" href="/images/temple-bg-light.jpg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  {{ $css := resources.Get "css/temple.css" | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" />
+  <script>(function(){try{var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body class="landing-split">
+
+  <header class="ls-header">
+    <h1 class="ls-title">{{ .Site.Title }}</h1>
+    {{ if .Site.Params.showSubtitle }}
+    <p class="ls-author">by {{ .Site.Params.author }}</p>
+    {{ end }}
+  </header>
+
+  <div class="ls-halves">
+
+    <div class="ls-half ls-half--dark" id="pick-dark" tabindex="0" role="button" aria-label="Enter in dark theme">
+      <div class="ls-half-text">
+        <p class="ls-half-label">Dark</p>
+        <p class="ls-half-sub">Still water. Deep earth.</p>
+      </div>
+    </div>
+
+    <div class="ls-divider" aria-hidden="true"></div>
+
+    <div class="ls-half ls-half--light" id="pick-light" tabindex="0" role="button" aria-label="Enter in light theme">
+      <div class="ls-half-text">
+        <p class="ls-half-label">Light</p>
+        <p class="ls-half-sub">Open sky. Warm stone.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="ls-footer">
+    <label class="ls-remember-label" for="ls-remember">
+      <input type="checkbox" id="ls-remember" class="ls-remember-check" />
+      <span>Remember my choice</span>
+    </label>
+  </footer>
+
+  <script>
+  (function () {
+    var THEME_KEY    = 'mt_theme';
+    var REMEMBER_KEY = 'mt_theme_remember';
+    var seriesURL    = '{{ "series" | relURL }}';
+
+    function sGet(s, k) { try { return s.getItem(k); } catch (e) { return null; } }
+    function sSet(s, k, v) { try { s.setItem(k, v); } catch (e) {} }
+    function sDel(s, k)   { try { s.removeItem(k); } catch (e) {} }
+
+    var remember = false;
+    var rememberCheck = document.getElementById('ls-remember');
+    if (rememberCheck) {
+      rememberCheck.addEventListener('change', function () { remember = this.checked; });
+    }
+
+    function pick(theme) {
+      sSet(sessionStorage, THEME_KEY, theme);
+      if (remember) {
+        sSet(localStorage, THEME_KEY, theme);
+        sSet(localStorage, REMEMBER_KEY, '1');
+      } else {
+        sDel(localStorage, THEME_KEY);
+        sDel(localStorage, REMEMBER_KEY);
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      window.location.href = seriesURL;
+    }
+
+    ['pick-dark', 'pick-light'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var theme = id === 'pick-dark' ? 'dark' : 'light';
+      el.addEventListener('click', function () { pick(theme); });
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(theme); }
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>

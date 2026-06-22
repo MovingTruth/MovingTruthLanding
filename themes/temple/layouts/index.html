@@ -12,8 +12,8 @@
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
   <meta property="og:image" content="{{ "logo.png" | absURL }}" />
   <meta name="twitter:card" content="summary" />
-  <link rel="preload" as="image" href="{{ .Site.Params.landingImage | relURL }}" />
-  <link rel="preload" as="image" href="{{ .Site.Params.landingImageLight | relURL }}" />
+  <link rel="preload" as="image" href="/desktop_doorway.jpg" media="(min-width: 769px)" />
+  <link rel="preload" as="image" href="/mobile_doorway.jpg" media="(max-width: 768px)" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -22,63 +22,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
   {{ $css := resources.Get "css/temple.css" | fingerprint }}
   <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" />
-  <style>
-    :root { --landing-bg-image: url('{{ .Site.Params.landingImage | relURL }}'); }
-    [data-theme="light"] { --landing-bg-image: url('{{ .Site.Params.landingImageLight | relURL }}'); }
-  </style>
-  <script>(function(){try{var t=localStorage.getItem('mt_theme')||sessionStorage.getItem('mt_theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
-<body class="landing">
+<body class="landing-doorway">
 
-  <div class="landing-bg"></div>
-  <div class="landing-overlay"></div>
+  <div class="ld-bg"></div>
+  <div class="ld-overlay"></div>
 
-  <svg class="landing-pyramid" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <polygon points="50,5 2,97 98,97" fill="none" stroke="#E07820" stroke-width="1.5" vector-effect="non-scaling-stroke" />
-  </svg>
-
-  <div id="mt-theme-picker" class="mt-theme-picker" style="display:none;" role="dialog" aria-modal="true" aria-label="Choose your theme">
-    <div class="mt-theme-picker-box">
-      <p class="mt-theme-picker-title">How would you like to arrive?</p>
-      <div class="mt-theme-options">
-        <button class="mt-theme-btn" data-theme="dark" id="mt-pick-dark">
-          <span class="mt-theme-btn-label">Dark</span>
-          <span class="mt-theme-btn-sub">Still water. Deep earth.</span>
-        </button>
-        <button class="mt-theme-btn" data-theme="light" id="mt-pick-light">
-          <span class="mt-theme-btn-label">Light</span>
-          <span class="mt-theme-btn-sub">Open sky. Warm stone.</span>
-        </button>
-      </div>
-      <label class="mt-theme-remember" for="mt-theme-remember">
-        <input type="checkbox" id="mt-theme-remember" class="mt-theme-remember-check" />
-        <span>Remember my choice</span>
-      </label>
-    </div>
-  </div>
-
-  <main class="landing-content">
-    <h1 class="landing-title">{{ .Site.Title }}</h1>
-    {{ if .Site.Params.showSubtitle }}
-    <p class="landing-author">by {{ .Site.Params.author }}</p>
-    {{ end }}
-    <p class="landing-tagline">{{ .Site.Params.tagline }}</p>
-    <a href="{{ "series" | relURL }}" class="enter-btn">Enter your Inner Temple</a>
+  <main class="ld-content">
+    <h1 class="ld-title">{{ .Site.Title }}</h1>
+    <p class="ld-tagline">{{ .Site.Params.tagline }}</p>
+    <a href="{{ "choose" | relURL }}" class="ld-enter-btn">Enter Your Inner Temple<br><span>and learn.</span></a>
   </main>
 
-  {{ $theme := resources.Get "js/mt-theme.js" | fingerprint }}
-  <script src="{{ $theme.Permalink }}" integrity="{{ $theme.Data.Integrity }}"></script>
-
-  {{ if .Site.Params.ambientAudio }}
-  <div class="audio-control">
-    <button id="audioToggle" onclick="toggleAudio()" aria-label="Toggle ambient sound">♪</button>
+  <div class="ld-bottom">
+    <img src="/logo.png" alt="" class="ld-logo" aria-hidden="true" />
+    {{ if .Site.Params.showSubtitle }}
+    <p class="ld-author">by {{ .Site.Params.author }}</p>
+    {{ end }}
   </div>
-  <audio id="ambient" loop>
-    <source src="{{ .Site.Params.ambientAudio | relURL }}" type="audio/mpeg" />
-  </audio>
-  {{ $audio := resources.Get "js/audio.js" | fingerprint }}
-  <script src="{{ $audio.Permalink }}" integrity="{{ $audio.Data.Integrity }}"></script>
-  {{ end }}
+
+  <script>
+  (function () {
+    var THEME_KEY    = 'mt_theme';
+    var REMEMBER_KEY = 'mt_theme_remember';
+    function sGet(s, k) { try { return s.getItem(k); } catch (e) { return null; } }
+    if (sGet(localStorage, THEME_KEY) && sGet(localStorage, REMEMBER_KEY)) {
+      window.location.replace('{{ "series" | relURL }}');
+    }
+  })();
+  </script>
 
 </body>
 </html>

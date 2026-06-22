@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="series-menu">
+  <h1 class="page-title">From the Creator</h1>
+  <p class="page-intro">Personal messages. Written from the heart.</p>
+  <div class="series-grid">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="series-card">
+      <h2>{{ .Title }}</h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      <span class="series-count">{{ .Date.Format "January 2, 2006" }}</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

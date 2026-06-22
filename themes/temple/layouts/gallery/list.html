@@ -1,0 +1,48 @@
+{{ define "bodyclass" }}inner gallery-full{{ end }}
+
+{{ define "main" }}
+
+{{ $pages := .Pages.ByParam "order" }}
+
+{{ if $pages }}
+<div class="gallery-page" id="gallery-page">
+
+  <div class="gallery-stage">
+    <button class="gallery-arrow gallery-arrow--prev" id="gallery-prev" aria-label="Previous image">&#8592;</button>
+    <div class="gallery-image-wrap" id="gallery-image-wrap">
+      <img class="gallery-img" id="gallery-img" src="" alt="" />
+    </div>
+    <button class="gallery-arrow gallery-arrow--next" id="gallery-next" aria-label="Next image">&#8594;</button>
+  </div>
+
+  <div class="gallery-info" id="gallery-info">
+    <p class="gallery-item-title" id="gallery-item-title"></p>
+    <p class="gallery-item-caption" id="gallery-item-caption"></p>
+  </div>
+
+  <div class="gallery-thumbs" id="gallery-thumbs">
+    {{ range $i, $page := $pages }}
+    <button class="gallery-thumb-btn" data-index="{{ $i }}" aria-label="{{ $page.Title }}">
+      <img class="gallery-thumb" src="{{ $page.Params.image }}" alt="{{ $page.Title }}" loading="lazy" />
+    </button>
+    {{ end }}
+  </div>
+
+</div>
+
+<script>
+var MT_GALLERY = [{{ range $pages }}{"src":{{ .Params.image | jsonify | safeJS }},"title":{{ .Title | jsonify | safeJS }},"caption":{{ with .Params.caption }}{{ . | jsonify | safeJS }}{{ else }}""{{ end }}},{{ end }}];
+</script>
+
+{{ else }}
+
+<div class="standalone-page">
+  <p style="opacity:0.5; text-align:center; padding: 4rem 0;">The gallery is coming.</p>
+</div>
+
+{{ end }}
+
+{{ $gallery := resources.Get "js/gallery.js" | fingerprint }}
+<script src="{{ $gallery.Permalink }}" integrity="{{ $gallery.Data.Integrity }}"></script>
+
+{{ end }}

@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var currentPart = parseInt(nav.dataset.part, 10);
   var isClosing = nav.dataset.closing === 'true';
   var isFinal = nav.dataset.final === 'true';
+  var isBlessing = nav.dataset.blessing === 'true';
   var seriesPage = nav.dataset.seriesPage || '/series';
   var nextWrap = nav.querySelector('.piece-nav-next-wrap');
   var nextLink = nav.querySelector('.piece-nav-next--locked');
 
-  if (!nextLink && !isClosing && !isFinal) return;
+  if (!nextLink && !isClosing && !isFinal && !isBlessing) return;
 
   var countdownEl = nav.querySelector('.reflect-countdown');
   var messageEl = nav.querySelector('.reflect-message');
@@ -27,7 +28,93 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var storageKey = isClosing
     ? 'mt_' + series + '_closing'
-    : 'mt_' + series + '_reflected_' + currentPart;
+    : isBlessing
+      ? 'mt_' + series + '_accepted_' + currentPart
+      : 'mt_' + series + '_reflected_' + currentPart;
+
+  // ── BLESSING MODE ──────────────────────────────────────────
+
+  if (isBlessing) {
+    var blessingWrap = document.getElementById('piece-blessing-wrap');
+    var blessingBtn  = document.getElementById('piece-blessing-btn');
+    var blessingStarted = false;
+
+    var alreadyAccepted = MT.get(storageKey);
+
+    function showBlessingOverlay() {
+      if (blessingStarted) return;
+      blessingStarted = true;
+
+      if (overlayTitle)       overlayTitle.textContent = 'Let it in.';
+      if (overlaySub)         overlaySub.textContent = 'You are being held.';
+      if (overlayInstruction) overlayInstruction.textContent = 'Give it thirty seconds to reach you.';
+      if (overlayUnlock)      overlayUnlock.style.display = 'none';
+      if (overlayReady)       overlayReady.style.display = 'none';
+      if (overlayContinue) {
+        overlayContinue.style.display = 'none';
+        overlayContinue.textContent = 'I receive this.';
+      }
+
+      if (overlay)      overlay.style.display = 'flex';
+      if (overlayTimer) overlayTimer.textContent = 30;
+
+      var remaining = 30;
+      var interval = setInterval(function () {
+        remaining -= 1;
+        if (overlayTimer) overlayTimer.textContent = remaining;
+
+        if (remaining <= 0) {
+          clearInterval(interval);
+          MT.set(storageKey);
+          if (overlayTimer) overlayTimer.style.display = 'none';
+          if (overlayReady) {
+            overlayReady.textContent = 'This blessing is yours.';
+            overlayReady.style.display = 'block';
+          }
+          if (overlayContinue) {
+            overlayContinue.style.display = 'inline-block';
+            overlayContinue.addEventListener('click', function () {
+              if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+              setTimeout(function () {
+                window.location.href = seriesPage;
+                setTimeout(function () {
+                  if (overlay) {
+                    overlay.style.display = 'none';
+                    overlay.classList.remove('mt-reflect-overlay--fade');
+                  }
+                }, 800);
+              }, 600);
+            }, { once: true });
+          }
+        }
+      }, 1000);
+      window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
+    }
+
+    var bodyEndObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          if (blessingWrap) blessingWrap.style.display = 'flex';
+          bodyEndObserver.disconnect();
+        }
+      });
+    }, { threshold: 0 });
+
+    var bodyEnd = document.getElementById('piece-body-end');
+    if (bodyEnd) bodyEndObserver.observe(bodyEnd);
+
+    if (blessingBtn) {
+      if (alreadyAccepted) {
+        blessingBtn.textContent = 'Accept this blessing again';
+      }
+      blessingBtn.addEventListener('click', function () {
+        blessingStarted = false;
+        showBlessingOverlay();
+      });
+    }
+
+    return;
+  }
 
   // ── CLOSING REFLECTION MODE ────────────────────────────────
 

@@ -27,13 +27,20 @@
   </div>
   {{ end }}
 
+  {{ if .Params.blessing }}
+  <div class="piece-action-wrap piece-blessing-wrap" id="piece-blessing-wrap" style="display:none;">
+    <button class="piece-action-btn piece-blessing-btn" id="piece-blessing-btn">Accept this blessing</button>
+  </div>
+  {{ end }}
+
   {{ $nextPiece := index (where .CurrentSection.Pages ".Params.part" (add .Params.part 1)) 0 }}
   <nav class="piece-nav"
     data-part="{{ .Params.part }}"
     data-series="{{ .CurrentSection.Slug }}"
     data-series-page="{{ .Parent.Permalink }}"
     {{ if not $nextPiece }}data-final="true"{{ end }}
-    {{ if .Params.closingReflection }}data-closing="true"{{ end }}>
+    {{ if .Params.closingReflection }}data-closing="true"{{ end }}
+    {{ if .Params.blessing }}data-blessing="true"{{ end }}>
     {{ $currentPart := .Params.part }}
     {{ $allPages := .CurrentSection.Pages }}
 
@@ -50,6 +57,12 @@
 
     {{ with index (where $allPages ".Params.part" (add $currentPart 1)) 0 }}
     <div class="piece-nav-next-wrap">
+      {{ if $.Params.blessing }}
+      <a href="{{ .Permalink }}" class="piece-nav-next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">{{ .Title }}</span>
+      </a>
+      {{ else }}
       <a data-href="{{ .Permalink }}" class="piece-nav-next piece-nav-next--locked">
         <span class="nav-label">Next →</span>
         <span class="nav-title">{{ .Title }}</span>
@@ -58,6 +71,7 @@
         <span class="reflect-message">Something in you already knew this.</span>
         <span class="reflect-countdown"></span>
       </div>
+      {{ end }}
     </div>
     {{ end }}
   </nav>

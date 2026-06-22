@@ -94,7 +94,153 @@ a:hover { color: var(--accent-dim); }
 [data-theme="light"] .mt-reflect-overlay { background: rgba(253, 248, 237, 0.97); }
 [data-theme="light"] .mt-notice          { background: rgba(253, 248, 237, 0.99); }
 
-/* ── LANDING PAGE ─────────────────────────────────────────── */
+/* ── PAGE LOGO (footer watermark, all pages except choose) ── */
+
+.site-footer-logo {
+  display: block;
+  height: 10vh;
+  width: auto;
+  margin: 0 auto 1.5rem;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.site-footer-logo:hover {
+  opacity: 0.75;
+}
+
+.ld-bottom {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  z-index: 3;
+  pointer-events: none;
+  text-align: center;
+}
+
+.ld-logo {
+  height: 10vh;
+  width: auto;
+  opacity: 0.55;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.7));
+}
+
+/* ── DOORWAY LANDING PAGE ─────────────────────────────────── */
+
+body.landing-doorway {
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ld-bg {
+  position: fixed;
+  inset: 0;
+  background-image: url('/desktop_doorway.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.ld-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.35) 45%, transparent 100%);
+  z-index: 1;
+}
+
+.ld-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 2rem 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ld-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 2px 40px rgba(0,0,0,0.9);
+  line-height: 1.1;
+}
+
+.ld-author {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+  color: rgba(201, 168, 76, 0.8);
+  letter-spacing: 0.08em;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+}
+
+.ld-tagline {
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+  color: rgba(232, 224, 208, 0.78);
+  letter-spacing: 0.06em;
+  max-width: 380px;
+}
+
+.ld-enter-btn {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.9rem 2.6rem;
+  border: 1.5px solid #C9A84C;
+  color: #C9A84C;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background: rgba(201, 168, 76, 0.08);
+  box-shadow: 0 0 28px rgba(201, 168, 76, 0.2);
+  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.ld-enter-btn span {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.ld-enter-btn:hover {
+  background: rgba(201, 168, 76, 0.22);
+  color: #e8c96a;
+  box-shadow: 0 0 42px rgba(201, 168, 76, 0.38);
+}
+
+@media (max-width: 768px) {
+  .ld-bg {
+    background-image: url('/mobile_doorway.jpg');
+    background-position: center top;
+  }
+
+  .ld-content {
+    padding-bottom: 4rem;
+  }
+}
+
+/* ── LEGACY LANDING PAGE ──────────────────────────────────── */
 
 body.landing {
   min-height: 100vh;
@@ -416,6 +562,25 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   font-size: 0.85rem;
   padding-left: 0.75rem;
   opacity: 0.85;
+}
+
+.mt-menu-reset {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+  font-family: var(--font-sans);
+}
+
+.mt-menu-reset:hover {
+  color: #c0392b;
 }
 
 .mt-menu-divider {
@@ -1034,6 +1199,141 @@ body.fading .inner-content {
 
 .back-home:hover { color: var(--accent); }
 
+/* ── GALLERY ──────────────────────────────────────────────── */
+
+.gallery-full .inner-content {
+  max-width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 69px);
+  overflow: hidden;
+}
+
+.gallery-stage {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  background: #000;
+}
+
+.gallery-image-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text);
+  font-size: 1.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.gallery-arrow:hover {
+  background: rgba(0,0,0,0.7);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.gallery-arrow--prev { left: 1rem; }
+.gallery-arrow--next { right: 1rem; }
+
+.gallery-info {
+  text-align: center;
+  padding: 0.6rem 2rem;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.gallery-item-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.gallery-item-caption {
+  font-size: 0.78rem;
+  color: var(--text);
+  opacity: 0.6;
+  margin: 0.2rem 0 0;
+  line-height: 1.4;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  background: var(--bg);
+  padding: 6px 6px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.gallery-thumb-btn {
+  flex-shrink: 0;
+  width: 72px;
+  height: 56px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  transition: border-color 0.2s;
+}
+
+.gallery-thumb-btn:hover { border-color: var(--accent); opacity: 0.9; }
+
+.gallery-thumb-btn--active {
+  border-color: var(--accent);
+}
+
+.gallery-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* ── STANDALONE PAGES (About, etc.) ───────────────────────── */
 
 .standalone-page {
@@ -1052,6 +1352,15 @@ body.fading .inner-content {
   font-weight: 400;
   color: var(--text);
   margin: 0;
+}
+
+.standalone-date {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted, var(--text));
+  opacity: 0.5;
+  margin-top: 0.5rem;
 }
 
 .standalone-body p {
@@ -1274,4 +1583,156 @@ body.fading .inner-content {
   [data-theme="light"] .landing-overlay {
     background: radial-gradient(ellipse at center, rgba(255,250,240,0.05) 0%, rgba(240,225,200,0.2) 100%);
   }
+}
+
+/* ── SPLIT LANDING PAGE ───────────────────────────────────── */
+
+body.landing-split {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.ls-header {
+  text-align: center;
+  padding: 1.4rem 2rem 1rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.ls-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.ls-author {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  letter-spacing: 0.06em;
+}
+
+.ls-halves {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.ls-half {
+  flex: 1;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ls-half:hover { flex: 1.18; }
+
+.ls-half:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -4px;
+}
+
+.ls-half--dark  { background-image: url('/images/temple-bg.jpg'); }
+.ls-half--light { background-image: url('/images/temple-bg-light.jpg'); }
+
+.ls-half--dark::after,
+.ls-half--light::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.ls-half--dark::after {
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+}
+
+.ls-half--light::after {
+  background: linear-gradient(to top, rgba(255,248,230,0.55) 0%, rgba(255,248,230,0.1) 60%, transparent 100%);
+}
+
+.ls-half-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1.5rem 1rem 2.2rem;
+}
+
+.ls-half-label {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.ls-half-sub {
+  font-family: var(--font-sans);
+  font-size: clamp(0.72rem, 1.6vw, 0.85rem);
+  letter-spacing: 0.07em;
+  opacity: 0.85;
+}
+
+.ls-half--dark .ls-half-label { color: #e8e0d0; }
+.ls-half--dark .ls-half-sub   { color: rgba(232, 224, 208, 0.78); }
+
+.ls-half--light .ls-half-label { color: #0d0b08; }
+.ls-half--light .ls-half-sub   { color: rgba(13, 11, 8, 0.68); }
+
+.ls-divider {
+  width: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.ls-footer {
+  text-align: center;
+  padding: 0.55rem 1rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.ls-remember-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.ls-remember-check {
+  accent-color: var(--accent);
+  width: 0.85rem;
+  height: 0.85rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ls-halves      { flex-direction: column; }
+  .ls-half--light { order: -1; }
+  .ls-half--dark  { order: 1; }
+  .ls-divider     { width: 100%; height: 1px; }
+  .ls-half:hover  { flex: 1.1; }
 }

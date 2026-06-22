@@ -30,15 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var resetAll = document.getElementById('mt-reset-all');
-  if (resetAll) {
-    resetAll.addEventListener('click', function (e) {
-      e.preventDefault();
-      if (!confirm('Reset all reading progress across every series? You\'ll start fresh.')) return;
-      MT.keysStartingWith('mt_').forEach(function (k) {
-        if (k !== 'mt_theme' && k !== 'mt_theme_remember') MT.remove(k);
-      });
-      window.location.reload();
+  function doReset(e) {
+    if (e) e.preventDefault();
+    if (!confirm('Reset all reading progress across every series? You\'ll start fresh.')) return;
+    MT.keysStartingWith('mt_').forEach(function (k) {
+      if (k !== 'mt_theme' && k !== 'mt_theme_remember') MT.remove(k);
     });
+    window.location.reload();
   }
+
+  ['mt-reset-all', 'mt-reset-menu'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('click', doReset);
+  });
 });

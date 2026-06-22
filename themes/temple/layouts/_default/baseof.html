@@ -71,7 +71,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 </head>
-<body class="inner">
+<body class="{{ block "bodyclass" . }}inner{{ end }}">
 
 <div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" aria-live="polite">
   <div class="mt-reflect-box">
@@ -102,6 +102,7 @@
     </a>
     <nav>
       <a href="{{ "series" | relURL }}">Series</a>
+      <a href="{{ "gallery" | relURL }}">Gallery</a>
       <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">Support the work</a>
       <button class="mt-menu-btn" id="mt-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mt-menu-panel">
         <span class="mt-menu-btn__bar"></span>
@@ -120,8 +121,11 @@
       <p class="mt-menu-section-label">Navigate</p>
       <a href="{{ "/" | relURL }}" class="mt-menu-link">Home</a>
       <a href="{{ "series" | relURL }}" class="mt-menu-link">All Series</a>
+      <a href="{{ "gallery" | relURL }}" class="mt-menu-link">Gallery</a>
       {{ range .Site.Sections }}
+      {{ if not .Params.menuOnly }}
       <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ .Title }}</a>
+      {{ end }}
       {{ end }}
     </nav>
 
@@ -130,7 +134,12 @@
     <nav class="mt-menu-nav" aria-label="Site pages">
       <p class="mt-menu-section-label">More</p>
       <a href="{{ "about" | relURL }}" class="mt-menu-link">About this site</a>
+      <a href="{{ "messages" | relURL }}" class="mt-menu-link">From the Creator</a>
     </nav>
+
+    <div class="mt-menu-divider"></div>
+
+    <button class="mt-menu-reset" id="mt-reset-menu">Reset progress</button>
   </aside>
 
   <main class="inner-content">
@@ -138,8 +147,9 @@
   </main>
 
   <footer class="site-footer">
+    <img src="/logo.png" alt="" class="site-footer-logo" aria-hidden="true" />
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
-    <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "/" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">Reset progress</a></p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "choose" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">Reset progress</a></p>
   </footer>
 
   {{ $theme   := resources.Get "js/mt-theme.js"        | fingerprint }}
