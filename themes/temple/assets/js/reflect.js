@@ -73,10 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayContinue.addEventListener('click', function () {
               if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
               setTimeout(function () {
-                if (overlay) {
-                  overlay.style.display = 'none';
-                  overlay.classList.remove('mt-reflect-overlay--fade');
-                }
+                window.location.href = seriesPage;
               }, 600);
             });
           }
