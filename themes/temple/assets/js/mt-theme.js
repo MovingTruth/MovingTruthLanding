@@ -72,6 +72,23 @@
       }
     }
 
+    // ── Random pulse on header support button ─────────────────
+    var navSupport = document.querySelector('.nav-support');
+    if (navSupport) {
+      function scheduleNavPulse() {
+        var delay = Math.floor(Math.random() * 80000) + 10000;
+        setTimeout(function () {
+          navSupport.classList.add('nav-support--pulsing');
+          navSupport.addEventListener('animationend', function onEnd() {
+            navSupport.removeEventListener('animationend', onEnd);
+            navSupport.classList.remove('nav-support--pulsing');
+            scheduleNavPulse();
+          }, { once: true });
+        }, delay);
+      }
+      scheduleNavPulse();
+    }
+
     // ── "Change theme" link (inner pages) ─────────────────────
     var changeLink = document.getElementById('mt-change-theme');
     if (changeLink) {

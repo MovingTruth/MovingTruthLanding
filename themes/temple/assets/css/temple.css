@@ -279,8 +279,11 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   border: 1px solid var(--accent);
   padding: 0.35rem 0.9rem;
   border-radius: 2px;
-  animation: supportGlow 2.5s ease-in-out infinite;
   transition: background 0.2s, color 0.2s !important;
+}
+
+.nav-support--pulsing {
+  animation: supportGlow 2.5s ease-in-out 3;
 }
 
 .nav-support:hover {
