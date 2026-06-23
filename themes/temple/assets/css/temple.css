@@ -544,18 +544,50 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   transform: translateX(0);
 }
 
+/* ── Menu header: brand + close button in one row ── */
+.mt-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+/* Brand link — logo + site name — navigates to the doorway page */
+.mt-menu-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+
+.mt-menu-brand:hover { color: var(--accent); }
+
+.mt-menu-brand-logo {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.mt-menu-brand:hover .mt-menu-brand-logo { opacity: 1; }
+
 .mt-menu-close {
-  align-self: flex-end;
   background: none;
   border: none;
   color: var(--text-muted, var(--text));
   font-size: 1.1rem;
   cursor: pointer;
   padding: 0;
-  margin-bottom: 2rem;
   opacity: 0.6;
   transition: opacity 0.2s;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .mt-menu-close:hover { opacity: 1; }
@@ -849,6 +881,13 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   color: var(--accent);
   flex-shrink: 0;
   line-height: 1;
+}
+
+/* In menu links, icon sits inline beside the series name */
+.mt-menu-link .series-icon {
+  display: inline;
+  font-size: 1em;
+  margin-right: 0.3em;
 }
 
 .series-card .series-icon {

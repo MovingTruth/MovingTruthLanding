@@ -117,11 +117,24 @@
   <div class="mt-menu-overlay" id="mt-menu-overlay" aria-hidden="true"></div>
 
   <aside class="mt-menu-panel" id="mt-menu-panel" aria-label="Site menu" aria-hidden="true">
-    <button class="mt-menu-close" id="mt-menu-close" aria-label="Close menu">&#x2715;</button>
+
+    {{/*
+      mt-menu-header: brand + close button in a single row at the top of the panel.
+      The brand link goes to the doorway/landing page (/) — the only in-menu path there.
+      Home in the nav below goes to /series/ — the content hub.
+    */}}
+    <div class="mt-menu-header">
+      <a href="{{ "/" | relURL }}" class="mt-menu-brand">
+        <img src="/logo.png" alt="" class="mt-menu-brand-logo" aria-hidden="true" />
+        <span class="mt-menu-brand-name">MovingTruth.com</span>
+      </a>
+      <button class="mt-menu-close" id="mt-menu-close" aria-label="Close menu">&#x2715;</button>
+    </div>
 
     <nav class="mt-menu-nav" aria-label="Site navigation">
       <p class="mt-menu-section-label">Navigate</p>
-      <a href="{{ "/" | relURL }}" class="mt-menu-link">Home</a>
+      {{/* Home = the Series hub. The doorway page is reached via the brand header above. */}}
+      <a href="{{ "series" | relURL }}" class="mt-menu-link">Home</a>
       {{/*
         Gallery and All Series are hardcoded here (not from .Site.Sections) so their
         order is fixed: Gallery → All Series → individual series names.
@@ -138,7 +151,7 @@
       */}}
       {{ range .Site.Sections }}
       {{ if not .Params.menuOnly }}
-      <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ .Title }}</a>
+      <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ with .Params.icon }}{{ partial "icon.html" . }} {{ end }}{{ .Title }}</a>
       {{ end }}
       {{ end }}
     </nav>
