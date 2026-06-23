@@ -39,7 +39,7 @@ Here is how you make a blessing out of numbers.
 
 ---
 
-These are mine. These are my people.
+These are mine. These are my people. 7 meanings for Lotto Max.
 
 **2** — my daughter. The day she arrived.
 
