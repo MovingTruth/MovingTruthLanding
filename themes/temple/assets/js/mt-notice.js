@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var trigger = document.getElementById('mt-show-notice');
   if (!notice) return;
 
-  function showNotice() {
+  var autoShown = false;
+
+  function showNotice(auto) {
+    autoShown = !!auto;
     notice.style.display = 'flex';
     document.body.style.overflow = 'hidden';
     if (btn) btn.focus();
@@ -13,7 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
   function hideNotice() {
     notice.style.display = 'none';
     document.body.style.overflow = '';
-    if (trigger) trigger.focus();
+    // Only return focus to the footer trigger when the user opened it manually.
+    // On auto-show (first visit), returning focus scrolls the page to the footer.
+    if (!autoShown && trigger) trigger.focus();
   }
 
   notice.addEventListener('keydown', function (e) {
@@ -21,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'Tab') { e.preventDefault(); if (btn) btn.focus(); }
   });
 
-  if (!MT.get('mt_noticed')) showNotice();
+  if (!MT.get('mt_noticed')) showNotice(true);
 
   if (btn) {
     btn.addEventListener('click', function () {
