@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-06-23
+
+- `themes/temple/layouts/_default/list.html` — Back to Home on series listing pages (e.g. /blessings/, /moving-truth/) was still pointing to /. Changed to /series/. Missed in the previous navigation pass.
+
+---
+
 ## 2026-06-22
 
 - `themes/temple/layouts/_default/baseof.html` — Menu "Home" link changed from `/` to `/series/`. Added `.mt-menu-header` block at top of menu panel containing a brand link (logo + "MovingTruth.com") that navigates to the doorway page — the only remaining in-menu path to `/`. Close button moved inside the header row.

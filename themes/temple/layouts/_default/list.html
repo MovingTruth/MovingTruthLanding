@@ -79,7 +79,8 @@
     {{ end }}
 
     <div class="back-home-wrap">
-      <a href="{{ "/" | relURL }}" class="back-home">← Back to Home</a>
+      {{/* Home is always the Series page. Only the logo navigates to the doorway. */}}
+      <a href="{{ "series" | relURL }}" class="back-home">← Back to Home</a>
     </div>
   </section>
 {{ end }}
