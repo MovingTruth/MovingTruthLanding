@@ -779,6 +779,100 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
 
 /* ── SERIES MENU ──────────────────────────────────────────── */
 
+/* Backbone card — Moving Truth, elevated above all other series */
+.backbone-card {
+  display: block;
+  margin-bottom: 3rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--bg-card);
+  transition: background 0.2s, transform 0.2s;
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+}
+
+.backbone-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 6%, transparent), transparent 60%);
+  pointer-events: none;
+}
+
+.backbone-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+  color: var(--text);
+}
+
+.backbone-card__inner {
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+.backbone-card__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.backbone-card__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.backbone-card__desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 1.5rem;
+}
+
+.backbone-card__meta {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.backbone-card__cta {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding-bottom: 1px;
+  transition: border-color 0.2s, letter-spacing 0.2s;
+}
+
+.backbone-card:hover .backbone-card__cta {
+  border-color: var(--accent);
+  letter-spacing: 0.14em;
+}
+
+/* Label between backbone and other series */
+.series-other-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+
 .series-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1730,6 +1824,7 @@ body.fading .inner-content {
   .piece-nav { flex-direction: column; align-items: center; }
   .piece-nav-prev, .piece-nav-next { align-items: center; text-align: center; max-width: 100%; }
   .series-grid { grid-template-columns: 1fr; }
+  .backbone-card__inner { padding: 1.75rem 1.5rem 1.5rem; }
 
   /* Dark theme: contain keeps the tall figure's knees/base in frame */
   .landing-bg {

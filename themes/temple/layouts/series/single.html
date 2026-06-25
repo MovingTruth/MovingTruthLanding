@@ -3,9 +3,29 @@
   <h1 class="page-title">The Series</h1>
   <p class="page-intro">Each series is a path. Choose where to begin.</p>
   <p class="page-intro-sub">More arrives regularly. Something you need may not exist yet — but it will.</p>
+
+  {{/* ── BACKBONE — Moving Truth stands alone above everything else ── */}}
+  {{ range .Site.Sections }}
+  {{ if .Params.backbone }}
+  <a href="{{ .Permalink }}" class="backbone-card">
+    <div class="backbone-card__inner">
+      <p class="backbone-card__eyebrow">The backbone</p>
+      <h2 class="backbone-card__title">{{ .Title }}</h2>
+      {{ with .Description }}<p class="backbone-card__desc">{{ . }}</p>{{ end }}
+      <span class="backbone-card__meta">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</span>
+      <span class="backbone-card__cta">Begin →</span>
+    </div>
+  </a>
+  {{ end }}
+  {{ end }}
+
+  {{/* ── OTHER SERIES ── */}}
+  {{ $others := where .Site.Sections "Params.backbone" "ne" true }}
+  {{ $others = where $others "Params.menuOnly" "ne" true }}
+  {{ if $others }}
+  <div class="series-other-label">Other paths</div>
   <div class="series-grid">
-    {{ range .Site.Sections }}
-    {{ if not .Params.menuOnly }}
+    {{ range $others }}
     <a href="{{ .Permalink }}" class="series-card">
       {{ with .Params.icon }}{{ partial "icon.html" . }}{{ end }}
       <h2>{{ .Title }}</h2>
@@ -13,8 +33,8 @@
       <span class="series-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</span>
     </a>
     {{ end }}
-    {{ end }}
   </div>
+  {{ end }}
 
   <div class="substack-signup">
     <p class="substack-label">Know when something new arrives.</p>
