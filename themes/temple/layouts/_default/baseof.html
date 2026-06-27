@@ -105,6 +105,7 @@
     <nav>
       <a href="{{ "series" | relURL }}">Series</a>
       <a href="{{ "gallery" | relURL }}">Gallery</a>
+      <a href="{{ "new" | relURL }}">What's New</a>
       <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">Support the work</a>
       <button class="mt-menu-btn" id="mt-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mt-menu-panel">
         <span class="mt-menu-btn__bar"></span>
@@ -160,6 +161,7 @@
 
     <nav class="mt-menu-nav" aria-label="Site pages">
       <p class="mt-menu-section-label">More</p>
+      <a href="{{ "new" | relURL }}" class="mt-menu-link">What's New</a>
       <a href="{{ "about" | relURL }}" class="mt-menu-link">About this site</a>
       <a href="{{ "messages" | relURL }}" class="mt-menu-link">From the Creator</a>
     </nav>
@@ -189,6 +191,7 @@
   <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>
   <script src="{{ $reflect.Permalink }}"  integrity="{{ $reflect.Data.Integrity }}"></script>
   <script src="{{ $progress.Permalink }}" integrity="{{ $progress.Data.Integrity }}"></script>
+  {{ block "extraScripts" . }}{{ end }}
   <script>
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href]');
