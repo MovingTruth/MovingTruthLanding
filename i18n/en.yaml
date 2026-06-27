@@ -1,0 +1,56 @@
+nav_series: Series
+nav_gallery: Gallery
+nav_whats_new: "What's New"
+nav_support: Support the work
+nav_skip: Skip to main content
+
+menu_navigate: Navigate
+menu_home: Home
+menu_all_series: All Series
+menu_more: More
+menu_about: About this site
+menu_from_creator: From the Creator
+menu_reset: Reset progress
+
+reflect_title: Something in you already knew this.
+reflect_sub: The part that brought you here.
+reflect_instruction: Stay with it. Let it move through you.
+reflect_unlock: The next piece unlocks when this reaches zero.
+reflect_ready: "Now you can't unknow it."
+reflect_continue: Continue
+
+notice_title: Before you begin
+notice_body_1: These stories are written to be read in order. Each series is its own path — you can begin any series whenever you choose, but within a series you follow the pieces from the first.
+notice_body_2: When you reach the end of a piece, you'll be asked to sit with it for thirty seconds before moving on. Once you've read a series through, you're free to return to any part of it at any time.
+notice_body_3: You can always reset your progress and go through it again.
+notice_btn: I'm ready
+
+footer_how_works: How this works
+footer_change_theme: Change theme
+footer_reset: Reset progress
+
+new_added_heading: Added in the last 14 days
+new_unread_heading: "You haven't read yet"
+new_loading: Checking your reading history…
+new_nothing: Nothing new in the last 14 days — but something is always coming.
+new_caught_up: You're all caught up.
+new_back: "← Back to Series"
+new_today: today
+new_yesterday: yesterday
+new_days_ago: "%d days ago"
+
+theme_dark: Dark
+theme_light: Light
+theme_series: The Series
+theme_backbone: The backbone
+theme_other: Other paths
+theme_remember: Remember my choice
+
+parts_all: All Parts
+series_all: All Series
+
+blessing_accept: Accept this blessing
+blessing_free: I am free.
+blessing_stay: Stay close
+blessing_return: Return to the beginning
+blessing_reset: Reset my progress

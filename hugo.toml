@@ -1,7 +1,59 @@
 baseURL = "https://movingtruth.com"
-locale = "en-us"
 title = "Moving Truth"
 theme = "temple"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    weight = 1
+    [languages.en.params]
+      tagline = "Questions we were never encouraged to ask."
+  [languages.es]
+    label = "Español"
+    locale = "es-ES"
+    weight = 2
+    [languages.es.params]
+      tagline = "Preguntas que nunca nos alentaron a hacer."
+  [languages.fr]
+    label = "Français"
+    locale = "fr-FR"
+    weight = 3
+    [languages.fr.params]
+      tagline = "Des questions qu'on ne nous a jamais encouragés à poser."
+  [languages.pt]
+    label = "Português"
+    locale = "pt-BR"
+    weight = 4
+    [languages.pt.params]
+      tagline = "Perguntas que nunca fomos encorajados a fazer."
+  [languages.de]
+    label = "Deutsch"
+    locale = "de-DE"
+    weight = 5
+    [languages.de.params]
+      tagline = "Fragen, die wir nie ermutigt wurden zu stellen."
+  [languages.ja]
+    label = "日本語"
+    locale = "ja-JP"
+    weight = 6
+    [languages.ja.params]
+      tagline = "私たちが尋ねるよう促されなかった問い。"
+  [languages.ru]
+    label = "Русский"
+    locale = "ru-RU"
+    weight = 7
+    [languages.ru.params]
+      tagline = "Вопросы, которые нам никогда не предлагали задавать."
+  [languages.zh]
+    label = "中文"
+    locale = "zh-CN"
+    weight = 8
+    [languages.zh.params]
+      tagline = "那些我们从未被鼓励去问的问题。"
 
 [params]
   author        = "Skylaur Roe"

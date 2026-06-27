@@ -1,0 +1,56 @@
+nav_series: Серии
+nav_gallery: Галерея
+nav_whats_new: Новое
+nav_support: Поддержать проект
+nav_skip: Перейти к основному содержанию
+
+menu_navigate: Навигация
+menu_home: Главная
+menu_all_series: Все серии
+menu_more: Ещё
+menu_about: Об этом сайте
+menu_from_creator: От автора
+menu_reset: Сбросить прогресс
+
+reflect_title: Что-то внутри тебя уже знало это.
+reflect_sub: Та часть, которая привела тебя сюда.
+reflect_instruction: Побудь с этим. Позволь этому пройти сквозь тебя.
+reflect_unlock: Следующая часть откроется, когда счётчик достигнет нуля.
+reflect_ready: Теперь ты не можешь это не знать.
+reflect_continue: Продолжить
+
+notice_title: Прежде чем начать
+notice_body_1: Эти истории написаны для последовательного чтения. Каждая серия — это собственный путь. Ты можешь начать любую серию в любое время, но внутри серии следуй частям с самой первой.
+notice_body_2: Когда ты достигнешь конца части, тебя попросят побыть с ней тридцать секунд перед тем, как двигаться дальше. После прочтения всей серии ты можешь вернуться к любой части в любое время.
+notice_body_3: Ты всегда можешь сбросить прогресс и пройти путь заново.
+notice_btn: Я готов
+
+footer_how_works: Как это работает
+footer_change_theme: Сменить тему
+footer_reset: Сбросить прогресс
+
+new_added_heading: Добавлено за последние 14 дней
+new_unread_heading: Ещё не прочитано
+new_loading: Проверяем историю чтения…
+new_nothing: Ничего нового за последние 14 дней — но что-то всегда грядёт.
+new_caught_up: Ты в курсе всего.
+new_back: "← Назад к сериям"
+new_today: сегодня
+new_yesterday: вчера
+new_days_ago: "%d дней назад"
+
+theme_dark: Тёмная
+theme_light: Светлая
+theme_series: Серия
+theme_backbone: Основа
+theme_other: Другие пути
+theme_remember: Запомнить выбор
+
+parts_all: Все части
+series_all: Все серии
+
+blessing_accept: Принять это благословение
+blessing_free: Я свободен.
+blessing_stay: Оставайся рядом
+blessing_return: Вернуться к началу
+blessing_reset: Сбросить мой прогресс

@@ -1,0 +1,56 @@
+nav_series: Series
+nav_gallery: Galería
+nav_whats_new: Novedades
+nav_support: Apoya el trabajo
+nav_skip: Saltar al contenido principal
+
+menu_navigate: Navegar
+menu_home: Inicio
+menu_all_series: Todas las series
+menu_more: Más
+menu_about: Acerca de este sitio
+menu_from_creator: De la creadora
+menu_reset: Restablecer progreso
+
+reflect_title: Algo en ti ya lo sabía.
+reflect_sub: La parte que te trajo aquí.
+reflect_instruction: Quédate con ello. Deja que se mueva a través de ti.
+reflect_unlock: La siguiente parte se desbloqueará cuando esto llegue a cero.
+reflect_ready: Ahora no puedes ignorarlo.
+reflect_continue: Continuar
+
+notice_title: Antes de comenzar
+notice_body_1: Estas historias están escritas para leerse en orden. Cada serie es su propio camino — puedes comenzar cualquier serie cuando quieras, pero dentro de una serie sigues las partes desde la primera.
+notice_body_2: Al llegar al final de una parte, se te pedirá que te quedes con ella treinta segundos antes de continuar. Una vez que hayas leído una serie completa, eres libre de regresar a cualquier parte en cualquier momento.
+notice_body_3: Siempre puedes restablecer tu progreso y volver a empezar.
+notice_btn: Estoy listo
+
+footer_how_works: Cómo funciona
+footer_change_theme: Cambiar tema
+footer_reset: Restablecer progreso
+
+new_added_heading: Añadido en los últimos 14 días
+new_unread_heading: Aún no has leído
+new_loading: Revisando tu historial de lectura…
+new_nothing: Nada nuevo en los últimos 14 días — pero algo siempre está llegando.
+new_caught_up: Estás al día.
+new_back: "← Volver a Series"
+new_today: hoy
+new_yesterday: ayer
+new_days_ago: "hace %d días"
+
+theme_dark: Oscuro
+theme_light: Claro
+theme_series: La Serie
+theme_backbone: La columna vertebral
+theme_other: Otros caminos
+theme_remember: Recordar mi elección
+
+parts_all: Todas las partes
+series_all: Todas las series
+
+blessing_accept: Acepta esta bendición
+blessing_free: Soy libre.
+blessing_stay: Permanece cerca
+blessing_return: Volver al principio
+blessing_reset: Restablecer mi progreso

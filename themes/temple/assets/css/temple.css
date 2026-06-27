@@ -2100,3 +2100,81 @@ body.landing-split {
 }
 
 .new-back-link:hover { color: var(--accent); }
+
+/* ── LANGUAGE SWITCHER ───────────────────────────────────── */
+
+.mt-lang-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mt-lang-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.55rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.mt-lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mt-lang-panel {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  min-width: 9rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.mt-lang-panel[aria-hidden="true"] {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+}
+
+.mt-lang-panel[aria-hidden="false"] {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.mt-lang-option {
+  padding: 0.55rem 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  transition: color 0.15s, background 0.15s;
+  text-decoration: none;
+}
+
+.mt-lang-option:hover {
+  color: var(--text);
+  background: var(--bg-card-hover);
+}
+
+.mt-lang-option--active {
+  color: var(--accent);
+}
+
+.mt-menu-link--active {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .mt-lang-switcher { display: none; }
+}
