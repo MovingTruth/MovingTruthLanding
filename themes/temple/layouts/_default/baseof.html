@@ -103,7 +103,7 @@
       {{ .Site.Title }}
     </a>
     <nav>
-      <a href="{{ "series" | relURL }}">{{ i18n "nav_series" }}</a>
+      <a href="{{ "series" | relLangURL }}">{{ i18n "nav_series" }}</a>
       <a href="{{ "gallery" | relURL }}">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "new" | relURL }}">{{ i18n "nav_whats_new" }}</a>
       <div class="mt-lang-switcher" id="mt-lang-switcher">
@@ -148,9 +148,9 @@
 
     <nav class="mt-menu-nav" aria-label="Site navigation">
       <p class="mt-menu-section-label">{{ i18n "menu_navigate" }}</p>
-      <a href="{{ "series" | relURL }}" class="mt-menu-link">{{ i18n "menu_home" }}</a>
+      <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_home" }}</a>
       <a href="{{ "gallery" | relURL }}" class="mt-menu-link">{{ i18n "nav_gallery" }}</a>
-      <a href="{{ "series" | relURL }}" class="mt-menu-link">{{ i18n "menu_all_series" }}</a>
+      <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_all_series" }}</a>
       {{ range .Site.Sections }}
       {{ if not .Params.menuOnly }}
       <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ with .Params.icon }}{{ partial "icon.html" . }} {{ end }}{{ .Title }}</a>

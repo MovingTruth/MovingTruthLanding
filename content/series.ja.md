@@ -1,0 +1,4 @@
+---
+title: "シリーズ"
+layout: "series"
+---
