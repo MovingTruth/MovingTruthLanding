@@ -1,13 +1,17 @@
 {{ define "main" }}
+{{ $cutoff := now.AddDate 0 0 -14 }}
 <section class="series-menu">
   <h1 class="page-title">The Series</h1>
   <p class="page-intro">Each series is a path. Choose where to begin.</p>
-  <p class="page-intro-sub">More arrives regularly. Something you need may not exist yet — but it will.</p>
+  <p class="page-intro-sub">More arrives regularly. Something you need may not exist yet — but it will. <a href="{{ "new" | relURL }}" class="whats-new-link">What's new →</a></p>
 
   {{/* ── BACKBONE — Moving Truth stands alone above everything else ── */}}
   {{ range .Site.Sections }}
   {{ if .Params.backbone }}
+  {{ $recentInSection := where .Pages "Date" "ge" $cutoff }}
+  {{ $hasNew := gt (len $recentInSection) 0 }}
   <a href="{{ .Permalink }}" class="backbone-card">
+    {{ if $hasNew }}<span class="new-dot" aria-label="New content available"></span>{{ end }}
     <div class="backbone-card__inner">
       <p class="backbone-card__eyebrow">The backbone</p>
       <h2 class="backbone-card__title">{{ .Title }}</h2>
@@ -26,7 +30,10 @@
   <div class="series-other-label">Other paths</div>
   <div class="series-grid">
     {{ range $others }}
+    {{ $recentInSection := where .Pages "Date" "ge" $cutoff }}
+    {{ $hasNew := gt (len $recentInSection) 0 }}
     <a href="{{ .Permalink }}" class="series-card">
+      {{ if $hasNew }}<span class="new-dot" aria-label="New content available"></span>{{ end }}
       {{ with .Params.icon }}{{ partial "icon.html" . }}{{ end }}
       <h2>{{ .Title }}</h2>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}

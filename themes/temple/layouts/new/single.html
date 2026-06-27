@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ $cutoff := now.AddDate 0 0 -14 }}
+
+{{/* Collect all recent pieces */}}
+{{ $recent := slice }}
+{{ range .Site.Sections }}
+  {{ if not .Params.menuOnly }}
+    {{ range .Pages }}
+      {{ if and .Params.part (.Date.After $cutoff) }}
+        {{ $recent = $recent | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $recent = sort $recent "Date" "desc" }}
+
+{{/* Collect all pieces for JS unread check */}}
+{{ $allPieces := slice }}
+{{ range .Site.Sections }}
+  {{ if not .Params.menuOnly }}
+    {{ range .Pages }}
+      {{ if .Params.part }}
+        {{ $item := dict "slug" .Section "part" .Params.part "title" .Title "url" .Permalink "series" .Parent.Title "date" (.Date.Format "2006-01-02") }}
+        {{ $allPieces = $allPieces | append $item }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<section class="new-page">
+  <h1 class="page-title">What's New</h1>
+
+  <div class="new-section">
+    <h2 class="new-section__heading">Added in the last 14 days</h2>
+    {{ if $recent }}
+    <div class="new-list">
+      {{ range $recent }}
+      {{ $days := int (math.Floor (div (now.Sub .Date).Hours 24)) }}
+      <a href="{{ .Permalink }}" class="new-item">
+        <span class="new-item__series">{{ .Parent.Title }}</span>
+        <span class="new-item__dot">·</span>
+        <span class="new-item__title">{{ .Title }}</span>
+        <span class="new-item__when">
+          {{- if eq $days 0 -}}today
+          {{- else if eq $days 1 -}}yesterday
+          {{- else -}}{{ $days }} days ago
+          {{- end -}}
+        </span>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="new-empty">Nothing new in the last 14 days — but something is always coming.</p>
+    {{ end }}
+  </div>
+
+  <div class="new-section">
+    <h2 class="new-section__heading">You haven't read yet</h2>
+    <div class="new-list" id="mt-unread-list">
+      <p class="new-loading">Checking your reading history…</p>
+    </div>
+  </div>
+
+  <script id="mt-all-pieces" type="application/json">{{ $allPieces | jsonify | safeJS }}</script>
+
+  <div class="new-back">
+    <a href="{{ "series" | relURL }}" class="new-back-link">← Back to Series</a>
+  </div>
+</section>
+{{ end }}
+
+{{ define "extraScripts" }}
+{{ $newjs := resources.Get "js/mt-new.js" | minify | fingerprint }}
+<script src="{{ $newjs.Permalink }}" integrity="{{ $newjs.Data.Integrity }}"></script>
+{{ end }}
