@@ -86,11 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayReady.textContent = 'This blessing is yours.';
             overlayReady.style.display = 'block';
           }
-          if (overlayContinue) {
-            overlayContinue.style.display = 'inline-block';
-            overlayContinue.focus();
-            overlayContinue.addEventListener('click', onBlessingContinue);
-          }
+          setTimeout(function () { onBlessingContinue(); }, 1500);
         }
       }, 1000);
       window.addEventListener('pagehide', function () { clearInterval(blessingInterval); }, { once: true });
@@ -159,22 +155,18 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayReady.textContent = 'You are free.';
             overlayReady.style.display = 'block';
           }
-          if (overlayContinue) {
-            overlayContinue.style.display = 'inline-block';
-            overlayContinue.focus();
-            overlayContinue.addEventListener('click', function () {
-              if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+          setTimeout(function () {
+            if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+            setTimeout(function () {
+              window.location.href = seriesPage;
               setTimeout(function () {
-                window.location.href = seriesPage;
-                setTimeout(function () {
-                  if (overlay) {
-                    overlay.style.display = 'none';
-                    overlay.classList.remove('mt-reflect-overlay--fade');
-                  }
-                }, 800);
-              }, 600);
-            }, { once: true });
-          }
+                if (overlay) {
+                  overlay.style.display = 'none';
+                  overlay.classList.remove('mt-reflect-overlay--fade');
+                }
+              }, 800);
+            }, 600);
+          }, 1500);
         }
       }, 1000);
       window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
@@ -213,43 +205,40 @@ document.addEventListener('DOMContentLoaded', function () {
     if (overlayTimer) overlayTimer.style.display = 'none';
     if (overlayUnlock) overlayUnlock.style.display = 'none';
     if (overlayReady) overlayReady.style.display = 'block';
-    if (overlayContinue) { overlayContinue.style.display = 'inline-block'; overlayContinue.focus(); }
 
     if (!isFinal && nextLink) {
       nextLink.href = nextLink.dataset.href;
       nextLink.classList.remove('piece-nav-next--locked');
     }
 
-    if (overlayContinue) {
-      overlayContinue.addEventListener('click', function () {
-        if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
-        setTimeout(function () {
-          if (isFinal) {
-            window.location.href = seriesPage;
-            setTimeout(function () {
-              if (overlay) {
-                overlay.style.display = 'none';
-                overlay.classList.remove('mt-reflect-overlay--fade');
-              }
-            }, 800);
-          } else {
+    setTimeout(function () {
+      if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+      setTimeout(function () {
+        if (isFinal) {
+          window.location.href = seriesPage;
+          setTimeout(function () {
             if (overlay) {
               overlay.style.display = 'none';
               overlay.classList.remove('mt-reflect-overlay--fade');
             }
-            var supportLink = document.querySelector('.support-link');
-            if (supportLink) {
-              supportLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              void supportLink.offsetWidth;
-              supportLink.classList.add('support-link--pulse');
-              supportLink.addEventListener('animationend', function () {
-                supportLink.classList.remove('support-link--pulse');
-              }, { once: true });
-            }
+          }, 800);
+        } else {
+          if (overlay) {
+            overlay.style.display = 'none';
+            overlay.classList.remove('mt-reflect-overlay--fade');
           }
-        }, 600);
-      }, { once: true });
-    }
+          var supportLink = document.querySelector('.support-link');
+          if (supportLink) {
+            supportLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            void supportLink.offsetWidth;
+            supportLink.classList.add('support-link--pulse');
+            supportLink.addEventListener('animationend', function () {
+              supportLink.classList.remove('support-link--pulse');
+            }, { once: true });
+          }
+        }
+      }, 600);
+    }, 1500);
   }
 
   // Already reflected — unlock immediately, hide prompt
