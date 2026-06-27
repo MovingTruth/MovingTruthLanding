@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
       ? 'mt_' + series + '_accepted_' + currentPart
       : 'mt_' + series + '_reflected_' + currentPart;
 
+  function dismissOverlay() {
+    if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
+    setTimeout(function () {
+      if (overlay) {
+        overlay.style.display = 'none';
+        overlay.classList.remove('mt-reflect-overlay--fade');
+      }
+    }, 600);
+  }
+
   // ── BLESSING MODE ──────────────────────────────────────────
 
   if (isBlessing) {
@@ -40,19 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var blessingInterval = null;
 
     var alreadyAccepted = MT.get(storageKey);
-
-    function onBlessingContinue() {
-      if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
-      setTimeout(function () {
-        window.location.href = seriesPage;
-        setTimeout(function () {
-          if (overlay) {
-            overlay.style.display = 'none';
-            overlay.classList.remove('mt-reflect-overlay--fade');
-          }
-        }, 800);
-      }, 600);
-    }
 
     function showBlessingOverlay() {
       if (blessingInterval) clearInterval(blessingInterval);
@@ -86,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayReady.textContent = 'This blessing is yours.';
             overlayReady.style.display = 'block';
           }
-          setTimeout(function () { onBlessingContinue(); }, 1500);
+          setTimeout(function () { dismissOverlay(); }, 1500);
         }
       }, 1000);
       window.addEventListener('pagehide', function () { clearInterval(blessingInterval); }, { once: true });
@@ -155,18 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayReady.textContent = 'You are free.';
             overlayReady.style.display = 'block';
           }
-          setTimeout(function () {
-            if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
-            setTimeout(function () {
-              window.location.href = seriesPage;
-              setTimeout(function () {
-                if (overlay) {
-                  overlay.style.display = 'none';
-                  overlay.classList.remove('mt-reflect-overlay--fade');
-                }
-              }, 800);
-            }, 600);
-          }, 1500);
+          setTimeout(function () { dismissOverlay(); }, 1500);
         }
       }, 1000);
       window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
@@ -212,21 +198,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     setTimeout(function () {
-      if (overlay) overlay.classList.add('mt-reflect-overlay--fade');
-      setTimeout(function () {
-        if (isFinal) {
-          window.location.href = seriesPage;
-          setTimeout(function () {
-            if (overlay) {
-              overlay.style.display = 'none';
-              overlay.classList.remove('mt-reflect-overlay--fade');
-            }
-          }, 800);
-        } else {
-          if (overlay) {
-            overlay.style.display = 'none';
-            overlay.classList.remove('mt-reflect-overlay--fade');
-          }
+      dismissOverlay();
+      if (!isFinal) {
+        setTimeout(function () {
           var supportLink = document.querySelector('.support-link');
           if (supportLink) {
             supportLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -236,8 +210,8 @@ document.addEventListener('DOMContentLoaded', function () {
               supportLink.classList.remove('support-link--pulse');
             }, { once: true });
           }
-        }
-      }, 600);
+        }, 700);
+      }
     }, 1500);
   }
 
@@ -265,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (overlayInstruction) overlayInstruction.textContent = 'Stay with it. Let it move through you.';
     if (overlayUnlock) {
       overlayUnlock.textContent = isFinal
-        ? 'Take a moment. Then we\'ll bring you back to choose your next path.'
+        ? 'Take a moment. Your next path is yours to choose.'
         : 'The next piece unlocks when this reaches zero.';
       overlayUnlock.style.display = '';
     }
