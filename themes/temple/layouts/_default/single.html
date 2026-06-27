@@ -54,7 +54,7 @@
   {{ $nextPiece := index (where .CurrentSection.Pages ".Params.part" (add .Params.part 1)) 0 }}
   <nav class="piece-nav"
     data-part="{{ .Params.part }}"
-    data-series="{{ .CurrentSection.Slug }}"
+    data-series="{{ .Section }}"
     data-series-page="{{ if eq .Language.Lang "en" }}{{ "series" | relLangURL }}{{ else }}{{ .Parent.Permalink }}{{ end }}"
     {{ if not $nextPiece }}data-final="true"{{ end }}
     {{ if .Params.closingReflection }}data-closing="true"{{ end }}
