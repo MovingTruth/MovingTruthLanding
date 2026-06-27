@@ -42,6 +42,11 @@
       All pieces in a section MUST have a unique `part` number or they will be omitted/mis-ordered.
     */}}
     {{ $pages := .Pages.ByParam "part" }}
+    {{ if not $pages }}
+      {{ range .Translations }}
+        {{ if eq .Language.Lang "en" }}{{ $pages = .Pages.ByParam "part" }}{{ end }}
+      {{ end }}
+    {{ end }}
     {{ $sectionIcon := .Params.icon }}
     {{ if $pages }}
     <div class="parts-list">
@@ -80,7 +85,7 @@
 
     <div class="back-home-wrap">
       {{/* Home is always the Series page. Only the logo navigates to the doorway. */}}
-      <a href="{{ "series" | relURL }}" class="back-home">← Back to Home</a>
+      <a href="{{ if eq .Language.Lang "en" }}{{ "series" | relLangURL }}{{ else }}{{ "moving-truth" | relLangURL }}{{ end }}" class="back-home">← Back to Home</a>
     </div>
   </section>
 {{ end }}

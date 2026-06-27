@@ -48,7 +48,7 @@
 
 -->` | safeHTML }}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Language.Lang }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -77,23 +77,23 @@
 
 <div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="mt-reflect-title" tabindex="-1">
   <div class="mt-reflect-box">
-    <p class="mt-reflect-title" id="mt-reflect-title">Something in you already knew this.</p>
-    <p class="mt-reflect-sub">The part that brought you here.</p>
-    <p class="mt-reflect-instruction">Stay with it. Let it move through you.</p>
+    <p class="mt-reflect-title" id="mt-reflect-title">{{ i18n "reflect_title" }}</p>
+    <p class="mt-reflect-sub">{{ i18n "reflect_sub" }}</p>
+    <p class="mt-reflect-instruction">{{ i18n "reflect_instruction" }}</p>
     <div class="mt-reflect-timer" id="mt-reflect-timer" role="timer" aria-label="Seconds remaining">30</div>
-    <p class="mt-reflect-unlock">The next piece unlocks when this reaches zero.</p>
-    <p class="mt-reflect-ready" id="mt-reflect-ready" style="display:none;">Now you can't unknow it.</p>
-    <button class="mt-reflect-continue" id="mt-reflect-continue" style="display:none;">Continue</button>
+    <p class="mt-reflect-unlock">{{ i18n "reflect_unlock" }}</p>
+    <p class="mt-reflect-ready" id="mt-reflect-ready" style="display:none;">{{ i18n "reflect_ready" }}</p>
+    <button class="mt-reflect-continue" id="mt-reflect-continue" style="display:none;">{{ i18n "reflect_continue" }}</button>
   </div>
 </div>
 
 <div id="mt-notice" class="mt-notice" style="display:none;" aria-modal="true" role="dialog" aria-labelledby="mt-notice-title">
   <div class="mt-notice-box">
-    <p class="mt-notice-title" id="mt-notice-title">Before you begin</p>
-    <p class="mt-notice-body">These stories are written to be read in order. Each series is its own path — you can begin any series whenever you choose, but within a series you follow the pieces from the first.</p>
-    <p class="mt-notice-body">When you reach the end of a piece, you'll be asked to sit with it for thirty seconds before moving on. Once you've read a series through, you're free to return to any part of it at any time.</p>
-    <p class="mt-notice-body">You can always reset your progress and go through it again.</p>
-    <button class="mt-notice-btn" id="mt-notice-btn">I'm ready</button>
+    <p class="mt-notice-title" id="mt-notice-title">{{ i18n "notice_title" }}</p>
+    <p class="mt-notice-body">{{ i18n "notice_body_1" }}</p>
+    <p class="mt-notice-body">{{ i18n "notice_body_2" }}</p>
+    <p class="mt-notice-body">{{ i18n "notice_body_3" }}</p>
+    <button class="mt-notice-btn" id="mt-notice-btn">{{ i18n "notice_btn" }}</button>
   </div>
 </div>
 
@@ -103,10 +103,24 @@
       {{ .Site.Title }}
     </a>
     <nav>
-      <a href="{{ "series" | relURL }}">Series</a>
-      <a href="{{ "gallery" | relURL }}">Gallery</a>
-      <a href="{{ "new" | relURL }}">What's New</a>
-      <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">Support the work</a>
+      <a href="{{ "series" | relLangURL }}">{{ i18n "nav_series" }}</a>
+      <a href="{{ "gallery" | relURL }}">{{ i18n "nav_gallery" }}</a>
+      <a href="{{ "new" | relURL }}">{{ i18n "nav_whats_new" }}</a>
+      <div class="mt-lang-switcher" id="mt-lang-switcher">
+        <button class="mt-lang-btn" id="mt-lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">{{ upper .Language.Lang }}</button>
+        <div class="mt-lang-panel" id="mt-lang-panel" aria-hidden="true">
+          {{ $xlat := dict }}
+          {{ range .AllTranslations }}{{ $xlat = merge $xlat (dict .Language.Lang .RelPermalink) }}{{ end }}
+          {{ $langs := slice (dict "code" "en" "label" "English") (dict "code" "es" "label" "Español") (dict "code" "fr" "label" "Français") (dict "code" "pt" "label" "Português") (dict "code" "de" "label" "Deutsch") (dict "code" "ja" "label" "日本語") (dict "code" "ru" "label" "Русский") (dict "code" "zh" "label" "中文") }}
+          {{ range $langs }}
+          {{ $code := .code }}
+          {{ $home := cond (eq $code "en") "/" (printf "/%s/" $code) }}
+          {{ $href := index $xlat $code | default $home }}
+          <a href="{{ $href }}" class="mt-lang-option{{ if eq $code $.Language.Lang }} mt-lang-option--active{{ end }}" data-lang="{{ $code }}">{{ .label }}</a>
+          {{ end }}
+        </div>
+      </div>
+      <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">{{ i18n "nav_support" }}</a>
       <button class="mt-menu-btn" id="mt-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mt-menu-panel">
         <span class="mt-menu-btn__bar"></span>
         <span class="mt-menu-btn__bar"></span>
@@ -133,23 +147,10 @@
     </div>
 
     <nav class="mt-menu-nav" aria-label="Site navigation">
-      <p class="mt-menu-section-label">Navigate</p>
-      {{/* Home = the Series hub. The doorway page is reached via the brand header above. */}}
-      <a href="{{ "series" | relURL }}" class="mt-menu-link">Home</a>
-      {{/*
-        Gallery and All Series are hardcoded here (not from .Site.Sections) so their
-        order is fixed: Gallery → All Series → individual series names.
-        Gallery content is a Hugo section but has menuOnly: true so it doesn't
-        also appear in the range below.
-      */}}
-      <a href="{{ "gallery" | relURL }}" class="mt-menu-link">Gallery</a>
-      <a href="{{ "series" | relURL }}" class="mt-menu-link">All Series</a>
-      {{/*
-        menuOnly: true in a section's _index.md hides it from this list.
-        Use it for sections that have their own nav entry above (Gallery)
-        or that shouldn't appear as series in the menu (Messages).
-        Sections WITHOUT menuOnly appear here as individual series links.
-      */}}
+      <p class="mt-menu-section-label">{{ i18n "menu_navigate" }}</p>
+      <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_home" }}</a>
+      <a href="{{ "gallery" | relURL }}" class="mt-menu-link">{{ i18n "nav_gallery" }}</a>
+      <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_all_series" }}</a>
       {{ range .Site.Sections }}
       {{ if not .Params.menuOnly }}
       <a href="{{ .Permalink }}" class="mt-menu-link mt-menu-link--series">{{ with .Params.icon }}{{ partial "icon.html" . }} {{ end }}{{ .Title }}</a>
@@ -160,15 +161,30 @@
     <div class="mt-menu-divider"></div>
 
     <nav class="mt-menu-nav" aria-label="Site pages">
-      <p class="mt-menu-section-label">More</p>
-      <a href="{{ "new" | relURL }}" class="mt-menu-link">What's New</a>
-      <a href="{{ "about" | relURL }}" class="mt-menu-link">About this site</a>
-      <a href="{{ "messages" | relURL }}" class="mt-menu-link">From the Creator</a>
+      <p class="mt-menu-section-label">{{ i18n "menu_more" }}</p>
+      <a href="{{ "new" | relURL }}" class="mt-menu-link">{{ i18n "nav_whats_new" }}</a>
+      <a href="{{ "about" | relURL }}" class="mt-menu-link">{{ i18n "menu_about" }}</a>
+      <a href="{{ "messages" | relURL }}" class="mt-menu-link">{{ i18n "menu_from_creator" }}</a>
     </nav>
 
     <div class="mt-menu-divider"></div>
 
-    <button class="mt-menu-reset" id="mt-reset-menu">Reset progress</button>
+    <nav class="mt-menu-nav" aria-label="Language selection">
+      <p class="mt-menu-section-label">Language</p>
+      {{ $xlat := dict }}
+      {{ range .AllTranslations }}{{ $xlat = merge $xlat (dict .Language.Lang .RelPermalink) }}{{ end }}
+      {{ $langs := slice (dict "code" "en" "label" "English") (dict "code" "es" "label" "Español") (dict "code" "fr" "label" "Français") (dict "code" "pt" "label" "Português") (dict "code" "de" "label" "Deutsch") (dict "code" "ja" "label" "日本語") (dict "code" "ru" "label" "Русский") (dict "code" "zh" "label" "中文") }}
+      {{ range $langs }}
+      {{ $code := .code }}
+      {{ $home := cond (eq $code "en") "/" (printf "/%s/" $code) }}
+      {{ $href := index $xlat $code | default $home }}
+      <a href="{{ $href }}" class="mt-menu-link mt-menu-lang-link{{ if eq $code $.Language.Lang }} mt-menu-link--active{{ end }}" data-lang="{{ $code }}">{{ .label }}</a>
+      {{ end }}
+    </nav>
+
+    <div class="mt-menu-divider"></div>
+
+    <button class="mt-menu-reset" id="mt-reset-menu">{{ i18n "menu_reset" }}</button>
   </aside>
 
   <main class="inner-content" id="main-content">
@@ -178,19 +194,21 @@
   <footer class="site-footer">
     <img src="/logo.png" alt="" class="site-footer-logo" aria-hidden="true" />
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
-    <p><a href="#" id="mt-show-notice" class="footer-link">How this works</a> &nbsp;·&nbsp; <a href="{{ "choose" | relURL }}" id="mt-change-theme" class="footer-link">Change theme</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">Support the work</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">Reset progress</a></p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "nav_support" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
   </footer>
 
-  {{ $theme   := resources.Get "js/mt-theme.js"        | minify | fingerprint }}
-  {{ $storage := resources.Get "js/mt-storage.js"      | minify | fingerprint }}
-  {{ $notice  := resources.Get "js/mt-notice.js"       | minify | fingerprint }}
-  {{ $reflect := resources.Get "js/reflect.js"         | minify | fingerprint }}
+  {{ $theme    := resources.Get "js/mt-theme.js"        | minify | fingerprint }}
+  {{ $storage  := resources.Get "js/mt-storage.js"      | minify | fingerprint }}
+  {{ $notice   := resources.Get "js/mt-notice.js"       | minify | fingerprint }}
+  {{ $reflect  := resources.Get "js/reflect.js"         | minify | fingerprint }}
   {{ $progress := resources.Get "js/series-progress.js" | minify | fingerprint }}
+  {{ $lang     := resources.Get "js/mt-lang.js"         | minify | fingerprint }}
   <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
   <script src="{{ $storage.Permalink }}"  integrity="{{ $storage.Data.Integrity }}"></script>
   <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>
   <script src="{{ $reflect.Permalink }}"  integrity="{{ $reflect.Data.Integrity }}"></script>
   <script src="{{ $progress.Permalink }}" integrity="{{ $progress.Data.Integrity }}"></script>
+  <script src="{{ $lang.Permalink }}"     integrity="{{ $lang.Data.Integrity }}"></script>
   {{ block "extraScripts" . }}{{ end }}
   <script>
   document.addEventListener('click', function (e) {

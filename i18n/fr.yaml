@@ -1,0 +1,56 @@
+nav_series: Séries
+nav_gallery: Galerie
+nav_whats_new: Nouveautés
+nav_support: Soutenir le travail
+nav_skip: Aller au contenu principal
+
+menu_navigate: Navigation
+menu_home: Accueil
+menu_all_series: Toutes les séries
+menu_more: Plus
+menu_about: À propos de ce site
+menu_from_creator: De la créatrice
+menu_reset: Réinitialiser la progression
+
+reflect_title: Quelque chose en toi le savait déjà.
+reflect_sub: La partie qui t'a amené ici.
+reflect_instruction: Reste avec ça. Laisse-le te traverser.
+reflect_unlock: La prochaine partie se débloquera quand cela atteindra zéro.
+reflect_ready: Tu ne peux plus ne pas le savoir.
+reflect_continue: Continuer
+
+notice_title: Avant de commencer
+notice_body_1: Ces histoires sont écrites pour être lues dans l'ordre. Chaque série est son propre chemin — tu peux commencer n'importe quelle série quand tu le souhaites, mais au sein d'une série tu suis les parties depuis la première.
+notice_body_2: Quand tu arrives à la fin d'une partie, on te demandera de rester avec elle trente secondes avant de continuer. Une fois que tu as lu une série en entier, tu es libre de revenir à n'importe quelle partie à tout moment.
+notice_body_3: Tu peux toujours réinitialiser ta progression et recommencer.
+notice_btn: Je suis prêt
+
+footer_how_works: Comment ça fonctionne
+footer_change_theme: Changer de thème
+footer_reset: Réinitialiser la progression
+
+new_added_heading: Ajouté ces 14 derniers jours
+new_unread_heading: Pas encore lu
+new_loading: Vérification de ton historique de lecture…
+new_nothing: Rien de nouveau ces 14 derniers jours — mais quelque chose arrive toujours.
+new_caught_up: Tu es à jour.
+new_back: "← Retour aux séries"
+new_today: aujourd'hui
+new_yesterday: hier
+new_days_ago: "il y a %d jours"
+
+theme_dark: Sombre
+theme_light: Clair
+theme_series: La Série
+theme_backbone: La colonne vertébrale
+theme_other: Autres chemins
+theme_remember: Mémoriser mon choix
+
+parts_all: Toutes les parties
+series_all: Toutes les séries
+
+blessing_accept: Accepter cette bénédiction
+blessing_free: Je suis libre.
+blessing_stay: Reste proche
+blessing_return: Retour au début
+blessing_reset: Réinitialiser ma progression

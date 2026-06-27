@@ -1,0 +1,56 @@
+nav_series: シリーズ
+nav_gallery: ギャラリー
+nav_whats_new: 新着
+nav_support: 活動を支援する
+nav_skip: メインコンテンツへ
+
+menu_navigate: ナビゲート
+menu_home: ホーム
+menu_all_series: 全シリーズ
+menu_more: その他
+menu_about: このサイトについて
+menu_from_creator: 作者より
+menu_reset: 進捗をリセット
+
+reflect_title: あなたの中の何かがすでに知っていた。
+reflect_sub: あなたをここへ連れてきた部分が。
+reflect_instruction: それと共にいてください。あなたの中を流れさせてください。
+reflect_unlock: ゼロになったとき、次のパートが解放されます。
+reflect_ready: もう知らないふりはできない。
+reflect_continue: 続ける
+
+notice_title: 始める前に
+notice_body_1: これらのストーリーは順番に読むように書かれています。各シリーズは独自の道です——いつでも任意のシリーズを始めることができますが、シリーズ内では最初のパートから順に読み進めます。
+notice_body_2: パートの終わりに達したとき、次に進む前に三十秒間それと共に過ごすよう求められます。シリーズを全て読み終えたら、いつでも任意のパートに戻ることができます。
+notice_body_3: いつでも進捗をリセットして最初からやり直すことができます。
+notice_btn: 準備ができました
+
+footer_how_works: 仕組みについて
+footer_change_theme: テーマを変更
+footer_reset: 進捗をリセット
+
+new_added_heading: 過去14日間に追加
+new_unread_heading: まだ読んでいません
+new_loading: 読書履歴を確認中…
+new_nothing: 過去14日間に新着はありません——でも何かは常に来ています。
+new_caught_up: 最新の状態です。
+new_back: ← シリーズに戻る
+new_today: 今日
+new_yesterday: 昨日
+new_days_ago: "%d日前"
+
+theme_dark: ダーク
+theme_light: ライト
+theme_series: シリーズ
+theme_backbone: 基幹
+theme_other: 他の道
+theme_remember: 選択を記憶する
+
+parts_all: 全パート
+series_all: 全シリーズ
+
+blessing_accept: この祝福を受け入れる
+blessing_free: 私は自由です。
+blessing_stay: 近くにいて
+blessing_return: 最初に戻る
+blessing_reset: 進捗をリセット

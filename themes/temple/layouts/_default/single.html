@@ -55,7 +55,7 @@
   <nav class="piece-nav"
     data-part="{{ .Params.part }}"
     data-series="{{ .CurrentSection.Slug }}"
-    data-series-page="{{ "series" | relURL }}"
+    data-series-page="{{ if eq .Language.Lang "en" }}{{ "series" | relLangURL }}{{ else }}{{ .Parent.Permalink }}{{ end }}"
     {{ if not $nextPiece }}data-final="true"{{ end }}
     {{ if .Params.closingReflection }}data-closing="true"{{ end }}
     {{ if .Params.blessing }}data-blessing="true"{{ end }}>
@@ -106,7 +106,7 @@
 
   <div class="back-home-wrap">
     {{/* Home is always the Series page. Only the logo navigates to the landing/doorway page. */}}
-    <a href="{{ "series" | relURL }}" class="back-home">← Back to Home</a>
+    <a href="{{ if eq .Language.Lang "en" }}{{ "series" | relLangURL }}{{ else }}{{ .Parent.Permalink }}{{ end }}" class="back-home">← Back to Home</a>
   </div>
 
 </article>

@@ -7,8 +7,10 @@
 
   {{/* ── BACKBONE — Moving Truth stands alone above everything else ── */}}
   {{ range .Site.Sections }}
+  {{ $sPages := .Pages }}
+  {{ if not $sPages }}{{ range .Translations }}{{ if eq .Language.Lang "en" }}{{ $sPages = .Pages }}{{ end }}{{ end }}{{ end }}
   {{ if .Params.backbone }}
-  {{ $recentInSection := where .Pages "Date" "ge" $cutoff }}
+  {{ $recentInSection := where $sPages "Date" "ge" $cutoff }}
   {{ $hasNew := gt (len $recentInSection) 0 }}
   <a href="{{ .Permalink }}" class="backbone-card">
     {{ if $hasNew }}<span class="new-dot" aria-label="New content available"></span>{{ end }}
@@ -16,7 +18,7 @@
       <p class="backbone-card__eyebrow">The backbone</p>
       <h2 class="backbone-card__title">{{ .Title }}</h2>
       {{ with .Description }}<p class="backbone-card__desc">{{ . }}</p>{{ end }}
-      <span class="backbone-card__meta">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</span>
+      <span class="backbone-card__meta">{{ len $sPages }} {{ if eq (len $sPages) 1 }}part{{ else }}parts{{ end }}</span>
       <span class="backbone-card__cta">Begin →</span>
     </div>
   </a>
@@ -30,14 +32,16 @@
   <div class="series-other-label">Other paths</div>
   <div class="series-grid">
     {{ range $others }}
-    {{ $recentInSection := where .Pages "Date" "ge" $cutoff }}
+    {{ $sPages := .Pages }}
+    {{ if not $sPages }}{{ range .Translations }}{{ if eq .Language.Lang "en" }}{{ $sPages = .Pages }}{{ end }}{{ end }}{{ end }}
+    {{ $recentInSection := where $sPages "Date" "ge" $cutoff }}
     {{ $hasNew := gt (len $recentInSection) 0 }}
     <a href="{{ .Permalink }}" class="series-card">
       {{ if $hasNew }}<span class="new-dot" aria-label="New content available"></span>{{ end }}
       {{ with .Params.icon }}{{ partial "icon.html" . }}{{ end }}
       <h2>{{ .Title }}</h2>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      <span class="series-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}part{{ else }}parts{{ end }}</span>
+      <span class="series-count">{{ len $sPages }} {{ if eq (len $sPages) 1 }}part{{ else }}parts{{ end }}</span>
     </a>
     {{ end }}
   </div>

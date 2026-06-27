@@ -1,0 +1,56 @@
+nav_series: Séries
+nav_gallery: Galeria
+nav_whats_new: Novidades
+nav_support: Apoiar o trabalho
+nav_skip: Ir para o conteúdo principal
+
+menu_navigate: Navegar
+menu_home: Início
+menu_all_series: Todas as séries
+menu_more: Mais
+menu_about: Sobre este site
+menu_from_creator: Da criadora
+menu_reset: Redefinir progresso
+
+reflect_title: Algo em você já sabia disso.
+reflect_sub: A parte que te trouxe até aqui.
+reflect_instruction: Fique com isso. Deixe-o passar por você.
+reflect_unlock: A próxima parte será desbloqueada quando isso chegar a zero.
+reflect_ready: Agora você não pode não saber.
+reflect_continue: Continuar
+
+notice_title: Antes de começar
+notice_body_1: Estas histórias são escritas para serem lidas em ordem. Cada série é o seu próprio caminho — você pode começar qualquer série quando quiser, mas dentro de uma série você segue as partes desde a primeira.
+notice_body_2: Quando você chegar ao final de uma parte, será pedido que fique com ela por trinta segundos antes de continuar. Depois de ler uma série completa, você é livre para voltar a qualquer parte a qualquer momento.
+notice_body_3: Você sempre pode redefinir seu progresso e começar de novo.
+notice_btn: Estou pronto
+
+footer_how_works: Como funciona
+footer_change_theme: Mudar tema
+footer_reset: Redefinir progresso
+
+new_added_heading: Adicionado nos últimos 14 dias
+new_unread_heading: Você ainda não leu
+new_loading: Verificando seu histórico de leitura…
+new_nothing: Nada de novo nos últimos 14 dias — mas algo está sempre chegando.
+new_caught_up: Você está em dia.
+new_back: "← Voltar para Séries"
+new_today: hoje
+new_yesterday: ontem
+new_days_ago: "há %d dias"
+
+theme_dark: Escuro
+theme_light: Claro
+theme_series: A Série
+theme_backbone: A espinha dorsal
+theme_other: Outros caminhos
+theme_remember: Lembrar minha escolha
+
+parts_all: Todas as partes
+series_all: Todas as séries
+
+blessing_accept: Aceitar esta bênção
+blessing_free: Sou livre.
+blessing_stay: Fique perto
+blessing_return: Voltar ao início
+blessing_reset: Redefinir meu progresso

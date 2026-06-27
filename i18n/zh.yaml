@@ -1,0 +1,56 @@
+nav_series: 系列
+nav_gallery: 图库
+nav_whats_new: 最新内容
+nav_support: 支持这项工作
+nav_skip: 跳至主要内容
+
+menu_navigate: 导航
+menu_home: 首页
+menu_all_series: 所有系列
+menu_more: 更多
+menu_about: 关于本站
+menu_from_creator: 来自创作者
+menu_reset: 重置进度
+
+reflect_title: 你内心深处早已知晓。
+reflect_sub: 是那个将你带到这里的部分。
+reflect_instruction: 与它同在。让它穿过你。
+reflect_unlock: 倒计时归零后，下一部分将解锁。
+reflect_ready: 现在你无法假装不知道了。
+reflect_continue: 继续
+
+notice_title: 开始之前
+notice_body_1: 这些故事是按顺序写的。每个系列都是独立的旅程——你可以随时开始任何系列，但在一个系列中，请从第一部分开始依次阅读。
+notice_body_2: 当你读完一个部分时，系统会请你静待三十秒再继续。一旦你读完整个系列，你可以随时回到其中任何一部分。
+notice_body_3: 你随时可以重置进度，重新经历这段旅程。
+notice_btn: 我准备好了
+
+footer_how_works: 使用说明
+footer_change_theme: 更改主题
+footer_reset: 重置进度
+
+new_added_heading: 过去14天内添加
+new_unread_heading: 尚未阅读
+new_loading: 正在检查阅读记录…
+new_nothing: 过去14天没有新内容——但总有新的即将到来。
+new_caught_up: 你已是最新状态。
+new_back: ← 返回系列
+new_today: 今天
+new_yesterday: 昨天
+new_days_ago: "%d天前"
+
+theme_dark: 深色
+theme_light: 浅色
+theme_series: 系列
+theme_backbone: 核心
+theme_other: 其他路径
+theme_remember: 记住我的选择
+
+parts_all: 所有部分
+series_all: 所有系列
+
+blessing_accept: 接受这份祝福
+blessing_free: 我自由了。
+blessing_stay: 留在身边
+blessing_return: 回到开始
+blessing_reset: 重置我的进度

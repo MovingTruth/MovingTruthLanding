@@ -1,0 +1,56 @@
+nav_series: Serien
+nav_gallery: Galerie
+nav_whats_new: Neuigkeiten
+nav_support: Die Arbeit unterstützen
+nav_skip: Zum Hauptinhalt springen
+
+menu_navigate: Navigation
+menu_home: Startseite
+menu_all_series: Alle Serien
+menu_more: Mehr
+menu_about: Über diese Seite
+menu_from_creator: Von der Autorin
+menu_reset: Fortschritt zurücksetzen
+
+reflect_title: Ein Teil von dir wusste es bereits.
+reflect_sub: Der Teil, der dich hierher gebracht hat.
+reflect_instruction: Bleib damit. Lass es durch dich hindurchfließen.
+reflect_unlock: Der nächste Teil wird freigeschaltet, wenn dies null erreicht.
+reflect_ready: Jetzt kannst du es nicht mehr nicht wissen.
+reflect_continue: Weiter
+
+notice_title: Bevor du beginnst
+notice_body_1: Diese Geschichten sind dazu gedacht, der Reihe nach gelesen zu werden. Jede Serie ist ihr eigener Weg — du kannst jede Serie beginnen, wann du möchtest, aber innerhalb einer Serie folgst du den Teilen vom ersten an.
+notice_body_2: Wenn du das Ende eines Teils erreichst, wirst du gebeten, dreißig Sekunden damit zu verweilen, bevor du weitermachst. Sobald du eine Serie durchgelesen hast, kannst du jederzeit zu jedem Teil zurückkehren.
+notice_body_3: Du kannst deinen Fortschritt jederzeit zurücksetzen und von vorne beginnen.
+notice_btn: Ich bin bereit
+
+footer_how_works: So funktioniert es
+footer_change_theme: Thema ändern
+footer_reset: Fortschritt zurücksetzen
+
+new_added_heading: In den letzten 14 Tagen hinzugefügt
+new_unread_heading: Noch nicht gelesen
+new_loading: Dein Leserverlauf wird überprüft…
+new_nothing: Nichts Neues in den letzten 14 Tagen — aber etwas kommt immer.
+new_caught_up: Du bist auf dem neuesten Stand.
+new_back: "← Zurück zu den Serien"
+new_today: heute
+new_yesterday: gestern
+new_days_ago: "vor %d Tagen"
+
+theme_dark: Dunkel
+theme_light: Hell
+theme_series: Die Serie
+theme_backbone: Das Fundament
+theme_other: Andere Wege
+theme_remember: Meine Wahl merken
+
+parts_all: Alle Teile
+series_all: Alle Serien
+
+blessing_accept: Diese Segnung annehmen
+blessing_free: Ich bin frei.
+blessing_stay: Bleib nah
+blessing_return: Zurück zum Anfang
+blessing_reset: Meinen Fortschritt zurücksetzen
