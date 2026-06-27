@@ -49,6 +49,15 @@ theme_remember: 记住我的选择
 parts_all: 所有部分
 series_all: 所有系列
 
+series_page_title: "系列"
+series_page_intro: "每个系列都是一条路。选择从哪里开始。"
+series_page_subtext: "更多内容定期到来。您需要的可能还不存在——但终将出现。"
+series_begin: "开始 →"
+series_parts:
+  other: "{{ . }}部分"
+substack_label: "了解新内容到来时的消息。"
+substack_placeholder: "您的邮箱"
+
 blessing_accept: 接受这份祝福
 blessing_free: 我自由了。
 blessing_stay: 留在身边

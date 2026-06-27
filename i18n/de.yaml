@@ -49,6 +49,16 @@ theme_remember: Meine Wahl merken
 parts_all: Alle Teile
 series_all: Alle Serien
 
+series_page_title: "Die Serien"
+series_page_intro: "Jede Serie ist ein Weg. Wähle, wo du beginnen möchtest."
+series_page_subtext: "Mehr kommt regelmäßig. Etwas, das du brauchst, existiert vielleicht noch nicht — aber es wird kommen."
+series_begin: "Beginnen →"
+series_parts:
+  one: "1 Teil"
+  other: "{{ . }} Teile"
+substack_label: "Erfahre, wenn etwas Neues ankommt."
+substack_placeholder: "Deine E-Mail"
+
 blessing_accept: Diese Segnung annehmen
 blessing_free: Ich bin frei.
 blessing_stay: Bleib nah

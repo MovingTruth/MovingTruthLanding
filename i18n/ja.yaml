@@ -49,6 +49,15 @@ theme_remember: 選択を記憶する
 parts_all: 全パート
 series_all: 全シリーズ
 
+series_page_title: "シリーズ"
+series_page_intro: "各シリーズは一つの道です。どこから始めるかを選んでください。"
+series_page_subtext: "新しいものが定期的に届きます。あなたが必要なものがまだ存在しないかもしれませんが、きっと届きます。"
+series_begin: "始める →"
+series_parts:
+  other: "{{ . }}パート"
+substack_label: "新しいものが届いたらお知らせします。"
+substack_placeholder: "メールアドレス"
+
 blessing_accept: この祝福を受け入れる
 blessing_free: 私は自由です。
 blessing_stay: 近くにいて

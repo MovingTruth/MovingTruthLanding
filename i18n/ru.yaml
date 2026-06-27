@@ -49,6 +49,17 @@ theme_remember: Запомнить выбор
 parts_all: Все части
 series_all: Все серии
 
+series_page_title: "Серии"
+series_page_intro: "Каждая серия — это путь. Выберите, с чего начать."
+series_page_subtext: "Новое появляется регулярно. То, что вам нужно, может ещё не существовать — но появится."
+series_begin: "Начать →"
+series_parts:
+  one: "1 часть"
+  few: "{{ . }} части"
+  other: "{{ . }} частей"
+substack_label: "Узнавайте, когда появляется что-то новое."
+substack_placeholder: "Ваш email"
+
 blessing_accept: Принять это благословение
 blessing_free: Я свободен.
 blessing_stay: Оставайся рядом
