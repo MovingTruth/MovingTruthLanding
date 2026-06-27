@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Language.Lang }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,7 @@
   <main class="ld-content">
     <h1 class="ld-title">{{ .Site.Title }}</h1>
     <p class="ld-tagline">{{ .Site.Params.tagline }}</p>
-    <a href="{{ "choose" | relURL }}" class="ld-enter-btn">Enter Your Inner Temple<br><span>and learn.</span></a>
+    <a href="{{ if eq .Language.Lang "en" }}{{ "choose" | relLangURL }}{{ else }}{{ "moving-truth" | relLangURL }}{{ end }}" class="ld-enter-btn">Enter Your Inner Temple<br><span>and learn.</span></a>
   </main>
 
   <div class="ld-bottom">
@@ -48,7 +48,7 @@
     function sGet(s, k) { try { return s.getItem(k); } catch (e) { return null; } }
     if (sGet(localStorage, THEME_KEY) && sGet(localStorage, REMEMBER_KEY)) {
       var btn = document.querySelector('.ld-enter-btn');
-      if (btn) btn.href = '{{ "series" | relURL }}';
+      if (btn) btn.href = '{{ if eq .Language.Lang "en" }}{{ "series" | relLangURL }}{{ else }}{{ "moving-truth" | relLangURL }}{{ end }}';
     }
   })();
   </script>
