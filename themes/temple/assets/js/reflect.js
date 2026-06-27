@@ -59,11 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (overlayInstruction) overlayInstruction.textContent = 'Give it thirty seconds to reach you.';
       if (overlayUnlock)      overlayUnlock.style.display = 'none';
       if (overlayReady)       overlayReady.style.display = 'none';
-      if (overlayContinue) {
-        overlayContinue.style.display = 'none';
-        overlayContinue.textContent = 'I receive this.';
-        overlayContinue.removeEventListener('click', onBlessingContinue);
-      }
 
       if (overlay)      { overlay.style.display = 'flex'; overlay.focus(); }
       if (overlayTimer) { overlayTimer.textContent = 30; overlayTimer.style.display = ''; }
