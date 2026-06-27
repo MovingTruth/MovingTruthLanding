@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayReady.textContent = 'This blessing is yours.';
             overlayReady.style.display = 'block';
           }
+          if (blessingWrap) blessingWrap.style.display = 'none';
           setTimeout(function () { dismissOverlay(); }, 1500);
         }
       }, 1000);
@@ -152,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function () {
             overlayReady.textContent = 'You are free.';
             overlayReady.style.display = 'block';
           }
+          var closingWrapEl = document.getElementById('piece-closing-wrap');
+          if (closingWrapEl) closingWrapEl.style.display = 'none';
           setTimeout(function () { dismissOverlay(); }, 1500);
         }
       }, 1000);
@@ -196,6 +199,9 @@ document.addEventListener('DOMContentLoaded', function () {
       nextLink.href = nextLink.dataset.href;
       nextLink.classList.remove('piece-nav-next--locked');
     }
+
+    var actionWrapEl = document.getElementById('piece-action-wrap');
+    if (actionWrapEl) actionWrapEl.style.display = 'none';
 
     setTimeout(function () {
       dismissOverlay();
