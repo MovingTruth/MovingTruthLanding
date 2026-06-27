@@ -1,146 +1,146 @@
 ---
-title: "What the Ancestors Knew"
-series: "Blessings"
+title: "O Que os Ancestrais Sabiam"
+series: "Bênçãos"
 part: 2
 date: 2026-06-22T00:00:00
-description: "A blessing of protection, daily hope, and clear sight — for all, of every faith and every land."
+description: "Uma bênção de proteção, esperança diária e visão clara — para todos, de toda fé e toda terra."
 blessing: true
 ---
 
-A blessing for anyone who has ever felt the weight of a world
-that is harder to trust than it should be.
+Uma bênção para qualquer pessoa que já sentiu o peso de um mundo
+que é mais difícil de confiar do que deveria ser.
 
 ---
 
-Whatever your name for the sacred —
+Qualquer que seja seu nome para o sagrado —
 
-the Great Spirit,
-the Creator,
-the Divine,
-the Ancestors,
-the Source,
-the Earth Herself,
-the Light at the center of all things,
-or simply the silence that has always listened
-when you had no more words —
+o Grande Espírito,
+o Criador,
+o Divino,
+os Ancestrais,
+a Fonte,
+a Própria Terra,
+a Luz no centro de todas as coisas,
+ou simplesmente o silêncio que sempre ouviu
+quando você não tinha mais palavras —
 
-this was meant to reach you.
+isto foi destinado a alcançá-lo.
 
-Every tradition.
-Every land.
-Every name.
-
----
-
-You are walking through a world
-that has learned to manufacture confusion.
-
-Where fear is sold in large quantities,
-and the loudest voice
-is rarely the truest one,
-and the dark has learned
-to wear the face of the light.
-
-You know this.
-You have felt it.
+Cada tradição.
+Cada terra.
+Cada nome.
 
 ---
 
-So this, placed here for you:
+Você está caminhando por um mundo
+que aprendeu a fabricar confusão.
 
-May what is designed to diminish you
-find no ground in which to root.
+Onde o medo é vendido em grandes quantidades,
+e a voz mais alta
+raramente é a mais verdadeira,
+e a escuridão aprendeu
+a usar o rosto da luz.
 
-May the forces that profit from your fear
-discover that you have learned to name them.
-
-May what was built to pull you under
-find you already anchored
-to something they cannot reach.
-
----
-
-And each morning —
-
-each ordinary, quiet morning —
-
-may there be one small thing waiting
-that says: *still.*
-
-The sun still arriving.
-The breath still coming.
-The earth still beneath your feet,
-holding everything up,
-as it has always done,
-without being asked.
-
-May that be enough to begin.
-
-And on the mornings when it is not enough —
-may you remember that you have begun before,
-from less than this,
-and you are still here.
+Você sabe disso.
+Você já sentiu.
 
 ---
 
-The first people of every land
-carried a way of knowing
-that was never only in the mind.
+Então isto, colocado aqui para você:
 
-They read it in the water.
-In the way the birds moved before the storm.
-In the feel of a direction before any path appeared.
+Que o que foi projetado para diminuí-lo
+não encontre solo onde enraizar.
 
-They knew: *truth has a particular warmth.*
-Deception has a particular weight.
+Que as forças que lucram com seu medo
+descubram que você aprendeu a nomeá-las.
 
-That knowing did not leave with the old ways.
-
-It is in you now.
-It has always been in you.
+Que o que foi construído para puxá-lo para baixo
+o encontre já ancorado
+em algo que elas não podem alcançar.
 
 ---
 
-May truth be easier for you to feel than deception.
+E cada manhã —
 
-Not as a thought — as a sensation.
+cada manhã ordinária e tranquila —
 
-The warmth of what is real.
-The hollow ring of what only sounds like it.
+que haja uma pequena coisa esperando
+que diga: *ainda.*
 
-May you grow so familiar with that difference
-that the lies announce themselves
-before they finish speaking.
+O sol ainda chegando.
+O fôlego ainda vindo.
+A terra ainda sob seus pés,
+sustentando tudo,
+como sempre fez,
+sem ser pedida.
 
----
+Que isso seja suficiente para começar.
 
-May you be held today.
-
-By the light that made you,
-whatever you call that light.
-
-By the people of every tradition
-who kept something alive long enough
-to pass it forward.
-
-By the ancestors of your bloodline and your spirit —
-the ones who survived the darkest versions of this world
-so that you could be standing here,
-in this moment,
-still reaching.
+E nas manhãs em que não for suficiente —
+que você se lembre de que já começou antes,
+com menos do que isso,
+e você ainda está aqui.
 
 ---
 
-They made it through.
+Os primeiros povos de cada terra
+carregavam uma forma de saber
+que nunca estava apenas na mente.
 
-You come from the ones who made it through.
+Eles a liam na água.
+Na forma como os pássaros se moviam antes da tempestade.
+Na sensação de uma direção antes de qualquer caminho aparecer.
 
-That is not a small thing to carry with you.
+Eles sabiam: *a verdade tem um calor particular.*
+O engano tem um peso particular.
+
+Esse saber não foi embora com as antigas formas.
+
+Está em você agora.
+Sempre esteve em você.
 
 ---
 
-*So be it.*
+Que a verdade seja mais fácil para você sentir do que o engano.
 
-*So it is.*
+Não como um pensamento — como uma sensação.
+
+O calor do que é real.
+O som oco do que apenas parece ser.
+
+Que você se torne tão familiarizado com essa diferença
+que as mentiras se anunciem
+antes de terminar de falar.
+
+---
+
+Que você seja sustentado hoje.
+
+Pela luz que o criou,
+como quer que você chame essa luz.
+
+Pelas pessoas de cada tradição
+que mantiveram algo vivo tempo suficiente
+para passá-lo adiante.
+
+Pelos ancestrais de sua linhagem e seu espírito —
+os que sobreviveram às versões mais sombrias deste mundo
+para que você pudesse estar de pé aqui,
+neste momento,
+ainda alcançando.
+
+---
+
+Eles conseguiram.
+
+Você vem dos que conseguiram.
+
+Isso não é uma coisa pequena para carregar com você.
+
+---
+
+*Que assim seja.*
+
+*Assim é.*
 
 *— Skylaur Roe*

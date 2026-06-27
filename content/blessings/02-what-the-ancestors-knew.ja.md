@@ -1,146 +1,139 @@
 ---
-title: "What the Ancestors Knew"
-series: "Blessings"
+title: "先祖たちが知っていたこと"
+series: "祝福"
 part: 2
 date: 2026-06-22T00:00:00
-description: "A blessing of protection, daily hope, and clear sight — for all, of every faith and every land."
+description: "守護、日々の希望、そして明確な視野への祝福——あらゆる信仰、あらゆる土地のすべての人へ。"
 blessing: true
 ---
 
-A blessing for anyone who has ever felt the weight of a world
-that is harder to trust than it should be.
+かつて、信じることが本来あるべきよりも難しい世界の重さを感じたことのある
+すべての人への祝福。
 
 ---
 
-Whatever your name for the sacred —
+あなたが神聖なものと呼ぶ名前が何であれ——
 
-the Great Spirit,
-the Creator,
-the Divine,
-the Ancestors,
-the Source,
-the Earth Herself,
-the Light at the center of all things,
-or simply the silence that has always listened
-when you had no more words —
+偉大なる霊、
+創造主、
+神聖なるもの、
+祖先たち、
+根源、
+大地そのもの、
+すべての中心にある光、
+あるいはただ、言葉が尽きたときにも
+ずっと聞いていた沈黙——
 
-this was meant to reach you.
+これはあなたに届くように意図されていた。
 
-Every tradition.
-Every land.
-Every name.
-
----
-
-You are walking through a world
-that has learned to manufacture confusion.
-
-Where fear is sold in large quantities,
-and the loudest voice
-is rarely the truest one,
-and the dark has learned
-to wear the face of the light.
-
-You know this.
-You have felt it.
+すべての伝統へ。
+すべての土地へ。
+すべての名前へ。
 
 ---
 
-So this, placed here for you:
+あなたは、混乱を製造することを覚えた世界の中を歩いている。
 
-May what is designed to diminish you
-find no ground in which to root.
+恐怖が大量に売られ、
+最も大きな声が
+最も真実に近いとは限らず、
+闇が光の顔をまとうことを学んだ世界を。
 
-May the forces that profit from your fear
-discover that you have learned to name them.
-
-May what was built to pull you under
-find you already anchored
-to something they cannot reach.
+あなたはそれを知っている。
+感じたことがある。
 
 ---
 
-And each morning —
+だから、あなたのためにここに置かれるこれを：
 
-each ordinary, quiet morning —
+あなたを小さくするために設計されたものが
+根を張る土を見つけられませんように。
 
-may there be one small thing waiting
-that says: *still.*
+あなたの恐怖から利益を得る力が
+あなたがその名を学んだことを発見しますように。
 
-The sun still arriving.
-The breath still coming.
-The earth still beneath your feet,
-holding everything up,
-as it has always done,
-without being asked.
-
-May that be enough to begin.
-
-And on the mornings when it is not enough —
-may you remember that you have begun before,
-from less than this,
-and you are still here.
+あなたを沈めるために作られたものが
+届かない何かにすでに錨を下ろしたあなたを見つけますように。
 
 ---
 
-The first people of every land
-carried a way of knowing
-that was never only in the mind.
+そして毎朝——
 
-They read it in the water.
-In the way the birds moved before the storm.
-In the feel of a direction before any path appeared.
+ごく普通の、静かな毎朝——
 
-They knew: *truth has a particular warmth.*
-Deception has a particular weight.
+*まだ*と告げる一つの小さなものが待っていますように。
 
-That knowing did not leave with the old ways.
+まだ届く太陽。
+まだ続く息。
+まだあなたの足の下にある大地が
+すべてを支えていますように——
+頼まれることなく、
+いつもそうしてきたように。
 
-It is in you now.
-It has always been in you.
+それが始めるのに十分でありますように。
 
----
-
-May truth be easier for you to feel than deception.
-
-Not as a thought — as a sensation.
-
-The warmth of what is real.
-The hollow ring of what only sounds like it.
-
-May you grow so familiar with that difference
-that the lies announce themselves
-before they finish speaking.
+そして、十分でない朝には——
+これよりも少ないところから始めたことがあると、
+そしてまだここにいると、思い出せますように。
 
 ---
 
-May you be held today.
+あらゆる土地の最初の人々は
+決して心だけにあったわけではない知の在り方を持っていた。
 
-By the light that made you,
-whatever you call that light.
+彼らは水の中でそれを読んだ。
+嵐の前に鳥たちが動く様子の中に。
+道が現れる前に方向を感じる中に。
 
-By the people of every tradition
-who kept something alive long enough
-to pass it forward.
+彼らは知っていた：*真実には特別な温もりがある。*
+欺きには特別な重さがある。
 
-By the ancestors of your bloodline and your spirit —
-the ones who survived the darkest versions of this world
-so that you could be standing here,
-in this moment,
-still reaching.
+その知は古い在り方とともに去らなかった。
 
----
-
-They made it through.
-
-You come from the ones who made it through.
-
-That is not a small thing to carry with you.
+今、あなたの中にある。
+ずっとあなたの中にあった。
 
 ---
 
-*So be it.*
+欺きよりも真実の方が感じやすくありますように。
 
-*So it is.*
+思考としてではなく——感覚として。
+
+本物の温もり。
+ただそう聞こえるだけのものの空虚な響き。
+
+その違いがとても馴染み深くなって
+言葉が終わる前に
+嘘が自らを告げるようになりますように。
+
+---
+
+今日、あなたが守られますように。
+
+あなたを造った光に、
+その光をどう呼ぼうとも。
+
+伝え続けるのに十分な長さの間
+何かを生かし続けたすべての伝統の人々に。
+
+あなたの血と魂の祖先たちに——
+この世界の最も暗い版を生き延びた者たちに——
+あなたがここに立っていられるように。
+この瞬間、
+まだ手を伸ばしながら。
+
+---
+
+彼らは乗り越えた。
+
+あなたは乗り越えた者たちから来ている。
+
+それはあなたが携えていく小さなことではない。
+
+---
+
+*そうであれ。*
+
+*そうである。*
 
 *— Skylaur Roe*

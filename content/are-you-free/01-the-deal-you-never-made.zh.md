@@ -1,85 +1,85 @@
 ---
-title: "The Deal You Never Made"
-series: "Are You Free?"
+title: "你从未达成的协议"
+series: "你自由吗？"
 part: 1
 date: 2026-06-18T00:00:00
-description: "A release through the mirror."
+description: "通过镜子的解放。"
 closingReflection: true
 ---
 
-You have been trading.
+你一直在交易。
 
-Maybe you know this. Maybe you don't. But somewhere along the way, you made a deal — and the terms were never written down, never agreed to, never fair.
+也许你知道这一点。也许不知道。但在某个时刻，你达成了一个协议——而那些条款从未被写下，从未被同意，从未公平过。
 
-You traded your time for safety.
-Your voice for belonging.
-Your truth for approval.
-Your ease for someone else's comfort.
+你用时间换取安全。
+用声音换取归属感。
+用真相换取认可。
+用安宁换取别人的舒适。
 
-Some of these trades were made before you were old enough to refuse them. They came in the form of lessons, rules, warnings, silences. *This is how things work here. This is what love looks like. This is the price of being accepted.*
+这些交易中有一些是在你还没有能力拒绝之前就达成的。它们以教导、规则、警告、沉默的形式出现。*这里就是这样运作的。这就是爱的样子。这是被接受的代价。*
 
-You did not sign anything.
+你没有签署任何东西。
 
-But you paid anyway.
+但你还是付了。
 
-And some of you have been paying ever since.
-
----
-
-There is another kind of deal — one that doesn't involve choice at all.
-
-Some of you are carrying something that was never yours. A pattern that ran through your family before you arrived. A streak of things not quite working out. A sense that something has always been slightly against you — not dramatically, just persistently. Like a low hum of resistance in the wire.
-
-Some people call this a curse. That word is older and more honest than we give it credit for.
-
-What it means, simply, is this: something is running that you didn't start, and it has been using your life as its road.
-
-I am asking you to notice that now.
+你们中有些人从那以后一直在付。
 
 ---
 
-Here is what happens when you see a deal clearly:
+还有另一种协议——一种根本不涉及选择的协议。
 
-It loses some of its power.
+你们中有些人携带着一些从未属于你们的东西。一个在你出生之前就在你家族中流动的模式。一连串的事情总是不太顺利。一种感觉，某些东西总是微微地与你为敌——不是戏剧性的，只是持续不断地。就像电线中低沉的阻力嗡嗡声。
 
-Not because of magic. Because of awareness. A deal only holds when both parties believe it must. When one person stops believing — really stops, not just wishes they could — the terms change.
+有些人称之为诅咒。这个词比我们所赋予它的更古老，更诚实。
 
-You are reading this because some part of you already knows there is a cost you have been paying that you never agreed to.
+它简单地意味着：有些东西在运转，而你没有启动它，它一直在把你的生命当作它的道路。
 
-That part of you brought you here.
-
----
-
-So here is what I want to offer.
-
-Not a ritual. Not a promise. Just a clear statement, read in the presence of someone willing to mean it.
-
-*I release any deal I made from fear.*
-
-*I release any deal made on my behalf before I could speak.*
-
-*I release any pattern running through me that I did not choose.*
-
-*I release the belief that I owe a debt I never incurred.*
-
-If something moved in you reading that — even slightly — then something shifted.
-
-That is enough.
+我请你现在注意到这一点。
 
 ---
 
-As for luck and prosperity:
+当你清楚地看见一个协议时，会发生什么：
 
-These are not rewards for the deserving. They are what happens when resistance clears. When the thing that was running against you finally stops. When you stop spending energy maintaining a deal that was never yours to keep.
+它失去了一些力量。
 
-You are allowed to receive.
-You are allowed to have things go well.
-You are allowed to be the version of yourself that didn't make those trades.
+不是因为魔法。而是因为意识。一个协议只有在双方都相信它必须如此的时候才能维持。当一方停止相信——真正停止，而不只是希望自己能——条款就会改变。
 
-That version is still here.
+你在读这篇文章，是因为你的某一部分已经知道，有一个你从未同意的代价一直在被支付。
 
-It has been waiting.
+你的那一部分把你带到了这里。
 
 ---
 
-*You didn't need permission to be free. But now you have it anyway.*
+所以这是我想要提供的。
+
+不是仪式。不是承诺。只是一个清晰的声明，在一个愿意用心说出它的人的见证下被读出。
+
+*我释放任何我因恐惧而达成的协议。*
+
+*我释放任何在我能够说话之前以我的名义达成的协议。*
+
+*我释放任何流经我而我没有选择的模式。*
+
+*我释放我欠下一笔从未产生的债务的信念。*
+
+如果读到这些时有什么在你内心移动了——哪怕只是轻微的——那么某些东西改变了。
+
+这就够了。
+
+---
+
+至于运气和繁荣：
+
+这些不是给有资格的人的奖励。它们是当阻力消散时发生的事情。当曾经与你为敌的东西终于停止时。当你停止花费精力维持一个从来就不该由你来保持的协议时。
+
+你被允许接受。
+你被允许让事情顺利进行。
+你被允许成为那个没有做过这些交易的自己的版本。
+
+那个版本还在这里。
+
+它一直在等待。
+
+---
+
+*你不需要许可就可以自由。但现在你无论如何都得到了它。*

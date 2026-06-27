@@ -1,146 +1,146 @@
 ---
-title: "What the Ancestors Knew"
-series: "Blessings"
+title: "То, Что Знали Предки"
+series: "Благословения"
 part: 2
 date: 2026-06-22T00:00:00
-description: "A blessing of protection, daily hope, and clear sight — for all, of every faith and every land."
+description: "Благословение защиты, ежедневной надежды и ясного видения — для всех, любой веры и любой земли."
 blessing: true
 ---
 
-A blessing for anyone who has ever felt the weight of a world
-that is harder to trust than it should be.
+Благословение для каждого, кто когда-либо чувствовал тяжесть мира,
+которому труднее доверять, чем он должен быть.
 
 ---
 
-Whatever your name for the sacred —
+Каково бы ни было твоё имя для священного —
 
-the Great Spirit,
-the Creator,
-the Divine,
-the Ancestors,
-the Source,
-the Earth Herself,
-the Light at the center of all things,
-or simply the silence that has always listened
-when you had no more words —
+Великий Дух,
+Творец,
+Божественное,
+Предки,
+Источник,
+сама Земля,
+Свет в центре всего сущего,
+или просто тишина, которая всегда слушала,
+когда у тебя больше не было слов —
 
-this was meant to reach you.
+это было предназначено достичь тебя.
 
-Every tradition.
-Every land.
-Every name.
-
----
-
-You are walking through a world
-that has learned to manufacture confusion.
-
-Where fear is sold in large quantities,
-and the loudest voice
-is rarely the truest one,
-and the dark has learned
-to wear the face of the light.
-
-You know this.
-You have felt it.
+Каждая традиция.
+Каждая земля.
+Каждое имя.
 
 ---
 
-So this, placed here for you:
+Ты идёшь через мир,
+который научился производить смятение.
 
-May what is designed to diminish you
-find no ground in which to root.
+Где страх продаётся в больших количествах,
+и самый громкий голос
+редко оказывается самым правдивым,
+и тьма научилась
+носить лицо света.
 
-May the forces that profit from your fear
-discover that you have learned to name them.
-
-May what was built to pull you under
-find you already anchored
-to something they cannot reach.
-
----
-
-And each morning —
-
-each ordinary, quiet morning —
-
-may there be one small thing waiting
-that says: *still.*
-
-The sun still arriving.
-The breath still coming.
-The earth still beneath your feet,
-holding everything up,
-as it has always done,
-without being asked.
-
-May that be enough to begin.
-
-And on the mornings when it is not enough —
-may you remember that you have begun before,
-from less than this,
-and you are still here.
+Ты знаешь это.
+Ты это чувствовал.
 
 ---
 
-The first people of every land
-carried a way of knowing
-that was never only in the mind.
+Так вот это, положенное здесь для тебя:
 
-They read it in the water.
-In the way the birds moved before the storm.
-In the feel of a direction before any path appeared.
+Пусть то, что создано, чтобы уменьшить тебя,
+не найдёт почвы, где укорениться.
 
-They knew: *truth has a particular warmth.*
-Deception has a particular weight.
+Пусть силы, которые извлекают выгоду из твоего страха,
+обнаружат, что ты научился называть их по имени.
 
-That knowing did not leave with the old ways.
-
-It is in you now.
-It has always been in you.
+Пусть то, что было построено, чтобы тянуть тебя вниз,
+застанет тебя уже закреплённым
+за что-то, чего они не могут достичь.
 
 ---
 
-May truth be easier for you to feel than deception.
+И каждое утро —
 
-Not as a thought — as a sensation.
+каждое обычное, тихое утро —
 
-The warmth of what is real.
-The hollow ring of what only sounds like it.
+пусть будет одна маленькая вещь, которая ждёт
+и говорит: *всё ещё.*
 
-May you grow so familiar with that difference
-that the lies announce themselves
-before they finish speaking.
+Солнце, которое всё ещё приходит.
+Дыхание, которое всё ещё идёт.
+Земля, которая всё ещё под твоими ногами,
+держащая всё,
+как она всегда делала,
+без просьб.
 
----
+Пусть этого будет достаточно, чтобы начать.
 
-May you be held today.
-
-By the light that made you,
-whatever you call that light.
-
-By the people of every tradition
-who kept something alive long enough
-to pass it forward.
-
-By the ancestors of your bloodline and your spirit —
-the ones who survived the darkest versions of this world
-so that you could be standing here,
-in this moment,
-still reaching.
+И в утра, когда этого недостаточно —
+пусть ты вспомнишь, что начинал и прежде,
+с меньшим, чем это,
+и ты всё ещё здесь.
 
 ---
 
-They made it through.
+Первые народы каждой земли
+несли способ знания,
+который никогда не был только в уме.
 
-You come from the ones who made it through.
+Они читали его в воде.
+В том, как птицы двигались перед бурей.
+В ощущении направления до того, как появился какой-либо путь.
 
-That is not a small thing to carry with you.
+Они знали: *у правды есть особая теплота.*
+У обмана есть особый вес.
+
+Это знание не ушло вместе со старыми путями.
+
+Оно в тебе сейчас.
+Оно всегда было в тебе.
 
 ---
 
-*So be it.*
+Пусть правда будет для тебя легче ощутить, чем обман.
 
-*So it is.*
+Не как мысль — как ощущение.
+
+Тепло того, что реально.
+Пустой звон того, что только звучит как реальное.
+
+Пусть ты настолько привыкнешь к этому различию,
+что ложь будет объявлять себя сама
+до того, как договорит.
+
+---
+
+Пусть ты будешь удержан сегодня.
+
+Светом, который создал тебя,
+как бы ты ни называл этот свет.
+
+Людьми каждой традиции,
+которые хранили что-то живым достаточно долго,
+чтобы передать вперёд.
+
+Предками твоей крови и твоего духа —
+теми, кто пережил самые тёмные версии этого мира,
+чтобы ты мог стоять здесь,
+в этот момент,
+всё ещё тянусь.
+
+---
+
+Они справились.
+
+Ты происходишь от тех, кто справился.
+
+Это не маленькая вещь, которую несёшь с собой.
+
+---
+
+*Да будет так.*
+
+*Так и есть.*
 
 *— Skylaur Roe*

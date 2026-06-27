@@ -1,85 +1,85 @@
 ---
-title: "The Deal You Never Made"
-series: "Are You Free?"
+title: "El Trato Que Nunca Hiciste"
+series: "¿Eres Libre?"
 part: 1
 date: 2026-06-18T00:00:00
-description: "A release through the mirror."
+description: "Una liberación a través del espejo."
 closingReflection: true
 ---
 
-You have been trading.
+Has estado negociando.
 
-Maybe you know this. Maybe you don't. But somewhere along the way, you made a deal — and the terms were never written down, never agreed to, never fair.
+Quizás lo sabes. Quizás no. Pero en algún lugar del camino, hiciste un trato — y los términos nunca fueron escritos, nunca acordados, nunca justos.
 
-You traded your time for safety.
-Your voice for belonging.
-Your truth for approval.
-Your ease for someone else's comfort.
+Negociaste tu tiempo por seguridad.
+Tu voz por pertenencia.
+Tu verdad por aprobación.
+Tu tranquilidad por el comfort de otros.
 
-Some of these trades were made before you were old enough to refuse them. They came in the form of lessons, rules, warnings, silences. *This is how things work here. This is what love looks like. This is the price of being accepted.*
+Algunos de estos tratos fueron hechos antes de que fueras suficientemente mayor para rechazarlos. Vinieron en forma de lecciones, reglas, advertencias, silencios. *Así es como funcionan las cosas aquí. Así es como se ve el amor. Este es el precio de ser aceptado.*
 
-You did not sign anything.
+No firmaste nada.
 
-But you paid anyway.
+Pero pagaste de todas formas.
 
-And some of you have been paying ever since.
-
----
-
-There is another kind of deal — one that doesn't involve choice at all.
-
-Some of you are carrying something that was never yours. A pattern that ran through your family before you arrived. A streak of things not quite working out. A sense that something has always been slightly against you — not dramatically, just persistently. Like a low hum of resistance in the wire.
-
-Some people call this a curse. That word is older and more honest than we give it credit for.
-
-What it means, simply, is this: something is running that you didn't start, and it has been using your life as its road.
-
-I am asking you to notice that now.
+Y algunos de ustedes han estado pagando desde entonces.
 
 ---
 
-Here is what happens when you see a deal clearly:
+Hay otro tipo de trato — uno que no involucra elección en absoluto.
 
-It loses some of its power.
+Algunos de ustedes llevan algo que nunca fue suyo. Un patrón que corría por tu familia antes de que llegaras. Una racha de cosas que no salen del todo bien. Una sensación de que algo siempre ha estado ligeramente en tu contra — no dramáticamente, solo persistentemente. Como un zumbido de baja resistencia en el cable.
 
-Not because of magic. Because of awareness. A deal only holds when both parties believe it must. When one person stops believing — really stops, not just wishes they could — the terms change.
+Algunas personas llaman a esto una maldición. Esa palabra es más antigua y honesta de lo que le damos crédito.
 
-You are reading this because some part of you already knows there is a cost you have been paying that you never agreed to.
+Lo que significa, simplemente, es esto: algo está corriendo que tú no empezaste, y ha estado usando tu vida como su camino.
 
-That part of you brought you here.
-
----
-
-So here is what I want to offer.
-
-Not a ritual. Not a promise. Just a clear statement, read in the presence of someone willing to mean it.
-
-*I release any deal I made from fear.*
-
-*I release any deal made on my behalf before I could speak.*
-
-*I release any pattern running through me that I did not choose.*
-
-*I release the belief that I owe a debt I never incurred.*
-
-If something moved in you reading that — even slightly — then something shifted.
-
-That is enough.
+Te pido que notes eso ahora.
 
 ---
 
-As for luck and prosperity:
+Esto es lo que sucede cuando ves un trato con claridad:
 
-These are not rewards for the deserving. They are what happens when resistance clears. When the thing that was running against you finally stops. When you stop spending energy maintaining a deal that was never yours to keep.
+Pierde algo de su poder.
 
-You are allowed to receive.
-You are allowed to have things go well.
-You are allowed to be the version of yourself that didn't make those trades.
+No por magia. Por consciencia. Un trato solo se mantiene cuando ambas partes creen que debe. Cuando una persona deja de creer — realmente deja, no solo desea que pudiera — los términos cambian.
 
-That version is still here.
+Estás leyendo esto porque alguna parte de ti ya sabe que hay un costo que has estado pagando y que nunca acordaste.
 
-It has been waiting.
+Esa parte de ti te trajo aquí.
 
 ---
 
-*You didn't need permission to be free. But now you have it anyway.*
+Entonces esto es lo que quiero ofrecerte.
+
+No un ritual. No una promesa. Solo una declaración clara, leída en presencia de alguien dispuesto a significarla.
+
+*Libero cualquier trato que hice por miedo.*
+
+*Libero cualquier trato hecho en mi nombre antes de que pudiera hablar.*
+
+*Libero cualquier patrón que corra a través de mí que no elegí.*
+
+*Libero la creencia de que debo una deuda que nunca contraje.*
+
+Si algo se movió en ti al leer eso — aunque sea levemente — entonces algo cambió.
+
+Eso es suficiente.
+
+---
+
+En cuanto a la suerte y la prosperidad:
+
+Estas no son recompensas para los merecedores. Son lo que sucede cuando la resistencia se despeja. Cuando la cosa que corría en tu contra finalmente se detiene. Cuando dejas de gastar energía manteniendo un trato que nunca fue tuyo para guardar.
+
+Tienes permitido recibir.
+Tienes permitido que las cosas te vayan bien.
+Tienes permitido ser la versión de ti mismo que no hizo esos tratos.
+
+Esa versión todavía está aquí.
+
+Ha estado esperando.
+
+---
+
+*No necesitabas permiso para ser libre. Pero ahora lo tienes de todas formas.*

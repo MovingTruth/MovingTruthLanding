@@ -1,124 +1,124 @@
 ---
-title: "The Numbers"
-series: "Blessings"
+title: "数字"
+series: "祝福"
 part: 3
 date: 2026-06-23T00:00:00
-description: "A blessing in numbers. The people who made you real, carried into every act of hope."
+description: "以数字写成的祝福。那些让你成为真实的人，被携带进每一次希望的行动中。"
 blessing: true
 ---
 
-Nobody wins the lottery.
+没有人能赢得彩票。
 
-Not pessimism. Statistically, almost exactly true. The odds sit somewhere near one in several hundred million, depending on the game, the country, the particular shape of hope you're buying that week.
+这不是悲观主义。从统计上看，这几乎正是事实。根据游戏、国家、以及你那周购买的那种特定形态的希望，概率大约是几亿分之一。
 
-And yet people stand at a counter every week. Tap a screen. Feed a bill into a machine. And choose.
+然而人们每周都站在柜台前。点击屏幕。把钞票塞进机器。然后选择。
 
-Or they hand the choosing to the machine. Quick Pick. Random. Surrender dressed up as a ticket.
-
----
-
-There are people with lucky numbers. Seven. Eleven. Three. A birthday. A number from a good day that never quite left.
-
-Same numbers, every week. Sometimes for decades.
-
-Ask them why and most can't fully explain. *It just feels right,* they'll tell you. *It's mine.*
-
-Which is a strange thing to say about a number.
-
-Unless the number belongs to someone.
+或者他们把选择交给机器。快速选号。随机。用彩票伪装的投降。
 
 ---
 
-Every number you carry is either borrowed or chosen.
+有人持有幸运数字。七。十一。三。一个生日。一个好日子里的数字，从未真正离去。
 
-Borrowed numbers belong to chance. They mean nothing to you and everything to the odds.
+同样的数字，每周。有时长达数十年。
 
-Chosen numbers are different. They carry weight. They arrive at the counter with history behind them.
+问他们为什么，大多数人无法完全解释。*感觉就是对的，*他们会告诉你。*这是我的。*
 
-Here is how you make a blessing out of numbers.
+这是关于一个数字的奇怪说法。
 
----
-
-These are mine. These are my people. 7 meanings for Lotto Max.
-
-**2** — my daughter. The day she arrived.
-
-**3** — me. The day I began.
-
-**7** — my mother's month. Luck's oldest number. She earned it.
-
-**19** — my wife. The day the world got its heart.
-
-**21** — my mother's day. Everything I know about love started there.
-
-**48** — the year she was born. A prayer, not just a number.
-
-**42** — my father's year, moved four steps closer to the answer to everything. Because he was most of mine.
-
-My son isn't in those numbers.
-
-He wasn't born yet when I set them. No date to carry. No number to place.
-
-But when he arrived, I didn't change the ticket. I changed what I thought winning meant.
-
-He is my good luck charm. Not a coin. Not a ritual. A person.
-
-I have not won the jackpot... yet.
-
-But every time I play those numbers, every person who made me real is in the room with me. If something good happens, they're already in it.
-
-And I stopped feeling like I was waiting.
+除非这个数字属于某个人。
 
 ---
 
-You can write your own.
+你所持有的每个数字，要么是借来的，要么是选择的。
 
-Find the people who made you real. The dates that hold weight. The number that feels like the answer to something you haven't finished asking yet.
+借来的数字属于偶然。它对你毫无意义，对概率却意味着一切。
 
-Write them down. Carry them. Put them somewhere you have to look.
+选择的数字不同。它们有分量。它们带着历史来到柜台前。
 
-That isn't hope dressed up as strategy.
-
-That is a blessing — and you are the only one who can write it.
+这就是你如何用数字造一个祝福。
 
 ---
 
-What's your pattern?
+这些是我的。这些是我的人。Lotto Max的7个含义。
+
+**2** — 我的女儿。她到来的那天。
+
+**3** — 我。我开始的那天。
+
+**7** — 我母亲的月份。最古老的幸运数字。她赢得了它。
+
+**19** — 我的妻子。世界得到其心的那天。
+
+**21** — 我母亲的日子。我所了解的关于爱的一切都从那里开始。
+
+**48** — 她出生的年份。一个祈祷，不只是一个数字。
+
+**42** — 我父亲的年份，向一切答案靠近了四步。因为他是我的大部分。
+
+我的儿子不在那些数字里。
+
+我设定它们的时候，他还没出生。没有日期可以携带。没有数字可以放置。
+
+但当他来到时，我没有改变彩票。我改变了我认为赢意味着什么。
+
+他是我的幸运符。不是硬币。不是仪式。一个人。
+
+我还没有赢得大奖……还没有。
+
+但每次我用那些数字买彩票，每一个让我成为真实的人都在房间里陪着我。如果有好事发生，他们已经在其中了。
+
+我不再感觉自己在等待。
 
 ---
 
-I bless this creation.
+你可以写下你自己的。
 
-I bless the numbers that carry the people I love.
+找到那些让你成为真实的人。找到那些有分量的日期。找到那个感觉像是你还没问完的某个问题的答案的数字。
 
-I bless my daughter, my wife, my mother, my father — whose lives are woven into every act of hope I place in the world.
+把它们写下来。随身携带。把它们放在你必须看到的地方。
 
-I bless my son, who wasn't in the numbers and changed what winning means.
+这不是伪装成策略的希望。
 
-I bless the one who will read this and recognise their own people in the blank spaces.
-
-But most of all — I bless the belief.
-
-Not certainty. Not proof. Not the odds.
-
-Belief. The stubborn, quiet kind that doesn't wait for evidence.
-
-The kind that plays the numbers anyway.
-
-The kind that says: *not yet — but yes.*
-
-Without that, the numbers are just numbers.
-
-With it, they are everything.
-
-May this reach the one who needs it.
-
-May it arrive at the right hour.
-
-May the numbers they carry become a blessing in their hands.
+这是一个祝福——只有你能写它。
 
 ---
 
-*So be it. So it is.*
+你的模式是什么？
+
+---
+
+我祝福这个创造。
+
+我祝福那些携带着我所爱之人的数字。
+
+我祝福我的女儿、妻子、母亲、父亲——他们的生命编织进我在世界上留下的每一个希望的行动。
+
+我祝福我的儿子，他不在数字里，却改变了赢的含义。
+
+我祝福那个将读到这篇文章并在空白处认出自己的人的人。
+
+但最重要的是——我祝福信念。
+
+不是确定。不是证明。不是概率。
+
+信念。那种安静、固执的、不等待证据的信念。
+
+那种无论如何都要买那些数字的信念。
+
+那种说：*还没有——但是会的*的信念。
+
+没有它，数字只是数字。
+
+有了它，它们就是一切。
+
+愿这能到达需要它的人。
+
+愿它在正确的时刻到来。
+
+愿他们所携带的数字在他们手中成为祝福。
+
+---
+
+*愿如此。已如此。*
 
 *— Skylaur Roe*

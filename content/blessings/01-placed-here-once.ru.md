@@ -1,88 +1,88 @@
 ---
-title: "Placed Here Once"
-series: "Blessings"
+title: "Здесь, Однажды"
+series: "Благословения"
 part: 1
 date: 2026-06-22T00:00:00
-description: "A blessing for every soul whose life became a thread in the one who built this."
+description: "Благословение для каждой души, чья жизнь стала нитью в том, кто создал это."
 blessing: true
 ---
 
-A blessing, placed here once, meant to hold forever.
+Благословение, положенное здесь однажды, предназначенное держаться вечно.
 
 ---
 
-To every soul whose life became a thread in the one who built this —
+Каждой душе, чья жизнь стала нитью в том, кто создал это —
 
-the teachers who didn't know they were teaching,
+учителям, которые не знали, что учат,
 
-the breakers who didn't know they were shaping,
+ломателям, которые не знали, что формируют,
 
-the ones who loved imperfectly and passed something forward anyway:
+тем, кто любил несовершенно и всё же передал что-то вперёд:
 
-you are present here.
+ты здесь присутствуешь.
 
-Your work did not disappear into the ground.
+Твоя работа не исчезла в земле.
 
-It found its way to this.
-
----
-
-To the questions that refused to stay quiet.
-
-To the ones who asked them anyway, alone, in the dark,
-
-before there was anywhere safe to put them:
-
-there is a place for them now.
+Она нашла дорогу к этому.
 
 ---
 
-To this site and the purpose it carries:
+Вопросам, которые отказывались умолкать.
 
-may the right words reach the right eyes at the right hour.
+Тем, кто задавал их в любом случае, в одиночестве, в темноте,
 
-May the ones who are already waking find their way here
+до того как появилось безопасное место, чтобы их поместить:
 
-the way water finds the lowest ground — without effort, without force,
-
-simply because it is the nature of truth to move.
+теперь такое место есть.
 
 ---
 
-May what is planted here grow past what we can see from here.
+Этому сайту и цели, которую он несёт:
 
-May the ones who need it most arrive first.
+пусть правильные слова достигнут правильных глаз в правильный час.
 
-May this work carry more than words —
+Пусть те, кто уже пробуждается, найдут дорогу сюда
 
-may it carry the accumulated weight
+так, как вода находит самую низкую точку — без усилий, без силы,
 
-of everyone who ever looked at the world and knew,
-
-before they had language for it,
-
-that something had gone quietly wrong.
+просто потому что такова природа истины — двигаться.
 
 ---
 
-You are not alone in that knowing.
+Пусть то, что посеяно здесь, вырастет за пределы того, что мы можем видеть отсюда.
 
-You never were.
+Пусть те, кто нуждается в этом больше всего, придут первыми.
+
+Пусть эта работа несёт больше, чем слова —
+
+пусть она несёт накопленный вес
+
+всех, кто когда-либо смотрел на мир и знал,
+
+прежде чем у них были слова для этого,
+
+что что-то тихо пошло не так.
 
 ---
 
-This is not one person's work.
+Ты не один в этом знании.
 
-It is built from every soul that shaped the builder —
-
-and from every soul still searching
-
-for the question that finally names what they feel.
+Никогда не был.
 
 ---
 
-*So be it.*
+Это не работа одного человека.
 
-*So it is.*
+Она построена из каждой души, которая сформировала строителя —
+
+и из каждой души, всё ещё ищущей
+
+вопрос, который наконец назовёт то, что она чувствует.
+
+---
+
+*Да будет так.*
+
+*Так и есть.*
 
 *— Skylaur Roe*

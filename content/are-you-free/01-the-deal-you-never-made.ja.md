@@ -1,85 +1,85 @@
 ---
-title: "The Deal You Never Made"
-series: "Are You Free?"
+title: "あなたが決して結ばなかった取引"
+series: "あなたは自由ですか？"
 part: 1
 date: 2026-06-18T00:00:00
-description: "A release through the mirror."
+description: "鏡を通じた解放。"
 closingReflection: true
 ---
 
-You have been trading.
+あなたは取引をしてきた。
 
-Maybe you know this. Maybe you don't. But somewhere along the way, you made a deal — and the terms were never written down, never agreed to, never fair.
+それを知っているかもしれない。知らないかもしれない。しかしどこかの時点で、あなたは取引をした——その条件は一度も書き留められず、合意されず、公平でもなかった。
 
-You traded your time for safety.
-Your voice for belonging.
-Your truth for approval.
-Your ease for someone else's comfort.
+あなたは時間を安全と引き換えにした。
+声を帰属感と引き換えにした。
+真実を承認と引き換えにした。
+安らぎを誰かの快適さと引き換えにした。
 
-Some of these trades were made before you were old enough to refuse them. They came in the form of lessons, rules, warnings, silences. *This is how things work here. This is what love looks like. This is the price of being accepted.*
+これらの取引の一部は、あなたがまだ断るほど年を取っていなかった頃に結ばれた。教訓、ルール、警告、沈黙という形でやってきた。*ここではこういうものだ。これが愛の姿だ。これが受け入れられるための代価だ。*
 
-You did not sign anything.
+あなたは何も署名しなかった。
 
-But you paid anyway.
+それでも払った。
 
-And some of you have been paying ever since.
-
----
-
-There is another kind of deal — one that doesn't involve choice at all.
-
-Some of you are carrying something that was never yours. A pattern that ran through your family before you arrived. A streak of things not quite working out. A sense that something has always been slightly against you — not dramatically, just persistently. Like a low hum of resistance in the wire.
-
-Some people call this a curse. That word is older and more honest than we give it credit for.
-
-What it means, simply, is this: something is running that you didn't start, and it has been using your life as its road.
-
-I am asking you to notice that now.
+そしてあなた方の中には、それ以来払い続けている人もいる。
 
 ---
 
-Here is what happens when you see a deal clearly:
+別の種類の取引がある——まったく選択を伴わないものだ。
 
-It loses some of its power.
+あなた方の中には、自分のものではなかった何かを背負っている人がいる。あなたが来る前から家族の中を流れていたパターン。うまくいかないことが続く連鎖。何かがいつもわずかに自分に対して向いているという感覚——劇的にではなく、ただ執拗に。電線の中の低い抵抗のうなりのように。
 
-Not because of magic. Because of awareness. A deal only holds when both parties believe it must. When one person stops believing — really stops, not just wishes they could — the terms change.
+これを呪いと呼ぶ人もいる。その言葉は、我々が評価する以上に古く、正直だ。
 
-You are reading this because some part of you already knows there is a cost you have been paying that you never agreed to.
+それが単純に意味することはこうだ：あなたが始めていない何かが動いており、それはあなたの人生を道として使ってきた。
 
-That part of you brought you here.
-
----
-
-So here is what I want to offer.
-
-Not a ritual. Not a promise. Just a clear statement, read in the presence of someone willing to mean it.
-
-*I release any deal I made from fear.*
-
-*I release any deal made on my behalf before I could speak.*
-
-*I release any pattern running through me that I did not choose.*
-
-*I release the belief that I owe a debt I never incurred.*
-
-If something moved in you reading that — even slightly — then something shifted.
-
-That is enough.
+今それに気づいてほしい。
 
 ---
 
-As for luck and prosperity:
+取引をはっきりと見ると何が起きるか：
 
-These are not rewards for the deserving. They are what happens when resistance clears. When the thing that was running against you finally stops. When you stop spending energy maintaining a deal that was never yours to keep.
+それはいくらかの力を失う。
 
-You are allowed to receive.
-You are allowed to have things go well.
-You are allowed to be the version of yourself that didn't make those trades.
+魔法によってではない。意識によってだ。取引は両者が維持しなければならないと信じている間だけ続く。一方が信じるのをやめたとき——本当にやめたとき、ただそうできたらと願うのではなく——条件は変わる。
 
-That version is still here.
+あなたがこれを読んでいるのは、あなたの一部がすでに知っているからだ。同意したことのない代価をずっと払ってきたということを。
 
-It has been waiting.
+あなたのその一部があなたをここへ連れてきた。
 
 ---
 
-*You didn't need permission to be free. But now you have it anyway.*
+だからこれが私が提供したいものだ。
+
+儀式ではない。約束でもない。ただ明確な言葉を、それを本気で意味する誰かの存在の中で読む。
+
+*恐れから結んだあらゆる取引を手放す。*
+
+*私が話せる前に私の名の下に結ばれたあらゆる取引を手放す。*
+
+*自分では選ばなかった、私の中を流れるあらゆるパターンを手放す。*
+
+*負ったことのない借金を負っているという信念を手放す。*
+
+これを読んで何かが動いたなら——わずかでも——何かがずれた。
+
+それで十分だ。
+
+---
+
+運と繁栄について言えば：
+
+これらは値する者への報酬ではない。抵抗が晴れたときに起きることだ。あなたに対して流れていたものがついに止まったとき。自分のものでもなかった取引を維持するために使っていたエネルギーを費やすのをやめたとき。
+
+あなたは受け取っていい。
+物事がうまくいっていい。
+あの取引をしなかった自分の版でいていい。
+
+その版はまだここにいる。
+
+待っていた。
+
+---
+
+*自由になるのに許可は必要なかった。でも今、あなたはどちらにせよそれを手に入れた。*

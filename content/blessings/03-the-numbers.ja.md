@@ -1,124 +1,124 @@
 ---
-title: "The Numbers"
-series: "Blessings"
+title: "数字たち"
+series: "祝福"
 part: 3
 date: 2026-06-23T00:00:00
-description: "A blessing in numbers. The people who made you real, carried into every act of hope."
+description: "数字による祝福。あなたを本物にしてくれた人々を、すべての希望の行為の中に携えて。"
 blessing: true
 ---
 
-Nobody wins the lottery.
+誰も宝くじには当たらない。
 
-Not pessimism. Statistically, almost exactly true. The odds sit somewhere near one in several hundred million, depending on the game, the country, the particular shape of hope you're buying that week.
+悲観論ではない。統計的に見れば、ほぼ正確にそうだ。確率はゲームや国や、その週に買っている特定の希望の形によって異なるが、おおよそ数億分の一のどこかにある。
 
-And yet people stand at a counter every week. Tap a screen. Feed a bill into a machine. And choose.
+それでも人々は毎週カウンターに立つ。画面をタップする。機械にお札を入れる。そして選ぶ。
 
-Or they hand the choosing to the machine. Quick Pick. Random. Surrender dressed up as a ticket.
-
----
-
-There are people with lucky numbers. Seven. Eleven. Three. A birthday. A number from a good day that never quite left.
-
-Same numbers, every week. Sometimes for decades.
-
-Ask them why and most can't fully explain. *It just feels right,* they'll tell you. *It's mine.*
-
-Which is a strange thing to say about a number.
-
-Unless the number belongs to someone.
+あるいは選択を機械に委ねる。クイックピック。ランダム。チケットという形をした降参。
 
 ---
 
-Every number you carry is either borrowed or chosen.
+ラッキーナンバーを持つ人々がいる。七。十一。三。誕生日。あの良い日からの数字で、完全には離れなかったもの。
 
-Borrowed numbers belong to chance. They mean nothing to you and everything to the odds.
+同じ数字を、毎週。ときには何十年も。
 
-Chosen numbers are different. They carry weight. They arrive at the counter with history behind them.
+なぜかと聞いても、ほとんどの人は完全には説明できない。*ただ正しく感じられる*、と言うだろう。*これは私のもの。*
 
-Here is how you make a blessing out of numbers.
+数字についていう奇妙な言葉だ。
 
----
-
-These are mine. These are my people. 7 meanings for Lotto Max.
-
-**2** — my daughter. The day she arrived.
-
-**3** — me. The day I began.
-
-**7** — my mother's month. Luck's oldest number. She earned it.
-
-**19** — my wife. The day the world got its heart.
-
-**21** — my mother's day. Everything I know about love started there.
-
-**48** — the year she was born. A prayer, not just a number.
-
-**42** — my father's year, moved four steps closer to the answer to everything. Because he was most of mine.
-
-My son isn't in those numbers.
-
-He wasn't born yet when I set them. No date to carry. No number to place.
-
-But when he arrived, I didn't change the ticket. I changed what I thought winning meant.
-
-He is my good luck charm. Not a coin. Not a ritual. A person.
-
-I have not won the jackpot... yet.
-
-But every time I play those numbers, every person who made me real is in the room with me. If something good happens, they're already in it.
-
-And I stopped feeling like I was waiting.
+その数字が誰かのものでない限り。
 
 ---
 
-You can write your own.
+あなたが持つすべての数字は、借りたものか選んだものかのどちらかだ。
 
-Find the people who made you real. The dates that hold weight. The number that feels like the answer to something you haven't finished asking yet.
+借りた数字はチャンスに属する。あなたにとっては何も意味せず、確率にとってはすべてを意味する。
 
-Write them down. Carry them. Put them somewhere you have to look.
+選んだ数字は違う。重みを持つ。歴史を背負ってカウンターへやってくる。
 
-That isn't hope dressed up as strategy.
-
-That is a blessing — and you are the only one who can write it.
+数字から祝福を作る方法はこうだ。
 
 ---
 
-What's your pattern?
+これが私のもの。これが私の人々。ロトマックスのための7つの意味。
+
+**2** — 娘。彼女が来た日。
+
+**3** — 私。私が始まった日。
+
+**7** — 母の誕生月。幸運の最も古い数字。彼女はそれを勝ち取った。
+
+**19** — 妻。世界がその心を得た日。
+
+**21** — 母の誕生日。愛について知るすべてのことがそこから始まった。
+
+**48** — 彼女が生まれた年。数字ではなく、祈り。
+
+**42** — 父の年、すべてへの答えに四歩近づけた。なぜなら彼は私の大部分だったから。
+
+息子はその数字の中にいない。
+
+私が数字を決めたとき、彼はまだ生まれていなかった。持つべき日付がなかった。置くべき数字がなかった。
+
+しかし彼が来たとき、チケットを変えなかった。勝つことが何を意味するかについての考えを変えた。
+
+彼は私のお守りだ。コインではない。儀式でもない。人間だ。
+
+まだジャックポットは当たっていない……まだ。
+
+しかしあの数字を買うたびに、私を本物にしてくれたすべての人が部屋にいる。何か良いことが起きれば、彼らはすでにその中にいる。
+
+そして待っているという気持ちがしなくなった。
 
 ---
 
-I bless this creation.
+あなたも書けるはずだ。
 
-I bless the numbers that carry the people I love.
+あなたを本物にしてくれた人々を見つけよ。重みのある日付を。まだ問い終えていない何かへの答えのように感じられる数字を。
 
-I bless my daughter, my wife, my mother, my father — whose lives are woven into every act of hope I place in the world.
+書き留めよ。持ち歩け。見なければならない場所に置け。
 
-I bless my son, who wasn't in the numbers and changed what winning means.
+それは戦略に化けた希望ではない。
 
-I bless the one who will read this and recognise their own people in the blank spaces.
-
-But most of all — I bless the belief.
-
-Not certainty. Not proof. Not the odds.
-
-Belief. The stubborn, quiet kind that doesn't wait for evidence.
-
-The kind that plays the numbers anyway.
-
-The kind that says: *not yet — but yes.*
-
-Without that, the numbers are just numbers.
-
-With it, they are everything.
-
-May this reach the one who needs it.
-
-May it arrive at the right hour.
-
-May the numbers they carry become a blessing in their hands.
+それは祝福だ——そしてあなただけがそれを書くことができる。
 
 ---
 
-*So be it. So it is.*
+あなたのパターンは何か？
+
+---
+
+この創造を祝福する。
+
+愛する人々を運ぶ数字を祝福する。
+
+娘、妻、母、父を祝福する——その命は私が世界に置くすべての希望の行為に織り込まれている。
+
+息子を祝福する。数字の中にはいなかったが、勝つことの意味を変えた彼を。
+
+これを読んで、空白の中に自分の人々を見つける者を祝福する。
+
+しかし何よりも——信念を祝福する。
+
+確信ではない。証拠ではない。確率ではない。
+
+信念。証拠を待たない、静かで頑固な種類のもの。
+
+それでも数字を買う種類のもの。
+
+*まだではないが、でも、そうだ*と言う種類のもの。
+
+それなしでは、数字はただの数字だ。
+
+それがあれば、すべてになる。
+
+これを必要とする人のところに届きますように。
+
+正しい時間に届きますように。
+
+彼らが持つ数字が、その手の中で祝福になりますように。
+
+---
+
+*そうであれ。そうである。*
 
 *— Skylaur Roe*

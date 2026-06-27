@@ -1,124 +1,124 @@
 ---
-title: "The Numbers"
-series: "Blessings"
+title: "Числа"
+series: "Благословения"
 part: 3
 date: 2026-06-23T00:00:00
-description: "A blessing in numbers. The people who made you real, carried into every act of hope."
+description: "Благословение в числах. Люди, которые сделали тебя настоящим, несомые в каждом акте надежды."
 blessing: true
 ---
 
-Nobody wins the lottery.
+Никто не выигрывает в лотерею.
 
-Not pessimism. Statistically, almost exactly true. The odds sit somewhere near one in several hundred million, depending on the game, the country, the particular shape of hope you're buying that week.
+Не пессимизм. Статистически почти точно так. Шансы находятся где-то около одного на несколько сотен миллионов, в зависимости от игры, страны, конкретной формы надежды, которую ты покупаешь на этой неделе.
 
-And yet people stand at a counter every week. Tap a screen. Feed a bill into a machine. And choose.
+И всё же люди каждую неделю стоят у кассы. Нажимают на экран. Вставляют купюру в машину. И выбирают.
 
-Or they hand the choosing to the machine. Quick Pick. Random. Surrender dressed up as a ticket.
-
----
-
-There are people with lucky numbers. Seven. Eleven. Three. A birthday. A number from a good day that never quite left.
-
-Same numbers, every week. Sometimes for decades.
-
-Ask them why and most can't fully explain. *It just feels right,* they'll tell you. *It's mine.*
-
-Which is a strange thing to say about a number.
-
-Unless the number belongs to someone.
+Или доверяют выбор машине. Быстрый выбор. Случайный. Сдача, замаскированная под билет.
 
 ---
 
-Every number you carry is either borrowed or chosen.
+Есть люди со счастливыми числами. Семь. Одиннадцать. Три. День рождения. Число из хорошего дня, которое так и не ушло до конца.
 
-Borrowed numbers belong to chance. They mean nothing to you and everything to the odds.
+Те же числа, каждую неделю. Иногда на протяжении десятилетий.
 
-Chosen numbers are different. They carry weight. They arrive at the counter with history behind them.
+Спроси их почему, и большинство не сможет объяснить в полной мере. *Просто чувствуется правильным,* скажут они тебе. *Оно моё.*
 
-Here is how you make a blessing out of numbers.
+Что является странной вещью, которую говорят о числе.
 
----
-
-These are mine. These are my people. 7 meanings for Lotto Max.
-
-**2** — my daughter. The day she arrived.
-
-**3** — me. The day I began.
-
-**7** — my mother's month. Luck's oldest number. She earned it.
-
-**19** — my wife. The day the world got its heart.
-
-**21** — my mother's day. Everything I know about love started there.
-
-**48** — the year she was born. A prayer, not just a number.
-
-**42** — my father's year, moved four steps closer to the answer to everything. Because he was most of mine.
-
-My son isn't in those numbers.
-
-He wasn't born yet when I set them. No date to carry. No number to place.
-
-But when he arrived, I didn't change the ticket. I changed what I thought winning meant.
-
-He is my good luck charm. Not a coin. Not a ritual. A person.
-
-I have not won the jackpot... yet.
-
-But every time I play those numbers, every person who made me real is in the room with me. If something good happens, they're already in it.
-
-And I stopped feeling like I was waiting.
+Если только число не принадлежит кому-то.
 
 ---
 
-You can write your own.
+Каждое число, которое ты несёшь, либо позаимствованное, либо выбранное.
 
-Find the people who made you real. The dates that hold weight. The number that feels like the answer to something you haven't finished asking yet.
+Позаимствованные числа принадлежат случаю. Они ничего не значат для тебя и всё — для шансов.
 
-Write them down. Carry them. Put them somewhere you have to look.
+Выбранные числа другие. Они несут вес. Они приходят к кассе с историей за собой.
 
-That isn't hope dressed up as strategy.
-
-That is a blessing — and you are the only one who can write it.
+Вот как ты делаешь благословение из чисел.
 
 ---
 
-What's your pattern?
+Это мои. Это мои люди. 7 значений для Lotto Max.
+
+**2** — моя дочь. День, когда она пришла.
+
+**3** — я. День, когда я начал.
+
+**7** — месяц рождения моей матери. Самое старое число удачи. Она его заслужила.
+
+**19** — моя жена. День, когда мир получил своё сердце.
+
+**21** — день моей матери. Всё, что я знаю о любви, началось там.
+
+**48** — год её рождения. Молитва, а не просто число.
+
+**42** — год моего отца, сдвинутый на четыре шага ближе к ответу на всё. Потому что он был большей частью меня.
+
+Моего сына нет в этих числах.
+
+Он ещё не родился, когда я их устанавливал. Нет даты для ношения. Нет числа для размещения.
+
+Но когда он появился, я не изменил билет. Я изменил то, что думал о значении выигрыша.
+
+Он мой талисман удачи. Не монета. Не ритуал. Человек.
+
+Я ещё не выиграл джекпот... пока.
+
+Но каждый раз, когда я играю эти числа, каждый человек, который сделал меня настоящим, находится в комнате со мной. Если что-то хорошее случится, они уже в этом.
+
+И я перестал чувствовать, что жду.
 
 ---
 
-I bless this creation.
+Ты можешь написать свои.
 
-I bless the numbers that carry the people I love.
+Найди людей, которые сделали тебя настоящим. Даты, которые несут вес. Число, которое ощущается как ответ на что-то, о чём ты ещё не закончил спрашивать.
 
-I bless my daughter, my wife, my mother, my father — whose lives are woven into every act of hope I place in the world.
+Запиши их. Носи с собой. Помести их туда, куда ты должен смотреть.
 
-I bless my son, who wasn't in the numbers and changed what winning means.
+Это не надежда, замаскированная под стратегию.
 
-I bless the one who will read this and recognise their own people in the blank spaces.
-
-But most of all — I bless the belief.
-
-Not certainty. Not proof. Not the odds.
-
-Belief. The stubborn, quiet kind that doesn't wait for evidence.
-
-The kind that plays the numbers anyway.
-
-The kind that says: *not yet — but yes.*
-
-Without that, the numbers are just numbers.
-
-With it, they are everything.
-
-May this reach the one who needs it.
-
-May it arrive at the right hour.
-
-May the numbers they carry become a blessing in their hands.
+Это благословение — и только ты можешь его написать.
 
 ---
 
-*So be it. So it is.*
+Каков твой узор?
+
+---
+
+Я благословляю это творение.
+
+Я благословляю числа, которые несут людей, которых я люблю.
+
+Я благословляю мою дочь, мою жену, мою мать, моего отца — чьи жизни вплетены в каждый акт надежды, который я помещаю в мир.
+
+Я благословляю моего сына, которого не было в числах и который изменил то, что значит выигрыш.
+
+Я благословляю того, кто прочтёт это и узнает своих людей в пустых местах.
+
+Но больше всего — я благословляю веру.
+
+Не уверенность. Не доказательство. Не шансы.
+
+Вера. Тихий, упрямый вид, который не ждёт доказательств.
+
+Тот вид, который всё равно играет числа.
+
+Тот вид, который говорит: *ещё нет — но да.*
+
+Без этого числа — просто числа.
+
+С этим они — всё.
+
+Пусть это достигнет того, кому это нужно.
+
+Пусть оно придёт в нужный час.
+
+Пусть числа, которые они несут, станут благословением в их руках.
+
+---
+
+*Да будет так. Так и есть.*
 
 *— Skylaur Roe*

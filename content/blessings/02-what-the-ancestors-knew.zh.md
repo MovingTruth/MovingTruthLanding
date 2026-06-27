@@ -1,146 +1,142 @@
 ---
-title: "What the Ancestors Knew"
-series: "Blessings"
+title: "先祖所知晓的"
+series: "祝福"
 part: 2
 date: 2026-06-22T00:00:00
-description: "A blessing of protection, daily hope, and clear sight — for all, of every faith and every land."
+description: "守护、日常希望与清明视野的祝福——献给所有人，无论信仰，无论土地。"
 blessing: true
 ---
 
-A blessing for anyone who has ever felt the weight of a world
-that is harder to trust than it should be.
+献给每一个曾感受到这个世界之重的人——
+这个世界比它本应有的更难信任。
 
 ---
 
-Whatever your name for the sacred —
+无论你对神圣之物的称呼是什么——
 
-the Great Spirit,
-the Creator,
-the Divine,
-the Ancestors,
-the Source,
-the Earth Herself,
-the Light at the center of all things,
-or simply the silence that has always listened
-when you had no more words —
+伟大的灵，
+造物主，
+神圣，
+祖先，
+本源，
+大地本身，
+万物中心的光，
+或者只是那沉默——当你再无言语时，它始终在倾听——
 
-this was meant to reach you.
+这是为了到达你而存在的。
 
-Every tradition.
-Every land.
-Every name.
-
----
-
-You are walking through a world
-that has learned to manufacture confusion.
-
-Where fear is sold in large quantities,
-and the loudest voice
-is rarely the truest one,
-and the dark has learned
-to wear the face of the light.
-
-You know this.
-You have felt it.
+每一种传统。
+每一片土地。
+每一个名字。
 
 ---
 
-So this, placed here for you:
+你正行走在一个学会了制造混乱的世界里。
 
-May what is designed to diminish you
-find no ground in which to root.
+在那里，恐惧被大量售卖，
+声音最响亮的
+往往不是最真实的，
+黑暗已经学会
+戴上光的面孔。
 
-May the forces that profit from your fear
-discover that you have learned to name them.
-
-May what was built to pull you under
-find you already anchored
-to something they cannot reach.
-
----
-
-And each morning —
-
-each ordinary, quiet morning —
-
-may there be one small thing waiting
-that says: *still.*
-
-The sun still arriving.
-The breath still coming.
-The earth still beneath your feet,
-holding everything up,
-as it has always done,
-without being asked.
-
-May that be enough to begin.
-
-And on the mornings when it is not enough —
-may you remember that you have begun before,
-from less than this,
-and you are still here.
+你知道这一点。
+你感受过它。
 
 ---
 
-The first people of every land
-carried a way of knowing
-that was never only in the mind.
+所以，这个放置于此的礼物，献给你：
 
-They read it in the water.
-In the way the birds moved before the storm.
-In the feel of a direction before any path appeared.
+愿那些被设计来削弱你的事物
+找不到可以扎根的土壤。
 
-They knew: *truth has a particular warmth.*
-Deception has a particular weight.
+愿那些从你的恐惧中获益的力量
+发现你已经学会了叫出它们的名字。
 
-That knowing did not leave with the old ways.
-
-It is in you now.
-It has always been in you.
+愿那些被造来将你拖下去的事物
+发现你已经锚定于
+它们无法触及的某处。
 
 ---
 
-May truth be easier for you to feel than deception.
+每一个清晨——
 
-Not as a thought — as a sensation.
+每一个平凡、安静的清晨——
 
-The warmth of what is real.
-The hollow ring of what only sounds like it.
+愿有一件小事在等待，
+说：*仍然。*
 
-May you grow so familiar with that difference
-that the lies announce themselves
-before they finish speaking.
+太阳仍然升起。
+呼吸仍然到来。
+大地仍在你脚下，
+托举着一切，
+一如既往，
+无需被要求。
 
----
+愿这足以让你开始。
 
-May you be held today.
-
-By the light that made you,
-whatever you call that light.
-
-By the people of every tradition
-who kept something alive long enough
-to pass it forward.
-
-By the ancestors of your bloodline and your spirit —
-the ones who survived the darkest versions of this world
-so that you could be standing here,
-in this moment,
-still reaching.
+而在那些不够的清晨——
+愿你记得，你曾从更少的地方出发，
+而你仍然在这里。
 
 ---
 
-They made it through.
+每片土地上的先民
+携带着一种从不只存在于心智中的知晓方式。
 
-You come from the ones who made it through.
+他们在水中读取它。
+在鸟儿于风暴前移动的方式里。
+在任何路径出现之前感知方向的能力中。
 
-That is not a small thing to carry with you.
+他们知道：*真相有一种特别的温度。*
+欺骗有一种特别的重量。
+
+那种知晓并没有随古老的方式而离去。
+
+它现在在你之中。
+它一直在你之中。
 
 ---
 
-*So be it.*
+愿真相比欺骗更容易被你感受到。
 
-*So it is.*
+不是作为思想——而是作为感觉。
+
+真实之物的温暖。
+仅仅听起来真实之物的空洞回响。
+
+愿你对这种差异如此熟悉，
+以至于谎言在说完之前
+就已经宣告了自己。
+
+---
+
+愿你今日被守护。
+
+被造就你的光，
+无论你如何称呼那道光。
+
+被每一种传统中的人们，
+他们将某些东西活着保存了足够长的时间
+以便传递下去。
+
+被你血脉与灵魂的祖先——
+那些在这个世界最黑暗的版本中存活下来的人，
+让你能够站在这里，
+在此刻，
+仍然伸手向前。
+
+---
+
+他们做到了。
+
+你来自那些做到了的人。
+
+这不是一件可以轻描淡写的事。
+
+---
+
+*愿如此。*
+
+*已如此。*
 
 *— Skylaur Roe*

@@ -1,146 +1,146 @@
 ---
-title: "What the Ancestors Knew"
-series: "Blessings"
+title: "Ce Que Savaient les Ancêtres"
+series: "Bénédictions"
 part: 2
 date: 2026-06-22T00:00:00
-description: "A blessing of protection, daily hope, and clear sight — for all, of every faith and every land."
+description: "Une bénédiction de protection, d'espoir quotidien et de vision claire — pour tous, de toute foi et de toute terre."
 blessing: true
 ---
 
-A blessing for anyone who has ever felt the weight of a world
-that is harder to trust than it should be.
+Une bénédiction pour quiconque a jamais senti le poids d'un monde
+qui est plus difficile à faire confiance qu'il ne devrait l'être.
 
 ---
 
-Whatever your name for the sacred —
+Quel que soit votre nom pour le sacré —
 
-the Great Spirit,
-the Creator,
-the Divine,
-the Ancestors,
-the Source,
-the Earth Herself,
-the Light at the center of all things,
-or simply the silence that has always listened
-when you had no more words —
+le Grand Esprit,
+le Créateur,
+le Divin,
+les Ancêtres,
+la Source,
+la Terre Elle-Même,
+la Lumière au centre de toutes choses,
+ou simplement le silence qui a toujours écouté
+quand vous n'aviez plus de mots —
 
-this was meant to reach you.
+ceci était destiné à vous atteindre.
 
-Every tradition.
-Every land.
-Every name.
-
----
-
-You are walking through a world
-that has learned to manufacture confusion.
-
-Where fear is sold in large quantities,
-and the loudest voice
-is rarely the truest one,
-and the dark has learned
-to wear the face of the light.
-
-You know this.
-You have felt it.
+Chaque tradition.
+Chaque terre.
+Chaque nom.
 
 ---
 
-So this, placed here for you:
+Vous marchez dans un monde
+qui a appris à fabriquer la confusion.
 
-May what is designed to diminish you
-find no ground in which to root.
+Où la peur est vendue en grande quantité,
+et la voix la plus forte
+est rarement la plus vraie,
+et l'obscurité a appris
+à porter le visage de la lumière.
 
-May the forces that profit from your fear
-discover that you have learned to name them.
-
-May what was built to pull you under
-find you already anchored
-to something they cannot reach.
-
----
-
-And each morning —
-
-each ordinary, quiet morning —
-
-may there be one small thing waiting
-that says: *still.*
-
-The sun still arriving.
-The breath still coming.
-The earth still beneath your feet,
-holding everything up,
-as it has always done,
-without being asked.
-
-May that be enough to begin.
-
-And on the mornings when it is not enough —
-may you remember that you have begun before,
-from less than this,
-and you are still here.
+Vous le savez.
+Vous l'avez ressenti.
 
 ---
 
-The first people of every land
-carried a way of knowing
-that was never only in the mind.
+Alors ceci, déposé ici pour vous :
 
-They read it in the water.
-In the way the birds moved before the storm.
-In the feel of a direction before any path appeared.
+Que ce qui est conçu pour vous diminuer
+ne trouve pas de terre où s'enraciner.
 
-They knew: *truth has a particular warmth.*
-Deception has a particular weight.
+Que les forces qui profitent de votre peur
+découvrent que vous avez appris à les nommer.
 
-That knowing did not leave with the old ways.
-
-It is in you now.
-It has always been in you.
+Que ce qui a été construit pour vous entraîner vers le bas
+vous trouve déjà ancré
+à quelque chose qu'elles ne peuvent pas atteindre.
 
 ---
 
-May truth be easier for you to feel than deception.
+Et chaque matin —
 
-Not as a thought — as a sensation.
+chaque matin ordinaire et tranquille —
 
-The warmth of what is real.
-The hollow ring of what only sounds like it.
+qu'il y ait une petite chose qui attend
+et qui dit : *encore.*
 
-May you grow so familiar with that difference
-that the lies announce themselves
-before they finish speaking.
+Le soleil qui arrive encore.
+Le souffle qui vient encore.
+La terre encore sous vos pieds,
+soutenant tout,
+comme elle l'a toujours fait,
+sans qu'on le lui demande.
 
----
+Que cela soit suffisant pour commencer.
 
-May you be held today.
-
-By the light that made you,
-whatever you call that light.
-
-By the people of every tradition
-who kept something alive long enough
-to pass it forward.
-
-By the ancestors of your bloodline and your spirit —
-the ones who survived the darkest versions of this world
-so that you could be standing here,
-in this moment,
-still reaching.
+Et les matins où ce n'est pas suffisant —
+que vous vous souveniez que vous avez commencé avant,
+avec moins que cela,
+et vous êtes encore là.
 
 ---
 
-They made it through.
+Les premiers peuples de chaque terre
+portaient une façon de savoir
+qui n'était jamais seulement dans l'esprit.
 
-You come from the ones who made it through.
+Ils la lisaient dans l'eau.
+Dans la façon dont les oiseaux se déplaçaient avant la tempête.
+Dans la sensation d'une direction avant qu'aucun chemin n'apparaisse.
 
-That is not a small thing to carry with you.
+Ils savaient : *la vérité a une chaleur particulière.*
+La tromperie a un poids particulier.
+
+Ce savoir n'est pas parti avec les anciennes façons.
+
+Il est en vous maintenant.
+Il a toujours été en vous.
 
 ---
 
-*So be it.*
+Que la vérité vous soit plus facile à ressentir que la tromperie.
 
-*So it is.*
+Pas comme une pensée — comme une sensation.
+
+La chaleur de ce qui est réel.
+La sonnerie creuse de ce qui y ressemble seulement.
+
+Que vous deveniez si familier avec cette différence
+que les mensonges s'annoncent eux-mêmes
+avant de finir de parler.
+
+---
+
+Que vous soyez tenu aujourd'hui.
+
+Par la lumière qui vous a créé,
+quelle que soit la façon dont vous appelez cette lumière.
+
+Par les personnes de chaque tradition
+qui ont gardé quelque chose en vie assez longtemps
+pour le transmettre.
+
+Par les ancêtres de votre lignée et de votre esprit —
+ceux qui ont survécu aux versions les plus sombres de ce monde
+pour que vous puissiez vous tenir ici,
+en ce moment,
+encore en train d'atteindre.
+
+---
+
+Ils s'en sont sortis.
+
+Vous venez de ceux qui s'en sont sortis.
+
+Ce n'est pas une petite chose à porter avec vous.
+
+---
+
+*Qu'il en soit ainsi.*
+
+*Il en est ainsi.*
 
 *— Skylaur Roe*

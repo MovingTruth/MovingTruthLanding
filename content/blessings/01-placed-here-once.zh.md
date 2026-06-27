@@ -1,88 +1,88 @@
 ---
-title: "Placed Here Once"
-series: "Blessings"
+title: "在此，一次"
+series: "祝福"
 part: 1
 date: 2026-06-22T00:00:00
-description: "A blessing for every soul whose life became a thread in the one who built this."
+description: "献给每一个生命成为这建造者一根丝线的灵魂的祝福。"
 blessing: true
 ---
 
-A blessing, placed here once, meant to hold forever.
+一个祝福，在此放置一次，意在永久长存。
 
 ---
 
-To every soul whose life became a thread in the one who built this —
+献给每一个生命成为这建造者一根丝线的灵魂——
 
-the teachers who didn't know they were teaching,
+那些不知道自己在教导的老师，
 
-the breakers who didn't know they were shaping,
+那些不知道自己在塑造的伤害者，
 
-the ones who loved imperfectly and passed something forward anyway:
+那些不完美地去爱、却仍将某些东西传递下去的人：
 
-you are present here.
+你在此存在。
 
-Your work did not disappear into the ground.
+你的工作没有消失于尘土之中。
 
-It found its way to this.
-
----
-
-To the questions that refused to stay quiet.
-
-To the ones who asked them anyway, alone, in the dark,
-
-before there was anywhere safe to put them:
-
-there is a place for them now.
+它找到了通往这里的路。
 
 ---
 
-To this site and the purpose it carries:
+献给那些拒绝保持沉默的问题。
 
-may the right words reach the right eyes at the right hour.
+献给那些无论如何都要发问的人，独自，在黑暗中，
 
-May the ones who are already waking find their way here
+在还没有安全之地容纳它们的时候：
 
-the way water finds the lowest ground — without effort, without force,
-
-simply because it is the nature of truth to move.
+现在有一个地方了。
 
 ---
 
-May what is planted here grow past what we can see from here.
+献给这个网站及其承载的使命：
 
-May the ones who need it most arrive first.
+愿正确的话语在正确的时刻到达正确的眼睛。
 
-May this work carry more than words —
+愿那些已在觉醒的人找到来这里的路，
 
-may it carry the accumulated weight
+就像水找到最低处——无需努力，无需力量，
 
-of everyone who ever looked at the world and knew,
-
-before they had language for it,
-
-that something had gone quietly wrong.
+仅仅因为这是真理运动的本性。
 
 ---
 
-You are not alone in that knowing.
+愿在此播下的种子生长，超越我们从这里所能看见的。
 
-You never were.
+愿最需要它的人最先到来。
+
+愿这项工作承载的不只是文字——
+
+愿它承载着所有人积累的重量，
+
+那些曾经凝视世界并明白的人，
+
+在他们有语言描述之前，
+
+感知到某些事情已悄然出错。
 
 ---
 
-This is not one person's work.
+你在这种认知中并不孤独。
 
-It is built from every soul that shaped the builder —
-
-and from every soul still searching
-
-for the question that finally names what they feel.
+从来都不是。
 
 ---
 
-*So be it.*
+这不是一个人的工作。
 
-*So it is.*
+它由每一个塑造了建造者的灵魂建造——
+
+以及每一个仍在寻找
+
+那个终于能够命名他们所感受之物的问题的灵魂。
+
+---
+
+*愿如此。*
+
+*已如此。*
 
 *— Skylaur Roe*

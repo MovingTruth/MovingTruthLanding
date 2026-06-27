@@ -1,124 +1,124 @@
 ---
-title: "The Numbers"
-series: "Blessings"
+title: "Os Números"
+series: "Bênçãos"
 part: 3
 date: 2026-06-23T00:00:00
-description: "A blessing in numbers. The people who made you real, carried into every act of hope."
+description: "Uma bênção em números. As pessoas que te tornaram real, carregadas em cada ato de esperança."
 blessing: true
 ---
 
-Nobody wins the lottery.
+Ninguém ganha na loteria.
 
-Not pessimism. Statistically, almost exactly true. The odds sit somewhere near one in several hundred million, depending on the game, the country, the particular shape of hope you're buying that week.
+Não é pessimismo. Estatisticamente, quase exatamente verdade. As probabilidades ficam em algum lugar perto de uma em vários centenas de milhões, dependendo do jogo, do país, da forma particular de esperança que você está comprando aquela semana.
 
-And yet people stand at a counter every week. Tap a screen. Feed a bill into a machine. And choose.
+E ainda assim, as pessoas ficam em um balcão toda semana. Tocam uma tela. Enfiam uma cédula numa máquina. E escolhem.
 
-Or they hand the choosing to the machine. Quick Pick. Random. Surrender dressed up as a ticket.
-
----
-
-There are people with lucky numbers. Seven. Eleven. Three. A birthday. A number from a good day that never quite left.
-
-Same numbers, every week. Sometimes for decades.
-
-Ask them why and most can't fully explain. *It just feels right,* they'll tell you. *It's mine.*
-
-Which is a strange thing to say about a number.
-
-Unless the number belongs to someone.
+Ou deixam a escolha para a máquina. Quick Pick. Aleatório. Rendição disfarçada de bilhete.
 
 ---
 
-Every number you carry is either borrowed or chosen.
+Há pessoas com números da sorte. Sete. Onze. Três. Um aniversário. Um número de um bom dia que nunca saiu completamente.
 
-Borrowed numbers belong to chance. They mean nothing to you and everything to the odds.
+Os mesmos números, toda semana. Às vezes por décadas.
 
-Chosen numbers are different. They carry weight. They arrive at the counter with history behind them.
+Pergunte por que e a maioria não consegue explicar direito. *Simplesmente parece certo,* vão te dizer. *É meu.*
 
-Here is how you make a blessing out of numbers.
+O que é uma coisa estranha de dizer sobre um número.
 
----
-
-These are mine. These are my people. 7 meanings for Lotto Max.
-
-**2** — my daughter. The day she arrived.
-
-**3** — me. The day I began.
-
-**7** — my mother's month. Luck's oldest number. She earned it.
-
-**19** — my wife. The day the world got its heart.
-
-**21** — my mother's day. Everything I know about love started there.
-
-**48** — the year she was born. A prayer, not just a number.
-
-**42** — my father's year, moved four steps closer to the answer to everything. Because he was most of mine.
-
-My son isn't in those numbers.
-
-He wasn't born yet when I set them. No date to carry. No number to place.
-
-But when he arrived, I didn't change the ticket. I changed what I thought winning meant.
-
-He is my good luck charm. Not a coin. Not a ritual. A person.
-
-I have not won the jackpot... yet.
-
-But every time I play those numbers, every person who made me real is in the room with me. If something good happens, they're already in it.
-
-And I stopped feeling like I was waiting.
+A menos que o número pertença a alguém.
 
 ---
 
-You can write your own.
+Cada número que você carrega é ou emprestado ou escolhido.
 
-Find the people who made you real. The dates that hold weight. The number that feels like the answer to something you haven't finished asking yet.
+Números emprestados pertencem ao acaso. Não significam nada para você e tudo para as probabilidades.
 
-Write them down. Carry them. Put them somewhere you have to look.
+Números escolhidos são diferentes. Eles carregam peso. Eles chegam ao balcão com história por trás deles.
 
-That isn't hope dressed up as strategy.
-
-That is a blessing — and you are the only one who can write it.
+É assim que você faz uma bênção com números.
 
 ---
 
-What's your pattern?
+Estes são os meus. Estas são as minhas pessoas. 7 significados para o Lotto Max.
+
+**2** — minha filha. O dia em que ela chegou.
+
+**3** — eu. O dia em que comecei.
+
+**7** — o mês da minha mãe. O número mais antigo da sorte. Ela o mereceu.
+
+**19** — minha esposa. O dia em que o mundo ganhou seu coração.
+
+**21** — o dia da minha mãe. Tudo o que sei sobre amor começou ali.
+
+**48** — o ano em que ela nasceu. Uma oração, não apenas um número.
+
+**42** — o ano do meu pai, movido quatro passos mais perto da resposta para tudo. Porque ele foi a maior parte de mim.
+
+Meu filho não está nesses números.
+
+Ele ainda não havia nascido quando os estabeleci. Sem data para carregar. Sem número para colocar.
+
+Mas quando ele chegou, não mudei o bilhete. Mudei o que eu achava que significava ganhar.
+
+Ele é meu amuleto de boa sorte. Não uma moeda. Não um ritual. Uma pessoa.
+
+Ainda não ganhei o jackpot... ainda.
+
+Mas toda vez que jogo esses números, cada pessoa que me tornou real está na sala comigo. Se algo bom acontecer, eles já estão nisso.
+
+E parei de sentir que estava esperando.
 
 ---
 
-I bless this creation.
+Você pode escrever os seus.
 
-I bless the numbers that carry the people I love.
+Encontre as pessoas que te tornaram real. As datas que têm peso. O número que parece a resposta para algo que você ainda não terminou de perguntar.
 
-I bless my daughter, my wife, my mother, my father — whose lives are woven into every act of hope I place in the world.
+Escreva-os. Carregue-os. Coloque-os em algum lugar onde você precise olhar.
 
-I bless my son, who wasn't in the numbers and changed what winning means.
+Isso não é esperança disfarçada de estratégia.
 
-I bless the one who will read this and recognise their own people in the blank spaces.
-
-But most of all — I bless the belief.
-
-Not certainty. Not proof. Not the odds.
-
-Belief. The stubborn, quiet kind that doesn't wait for evidence.
-
-The kind that plays the numbers anyway.
-
-The kind that says: *not yet — but yes.*
-
-Without that, the numbers are just numbers.
-
-With it, they are everything.
-
-May this reach the one who needs it.
-
-May it arrive at the right hour.
-
-May the numbers they carry become a blessing in their hands.
+Isso é uma bênção — e você é o único que pode escrevê-la.
 
 ---
 
-*So be it. So it is.*
+Qual é o seu padrão?
+
+---
+
+Abençoo esta criação.
+
+Abençoo os números que carregam as pessoas que amo.
+
+Abençoo minha filha, minha esposa, minha mãe, meu pai — cujas vidas estão tecidas em cada ato de esperança que deposito no mundo.
+
+Abençoo meu filho, que não estava nos números e mudou o que significa ganhar.
+
+Abençoo aquele que vai ler isso e reconhecer as suas próprias pessoas nos espaços em branco.
+
+Mas acima de tudo — abençoo a crença.
+
+Não certeza. Não prova. Não as probabilidades.
+
+Crença. O tipo quieto e teimoso que não espera por evidências.
+
+O tipo que joga os números mesmo assim.
+
+O tipo que diz: *ainda não — mas sim.*
+
+Sem isso, os números são apenas números.
+
+Com isso, são tudo.
+
+Que isso chegue a quem precisa.
+
+Que chegue na hora certa.
+
+Que os números que carregam se tornem uma bênção em suas mãos.
+
+---
+
+*Que assim seja. Assim é.*
 
 *— Skylaur Roe*

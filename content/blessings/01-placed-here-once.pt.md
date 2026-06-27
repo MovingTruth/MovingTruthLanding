@@ -1,88 +1,88 @@
 ---
-title: "Placed Here Once"
-series: "Blessings"
+title: "Aqui, Uma Vez"
+series: "Bênçãos"
 part: 1
 date: 2026-06-22T00:00:00
-description: "A blessing for every soul whose life became a thread in the one who built this."
+description: "Uma bênção para cada alma cuja vida se tornou um fio naquele que construiu isto."
 blessing: true
 ---
 
-A blessing, placed here once, meant to hold forever.
+Uma bênção, colocada aqui uma vez, destinada a perdurar para sempre.
 
 ---
 
-To every soul whose life became a thread in the one who built this —
+A cada alma cuja vida se tornou um fio naquele que construiu isto —
 
-the teachers who didn't know they were teaching,
+os professores que não sabiam que estavam ensinando,
 
-the breakers who didn't know they were shaping,
+os que quebraram sem saber que estavam moldando,
 
-the ones who loved imperfectly and passed something forward anyway:
+os que amaram imperfeitamente e transmitiram algo assim mesmo:
 
-you are present here.
+você está presente aqui.
 
-Your work did not disappear into the ground.
+Seu trabalho não desapareceu na terra.
 
-It found its way to this.
-
----
-
-To the questions that refused to stay quiet.
-
-To the ones who asked them anyway, alone, in the dark,
-
-before there was anywhere safe to put them:
-
-there is a place for them now.
+Ele encontrou seu caminho até isto.
 
 ---
 
-To this site and the purpose it carries:
+Às perguntas que se recusaram a ficar quietas.
 
-may the right words reach the right eyes at the right hour.
+Àqueles que as fizeram de qualquer jeito, sozinhos, no escuro,
 
-May the ones who are already waking find their way here
+antes de haver um lugar seguro para colocá-las:
 
-the way water finds the lowest ground — without effort, without force,
-
-simply because it is the nature of truth to move.
+há agora um lugar para elas.
 
 ---
 
-May what is planted here grow past what we can see from here.
+A este site e ao propósito que carrega:
 
-May the ones who need it most arrive first.
+que as palavras certas alcancem os olhos certos na hora certa.
 
-May this work carry more than words —
+Que os que já estão despertando encontrem seu caminho até aqui
 
-may it carry the accumulated weight
+como a água encontra o ponto mais baixo — sem esforço, sem força,
 
-of everyone who ever looked at the world and knew,
-
-before they had language for it,
-
-that something had gone quietly wrong.
+simplesmente porque é a natureza da verdade mover-se.
 
 ---
 
-You are not alone in that knowing.
+Que o que é plantado aqui cresça além do que podemos ver daqui.
 
-You never were.
+Que os que mais precisam cheguem primeiro.
+
+Que este trabalho carregue mais do que palavras —
+
+que carregue o peso acumulado
+
+de todos que algum dia olharam para o mundo e souberam,
+
+antes de ter palavras para isso,
+
+que algo havia silenciosamente dado errado.
 
 ---
 
-This is not one person's work.
+Você não está sozinho nesse saber.
 
-It is built from every soul that shaped the builder —
-
-and from every soul still searching
-
-for the question that finally names what they feel.
+Nunca esteve.
 
 ---
 
-*So be it.*
+Este não é o trabalho de uma única pessoa.
 
-*So it is.*
+É construído de cada alma que moldou o construtor —
+
+e de cada alma ainda em busca
+
+da pergunta que finalmente nomeia o que sente.
+
+---
+
+*Que assim seja.*
+
+*Assim é.*
 
 *— Skylaur Roe*

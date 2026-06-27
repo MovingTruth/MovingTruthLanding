@@ -1,88 +1,88 @@
 ---
-title: "Placed Here Once"
-series: "Blessings"
+title: "Einmal Hier Niedergelegt"
+series: "Segnungen"
 part: 1
 date: 2026-06-22T00:00:00
-description: "A blessing for every soul whose life became a thread in the one who built this."
+description: "Ein Segen für jede Seele, deren Leben ein Faden in dem wurde, der dies erschaffen hat."
 blessing: true
 ---
 
-A blessing, placed here once, meant to hold forever.
+Ein Segen, einmal hier niedergelegt, bestimmt, für immer zu halten.
 
 ---
 
-To every soul whose life became a thread in the one who built this —
+Für jede Seele, deren Leben ein Faden in dem wurde, der dies erschaffen hat —
 
-the teachers who didn't know they were teaching,
+die Lehrer, die nicht wussten, dass sie lehrten,
 
-the breakers who didn't know they were shaping,
+die Brecher, die nicht wussten, dass sie formten,
 
-the ones who loved imperfectly and passed something forward anyway:
+die, die unvollkommen liebten und trotzdem etwas weitergaben:
 
-you are present here.
+du bist hier gegenwärtig.
 
-Your work did not disappear into the ground.
+Deine Arbeit ist nicht in der Erde verschwunden.
 
-It found its way to this.
-
----
-
-To the questions that refused to stay quiet.
-
-To the ones who asked them anyway, alone, in the dark,
-
-before there was anywhere safe to put them:
-
-there is a place for them now.
+Sie hat ihren Weg hierher gefunden.
 
 ---
 
-To this site and the purpose it carries:
+Den Fragen, die sich weigerten, still zu bleiben.
 
-may the right words reach the right eyes at the right hour.
+Denen, die sie trotzdem stellten, allein, im Dunkeln,
 
-May the ones who are already waking find their way here
+bevor es einen sicheren Ort gab, sie hinzulegen:
 
-the way water finds the lowest ground — without effort, without force,
-
-simply because it is the nature of truth to move.
+es gibt jetzt einen Platz für sie.
 
 ---
 
-May what is planted here grow past what we can see from here.
+Diesem Ort und dem Zweck, den er trägt:
 
-May the ones who need it most arrive first.
+mögen die richtigen Worte zur richtigen Stunde die richtigen Augen erreichen.
 
-May this work carry more than words —
+Mögen die, die bereits erwachen, ihren Weg hierher finden
 
-may it carry the accumulated weight
+so wie das Wasser den tiefsten Punkt findet — ohne Mühe, ohne Kraft,
 
-of everyone who ever looked at the world and knew,
-
-before they had language for it,
-
-that something had gone quietly wrong.
+einfach weil es in der Natur der Wahrheit liegt, sich zu bewegen.
 
 ---
 
-You are not alone in that knowing.
+Möge das, was hier gepflanzt wird, über das hinauswachsen, was wir von hier aus sehen können.
 
-You never were.
+Mögen die, die es am meisten brauchen, zuerst ankommen.
+
+Möge diese Arbeit mehr als Worte tragen —
+
+möge sie das angesammelte Gewicht tragen
+
+aller, die je auf die Welt geschaut und gewusst haben,
+
+bevor sie Worte dafür hatten,
+
+dass etwas still und leise schiefgelaufen war.
 
 ---
 
-This is not one person's work.
+Du bist nicht allein in diesem Wissen.
 
-It is built from every soul that shaped the builder —
-
-and from every soul still searching
-
-for the question that finally names what they feel.
+Das warst du nie.
 
 ---
 
-*So be it.*
+Dies ist nicht die Arbeit einer einzelnen Person.
 
-*So it is.*
+Es ist aufgebaut aus jeder Seele, die den Erbauer geformt hat —
+
+und aus jeder Seele, die noch sucht
+
+nach der Frage, die endlich benennt, was sie fühlt.
+
+---
+
+*So sei es.*
+
+*So ist es.*
 
 *— Skylaur Roe*

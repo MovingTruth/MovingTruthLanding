@@ -1,85 +1,85 @@
 ---
-title: "The Deal You Never Made"
-series: "Are You Free?"
+title: "Der Deal, Den Du Nie Gemacht Hast"
+series: "Bist Du Frei?"
 part: 1
 date: 2026-06-18T00:00:00
-description: "A release through the mirror."
+description: "Eine Befreiung durch den Spiegel."
 closingReflection: true
 ---
 
-You have been trading.
+Du hast gehandelt.
 
-Maybe you know this. Maybe you don't. But somewhere along the way, you made a deal — and the terms were never written down, never agreed to, never fair.
+Vielleicht weißt du das. Vielleicht nicht. Aber irgendwo auf dem Weg hast du einen Deal gemacht — und die Bedingungen wurden nie aufgeschrieben, nie vereinbart, nie fair.
 
-You traded your time for safety.
-Your voice for belonging.
-Your truth for approval.
-Your ease for someone else's comfort.
+Du hast deine Zeit gegen Sicherheit eingetauscht.
+Deine Stimme gegen Zugehörigkeit.
+Deine Wahrheit gegen Zustimmung.
+Deine Ruhe gegen den Komfort anderer.
 
-Some of these trades were made before you were old enough to refuse them. They came in the form of lessons, rules, warnings, silences. *This is how things work here. This is what love looks like. This is the price of being accepted.*
+Einige dieser Tausche wurden gemacht, bevor du alt genug warst, sie abzulehnen. Sie kamen in Form von Lektionen, Regeln, Warnungen, Schweigen. *So funktionieren die Dinge hier. So sieht Liebe aus. Das ist der Preis, akzeptiert zu werden.*
 
-You did not sign anything.
+Du hast nichts unterschrieben.
 
-But you paid anyway.
+Aber du hast trotzdem bezahlt.
 
-And some of you have been paying ever since.
-
----
-
-There is another kind of deal — one that doesn't involve choice at all.
-
-Some of you are carrying something that was never yours. A pattern that ran through your family before you arrived. A streak of things not quite working out. A sense that something has always been slightly against you — not dramatically, just persistently. Like a low hum of resistance in the wire.
-
-Some people call this a curse. That word is older and more honest than we give it credit for.
-
-What it means, simply, is this: something is running that you didn't start, and it has been using your life as its road.
-
-I am asking you to notice that now.
+Und einige von euch zahlen seitdem.
 
 ---
 
-Here is what happens when you see a deal clearly:
+Es gibt eine andere Art von Deal — einen, der gar keine Wahl beinhaltet.
 
-It loses some of its power.
+Einige von euch tragen etwas, das nie eures war. Ein Muster, das durch deine Familie lief, bevor du ankamst. Eine Reihe von Dingen, die nie ganz aufgehen. Ein Gefühl, dass etwas immer leicht gegen dich gewesen ist — nicht dramatisch, nur beharrlich. Wie ein leises Widerstandssummen im Draht.
 
-Not because of magic. Because of awareness. A deal only holds when both parties believe it must. When one person stops believing — really stops, not just wishes they could — the terms change.
+Manche Menschen nennen das einen Fluch. Dieses Wort ist älter und ehrlicher, als wir ihm zuschreiben.
 
-You are reading this because some part of you already knows there is a cost you have been paying that you never agreed to.
+Was es einfach bedeutet, ist dies: Etwas läuft, das du nicht gestartet hast, und es hat dein Leben als seinen Weg benutzt.
 
-That part of you brought you here.
-
----
-
-So here is what I want to offer.
-
-Not a ritual. Not a promise. Just a clear statement, read in the presence of someone willing to mean it.
-
-*I release any deal I made from fear.*
-
-*I release any deal made on my behalf before I could speak.*
-
-*I release any pattern running through me that I did not choose.*
-
-*I release the belief that I owe a debt I never incurred.*
-
-If something moved in you reading that — even slightly — then something shifted.
-
-That is enough.
+Ich bitte dich, das jetzt zu bemerken.
 
 ---
 
-As for luck and prosperity:
+Hier ist, was passiert, wenn du einen Deal klar siehst:
 
-These are not rewards for the deserving. They are what happens when resistance clears. When the thing that was running against you finally stops. When you stop spending energy maintaining a deal that was never yours to keep.
+Er verliert etwas von seiner Macht.
 
-You are allowed to receive.
-You are allowed to have things go well.
-You are allowed to be the version of yourself that didn't make those trades.
+Nicht durch Magie. Durch Bewusstsein. Ein Deal hält nur, wenn beide Parteien glauben, dass er es muss. Wenn eine Person aufhört zu glauben — wirklich aufhört, nicht nur wünscht, sie könnte — ändern sich die Bedingungen.
 
-That version is still here.
+Du liest das, weil ein Teil von dir bereits weiß, dass es Kosten gibt, die du bezahlt hast und denen du nie zugestimmt hast.
 
-It has been waiting.
+Dieser Teil von dir hat dich hierher gebracht.
 
 ---
 
-*You didn't need permission to be free. But now you have it anyway.*
+Also hier ist, was ich anbieten möchte.
+
+Kein Ritual. Kein Versprechen. Nur eine klare Aussage, gelesen in Gegenwart jemandes, der bereit ist, sie zu meinen.
+
+*Ich löse jeden Deal, den ich aus Angst gemacht habe.*
+
+*Ich löse jeden Deal, der in meinem Namen gemacht wurde, bevor ich sprechen konnte.*
+
+*Ich löse jedes Muster, das durch mich läuft und das ich nicht gewählt habe.*
+
+*Ich löse den Glauben, dass ich eine Schuld schulde, die ich nie eingegangen bin.*
+
+Wenn sich beim Lesen davon etwas in dir bewegte — auch nur leicht — dann hat sich etwas verschoben.
+
+Das genügt.
+
+---
+
+Was Glück und Wohlstand betrifft:
+
+Diese sind keine Belohnungen für die Würdigen. Sie sind das, was passiert, wenn Widerstand sich klärt. Wenn das, was gegen dich lief, endlich aufhört. Wenn du aufhörst, Energie darauf zu verwenden, einen Deal aufrechtzuerhalten, der nie deiner zu halten war.
+
+Du darfst empfangen.
+Du darfst haben, dass die Dinge gut gehen.
+Du darfst die Version von dir selbst sein, die diese Tausche nicht gemacht hat.
+
+Diese Version ist noch hier.
+
+Sie hat gewartet.
+
+---
+
+*Du brauchtest keine Erlaubnis, frei zu sein. Aber jetzt hast du sie trotzdem.*

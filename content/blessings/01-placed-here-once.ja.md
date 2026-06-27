@@ -1,88 +1,84 @@
 ---
-title: "Placed Here Once"
-series: "Blessings"
+title: "ここに、一度だけ"
+series: "祝福"
 part: 1
 date: 2026-06-22T00:00:00
-description: "A blessing for every soul whose life became a thread in the one who built this."
+description: "これを築いた者の中で、命が一本の糸となったすべての魂への祝福。"
 blessing: true
 ---
 
-A blessing, placed here once, meant to hold forever.
+ここに一度だけ置かれた祝福。永遠に保たれるように。
 
 ---
 
-To every soul whose life became a thread in the one who built this —
+これを築いた者の中で、命が一本の糸となったすべての魂へ——
 
-the teachers who didn't know they were teaching,
+教えていると知らずに教えた教師たちへ、
 
-the breakers who didn't know they were shaping,
+形を与えていると知らずに傷つけた者たちへ、
 
-the ones who loved imperfectly and passed something forward anyway:
+不完全に愛しながら、それでも何かを受け渡してくれた者たちへ：
 
-you are present here.
+あなたはここに存在している。
 
-Your work did not disappear into the ground.
+あなたの働きは土の中に消えなかった。
 
-It found its way to this.
-
----
-
-To the questions that refused to stay quiet.
-
-To the ones who asked them anyway, alone, in the dark,
-
-before there was anywhere safe to put them:
-
-there is a place for them now.
+それはここへの道を見つけた。
 
 ---
 
-To this site and the purpose it carries:
+静かにしていることを拒んだ問いへ。
 
-may the right words reach the right eyes at the right hour.
+安全な場所もなかった頃に、それでも暗闇の中で一人、問い続けた者たちへ：
 
-May the ones who are already waking find their way here
-
-the way water finds the lowest ground — without effort, without force,
-
-simply because it is the nature of truth to move.
+今、それらの場所がある。
 
 ---
 
-May what is planted here grow past what we can see from here.
+このサイトと、それが担う使命へ：
 
-May the ones who need it most arrive first.
+正しい言葉が、正しい目に、正しい時間に届きますように。
 
-May this work carry more than words —
+すでに目覚めつつある者たちがここへの道を見つけますように——
 
-may it carry the accumulated weight
+水が最も低い場所を見つけるように——努力なく、力なく、
 
-of everyone who ever looked at the world and knew,
-
-before they had language for it,
-
-that something had gone quietly wrong.
+ただ、真実が動くことを本質とするがゆえに。
 
 ---
 
-You are not alone in that knowing.
+ここに植えられたものが、ここから見えるものを超えて育ちますように。
 
-You never were.
+最も必要としている者たちが最初に到着しますように。
 
----
+この作品が言葉以上のものを運びますように——
 
-This is not one person's work.
+かつて世界を見て、言葉にする前から知っていた者たちの
 
-It is built from every soul that shaped the builder —
+積み重なった重みを運びますように——
 
-and from every soul still searching
-
-for the question that finally names what they feel.
+何かが静かに狂ってしまったと。
 
 ---
 
-*So be it.*
+あなたはその知の中で一人ではない。
 
-*So it is.*
+一度もそうではなかった。
+
+---
+
+これは一人の人間の作品ではない。
+
+それは作り手を形成したすべての魂から築かれ——
+
+そして、自分が感じていることをついに名前にしてくれる問いを
+
+まだ探し続けているすべての魂から。
+
+---
+
+*そうであれ。*
+
+*そうである。*
 
 *— Skylaur Roe*
