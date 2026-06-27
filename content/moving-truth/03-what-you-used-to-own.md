@@ -75,3 +75,9 @@ Not loudly. Not all at once. One convenience at a time, one upgrade at a time, o
 You used to own things.
 
 The question is: when did you stop, and who decided that you would?
+
+---
+
+*The facts in this piece are documented and verifiable.*
+
+- **Amazon deleting 1984:** Pogue, David. "Some E-Books Are More Equal Than Others." *The New York Times*, July 17, 2009. Amazon publicly acknowledged the deletion and issued refunds.

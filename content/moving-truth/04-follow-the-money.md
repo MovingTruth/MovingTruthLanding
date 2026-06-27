@@ -91,3 +91,17 @@ What they cannot show — what no spreadsheet can show — is who was in the roo
 Whether the room is still full.
 
 And whether they have already decided what comes next.
+
+---
+
+*The facts in this piece are documented and verifiable.*
+
+- **CEO-to-worker pay ratio (21:1 in 1965, 399:1 in 2021):** Mishel, Lawrence, and Jori Kandra. "CEO Pay Has Skyrocketed 1,322% Since 1978." Economic Policy Institute, August 10, 2021. epi.org
+- **Productivity vs. wage gap (1979–2020):** Economic Policy Institute. "The Productivity–Pay Gap." Updated 2022. epi.org/productivity-pay-gap
+- **Federal minimum wage ($7.25, unchanged since 2009):** US Department of Labor. "History of Federal Minimum Wage Rates Under the Fair Labor Standards Act." dol.gov
+- **Minimum wage if tracked productivity since 1968 (~$24):** Economic Policy Institute. "Minimum Wage Tracker." epi.org
+- **International minimum wages:** Government sources for each country — Canada (Employment and Social Development Canada), UK (Low Pay Commission), Australia (Fair Work Commission).
+- **Top marginal tax rates (91% in 1960, 28% in 1988, 37% today):** Tax Policy Center. "Historical Highest Marginal Income Tax Rates." taxpolicycenter.org
+- **Share buybacks legalised in 1982:** US Securities and Exchange Commission. Rule 10b-18, adopted November 17, 1982.
+- **$1 trillion in buybacks in 2018:** S&P 500 buyback data, widely reported. See also: Lazonick, William. "Profits Without Prosperity." *Harvard Business Review*, September 2014.
+- **400 wealthiest Americans own more than the bottom half combined:** Federal Reserve Distributional Financial Accounts data. See also Forbes 400 annual wealth estimates.
