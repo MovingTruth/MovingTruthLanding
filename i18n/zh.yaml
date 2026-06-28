@@ -58,6 +58,18 @@ series_parts:
 substack_label: "了解新内容到来时的消息。"
 substack_placeholder: "您的邮箱"
 
+reflect_unlock_final: "给自己一点时间。下一条路由你选择。"
+reflect_countdown_suffix: "秒"
+reflect_blessing_title: "让它进来。"
+reflect_blessing_sub: "你被守护着。"
+reflect_blessing_instruction: "给它三十秒到达你。"
+reflect_blessing_ready: "这份祝福是你的。"
+reflect_blessing_again: "再次接受这份祝福"
+reflect_closing_title: "让它发挥作用。"
+reflect_closing_sub: "话已经说了。"
+reflect_closing_instruction: "给它们三十秒。"
+reflect_closing_ready: "你自由了。"
+
 blessing_accept: 接受这份祝福
 blessing_free: 我自由了。
 blessing_stay: 留在身边

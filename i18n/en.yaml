@@ -16,8 +16,19 @@ reflect_title: Something in you already knew this.
 reflect_sub: The part that brought you here.
 reflect_instruction: Stay with it. Let it move through you.
 reflect_unlock: The next piece unlocks when this reaches zero.
+reflect_unlock_final: "Take a moment. Your next path is yours to choose."
 reflect_ready: "Now you can't unknow it."
 reflect_continue: Continue
+reflect_countdown_suffix: "s"
+reflect_blessing_title: "Let it in."
+reflect_blessing_sub: "You are being held."
+reflect_blessing_instruction: "Give it thirty seconds to reach you."
+reflect_blessing_ready: "This blessing is yours."
+reflect_blessing_again: "Accept this blessing again"
+reflect_closing_title: "Let it work."
+reflect_closing_sub: "The words have been spoken."
+reflect_closing_instruction: "Give them thirty seconds."
+reflect_closing_ready: "You are free."
 
 notice_title: Before you begin
 notice_body_1: These stories are written to be read in order. Each series is its own path — you can begin any series whenever you choose, but within a series you follow the pieces from the first.

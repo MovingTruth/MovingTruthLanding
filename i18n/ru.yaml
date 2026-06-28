@@ -16,8 +16,19 @@ reflect_title: Что-то внутри тебя уже знало это.
 reflect_sub: Та часть, которая привела тебя сюда.
 reflect_instruction: Побудь с этим. Позволь этому пройти сквозь тебя.
 reflect_unlock: Следующая часть откроется, когда счётчик достигнет нуля.
+reflect_unlock_final: "Возьми момент. Следующий путь твой, чтобы выбрать."
 reflect_ready: Теперь ты не можешь это не знать.
 reflect_continue: Продолжить
+reflect_countdown_suffix: "с"
+reflect_blessing_title: "Впусти это."
+reflect_blessing_sub: "Ты в надёжных руках."
+reflect_blessing_instruction: "Дай ему тридцать секунд, чтобы достичь тебя."
+reflect_blessing_ready: "Это благословение твоё."
+reflect_blessing_again: "Принять это благословение снова"
+reflect_closing_title: "Дай ему работать."
+reflect_closing_sub: "Слова были произнесены."
+reflect_closing_instruction: "Дай им тридцать секунд."
+reflect_closing_ready: "Ты свободен."
 
 notice_title: Прежде чем начать
 notice_body_1: Эти истории написаны для последовательного чтения. Каждая серия — это собственный путь. Ты можешь начать любую серию в любое время, но внутри серии следуй частям с самой первой.

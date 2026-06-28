@@ -16,8 +16,19 @@ reflect_title: Algo en ti ya lo sabía.
 reflect_sub: La parte que te trajo aquí.
 reflect_instruction: Quédate con ello. Deja que se mueva a través de ti.
 reflect_unlock: La siguiente parte se desbloqueará cuando esto llegue a cero.
+reflect_unlock_final: "Tómate un momento. El próximo camino es tuyo para elegir."
 reflect_ready: Ahora no puedes ignorarlo.
 reflect_continue: Continuar
+reflect_countdown_suffix: "s"
+reflect_blessing_title: "Déjalo entrar."
+reflect_blessing_sub: "Estás sostenido."
+reflect_blessing_instruction: "Dale treinta segundos para llegar a ti."
+reflect_blessing_ready: "Esta bendición es tuya."
+reflect_blessing_again: "Aceptar esta bendición de nuevo"
+reflect_closing_title: "Deja que trabaje."
+reflect_closing_sub: "Las palabras han sido pronunciadas."
+reflect_closing_instruction: "Dales treinta segundos."
+reflect_closing_ready: "Eres libre."
 
 notice_title: Antes de comenzar
 notice_body_1: Estas historias están escritas para leerse en orden. Cada serie es su propio camino — puedes comenzar cualquier serie cuando quieras, pero dentro de una serie sigues las partes desde la primera.

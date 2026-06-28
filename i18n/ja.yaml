@@ -16,8 +16,19 @@ reflect_title: あなたの中の何かがすでに知っていた。
 reflect_sub: あなたをここへ連れてきた部分が。
 reflect_instruction: それと共にいてください。あなたの中を流れさせてください。
 reflect_unlock: ゼロになったとき、次のパートが解放されます。
+reflect_unlock_final: "少し時間をとってください。次の道は、あなたが選ぶものです。"
 reflect_ready: もう知らないふりはできない。
 reflect_continue: 続ける
+reflect_countdown_suffix: "秒"
+reflect_blessing_title: "受け入れてください。"
+reflect_blessing_sub: "あなたは守られています。"
+reflect_blessing_instruction: "三十秒、それがあなたに届くまで待ってください。"
+reflect_blessing_ready: "この祝福はあなたのものです。"
+reflect_blessing_again: "もう一度この祝福を受け入れる"
+reflect_closing_title: "それを働かせてください。"
+reflect_closing_sub: "言葉はすでに語られました。"
+reflect_closing_instruction: "三十秒、それに時間を与えてください。"
+reflect_closing_ready: "あなたは自由です。"
 
 notice_title: 始める前に
 notice_body_1: これらのストーリーは順番に読むように書かれています。各シリーズは独自の道です——いつでも任意のシリーズを始めることができますが、シリーズ内では最初のパートから順に読み進めます。

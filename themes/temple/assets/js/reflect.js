@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var duration = 30;
   var started = false;
 
+  var d = overlay ? overlay.dataset : {};
+  var suffix = d.secondsSuffix || 's';
+
   var storageKey = isClosing
     ? 'mt_' + series + '_closing'
     : isBlessing
@@ -54,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function showBlessingOverlay() {
       if (blessingInterval) clearInterval(blessingInterval);
 
-      if (overlayTitle)       overlayTitle.textContent = 'Let it in.';
-      if (overlaySub)         overlaySub.textContent = 'You are being held.';
-      if (overlayInstruction) overlayInstruction.textContent = 'Give it thirty seconds to reach you.';
+      if (overlayTitle)       overlayTitle.textContent = d.blessingTitle;
+      if (overlaySub)         overlaySub.textContent = d.blessingSub;
+      if (overlayInstruction) overlayInstruction.textContent = d.blessingInstruction;
       if (overlayUnlock)      overlayUnlock.style.display = 'none';
       if (overlayReady)       overlayReady.style.display = 'none';
 
@@ -75,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
           MT.set('mt_' + series + '_reflected_' + currentPart);
           if (overlayTimer) overlayTimer.style.display = 'none';
           if (overlayReady) {
-            overlayReady.textContent = 'This blessing is yours.';
+            overlayReady.textContent = d.blessingReady;
             overlayReady.style.display = 'block';
           }
           if (blessingWrap) blessingWrap.style.display = 'none';
@@ -99,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (blessingBtn) {
       if (alreadyAccepted) {
-        blessingBtn.textContent = 'Accept this blessing again';
+        blessingBtn.textContent = blessingBtn.dataset.blessingAgain;
       }
       blessingBtn.addEventListener('click', function () {
         showBlessingOverlay();
@@ -120,14 +123,14 @@ document.addEventListener('DOMContentLoaded', function () {
       if (started) return;
       started = true;
 
-      if (overlayTitle) overlayTitle.textContent = 'Let it work.';
-      if (overlaySub) overlaySub.textContent = 'The words have been spoken.';
-      if (overlayInstruction) overlayInstruction.textContent = 'Give them thirty seconds.';
+      if (overlayTitle) overlayTitle.textContent = d.closingTitle;
+      if (overlaySub) overlaySub.textContent = d.closingSub;
+      if (overlayInstruction) overlayInstruction.textContent = d.closingInstruction;
       if (overlayUnlock) overlayUnlock.style.display = 'none';
       if (overlayReady) overlayReady.style.display = 'none';
       if (overlayContinue) {
         overlayContinue.style.display = 'none';
-        overlayContinue.textContent = 'I am free.';
+        overlayContinue.textContent = d.closingContinue;
         overlayContinue.classList.add('mt-reflect-continue--closing');
       }
 
@@ -145,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
           MT.set('mt_' + series + '_reflected_' + currentPart);
           if (overlayTimer) overlayTimer.style.display = 'none';
           if (overlayReady) {
-            overlayReady.textContent = 'You are free.';
+            overlayReady.textContent = d.closingReady;
             overlayReady.style.display = 'block';
           }
           var closingWrapEl = document.getElementById('piece-closing-wrap');
@@ -184,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     MT.set(storageKey);
 
     if (countdownEl) countdownEl.textContent = '';
-    if (messageEl) messageEl.textContent = 'Now you can\'t unknow it.';
+    if (messageEl) messageEl.textContent = d.ready;
 
     if (overlayTimer) overlayTimer.style.display = 'none';
     if (overlayUnlock) overlayUnlock.style.display = 'none';
@@ -235,28 +238,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var remaining = duration;
 
-    if (overlayTitle) overlayTitle.textContent = 'Something in you already knew this.';
-    if (overlaySub) overlaySub.textContent = 'The part that brought you here.';
-    if (overlayInstruction) overlayInstruction.textContent = 'Stay with it. Let it move through you.';
     if (overlayUnlock) {
-      overlayUnlock.textContent = isFinal
-        ? 'Take a moment. Your next path is yours to choose.'
-        : 'The next piece unlocks when this reaches zero.';
+      if (isFinal) overlayUnlock.textContent = d.unlockFinal;
       overlayUnlock.style.display = '';
     }
-    if (overlayContinue) overlayContinue.textContent = 'Continue';
 
     if (overlay) { overlay.style.display = 'flex'; overlay.focus(); }
     if (overlayTimer) {
       overlayTimer.textContent = remaining;
       overlayTimer.style.display = '';
     }
-    if (countdownEl) countdownEl.textContent = remaining + 's';
+    if (countdownEl) countdownEl.textContent = remaining + suffix;
 
     var interval = setInterval(function () {
       remaining -= 1;
       if (overlayTimer) overlayTimer.textContent = remaining;
-      if (countdownEl) countdownEl.textContent = remaining + 's';
+      if (countdownEl) countdownEl.textContent = remaining + suffix;
 
       if (remaining <= 0) {
         clearInterval(interval);
