@@ -1,6 +1,7 @@
 nav_series: 系列
 nav_gallery: 图库
 nav_whats_new: 最新内容
+nav_apps: "应用"
 nav_support: 支持这项工作
 nav_skip: 跳至主要内容
 
@@ -76,3 +77,11 @@ blessing_free: 我自由了。
 blessing_stay: 留在身边
 blessing_return: 回到开始
 blessing_reset: 重置我的进度
+
+mission_statement: "Moving Truth是一份邀请，而非指令。"
+mission_ask_1: "我们不要求你相信我们。"
+mission_ask_2: "我们请求你保持好奇。"
+mission_ask_3: "质疑你所知道的。"
+mission_ask_4: "审视你所继承的。"
+mission_ask_5: "诚实地比较各种观点。"
+mission_ask_6: "追随证据、经验、历史与智慧，无论它们指向何处。"

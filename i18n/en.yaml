@@ -1,6 +1,7 @@
 nav_series: Series
 nav_gallery: Gallery
 nav_whats_new: "What's New"
+nav_apps: "Apps"
 nav_support: Support the work
 nav_skip: Skip to main content
 
@@ -76,3 +77,11 @@ blessing_free: I am free.
 blessing_stay: Stay close
 blessing_return: Return to the beginning
 blessing_reset: Reset my progress
+
+mission_statement: "Moving Truth is an invitation, not an instruction."
+mission_ask_1: "We do not ask you to believe us."
+mission_ask_2: "We ask you to become curious."
+mission_ask_3: "To question what you know."
+mission_ask_4: "To examine what you have inherited."
+mission_ask_5: "To compare ideas with honesty."
+mission_ask_6: "To follow evidence, experience, history, and wisdom wherever they lead."

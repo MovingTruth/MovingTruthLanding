@@ -1,6 +1,7 @@
 nav_series: Séries
 nav_gallery: Galerie
 nav_whats_new: Nouveautés
+nav_apps: "Applications"
 nav_support: Soutenir le travail
 nav_skip: Aller au contenu principal
 
@@ -76,3 +77,11 @@ blessing_free: Je suis libre.
 blessing_stay: Reste proche
 blessing_return: Retour au début
 blessing_reset: Réinitialiser ma progression
+
+mission_statement: "Moving Truth est une invitation, pas une instruction."
+mission_ask_1: "Nous ne vous demandons pas de nous croire."
+mission_ask_2: "Nous vous demandons de devenir curieux."
+mission_ask_3: "De remettre en question ce que vous savez."
+mission_ask_4: "D'examiner ce que vous avez hérité."
+mission_ask_5: "De comparer les idées avec honnêteté."
+mission_ask_6: "De suivre les preuves, l'expérience, l'histoire et la sagesse, où qu'elles mènent."
