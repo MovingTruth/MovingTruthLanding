@@ -46,9 +46,10 @@ new_loading: Dein Leserverlauf wird überprüft…
 new_nothing: Nichts Neues in den letzten 14 Tagen — aber etwas kommt immer.
 new_caught_up: Du bist auf dem neuesten Stand.
 new_back: "← Zurück zu den Serien"
+new_out_of_order: "Diese Serie hat einen Anfang. Wir bringen dich dorthin."
 new_today: heute
 new_yesterday: gestern
-new_days_ago: "vor %d Tagen"
+new_days_ago: "vor {{ . }} Tagen"
 
 theme_dark: Dunkel
 theme_light: Hell

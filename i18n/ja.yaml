@@ -46,9 +46,10 @@ new_loading: 読書履歴を確認中…
 new_nothing: 過去14日間に新着はありません——でも何かは常に来ています。
 new_caught_up: 最新の状態です。
 new_back: ← シリーズに戻る
+new_out_of_order: "このシリーズには始まりがあります。そこへお連れします。"
 new_today: 今日
 new_yesterday: 昨日
-new_days_ago: "%d日前"
+new_days_ago: "{{ . }}日前"
 
 theme_dark: ダーク
 theme_light: ライト

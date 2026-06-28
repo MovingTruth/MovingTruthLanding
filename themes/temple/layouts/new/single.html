@@ -20,51 +20,56 @@
   {{ if not .Params.menuOnly }}
     {{ range .Pages }}
       {{ if .Params.part }}
-        {{ $item := dict "slug" .Section "part" .Params.part "title" .Title "url" .Permalink "series" .Parent.Title "date" (.Date.Format "2006-01-02") }}
+        {{ $free := or .Params.blessing .Parent.Params.freeAccess }}
+        {{ $item := dict "slug" .Section "part" .Params.part "title" .Title "url" .Permalink "series" .Parent.Title "date" (.Date.Format "2006-01-02") "free" $free }}
         {{ $allPieces = $allPieces | append $item }}
       {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
 
-<section class="new-page">
-  <h1 class="page-title">What's New</h1>
+<section class="new-page" data-redirect-msg="{{ i18n "new_out_of_order" }}">
+  <h1 class="page-title">{{ i18n "nav_whats_new" }}</h1>
 
   <div class="new-section">
-    <h2 class="new-section__heading">Added in the last 14 days</h2>
+    <h2 class="new-section__heading">{{ i18n "new_added_heading" }}</h2>
     {{ if $recent }}
     <div class="new-list">
       {{ range $recent }}
       {{ $days := int (math.Floor (div (now.Sub .Date).Hours 24)) }}
-      <a href="{{ .Permalink }}" class="new-item">
+      {{ $free := or .Params.blessing .Parent.Params.freeAccess }}
+      <a href="{{ .Permalink }}" class="new-item"
+        data-slug="{{ .Section }}"
+        data-part="{{ .Params.part }}"
+        {{ if $free }}data-free="true"{{ end }}>
         <span class="new-item__series">{{ .Parent.Title }}</span>
         <span class="new-item__dot">·</span>
         <span class="new-item__title">{{ .Title }}</span>
         <span class="new-item__when">
-          {{- if eq $days 0 -}}today
-          {{- else if eq $days 1 -}}yesterday
-          {{- else -}}{{ $days }} days ago
+          {{- if eq $days 0 -}}{{ i18n "new_today" }}
+          {{- else if eq $days 1 -}}{{ i18n "new_yesterday" }}
+          {{- else -}}{{ i18n "new_days_ago" $days }}
           {{- end -}}
         </span>
       </a>
       {{ end }}
     </div>
     {{ else }}
-    <p class="new-empty">Nothing new in the last 14 days — but something is always coming.</p>
+    <p class="new-empty">{{ i18n "new_nothing" }}</p>
     {{ end }}
   </div>
 
   <div class="new-section">
-    <h2 class="new-section__heading">You haven't read yet</h2>
-    <div class="new-list" id="mt-unread-list">
-      <p class="new-loading">Checking your reading history…</p>
+    <h2 class="new-section__heading">{{ i18n "new_unread_heading" }}</h2>
+    <div class="new-list" id="mt-unread-list" data-caught-up="{{ i18n "new_caught_up" }}">
+      <p class="new-loading">{{ i18n "new_loading" }}</p>
     </div>
   </div>
 
   <script id="mt-all-pieces" type="application/json">{{ $allPieces | jsonify | safeJS }}</script>
 
   <div class="new-back">
-    <a href="{{ "series" | relURL }}" class="new-back-link">← Back to Series</a>
+    <a href="{{ "series" | relURL }}" class="new-back-link">{{ i18n "new_back" }}</a>
   </div>
 </section>
 {{ end }}

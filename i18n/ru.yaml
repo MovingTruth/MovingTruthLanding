@@ -46,9 +46,10 @@ new_loading: Проверяем историю чтения…
 new_nothing: Ничего нового за последние 14 дней — но что-то всегда грядёт.
 new_caught_up: Ты в курсе всего.
 new_back: "← Назад к сериям"
+new_out_of_order: "У этой серии есть начало. Мы отведём тебя туда."
 new_today: сегодня
 new_yesterday: вчера
-new_days_ago: "%d дней назад"
+new_days_ago: "{{ . }} дней назад"
 
 theme_dark: Тёмная
 theme_light: Светлая

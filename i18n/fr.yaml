@@ -46,9 +46,10 @@ new_loading: Vérification de ton historique de lecture…
 new_nothing: Rien de nouveau ces 14 derniers jours — mais quelque chose arrive toujours.
 new_caught_up: Tu es à jour.
 new_back: "← Retour aux séries"
+new_out_of_order: "Cette série a un début. Nous vous y emmenons."
 new_today: aujourd'hui
 new_yesterday: hier
-new_days_ago: "il y a %d jours"
+new_days_ago: "il y a {{ . }} jours"
 
 theme_dark: Sombre
 theme_light: Clair
