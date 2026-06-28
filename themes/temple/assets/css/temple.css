@@ -2359,6 +2359,42 @@ body.landing-split {
 
 .new-back-link:hover { color: var(--accent); }
 
+.new-gallery-strip {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.new-gallery-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-decoration: none;
+  width: 140px;
+  flex-shrink: 0;
+  transition: opacity 0.15s;
+}
+
+.new-gallery-thumb:hover { opacity: 0.8; }
+
+.new-gallery-thumb img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.new-gallery-thumb__title {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
 .new-redirect-toast {
   position: fixed;
   bottom: 2rem;

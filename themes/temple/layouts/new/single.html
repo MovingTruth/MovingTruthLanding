@@ -59,6 +59,23 @@
     {{ end }}
   </div>
 
+  {{ $recentGallery := where .Site.RegularPages "Section" "gallery" }}
+  {{ $recentGallery = where $recentGallery "Date" "ge" $cutoff }}
+  {{ $recentGallery = sort $recentGallery "Date" "desc" }}
+  {{ if $recentGallery }}
+  <div class="new-section">
+    <h2 class="new-section__heading">{{ i18n "new_gallery_heading" }}</h2>
+    <div class="new-gallery-strip">
+      {{ range $recentGallery }}
+      <a href="{{ "gallery" | relURL }}" class="new-gallery-thumb">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
+        <span class="new-gallery-thumb__title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
   <div class="new-section">
     <h2 class="new-section__heading">{{ i18n "new_unread_heading" }}</h2>
     <div class="new-list" id="mt-unread-list" data-caught-up="{{ i18n "new_caught_up" }}">
