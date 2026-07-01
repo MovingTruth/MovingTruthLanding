@@ -1,6 +1,19 @@
 {{ define "main" }}
 {{ $cutoff := now.AddDate 0 0 -14 }}
 <section class="series-menu">
+
+  <div class="mt-mission">
+    <p class="mt-mission__statement">{{ i18n "mission_statement" }}</p>
+    <div class="mt-mission__asks">
+      <p>{{ i18n "mission_ask_1" }}</p>
+      <p>{{ i18n "mission_ask_2" }}</p>
+      <p>{{ i18n "mission_ask_3" }}</p>
+      <p>{{ i18n "mission_ask_4" }}</p>
+      <p>{{ i18n "mission_ask_5" }}</p>
+      <p>{{ i18n "mission_ask_6" }}</p>
+    </div>
+  </div>
+
   <h1 class="page-title">The Series</h1>
   <p class="page-intro">Each series is a path. Choose where to begin.</p>
   <p class="page-intro-sub">More arrives regularly. Something you need may not exist yet — but it will. <a href="{{ "new" | relURL }}" class="whats-new-link">What's new →</a></p>

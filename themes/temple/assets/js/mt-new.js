@@ -1,24 +1,86 @@
 document.addEventListener('DOMContentLoaded', function () {
   var el = document.getElementById('mt-all-pieces');
   var container = document.getElementById('mt-unread-list');
-  if (!el || !container) return;
+  if (!el) return;
 
   var pieces;
-  try { pieces = JSON.parse(el.textContent); } catch (e) { container.innerHTML = ''; return; }
+  try { pieces = JSON.parse(el.textContent); } catch (e) { if (container) container.innerHTML = ''; return; }
 
-  var unread = pieces.filter(function (p) {
-    return !MT.get('mt_' + p.slug + '_reflected_' + p.part);
+  // Build series map: slug → array of pieces sorted by part number
+  var seriesMap = {};
+  pieces.forEach(function (p) {
+    if (!seriesMap[p.slug]) seriesMap[p.slug] = [];
+    seriesMap[p.slug].push(p);
+  });
+  Object.keys(seriesMap).forEach(function (slug) {
+    seriesMap[slug].sort(function (a, b) { return a.part - b.part; });
   });
 
-  if (!unread.length) {
+  // Given a target piece, return the correct entry point:
+  // the first unread part before it, or the piece itself if all prior parts are done.
+  function entryPoint(target) {
+    var list = seriesMap[target.slug] || [];
+    for (var i = 0; i < list.length; i++) {
+      var p = list[i];
+      if (p.part >= target.part) break;
+      if (!MT.get('mt_' + p.slug + '_reflected_' + p.part)) return p;
+    }
+    return target;
+  }
+
+  // Return the first unread piece in a series, or null if all complete.
+  function firstUnread(slug) {
+    var list = seriesMap[slug] || [];
+    for (var i = 0; i < list.length; i++) {
+      var p = list[i];
+      if (!MT.get('mt_' + p.slug + '_reflected_' + p.part)) return p;
+    }
+    return null;
+  }
+
+  // ── "Added in last 14 days" — intercept links, redirect if prerequisites unread ──
+  var recentList = document.getElementById('mt-recent-list');
+  if (recentList) {
+    recentList.querySelectorAll('.new-item').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var href = link.getAttribute('href');
+        if (!href) return;
+        var target = null;
+        pieces.forEach(function (p) {
+          try {
+            if (new URL(p.url).pathname === new URL(href, window.location.href).pathname) target = p;
+          } catch (_) {
+            if (p.url === href) target = p;
+          }
+        });
+        if (!target) return;
+        var entry = entryPoint(target);
+        if (entry.url !== target.url) {
+          e.preventDefault();
+          window.location.href = entry.url;
+        }
+      });
+    });
+  }
+
+  // ── "You haven't read yet" — show first unread piece per series ──
+  if (!container) return;
+
+  var unreadEntries = [];
+  Object.keys(seriesMap).forEach(function (slug) {
+    var p = firstUnread(slug);
+    if (p) unreadEntries.push(p);
+  });
+
+  if (!unreadEntries.length) {
     container.innerHTML = '<p class="new-empty">You\'re all caught up.</p>';
     return;
   }
 
-  unread.sort(function (a, b) { return b.date < a.date ? -1 : b.date > a.date ? 1 : 0; });
+  unreadEntries.sort(function (a, b) { return b.date < a.date ? -1 : b.date > a.date ? 1 : 0; });
 
   var html = '';
-  unread.forEach(function (p) {
+  unreadEntries.forEach(function (p) {
     html += '<a href="' + p.url + '" class="new-item">'
       + '<span class="new-item__series">' + p.series + '</span>'
       + '<span class="new-item__dot">·</span>'

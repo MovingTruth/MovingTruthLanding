@@ -54,14 +54,15 @@ document.addEventListener('DOMContentLoaded', function () {
     function showBlessingOverlay() {
       if (blessingInterval) clearInterval(blessingInterval);
 
-      if (overlayTitle)       overlayTitle.textContent = 'Let it in.';
-      if (overlaySub)         overlaySub.textContent = 'You are being held.';
-      if (overlayInstruction) overlayInstruction.textContent = 'Give it thirty seconds to reach you.';
+      var i18n = window.MT_I18N || {};
+      if (overlayTitle)       overlayTitle.textContent = i18n.blessing_title || 'Let it in.';
+      if (overlaySub)         overlaySub.textContent = i18n.blessing_sub || 'You are being held.';
+      if (overlayInstruction) overlayInstruction.textContent = i18n.blessing_instruction || 'Give it thirty seconds to reach you.';
       if (overlayUnlock)      overlayUnlock.style.display = 'none';
       if (overlayReady)       overlayReady.style.display = 'none';
       if (overlayContinue) {
         overlayContinue.style.display = 'none';
-        overlayContinue.textContent = 'I receive this.';
+        overlayContinue.textContent = (window.MT_I18N || {}).blessing_continue || 'I receive this.';
         overlayContinue.removeEventListener('click', onBlessingContinue);
       }
 
@@ -80,11 +81,14 @@ document.addEventListener('DOMContentLoaded', function () {
           MT.set('mt_' + series + '_reflected_' + currentPart);
           if (overlayTimer) overlayTimer.style.display = 'none';
           if (overlayReady) {
-            overlayReady.textContent = 'This blessing is yours.';
+            overlayReady.textContent = (window.MT_I18N || {}).blessing_done || 'This blessing is yours.';
             overlayReady.style.display = 'block';
           }
           if (blessingWrap) blessingWrap.style.display = 'none';
-          setTimeout(function () { dismissOverlay(); }, 1500);
+          if (overlayContinue) {
+            overlayContinue.style.display = '';
+            overlayContinue.addEventListener('click', function () { dismissOverlay(); }, { once: true });
+          }
         }
       }, 1000);
       window.addEventListener('pagehide', function () { clearInterval(blessingInterval); }, { once: true });
@@ -104,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (blessingBtn) {
       if (alreadyAccepted) {
-        blessingBtn.textContent = 'Accept this blessing again';
+        blessingBtn.textContent = (window.MT_I18N || {}).blessing_accept_again || 'Accept this blessing again';
       }
       blessingBtn.addEventListener('click', function () {
         showBlessingOverlay();
@@ -125,14 +129,15 @@ document.addEventListener('DOMContentLoaded', function () {
       if (started) return;
       started = true;
 
-      if (overlayTitle) overlayTitle.textContent = 'Let it work.';
-      if (overlaySub) overlaySub.textContent = 'The words have been spoken.';
-      if (overlayInstruction) overlayInstruction.textContent = 'Give them thirty seconds.';
+      var i18n = window.MT_I18N || {};
+      if (overlayTitle) overlayTitle.textContent = i18n.closing_title || 'Let it work.';
+      if (overlaySub) overlaySub.textContent = i18n.closing_sub || 'The words have been spoken.';
+      if (overlayInstruction) overlayInstruction.textContent = i18n.closing_instruction || 'Give them thirty seconds.';
       if (overlayUnlock) overlayUnlock.style.display = 'none';
       if (overlayReady) overlayReady.style.display = 'none';
       if (overlayContinue) {
         overlayContinue.style.display = 'none';
-        overlayContinue.textContent = 'I am free.';
+        overlayContinue.textContent = i18n.closing_continue || 'I am free.';
         overlayContinue.classList.add('mt-reflect-continue--closing');
       }
 
@@ -150,12 +155,15 @@ document.addEventListener('DOMContentLoaded', function () {
           MT.set('mt_' + series + '_reflected_' + currentPart);
           if (overlayTimer) overlayTimer.style.display = 'none';
           if (overlayReady) {
-            overlayReady.textContent = 'You are free.';
+            overlayReady.textContent = (window.MT_I18N || {}).closing_done || 'You are free.';
             overlayReady.style.display = 'block';
           }
           var closingWrapEl = document.getElementById('piece-closing-wrap');
           if (closingWrapEl) closingWrapEl.style.display = 'none';
-          setTimeout(function () { dismissOverlay(); }, 1500);
+          if (overlayContinue) {
+            overlayContinue.style.display = '';
+            overlayContinue.addEventListener('click', function () { dismissOverlay(); }, { once: true });
+          }
         }
       }, 1000);
       window.addEventListener('pagehide', function () { clearInterval(interval); }, { once: true });
@@ -189,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
     MT.set(storageKey);
 
     if (countdownEl) countdownEl.textContent = '';
-    if (messageEl) messageEl.textContent = 'Now you can\'t unknow it.';
+    if (messageEl) messageEl.textContent = (window.MT_I18N || {}).reflect_message || 'Now you can\'t unknow it.';
 
     if (overlayTimer) overlayTimer.style.display = 'none';
     if (overlayUnlock) overlayUnlock.style.display = 'none';
@@ -203,22 +211,25 @@ document.addEventListener('DOMContentLoaded', function () {
     var actionWrapEl = document.getElementById('piece-action-wrap');
     if (actionWrapEl) actionWrapEl.style.display = 'none';
 
-    setTimeout(function () {
-      dismissOverlay();
-      if (!isFinal) {
-        setTimeout(function () {
-          var supportLink = document.querySelector('.support-link');
-          if (supportLink) {
-            supportLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            void supportLink.offsetWidth;
-            supportLink.classList.add('support-link--pulse');
-            supportLink.addEventListener('animationend', function () {
-              supportLink.classList.remove('support-link--pulse');
-            }, { once: true });
-          }
-        }, 700);
-      }
-    }, 1500);
+    if (overlayContinue) {
+      overlayContinue.style.display = '';
+      overlayContinue.addEventListener('click', function () {
+        dismissOverlay();
+        if (!isFinal) {
+          setTimeout(function () {
+            var supportLink = document.querySelector('.support-link');
+            if (supportLink) {
+              supportLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              void supportLink.offsetWidth;
+              supportLink.classList.add('support-link--pulse');
+              supportLink.addEventListener('animationend', function () {
+                supportLink.classList.remove('support-link--pulse');
+              }, { once: true });
+            }
+          }, 700);
+        }
+      }, { once: true });
+    }
   }
 
   // Already reflected — unlock immediately, hide prompt
@@ -240,16 +251,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var remaining = duration;
 
-    if (overlayTitle) overlayTitle.textContent = 'Something in you already knew this.';
-    if (overlaySub) overlaySub.textContent = 'The part that brought you here.';
-    if (overlayInstruction) overlayInstruction.textContent = 'Stay with it. Let it move through you.';
+    var i18n = window.MT_I18N || {};
+    if (overlayTitle) overlayTitle.textContent = i18n.reflect_title || 'Something in you already knew this.';
+    if (overlaySub) overlaySub.textContent = i18n.reflect_sub || 'The part that brought you here.';
+    if (overlayInstruction) overlayInstruction.textContent = i18n.reflect_instruction || 'Stay with it. Let it move through you.';
     if (overlayUnlock) {
       overlayUnlock.textContent = isFinal
-        ? 'Take a moment. Your next path is yours to choose.'
-        : 'The next piece unlocks when this reaches zero.';
+        ? (i18n.reflect_unlock_final || 'Take a moment. Your next path is yours to choose.')
+        : (i18n.reflect_unlock || 'The next piece unlocks when this reaches zero.');
       overlayUnlock.style.display = '';
     }
-    if (overlayContinue) overlayContinue.textContent = 'Continue';
+    if (overlayContinue) overlayContinue.textContent = i18n.reflect_continue || 'Continue';
 
     if (overlay) { overlay.style.display = 'flex'; overlay.focus(); }
     if (overlayTimer) {

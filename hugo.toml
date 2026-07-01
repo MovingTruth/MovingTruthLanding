@@ -54,6 +54,25 @@ defaultContentLanguageInSubdir = false
     weight = 8
     [languages.zh.params]
       tagline = "那些我们从未被鼓励去问的问题。"
+  [languages.ar]
+    label = "العربية"
+    locale = "ar-SA"
+    weight = 9
+    [languages.ar.params]
+      tagline = "أسئلة لم يُشجَّع أحدٌ منّا على طرحها."
+      dir = "rtl"
+  [languages.ko]
+    label = "한국어"
+    locale = "ko-KR"
+    weight = 10
+    [languages.ko.params]
+      tagline = "우리 중 누구도 물어보도록 격려받지 못한 질문들."
+  [languages.th]
+    label = "ภาษาไทย"
+    locale = "th-TH"
+    weight = 11
+    [languages.th.params]
+      tagline = "คำถามที่พวกเราไม่เคยได้รับการสนับสนุนให้ถาม"
 
 [params]
   author        = "Skylaur Roe"

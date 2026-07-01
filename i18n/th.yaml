@@ -1,0 +1,81 @@
+nav_series: ชุดเรื่อง
+nav_gallery: แกลเลอรี
+nav_whats_new: มีอะไรใหม่
+nav_support: สนับสนุนงานนี้
+nav_skip: ข้ามไปยังเนื้อหาหลัก
+
+menu_navigate: นำทาง
+menu_home: หน้าหลัก
+menu_all_series: ทุกชุดเรื่อง
+menu_more: เพิ่มเติม
+menu_about: เกี่ยวกับเว็บไซต์นี้
+menu_from_creator: จากผู้สร้าง
+menu_reset: รีเซ็ตความคืบหน้า
+
+reflect_title: บางส่วนในตัวคุณรู้เรื่องนี้อยู่แล้ว
+reflect_sub: ส่วนที่นำคุณมาที่นี่
+reflect_instruction: อยู่กับมัน ให้มันเคลื่อนผ่านคุณ
+reflect_unlock: ชิ้นต่อไปจะปลดล็อกเมื่อนับถึงศูนย์
+reflect_unlock_final: หยุดสักครู่ เส้นทางต่อไปเป็นของคุณที่จะเลือก
+reflect_ready: "ตอนนี้คุณไม่อาจแกล้งทำเป็นว่าไม่รู้แล้ว"
+reflect_continue: ดำเนินต่อ
+reflect_message: "ตอนนี้คุณไม่อาจแกล้งทำเป็นว่าไม่รู้แล้ว"
+
+blessing_title: ปล่อยให้มันเข้ามา
+blessing_sub: คุณได้รับการดูแล
+blessing_instruction: ให้เวลามันสักครู่เพื่อมาถึงคุณ
+blessing_continue: ฉันรับสิ่งนี้
+blessing_done: พรนี้เป็นของคุณ
+blessing_accept_again: รับพรนี้อีกครั้ง
+
+closing_title: ปล่อยให้มันทำงาน
+closing_sub: คำพูดได้ถูกกล่าวแล้ว
+closing_instruction: ให้เวลาพวกมันสักครู่
+closing_continue: ฉันเป็นอิสระ
+closing_done: คุณเป็นอิสระ
+
+reset_confirm: "รีเซ็ตความคืบหน้าการอ่านทั้งหมดในทุกชุดเรื่อง? คุณจะเริ่มต้นใหม่"
+
+notice_title: ก่อนเริ่มต้น
+notice_body_1: เรื่องราวเหล่านี้เขียนขึ้นเพื่อให้อ่านตามลำดับ แต่ละชุดเรื่องเป็นเส้นทางของตัวเอง — คุณสามารถเริ่มชุดใดก็ได้ที่ต้องการ แต่ภายในชุดเรื่อง ให้ทำตามชิ้นส่วนตั้งแต่ชิ้นแรก
+notice_body_2: เมื่อคุณถึงจุดสิ้นสุดของแต่ละชิ้น คุณจะถูกขอให้นั่งอยู่กับมันสักสามสิบวินาทีก่อนดำเนินต่อ เมื่ออ่านชุดเรื่องจบแล้ว คุณสามารถกลับไปยังส่วนใดก็ได้เมื่อใดก็ได้
+notice_body_3: คุณสามารถรีเซ็ตความคืบหน้าและอ่านใหม่อีกครั้งได้เสมอ
+notice_btn: ฉันพร้อมแล้ว
+
+footer_how_works: วิธีการทำงาน
+footer_change_theme: เปลี่ยนธีม
+footer_reset: รีเซ็ตความคืบหน้า
+
+new_added_heading: เพิ่มในช่วง 14 วันที่ผ่านมา
+new_unread_heading: "ที่คุณยังไม่ได้อ่าน"
+new_loading: กำลังตรวจสอบประวัติการอ่านของคุณ…
+new_nothing: ไม่มีสิ่งใหม่ในช่วง 14 วันที่ผ่านมา — แต่มีบางสิ่งกำลังจะมาเสมอ
+new_caught_up: คุณอ่านทุกอย่างแล้ว
+new_back: "← กลับไปยังชุดเรื่อง"
+new_today: วันนี้
+new_yesterday: เมื่อวาน
+new_days_ago: "%d วันที่แล้ว"
+
+theme_dark: มืด
+theme_light: สว่าง
+theme_series: ชุดเรื่อง
+theme_backbone: หลักกระดูกสันหลัง
+theme_other: เส้นทางอื่น
+theme_remember: จำการเลือกของฉัน
+
+parts_all: ทุกชิ้น
+series_all: ทุกชุดเรื่อง
+
+blessing_accept: รับพรนี้
+blessing_free: ฉันเป็นอิสระ
+blessing_stay: อยู่ใกล้ๆ
+blessing_return: กลับไปยังจุดเริ่มต้น
+blessing_reset: รีเซ็ตความคืบหน้าของฉัน
+
+mission_statement: Moving Truth คือคำเชิญ ไม่ใช่คำสั่ง
+mission_ask_1: เราไม่ได้ขอให้คุณเชื่อเรา
+mission_ask_2: เราขอให้คุณเปิดใจอยากรู้
+mission_ask_3: ตั้งคำถามกับสิ่งที่คุณรู้
+mission_ask_4: ตรวจสอบสิ่งที่คุณสืบทอดมา
+mission_ask_5: เปรียบเทียบความคิดอย่างซื่อสัตย์
+mission_ask_6: ติดตามหลักฐาน ประสบการณ์ ประวัติศาสตร์ และปัญญา ไม่ว่าจะนำไปสู่ที่ใด

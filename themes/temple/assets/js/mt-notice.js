@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function doReset(e) {
     if (e) e.preventDefault();
-    if (!confirm('Reset all reading progress across every series? You\'ll start fresh.')) return;
+    var msg = (window.MT_I18N || {}).reset_confirm || 'Reset all reading progress across every series? You\'ll start fresh.';
+    if (!confirm(msg)) return;
     MT.keysStartingWith('mt_').forEach(function (k) {
       if (k !== 'mt_theme' && k !== 'mt_theme_remember') MT.remove(k);
     });

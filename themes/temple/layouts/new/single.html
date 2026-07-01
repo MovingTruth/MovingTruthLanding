@@ -33,7 +33,7 @@
   <div class="new-section">
     <h2 class="new-section__heading">Added in the last 14 days</h2>
     {{ if $recent }}
-    <div class="new-list">
+    <div class="new-list" id="mt-recent-list">
       {{ range $recent }}
       {{ $days := int (math.Floor (div (now.Sub .Date).Hours 24)) }}
       <a href="{{ .Permalink }}" class="new-item">

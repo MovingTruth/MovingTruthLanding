@@ -1,0 +1,81 @@
+nav_series: المتسلسلة
+nav_gallery: المعرض
+nav_whats_new: الجديد
+nav_support: ادعم هذا العمل
+nav_skip: انتقل إلى المحتوى الرئيسي
+
+menu_navigate: تصفّح
+menu_home: الرئيسية
+menu_all_series: جميع المتسلسلات
+menu_more: المزيد
+menu_about: عن هذا الموقع
+menu_from_creator: من المؤلف
+menu_reset: إعادة تعيين التقدم
+
+reflect_title: شيء فيك كان يعرف هذا بالفعل.
+reflect_sub: ذلك الجزء الذي أحضرك إلى هنا.
+reflect_instruction: ابقَ معه. دعه يعبر من خلالك.
+reflect_unlock: الجزء التالي يُفتح حين تنتهي العدّة.
+reflect_unlock_final: خذ لحظة. مسارك التالي لك وحدك تختاره.
+reflect_ready: "الآن لا يمكنك أن تتظاهر بأنك لا تعلم."
+reflect_continue: متابعة
+reflect_message: "الآن لا يمكنك أن تتظاهر بأنك لا تعلم."
+
+blessing_title: دعه يصل إليك.
+blessing_sub: أنت محاط بالرعاية.
+blessing_instruction: أعطِه ثلاثين ثانية ليصلك.
+blessing_continue: أتلقّاه.
+blessing_done: هذه البركة لك.
+blessing_accept_again: اقبل هذه البركة مرة أخرى
+
+closing_title: دعه يعمل.
+closing_sub: قيلت الكلمات.
+closing_instruction: أعطِها ثلاثين ثانية.
+closing_continue: أنا حر.
+closing_done: أنت حر.
+
+reset_confirm: "إعادة تعيين كل تقدم القراءة في جميع المتسلسلات؟ ستبدأ من جديد."
+
+notice_title: قبل أن تبدأ
+notice_body_1: كُتبت هذه المقالات لتُقرأ بالترتيب. كل متسلسلة مسار مستقل — يمكنك البدء بأي متسلسلة تختارها، لكن داخل المتسلسلة تتبع الأجزاء من الأول.
+notice_body_2: حين تصل إلى نهاية كل جزء، ستُطلب منك لحظة للتأمل — ثلاثون ثانية — قبل المتابعة. حين تقرأ المتسلسلة كاملةً، يمكنك العودة إلى أي جزء في أي وقت.
+notice_body_3: يمكنك دائمًا إعادة تعيين تقدمك والمرور بها من جديد.
+notice_btn: أنا مستعد
+
+footer_how_works: كيف يعمل هذا
+footer_change_theme: تغيير المظهر
+footer_reset: إعادة تعيين التقدم
+
+new_added_heading: أُضيف في الأربعة عشر يومًا الأخيرة
+new_unread_heading: "لم تقرأه بعد"
+new_loading: جارٍ التحقق من سجل قراءتك…
+new_nothing: لا جديد في الأربعة عشر يومًا الأخيرة — لكن شيئًا ما قادم دائمًا.
+new_caught_up: قرأت كل شيء.
+new_back: "→ العودة إلى المتسلسلة"
+new_today: اليوم
+new_yesterday: أمس
+new_days_ago: "منذ %d أيام"
+
+theme_dark: داكن
+theme_light: فاتح
+theme_series: المتسلسلة
+theme_backbone: العمود الفقري
+theme_other: مسارات أخرى
+theme_remember: تذكّر اختياري
+
+parts_all: جميع الأجزاء
+series_all: جميع المتسلسلات
+
+blessing_accept: اقبل هذه البركة
+blessing_free: أنا حر.
+blessing_stay: ابقَ قريبًا
+blessing_return: العودة إلى البداية
+blessing_reset: إعادة تعيين تقدمي
+
+mission_statement: Moving Truth هو دعوة، لا تعليمة.
+mission_ask_1: نحن لا نطلب منك أن تصدّقنا.
+mission_ask_2: نطلب منك أن تصبح فضولياً.
+mission_ask_3: أن تشكّك فيما تعلمه.
+mission_ask_4: أن تفحص ما ورثته.
+mission_ask_5: أن تقارن الأفكار بصدق.
+mission_ask_6: أن تتبع الأدلة والتجربة والتاريخ والحكمة أينما قادت.

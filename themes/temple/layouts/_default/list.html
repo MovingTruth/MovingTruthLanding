@@ -85,7 +85,7 @@
 
     <div class="back-home-wrap">
       {{/* Home is always the Series page. Only the logo navigates to the doorway. */}}
-      <a href="{{ if eq .Language.Lang "en" }}{{ "series" | relLangURL }}{{ else }}{{ "moving-truth" | relLangURL }}{{ end }}" class="back-home">← Back to Home</a>
+      <a href="{{ "series" | relLangURL }}" class="back-home">← Back to Home</a>
     </div>
   </section>
 {{ end }}

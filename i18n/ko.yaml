@@ -1,0 +1,81 @@
+nav_series: 시리즈
+nav_gallery: 갤러리
+nav_whats_new: 새로운 것들
+nav_support: 이 작업을 지원하세요
+nav_skip: 메인 콘텐츠로 건너뛰기
+
+menu_navigate: 탐색
+menu_home: 홈
+menu_all_series: 모든 시리즈
+menu_more: 더 보기
+menu_about: 이 사이트 소개
+menu_from_creator: 창작자로부터
+menu_reset: 진행 상황 초기화
+
+reflect_title: 당신 안의 무언가가 이미 알고 있었습니다.
+reflect_sub: 당신을 여기로 이끈 그 부분.
+reflect_instruction: 그것과 함께 있으세요. 당신을 통과하게 두세요.
+reflect_unlock: 0이 되면 다음 편이 열립니다.
+reflect_unlock_final: 잠시 머무세요. 다음 길은 당신이 선택하는 것입니다.
+reflect_ready: "이제 당신은 모른 척할 수 없습니다."
+reflect_continue: 계속
+reflect_message: "이제 당신은 모른 척할 수 없습니다."
+
+blessing_title: 받아들이세요.
+blessing_sub: 당신은 보살핌을 받고 있습니다.
+blessing_instruction: 당신에게 닿을 때까지 잠시 기다리세요.
+blessing_continue: 나는 이것을 받습니다.
+blessing_done: 이 축복은 당신의 것입니다.
+blessing_accept_again: 이 축복을 다시 받으세요
+
+closing_title: 작용하게 두세요.
+closing_sub: 말이 전해졌습니다.
+closing_instruction: 잠시 시간을 주세요.
+closing_continue: 나는 자유롭습니다.
+closing_done: 당신은 자유롭습니다.
+
+reset_confirm: "모든 시리즈의 읽기 진행 상황을 초기화하시겠습니까? 처음부터 다시 시작하게 됩니다."
+
+notice_title: 시작하기 전에
+notice_body_1: 이 이야기들은 순서대로 읽도록 쓰였습니다. 각 시리즈는 독자적인 길입니다 — 원하는 시리즈부터 시작할 수 있지만, 시리즈 안에서는 첫 번째 편부터 순서대로 따라가세요.
+notice_body_2: 각 편의 끝에 도달하면, 다음으로 넘어가기 전에 30초 동안 그것과 함께 있을 것을 요청받게 됩니다. 시리즈를 다 읽고 나면, 언제든지 어느 부분으로든 자유롭게 돌아올 수 있습니다.
+notice_body_3: 언제든지 진행 상황을 초기화하고 다시 처음부터 시작할 수 있습니다.
+notice_btn: 준비됐습니다
+
+footer_how_works: 작동 방식
+footer_change_theme: 테마 변경
+footer_reset: 진행 상황 초기화
+
+new_added_heading: 지난 14일 이내에 추가됨
+new_unread_heading: "아직 읽지 않은 것들"
+new_loading: 읽기 기록을 확인하는 중…
+new_nothing: 지난 14일 이내에 새로운 것이 없습니다 — 하지만 항상 무언가가 오고 있습니다.
+new_caught_up: 모두 읽었습니다.
+new_back: "← 시리즈로 돌아가기"
+new_today: 오늘
+new_yesterday: 어제
+new_days_ago: "%d일 전"
+
+theme_dark: 어두운
+theme_light: 밝은
+theme_series: 시리즈
+theme_backbone: 중심축
+theme_other: 다른 경로
+theme_remember: 내 선택 기억하기
+
+parts_all: 모든 편
+series_all: 모든 시리즈
+
+blessing_accept: 이 축복을 받으세요
+blessing_free: 나는 자유롭습니다.
+blessing_stay: 가까이 있으세요
+blessing_return: 처음으로 돌아가기
+blessing_reset: 진행 상황 초기화
+
+mission_statement: Moving Truth는 지시가 아닌 초대입니다.
+mission_ask_1: 우리를 믿으라고 요청하지 않습니다.
+mission_ask_2: 호기심을 가지도록 요청합니다.
+mission_ask_3: 당신이 아는 것에 의문을 품는 것.
+mission_ask_4: 당신이 물려받은 것을 살펴보는 것.
+mission_ask_5: 정직하게 생각을 비교하는 것.
+mission_ask_6: 증거와 경험, 역사와 지혜가 이끄는 곳으로 따라가는 것.

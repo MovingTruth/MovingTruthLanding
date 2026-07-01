@@ -1,0 +1,4 @@
+---
+title: "Galería"
+menuOnly: true
+---

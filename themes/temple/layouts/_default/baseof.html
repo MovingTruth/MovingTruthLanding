@@ -48,7 +48,7 @@
 
 -->` | safeHTML }}
 <!DOCTYPE html>
-<html lang="{{ .Language.Lang }}">
+<html lang="{{ .Language.Lang }}"{{ if .Site.Language.Params.dir }} dir="{{ .Site.Language.Params.dir }}"{{ end }}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,7 +73,7 @@
 </head>
 <body class="{{ block "bodyclass" . }}inner{{ end }}">
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#main-content" class="skip-link">{{ i18n "nav_skip" }}</a>
 
 <div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="mt-reflect-title" tabindex="-1">
   <div class="mt-reflect-box">
@@ -98,20 +98,20 @@
 </div>
 
   <header class="site-header">
-    <a href="{{ "/" | relURL }}" class="site-logo">
+    <a href="{{ "/" | relLangURL }}" class="site-logo">
       <img src="/logo.png" alt="" class="site-logo-img" aria-hidden="true" />
       {{ .Site.Title }}
     </a>
     <nav>
       <a href="{{ "series" | relLangURL }}">{{ i18n "nav_series" }}</a>
-      <a href="{{ "gallery" | relURL }}">{{ i18n "nav_gallery" }}</a>
-      <a href="{{ "new" | relURL }}">{{ i18n "nav_whats_new" }}</a>
+      <a href="{{ "gallery" | relLangURL }}">{{ i18n "nav_gallery" }}</a>
+      <a href="{{ "new" | relLangURL }}">{{ i18n "nav_whats_new" }}</a>
       <div class="mt-lang-switcher" id="mt-lang-switcher">
         <button class="mt-lang-btn" id="mt-lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">{{ upper .Language.Lang }}</button>
         <div class="mt-lang-panel" id="mt-lang-panel" aria-hidden="true">
           {{ $xlat := dict }}
           {{ range .AllTranslations }}{{ $xlat = merge $xlat (dict .Language.Lang .RelPermalink) }}{{ end }}
-          {{ $langs := slice (dict "code" "en" "label" "English") (dict "code" "es" "label" "Español") (dict "code" "fr" "label" "Français") (dict "code" "pt" "label" "Português") (dict "code" "de" "label" "Deutsch") (dict "code" "ja" "label" "日本語") (dict "code" "ru" "label" "Русский") (dict "code" "zh" "label" "中文") }}
+          {{ $langs := slice (dict "code" "en" "label" "English") (dict "code" "es" "label" "Español") (dict "code" "fr" "label" "Français") (dict "code" "pt" "label" "Português") (dict "code" "de" "label" "Deutsch") (dict "code" "ja" "label" "日本語") (dict "code" "ru" "label" "Русский") (dict "code" "zh" "label" "中文") (dict "code" "ar" "label" "العربية") (dict "code" "ko" "label" "한국어") (dict "code" "th" "label" "ภาษาไทย") }}
           {{ range $langs }}
           {{ $code := .code }}
           {{ $home := cond (eq $code "en") "/" (printf "/%s/" $code) }}
@@ -139,7 +139,7 @@
       Home in the nav below goes to /series/ — the content hub.
     */}}
     <div class="mt-menu-header">
-      <a href="{{ "/" | relURL }}" class="mt-menu-brand">
+      <a href="{{ "/" | relLangURL }}" class="mt-menu-brand">
         <img src="/logo.png" alt="" class="mt-menu-brand-logo" aria-hidden="true" />
         <span class="mt-menu-brand-name">MovingTruth.com</span>
       </a>
@@ -149,7 +149,7 @@
     <nav class="mt-menu-nav" aria-label="Site navigation">
       <p class="mt-menu-section-label">{{ i18n "menu_navigate" }}</p>
       <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_home" }}</a>
-      <a href="{{ "gallery" | relURL }}" class="mt-menu-link">{{ i18n "nav_gallery" }}</a>
+      <a href="{{ "gallery" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_all_series" }}</a>
       {{ range .Site.Sections }}
       {{ if not .Params.menuOnly }}
@@ -162,9 +162,9 @@
 
     <nav class="mt-menu-nav" aria-label="Site pages">
       <p class="mt-menu-section-label">{{ i18n "menu_more" }}</p>
-      <a href="{{ "new" | relURL }}" class="mt-menu-link">{{ i18n "nav_whats_new" }}</a>
-      <a href="{{ "about" | relURL }}" class="mt-menu-link">{{ i18n "menu_about" }}</a>
-      <a href="{{ "messages" | relURL }}" class="mt-menu-link">{{ i18n "menu_from_creator" }}</a>
+      <a href="{{ "new" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_whats_new" }}</a>
+      <a href="{{ "about" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_about" }}</a>
+      <a href="{{ "messages" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_from_creator" }}</a>
     </nav>
 
     <div class="mt-menu-divider"></div>
@@ -173,7 +173,7 @@
       <p class="mt-menu-section-label">Language</p>
       {{ $xlat := dict }}
       {{ range .AllTranslations }}{{ $xlat = merge $xlat (dict .Language.Lang .RelPermalink) }}{{ end }}
-      {{ $langs := slice (dict "code" "en" "label" "English") (dict "code" "es" "label" "Español") (dict "code" "fr" "label" "Français") (dict "code" "pt" "label" "Português") (dict "code" "de" "label" "Deutsch") (dict "code" "ja" "label" "日本語") (dict "code" "ru" "label" "Русский") (dict "code" "zh" "label" "中文") }}
+      {{ $langs := slice (dict "code" "en" "label" "English") (dict "code" "es" "label" "Español") (dict "code" "fr" "label" "Français") (dict "code" "pt" "label" "Português") (dict "code" "de" "label" "Deutsch") (dict "code" "ja" "label" "日本語") (dict "code" "ru" "label" "Русский") (dict "code" "zh" "label" "中文") (dict "code" "ar" "label" "العربية") (dict "code" "ko" "label" "한국어") (dict "code" "th" "label" "ภาษาไทย") }}
       {{ range $langs }}
       {{ $code := .code }}
       {{ $home := cond (eq $code "en") "/" (printf "/%s/" $code) }}
@@ -194,9 +194,33 @@
   <footer class="site-footer">
     <img src="/logo.png" alt="" class="site-footer-logo" aria-hidden="true" />
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
-    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "nav_support" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relLangURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "nav_support" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
   </footer>
 
+  <script>
+  window.MT_I18N = {
+    reflect_title:       {{ i18n "reflect_title"       | jsonify | safeJS }},
+    reflect_sub:         {{ i18n "reflect_sub"         | jsonify | safeJS }},
+    reflect_instruction: {{ i18n "reflect_instruction" | jsonify | safeJS }},
+    reflect_unlock:      {{ i18n "reflect_unlock"      | jsonify | safeJS }},
+    reflect_unlock_final:{{ i18n "reflect_unlock_final"| jsonify | safeJS }},
+    reflect_ready:       {{ i18n "reflect_ready"       | jsonify | safeJS }},
+    reflect_continue:    {{ i18n "reflect_continue"    | jsonify | safeJS }},
+    reflect_message:     {{ i18n "reflect_message"     | jsonify | safeJS }},
+    blessing_title:      {{ i18n "blessing_title"      | jsonify | safeJS }},
+    blessing_sub:        {{ i18n "blessing_sub"        | jsonify | safeJS }},
+    blessing_instruction:{{ i18n "blessing_instruction"| jsonify | safeJS }},
+    blessing_continue:   {{ i18n "blessing_continue"   | jsonify | safeJS }},
+    blessing_done:       {{ i18n "blessing_done"       | jsonify | safeJS }},
+    blessing_accept_again:{{ i18n "blessing_accept_again" | jsonify | safeJS }},
+    closing_title:       {{ i18n "closing_title"       | jsonify | safeJS }},
+    closing_sub:         {{ i18n "closing_sub"         | jsonify | safeJS }},
+    closing_instruction: {{ i18n "closing_instruction" | jsonify | safeJS }},
+    closing_continue:    {{ i18n "closing_continue"    | jsonify | safeJS }},
+    closing_done:        {{ i18n "closing_done"        | jsonify | safeJS }},
+    reset_confirm:       {{ i18n "reset_confirm"       | jsonify | safeJS }}
+  };
+  </script>
   {{ $theme    := resources.Get "js/mt-theme.js"        | minify | fingerprint }}
   {{ $storage  := resources.Get "js/mt-storage.js"      | minify | fingerprint }}
   {{ $notice   := resources.Get "js/mt-notice.js"       | minify | fingerprint }}
