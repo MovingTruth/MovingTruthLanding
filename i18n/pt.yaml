@@ -1,6 +1,7 @@
 nav_series: Séries
 nav_gallery: Galeria
 nav_whats_new: Novidades
+nav_apps: "Apps"
 nav_support: Apoiar o trabalho
 nav_skip: Ir para o conteúdo principal
 
@@ -16,8 +17,19 @@ reflect_title: Algo em você já sabia disso.
 reflect_sub: A parte que te trouxe até aqui.
 reflect_instruction: Fique com isso. Deixe-o passar por você.
 reflect_unlock: A próxima parte será desbloqueada quando isso chegar a zero.
+reflect_unlock_final: "Tire um momento. O próximo caminho é seu para escolher."
 reflect_ready: Agora você não pode não saber.
 reflect_continue: Continuar
+reflect_countdown_suffix: "s"
+reflect_blessing_title: "Deixe entrar."
+reflect_blessing_sub: "Você está sendo sustentado."
+reflect_blessing_instruction: "Dê-lhe trinta segundos para chegar até você."
+reflect_blessing_ready: "Esta bênção é sua."
+reflect_blessing_again: "Aceitar esta bênção novamente"
+reflect_closing_title: "Deixe trabalhar."
+reflect_closing_sub: "As palavras foram pronunciadas."
+reflect_closing_instruction: "Dê-lhes trinta segundos."
+reflect_closing_ready: "Você é livre."
 
 notice_title: Antes de começar
 notice_body_1: Estas histórias são escritas para serem lidas em ordem. Cada série é o seu próprio caminho — você pode começar qualquer série quando quiser, mas dentro de uma série você segue as partes desde a primeira.
@@ -35,9 +47,10 @@ new_loading: Verificando seu histórico de leitura…
 new_nothing: Nada de novo nos últimos 14 dias — mas algo está sempre chegando.
 new_caught_up: Você está em dia.
 new_back: "← Voltar para Séries"
+new_out_of_order: "Esta série tem um começo. Vamos levá-lo lá."
 new_today: hoje
 new_yesterday: ontem
-new_days_ago: "há %d dias"
+new_days_ago: "há {{ . }} dias"
 
 theme_dark: Escuro
 theme_light: Claro
@@ -48,6 +61,16 @@ theme_remember: Lembrar minha escolha
 
 parts_all: Todas as partes
 series_all: Todas as séries
+
+series_page_title: "As Séries"
+series_page_intro: "Cada série é um caminho. Escolha onde começar."
+series_page_subtext: "Mais chega regularmente. Algo que você precisa pode ainda não existir — mas chegará."
+series_begin: "Começar →"
+series_parts:
+  one: "1 parte"
+  other: "{{ . }} partes"
+substack_label: "Saiba quando algo novo chega."
+substack_placeholder: "Seu email"
 
 blessing_accept: Aceitar esta bênção
 blessing_free: Sou livre.

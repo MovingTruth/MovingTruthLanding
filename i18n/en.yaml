@@ -1,6 +1,7 @@
 nav_series: Series
 nav_gallery: Gallery
 nav_whats_new: "What's New"
+nav_apps: "Apps"
 nav_support: Support the work
 nav_skip: Skip to main content
 
@@ -52,9 +53,10 @@ new_loading: Checking your reading history…
 new_nothing: Nothing new in the last 14 days — but something is always coming.
 new_caught_up: You're all caught up.
 new_back: "← Back to Series"
+new_out_of_order: "This series has a beginning. Taking you there."
 new_today: today
 new_yesterday: yesterday
-new_days_ago: "%d days ago"
+new_days_ago: "{{ . }} days ago"
 
 theme_dark: Dark
 theme_light: Light
@@ -65,6 +67,16 @@ theme_remember: Remember my choice
 
 parts_all: All Parts
 series_all: All Series
+
+series_page_title: "The Series"
+series_page_intro: "Each series is a path. Choose where to begin."
+series_page_subtext: "More arrives regularly. Something you need may not exist yet — but it will."
+series_begin: "Begin →"
+series_parts:
+  one: "1 part"
+  other: "{{ . }} parts"
+substack_label: "Know when something new arrives."
+substack_placeholder: "Your email"
 
 blessing_accept: Accept this blessing
 blessing_free: I am free.

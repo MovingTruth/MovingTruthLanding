@@ -28,11 +28,11 @@
   <a href="{{ .Permalink }}" class="backbone-card">
     {{ if $hasNew }}<span class="new-dot" aria-label="New content available"></span>{{ end }}
     <div class="backbone-card__inner">
-      <p class="backbone-card__eyebrow">The backbone</p>
+      <p class="backbone-card__eyebrow">{{ i18n "theme_backbone" }}</p>
       <h2 class="backbone-card__title">{{ .Title }}</h2>
       {{ with .Description }}<p class="backbone-card__desc">{{ . }}</p>{{ end }}
-      <span class="backbone-card__meta">{{ len $sPages }} {{ if eq (len $sPages) 1 }}part{{ else }}parts{{ end }}</span>
-      <span class="backbone-card__cta">Begin →</span>
+      <span class="backbone-card__meta">{{ i18n "series_parts" (len $sPages) }}</span>
+      <span class="backbone-card__cta">{{ i18n "series_begin" }}</span>
     </div>
   </a>
   {{ end }}
@@ -42,7 +42,7 @@
   {{ $others := where .Site.Sections "Params.backbone" "ne" true }}
   {{ $others = where $others "Params.menuOnly" "ne" true }}
   {{ if $others }}
-  <div class="series-other-label">Other paths</div>
+  <div class="series-other-label">{{ i18n "theme_other" }}</div>
   <div class="series-grid">
     {{ range $others }}
     {{ $sPages := .Pages }}
@@ -54,17 +54,17 @@
       {{ with .Params.icon }}{{ partial "icon.html" . }}{{ end }}
       <h2>{{ .Title }}</h2>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      <span class="series-count">{{ len $sPages }} {{ if eq (len $sPages) 1 }}part{{ else }}parts{{ end }}</span>
+      <span class="series-count">{{ i18n "series_parts" (len $sPages) }}</span>
     </a>
     {{ end }}
   </div>
   {{ end }}
 
   <div class="substack-signup">
-    <p class="substack-label">Know when something new arrives.</p>
+    <p class="substack-label">{{ i18n "substack_label" }}</p>
     <form action="https://movingtruth.substack.com/api/v1/free?nojs=true" method="post" target="_blank" class="substack-form">
-      <input type="email" name="email" placeholder="Your email" required class="substack-input" />
-      <button type="submit" class="substack-btn">Stay close</button>
+      <input type="email" name="email" placeholder="{{ i18n "substack_placeholder" }}" required class="substack-input" />
+      <button type="submit" class="substack-btn">{{ i18n "blessing_stay" }}</button>
     </form>
   </div>
 

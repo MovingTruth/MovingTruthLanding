@@ -75,7 +75,19 @@
 
 <a href="#main-content" class="skip-link">{{ i18n "nav_skip" }}</a>
 
-<div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="mt-reflect-title" tabindex="-1">
+<div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="mt-reflect-title" tabindex="-1"
+  data-unlock-final="{{ i18n "reflect_unlock_final" }}"
+  data-ready="{{ i18n "reflect_ready" }}"
+  data-seconds-suffix="{{ i18n "reflect_countdown_suffix" }}"
+  data-blessing-title="{{ i18n "reflect_blessing_title" }}"
+  data-blessing-sub="{{ i18n "reflect_blessing_sub" }}"
+  data-blessing-instruction="{{ i18n "reflect_blessing_instruction" }}"
+  data-blessing-ready="{{ i18n "reflect_blessing_ready" }}"
+  data-closing-title="{{ i18n "reflect_closing_title" }}"
+  data-closing-sub="{{ i18n "reflect_closing_sub" }}"
+  data-closing-instruction="{{ i18n "reflect_closing_instruction" }}"
+  data-closing-continue="{{ i18n "blessing_free" }}"
+  data-closing-ready="{{ i18n "reflect_closing_ready" }}">
   <div class="mt-reflect-box">
     <p class="mt-reflect-title" id="mt-reflect-title">{{ i18n "reflect_title" }}</p>
     <p class="mt-reflect-sub">{{ i18n "reflect_sub" }}</p>

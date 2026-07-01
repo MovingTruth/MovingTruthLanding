@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var duration = 30;
   var started = false;
 
+  var d = overlay ? overlay.dataset : {};
+  var suffix = d.secondsSuffix || 's';
+
   var storageKey = isClosing
     ? 'mt_' + series + '_closing'
     : isBlessing
@@ -268,12 +271,12 @@ document.addEventListener('DOMContentLoaded', function () {
       overlayTimer.textContent = remaining;
       overlayTimer.style.display = '';
     }
-    if (countdownEl) countdownEl.textContent = remaining + 's';
+    if (countdownEl) countdownEl.textContent = remaining + suffix;
 
     var interval = setInterval(function () {
       remaining -= 1;
       if (overlayTimer) overlayTimer.textContent = remaining;
-      if (countdownEl) countdownEl.textContent = remaining + 's';
+      if (countdownEl) countdownEl.textContent = remaining + suffix;
 
       if (remaining <= 0) {
         clearInterval(interval);

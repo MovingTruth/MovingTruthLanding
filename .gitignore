@@ -1,3 +1,6 @@
 public/
 resources/
 .hugo_build.lock
+
+# Held back — not ready to publish
+content/what-if/04-what-if-the-person-you-voted-for-isnt-the-one-in-charge.md

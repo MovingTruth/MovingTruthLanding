@@ -1,6 +1,7 @@
 nav_series: シリーズ
 nav_gallery: ギャラリー
 nav_whats_new: 新着
+nav_apps: "アプリ"
 nav_support: 活動を支援する
 nav_skip: メインコンテンツへ
 
@@ -16,8 +17,19 @@ reflect_title: あなたの中の何かがすでに知っていた。
 reflect_sub: あなたをここへ連れてきた部分が。
 reflect_instruction: それと共にいてください。あなたの中を流れさせてください。
 reflect_unlock: ゼロになったとき、次のパートが解放されます。
+reflect_unlock_final: "少し時間をとってください。次の道は、あなたが選ぶものです。"
 reflect_ready: もう知らないふりはできない。
 reflect_continue: 続ける
+reflect_countdown_suffix: "秒"
+reflect_blessing_title: "受け入れてください。"
+reflect_blessing_sub: "あなたは守られています。"
+reflect_blessing_instruction: "三十秒、それがあなたに届くまで待ってください。"
+reflect_blessing_ready: "この祝福はあなたのものです。"
+reflect_blessing_again: "もう一度この祝福を受け入れる"
+reflect_closing_title: "それを働かせてください。"
+reflect_closing_sub: "言葉はすでに語られました。"
+reflect_closing_instruction: "三十秒、それに時間を与えてください。"
+reflect_closing_ready: "あなたは自由です。"
 
 notice_title: 始める前に
 notice_body_1: これらのストーリーは順番に読むように書かれています。各シリーズは独自の道です——いつでも任意のシリーズを始めることができますが、シリーズ内では最初のパートから順に読み進めます。
@@ -35,9 +47,10 @@ new_loading: 読書履歴を確認中…
 new_nothing: 過去14日間に新着はありません——でも何かは常に来ています。
 new_caught_up: 最新の状態です。
 new_back: ← シリーズに戻る
+new_out_of_order: "このシリーズには始まりがあります。そこへお連れします。"
 new_today: 今日
 new_yesterday: 昨日
-new_days_ago: "%d日前"
+new_days_ago: "{{ . }}日前"
 
 theme_dark: ダーク
 theme_light: ライト
@@ -48,6 +61,15 @@ theme_remember: 選択を記憶する
 
 parts_all: 全パート
 series_all: 全シリーズ
+
+series_page_title: "シリーズ"
+series_page_intro: "各シリーズは一つの道です。どこから始めるかを選んでください。"
+series_page_subtext: "新しいものが定期的に届きます。あなたが必要なものがまだ存在しないかもしれませんが、きっと届きます。"
+series_begin: "始める →"
+series_parts:
+  other: "{{ . }}パート"
+substack_label: "新しいものが届いたらお知らせします。"
+substack_placeholder: "メールアドレス"
 
 blessing_accept: この祝福を受け入れる
 blessing_free: 私は自由です。

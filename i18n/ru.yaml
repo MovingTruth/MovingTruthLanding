@@ -1,6 +1,7 @@
 nav_series: Серии
 nav_gallery: Галерея
 nav_whats_new: Новое
+nav_apps: "Приложения"
 nav_support: Поддержать проект
 nav_skip: Перейти к основному содержанию
 
@@ -16,8 +17,19 @@ reflect_title: Что-то внутри тебя уже знало это.
 reflect_sub: Та часть, которая привела тебя сюда.
 reflect_instruction: Побудь с этим. Позволь этому пройти сквозь тебя.
 reflect_unlock: Следующая часть откроется, когда счётчик достигнет нуля.
+reflect_unlock_final: "Возьми момент. Следующий путь твой, чтобы выбрать."
 reflect_ready: Теперь ты не можешь это не знать.
 reflect_continue: Продолжить
+reflect_countdown_suffix: "с"
+reflect_blessing_title: "Впусти это."
+reflect_blessing_sub: "Ты в надёжных руках."
+reflect_blessing_instruction: "Дай ему тридцать секунд, чтобы достичь тебя."
+reflect_blessing_ready: "Это благословение твоё."
+reflect_blessing_again: "Принять это благословение снова"
+reflect_closing_title: "Дай ему работать."
+reflect_closing_sub: "Слова были произнесены."
+reflect_closing_instruction: "Дай им тридцать секунд."
+reflect_closing_ready: "Ты свободен."
 
 notice_title: Прежде чем начать
 notice_body_1: Эти истории написаны для последовательного чтения. Каждая серия — это собственный путь. Ты можешь начать любую серию в любое время, но внутри серии следуй частям с самой первой.
@@ -35,9 +47,10 @@ new_loading: Проверяем историю чтения…
 new_nothing: Ничего нового за последние 14 дней — но что-то всегда грядёт.
 new_caught_up: Ты в курсе всего.
 new_back: "← Назад к сериям"
+new_out_of_order: "У этой серии есть начало. Мы отведём тебя туда."
 new_today: сегодня
 new_yesterday: вчера
-new_days_ago: "%d дней назад"
+new_days_ago: "{{ . }} дней назад"
 
 theme_dark: Тёмная
 theme_light: Светлая
@@ -48,6 +61,17 @@ theme_remember: Запомнить выбор
 
 parts_all: Все части
 series_all: Все серии
+
+series_page_title: "Серии"
+series_page_intro: "Каждая серия — это путь. Выберите, с чего начать."
+series_page_subtext: "Новое появляется регулярно. То, что вам нужно, может ещё не существовать — но появится."
+series_begin: "Начать →"
+series_parts:
+  one: "1 часть"
+  few: "{{ . }} части"
+  other: "{{ . }} частей"
+substack_label: "Узнавайте, когда появляется что-то новое."
+substack_placeholder: "Ваш email"
 
 blessing_accept: Принять это благословение
 blessing_free: Я свободен.

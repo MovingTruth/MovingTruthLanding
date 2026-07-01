@@ -23,7 +23,7 @@
     Only shown for standard (non-blessing, non-closing) pieces.
   */}}
   <div class="piece-action-wrap" id="piece-action-wrap" style="display:none;">
-    <button class="piece-action-btn" id="piece-action-btn">Continue</button>
+    <button class="piece-action-btn" id="piece-action-btn">{{ i18n "reflect_continue" }}</button>
   </div>
 
   {{/*
@@ -33,7 +33,7 @@
   */}}
   {{ if .Params.closingReflection }}
   <div class="piece-action-wrap" id="piece-closing-wrap" style="display:none;">
-    <button class="piece-action-btn" id="piece-closing-btn">Continue</button>
+    <button class="piece-action-btn" id="piece-closing-btn">{{ i18n "reflect_continue" }}</button>
   </div>
   {{ end }}
 
@@ -47,7 +47,8 @@
   */}}
   {{ if .Params.blessing }}
   <div class="piece-action-wrap piece-blessing-wrap" id="piece-blessing-wrap" style="display:none;">
-    <button class="piece-action-btn piece-blessing-btn" id="piece-blessing-btn">Accept this blessing</button>
+    <button class="piece-action-btn piece-blessing-btn" id="piece-blessing-btn"
+      data-blessing-again="{{ i18n "reflect_blessing_again" }}">{{ i18n "blessing_accept" }}</button>
   </div>
   {{ end }}
 
@@ -92,7 +93,7 @@
         <span class="nav-title">{{ .Title }}</span>
       </a>
       <div class="reflect-prompt">
-        <span class="reflect-message">Something in you already knew this.</span>
+        <span class="reflect-message">{{ i18n "reflect_title" }}</span>
         <span class="reflect-countdown"></span>
       </div>
       {{ end }}

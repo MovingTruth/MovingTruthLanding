@@ -1,6 +1,7 @@
 nav_series: 系列
 nav_gallery: 图库
 nav_whats_new: 最新内容
+nav_apps: "应用"
 nav_support: 支持这项工作
 nav_skip: 跳至主要内容
 
@@ -35,9 +36,10 @@ new_loading: 正在检查阅读记录…
 new_nothing: 过去14天没有新内容——但总有新的即将到来。
 new_caught_up: 你已是最新状态。
 new_back: ← 返回系列
+new_out_of_order: "这个系列有一个开始。带你去那里。"
 new_today: 今天
 new_yesterday: 昨天
-new_days_ago: "%d天前"
+new_days_ago: "{{ . }}天前"
 
 theme_dark: 深色
 theme_light: 浅色
@@ -48,6 +50,27 @@ theme_remember: 记住我的选择
 
 parts_all: 所有部分
 series_all: 所有系列
+
+series_page_title: "系列"
+series_page_intro: "每个系列都是一条路。选择从哪里开始。"
+series_page_subtext: "更多内容定期到来。您需要的可能还不存在——但终将出现。"
+series_begin: "开始 →"
+series_parts:
+  other: "{{ . }}部分"
+substack_label: "了解新内容到来时的消息。"
+substack_placeholder: "您的邮箱"
+
+reflect_unlock_final: "给自己一点时间。下一条路由你选择。"
+reflect_countdown_suffix: "秒"
+reflect_blessing_title: "让它进来。"
+reflect_blessing_sub: "你被守护着。"
+reflect_blessing_instruction: "给它三十秒到达你。"
+reflect_blessing_ready: "这份祝福是你的。"
+reflect_blessing_again: "再次接受这份祝福"
+reflect_closing_title: "让它发挥作用。"
+reflect_closing_sub: "话已经说了。"
+reflect_closing_instruction: "给它们三十秒。"
+reflect_closing_ready: "你自由了。"
 
 blessing_accept: 接受这份祝福
 blessing_free: 我自由了。
