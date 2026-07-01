@@ -206,7 +206,7 @@
   <footer class="site-footer">
     <img src="/logo.png" alt="" class="site-footer-logo" aria-hidden="true" />
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
-    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relLangURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "nav_support" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relLangURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "buy_me_coffee" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
   </footer>
 
   <script>
@@ -235,12 +235,14 @@
   </script>
   {{ $theme    := resources.Get "js/mt-theme.js"        | minify | fingerprint }}
   {{ $storage  := resources.Get "js/mt-storage.js"      | minify | fingerprint }}
+  {{ $read     := resources.Get "js/mt-read.js"         | minify | fingerprint }}
   {{ $notice   := resources.Get "js/mt-notice.js"       | minify | fingerprint }}
   {{ $reflect  := resources.Get "js/reflect.js"         | minify | fingerprint }}
   {{ $progress := resources.Get "js/series-progress.js" | minify | fingerprint }}
   {{ $lang     := resources.Get "js/mt-lang.js"         | minify | fingerprint }}
   <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
   <script src="{{ $storage.Permalink }}"  integrity="{{ $storage.Data.Integrity }}"></script>
+  <script src="{{ $read.Permalink }}"     integrity="{{ $read.Data.Integrity }}"></script>
   <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>
   <script src="{{ $reflect.Permalink }}"  integrity="{{ $reflect.Data.Integrity }}"></script>
   <script src="{{ $progress.Permalink }}" integrity="{{ $progress.Data.Integrity }}"></script>
