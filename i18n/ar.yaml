@@ -1,7 +1,16 @@
 nav_series: المتسلسلة
 nav_gallery: المعرض
 nav_whats_new: الجديد
-nav_support: ادعم هذا العمل
+nav_support: أظهر دعمك
+nav_support_mobile: دعم
+nav_support_page: ادعم هذه المهمة
+menu_asking_for_help: أطلب المساعدة
+support_prompt_text: "لقد قرأتَ ثلاث قطع. هناك شيء أودّ أن تراه."
+support_prompt_btn: اقرأه
+support_interrupt_heading: "أعتذر عن إيقافك هنا."
+support_interrupt_body: "لقد كنتَ تقرأ — وهذا وحده يعني شيئًا. قبل أن تكمل، هناك شيء أحتاج أن أطلب منك أن تراه. لن يستغرق سوى دقيقتين."
+support_interrupt_btn: "سأقرأه"
+support_interrupt_dismiss: "ليس الآن"
 buy_me_coffee: اشترِ لي قهوة
 nav_skip: انتقل إلى المحتوى الرئيسي
 

@@ -1,7 +1,16 @@
 nav_series: ชุดเรื่อง
 nav_gallery: แกลเลอรี
 nav_whats_new: มีอะไรใหม่
-nav_support: สนับสนุนงานนี้
+nav_support: แสดงการสนับสนุนของคุณ
+nav_support_mobile: สนับสนุน
+nav_support_page: สนับสนุนภารกิจนี้
+menu_asking_for_help: ฉันขอความช่วยเหลือ
+support_prompt_text: "คุณอ่านมาสามชิ้นแล้ว มีบางอย่างที่อยากให้คุณได้เห็น"
+support_prompt_btn: อ่านเลย
+support_interrupt_heading: "ขอโทษที่ต้องหยุดคุณไว้ตรงนี้"
+support_interrupt_body: "คุณได้อ่านมาตลอด — และนั่นมีความหมายแล้ว ก่อนที่จะอ่านต่อ มีบางอย่างที่อยากให้คุณได้เห็น ใช้เวลาแค่สองนาที"
+support_interrupt_btn: "จะอ่านเลย"
+support_interrupt_dismiss: "ไว้คราวหน้า"
 buy_me_coffee: เลี้ยงกาแฟฉันหน่อยนะ
 nav_skip: ข้ามไปยังเนื้อหาหลัก
 

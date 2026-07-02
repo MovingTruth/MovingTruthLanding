@@ -46,6 +46,27 @@
 
   ✦ ✦ ✦
 
+  If you found your way into the source code —
+  you are exactly the kind of person this was built for.
+
+  This site exists without a salary behind it.
+  No grant. No institution. No backing.
+  Just one person, a question that wouldn't leave,
+  and the stubborn belief that truth deserves a place to move.
+
+  If what you read here shifted something in you —
+  even slightly, even uncomfortably —
+  consider buying the builder a coffee.
+
+  paypal.me/SkylaurRoe
+
+  It won't change what's written here.
+  But it will help it keep being written.
+
+  Thank you for looking underneath things.
+
+  ✦ ✦ ✦
+
 -->` | safeHTML }}
 <!DOCTYPE html>
 <html lang="{{ .Language.Lang }}"{{ if .Site.Language.Params.dir }} dir="{{ .Site.Language.Params.dir }}"{{ end }}>
@@ -118,6 +139,8 @@
       <a href="{{ "series" | relLangURL }}">{{ i18n "nav_series" }}</a>
       <a href="{{ "gallery" | relLangURL }}">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "new" | relLangURL }}">{{ i18n "nav_whats_new" }}</a>
+      <a href="https://paypal.me/SkylaurRoe" class="nav-coffee" target="_blank" rel="noopener" aria-label="{{ i18n "buy_me_coffee" }}">☕ <span class="nav-coffee-label">{{ i18n "buy_me_coffee" }}</span></a>
+      <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener"><span class="nav-support-full">{{ i18n "nav_support" }}</span><span class="nav-support-short">{{ i18n "nav_support_mobile" }}</span></a>
       <div class="mt-lang-switcher" id="mt-lang-switcher">
         <button class="mt-lang-btn" id="mt-lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">{{ upper .Language.Lang }}</button>
         <div class="mt-lang-panel" id="mt-lang-panel" aria-hidden="true">
@@ -132,7 +155,6 @@
           {{ end }}
         </div>
       </div>
-      <a href="https://paypal.me/SkylaurRoe" class="nav-support" target="_blank" rel="noopener">{{ i18n "nav_support" }}</a>
       <button class="mt-menu-btn" id="mt-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mt-menu-panel">
         <span class="mt-menu-btn__bar"></span>
         <span class="mt-menu-btn__bar"></span>
@@ -177,6 +199,8 @@
       <a href="{{ "new" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_whats_new" }}</a>
       <a href="{{ "about" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_about" }}</a>
       <a href="{{ "messages" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_from_creator" }}</a>
+      <a href="{{ "support" | relLangURL }}" class="mt-menu-link mt-menu-link--ask">{{ i18n "menu_asking_for_help" }}</a>
+      <a href="https://paypal.me/SkylaurRoe" class="mt-menu-link mt-menu-coffee" target="_blank" rel="noopener">☕ {{ i18n "buy_me_coffee" }}</a>
     </nav>
 
     <div class="mt-menu-divider"></div>
@@ -206,7 +230,7 @@
   <footer class="site-footer">
     <img src="/logo.png" alt="" class="site-footer-logo" aria-hidden="true" />
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
-    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relLangURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "buy_me_coffee" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
+    <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relLangURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="{{ "support" | relLangURL }}" class="footer-link">{{ i18n "nav_support_page" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "buy_me_coffee" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
   </footer>
 
   <script>
@@ -232,20 +256,31 @@
     closing_done:        {{ i18n "closing_done"        | jsonify | safeJS }},
     reset_confirm:       {{ i18n "reset_confirm"       | jsonify | safeJS }}
   };
+  window.MT_SUPPORT_I18N = {
+    prompt_text:       {{ i18n "support_prompt_text"       | jsonify | safeJS }},
+    prompt_btn:        {{ i18n "support_prompt_btn"        | jsonify | safeJS }},
+    prompt_url:        {{ "support" | relLangURL            | jsonify | safeJS }},
+    interrupt_heading: {{ i18n "support_interrupt_heading" | jsonify | safeJS }},
+    interrupt_body:    {{ i18n "support_interrupt_body"    | jsonify | safeJS }},
+    interrupt_btn:     {{ i18n "support_interrupt_btn"     | jsonify | safeJS }},
+    interrupt_dismiss: {{ i18n "support_interrupt_dismiss" | jsonify | safeJS }}
+  };
   </script>
-  {{ $theme    := resources.Get "js/mt-theme.js"        | minify | fingerprint }}
-  {{ $storage  := resources.Get "js/mt-storage.js"      | minify | fingerprint }}
-  {{ $read     := resources.Get "js/mt-read.js"         | minify | fingerprint }}
-  {{ $notice   := resources.Get "js/mt-notice.js"       | minify | fingerprint }}
-  {{ $reflect  := resources.Get "js/reflect.js"         | minify | fingerprint }}
-  {{ $progress := resources.Get "js/series-progress.js" | minify | fingerprint }}
-  {{ $lang     := resources.Get "js/mt-lang.js"         | minify | fingerprint }}
+  {{ $theme    := resources.Get "js/mt-theme.js"           | minify | fingerprint }}
+  {{ $storage  := resources.Get "js/mt-storage.js"         | minify | fingerprint }}
+  {{ $read     := resources.Get "js/mt-read.js"            | minify | fingerprint }}
+  {{ $notice   := resources.Get "js/mt-notice.js"          | minify | fingerprint }}
+  {{ $reflect  := resources.Get "js/reflect.js"            | minify | fingerprint }}
+  {{ $progress := resources.Get "js/series-progress.js"    | minify | fingerprint }}
+  {{ $support  := resources.Get "js/mt-support-prompt.js"  | minify | fingerprint }}
+  {{ $lang     := resources.Get "js/mt-lang.js"            | minify | fingerprint }}
   <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
   <script src="{{ $storage.Permalink }}"  integrity="{{ $storage.Data.Integrity }}"></script>
   <script src="{{ $read.Permalink }}"     integrity="{{ $read.Data.Integrity }}"></script>
   <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>
   <script src="{{ $reflect.Permalink }}"  integrity="{{ $reflect.Data.Integrity }}"></script>
   <script src="{{ $progress.Permalink }}" integrity="{{ $progress.Data.Integrity }}"></script>
+  <script src="{{ $support.Permalink }}"  integrity="{{ $support.Data.Integrity }}"></script>
   <script src="{{ $lang.Permalink }}"     integrity="{{ $lang.Data.Integrity }}"></script>
   {{ block "extraScripts" . }}{{ end }}
   <script>

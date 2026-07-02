@@ -2,7 +2,16 @@ nav_series: 系列
 nav_gallery: 图库
 nav_whats_new: 最新内容
 nav_apps: "应用"
-nav_support: 支持这项工作
+nav_support: 给予支持
+nav_support_mobile: 支持
+nav_support_page: 支持这项使命
+menu_asking_for_help: 我在请求帮助
+support_prompt_text: "您已阅读了三篇文章。有件事我想请您看看。"
+support_prompt_btn: 阅读
+support_interrupt_heading: "很抱歉在这里打断您。"
+support_interrupt_body: "您一直在阅读——这本身已经意味着什么。在继续之前，有件事我想请您看看。只需两分钟。"
+support_interrupt_btn: "我会读的"
+support_interrupt_dismiss: "暂时不了"
 buy_me_coffee: 请我喝杯咖啡
 nav_skip: 跳至主要内容
 

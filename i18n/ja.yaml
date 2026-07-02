@@ -2,7 +2,16 @@ nav_series: シリーズ
 nav_gallery: ギャラリー
 nav_whats_new: 新着
 nav_apps: "アプリ"
-nav_support: 活動を支援する
+nav_support: 応援してください
+nav_support_mobile: 支援
+nav_support_page: このミッションを支援する
+menu_asking_for_help: 助けをお願いしています
+support_prompt_text: "あなたは3つの作品を読みました。ぜひ見ていただきたいものがあります。"
+support_prompt_btn: 読む
+support_interrupt_heading: "ここで立ち止めていただき、申し訳ございません。"
+support_interrupt_body: "あなたはずっと読み続けてくれていました — それはすでに何かを意味しています。続ける前に、ぜひ見ていただきたいことがあります。2分で読めます。"
+support_interrupt_btn: "読みます"
+support_interrupt_dismiss: "今はいいです"
 buy_me_coffee: コーヒーをおごってください
 nav_skip: メインコンテンツへ
 

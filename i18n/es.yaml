@@ -2,7 +2,16 @@ nav_series: Series
 nav_gallery: Galería
 nav_whats_new: Novedades
 nav_apps: "Aplicaciones"
-nav_support: Apoya el trabajo
+nav_support: Muestra tu apoyo
+nav_support_mobile: Apoyo
+nav_support_page: Apoya esta misión
+menu_asking_for_help: Necesito tu ayuda
+support_prompt_text: "Has leído tres piezas. Hay algo que me gustaría que vieras."
+support_prompt_btn: Leerlo
+support_interrupt_heading: "Siento interrumpirte aquí."
+support_interrupt_body: "Has estado leyendo — y eso ya significa algo. Antes de continuar, hay algo que necesito pedirte que veas. Solo tomará dos minutos."
+support_interrupt_btn: "Lo leeré"
+support_interrupt_dismiss: "Ahora no"
 buy_me_coffee: Invítame un café
 nav_skip: Saltar al contenido principal
 

@@ -459,7 +459,11 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   padding: 0.35rem 0.9rem;
   border-radius: 2px;
   transition: background 0.2s, color 0.2s !important;
+  max-width: 7rem;
+  text-align: center;
+  line-height: 1.3;
 }
+.nav-support-short { display: none; }
 
 .nav-support--pulsing {
   animation: supportGlow 1.75s ease-in-out 3;
@@ -471,6 +475,18 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   animation: none;
   box-shadow: 0 0 28px var(--accent);
 }
+
+.nav-coffee {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.72rem;
+  opacity: 0.7;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+.nav-coffee:hover { opacity: 1; color: var(--accent) !important; }
+.nav-coffee-label { font-size: 0.72rem; }
 
 /* ── HAMBURGER MENU ──────────────────────────────────────── */
 
@@ -646,6 +662,131 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
 .mt-menu-reset:hover {
   color: #c0392b;
 }
+
+.mt-support-prompt {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  width: min(480px, calc(100vw - 2.4rem));
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.35);
+  z-index: 900;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.mt-support-prompt--visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+.mt-support-prompt__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0 0 1rem;
+}
+.mt-support-prompt__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mt-support-prompt__btn {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+.mt-support-prompt__btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+.mt-support-prompt__close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.mt-support-prompt__close:hover { opacity: 1; }
+
+.mt-support-interrupt {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.mt-support-interrupt--visible { opacity: 1; }
+.mt-support-interrupt__box {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  transform: translateY(16px);
+  transition: transform 0.4s ease;
+}
+.mt-support-interrupt--visible .mt-support-interrupt__box { transform: translateY(0); }
+.mt-support-interrupt__heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 1rem;
+  line-height: 1.4;
+}
+.mt-support-interrupt__body {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 1.75rem;
+}
+.mt-support-interrupt__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.mt-support-interrupt__btn-go {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 0.65rem 1rem;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+.mt-support-interrupt__btn-go:hover { opacity: 0.85; color: var(--bg); }
+.mt-support-interrupt__btn-deny {
+  background: none;
+  border: none;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-align: center;
+  padding: 0.3rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  letter-spacing: 0.04em;
+}
+.mt-support-interrupt__btn-deny:hover { opacity: 1; }
 
 .mt-menu-divider {
   height: 1px;
@@ -2076,7 +2217,9 @@ body.fading .inner-content {
   .inner-content { padding: 2rem 1.2rem 4rem; }
   .site-header { padding: 1rem 1.2rem; }
   .site-header nav a:not(.nav-support) { display: none; }
-  .nav-support { white-space: normal; max-width: 5rem; text-align: center; line-height: 1.4; padding: 0.3rem 0.6rem; }
+  .nav-support { white-space: nowrap; padding: 0.3rem 0.6rem; }
+  .nav-support-full { display: none; }
+  .nav-support-short { display: inline; }
   .part-card { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
   .part-number { font-size: 1.4rem; }
   .part-arrow { display: none; }

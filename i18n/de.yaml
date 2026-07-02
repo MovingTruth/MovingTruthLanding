@@ -2,7 +2,16 @@ nav_series: Serien
 nav_gallery: Galerie
 nav_whats_new: Neuigkeiten
 nav_apps: "Apps"
-nav_support: Die Arbeit unterstützen
+nav_support: Zeig deine Unterstützung
+nav_support_mobile: Unterstützen
+nav_support_page: Diese Mission unterstützen
+menu_asking_for_help: Ich Bitte um Hilfe
+support_prompt_text: "Sie haben drei Beiträge gelesen. Es gibt etwas, das ich Ihnen zeigen möchte."
+support_prompt_btn: Lesen
+support_interrupt_heading: "Es tut mir leid, Sie hier aufzuhalten."
+support_interrupt_body: "Sie haben gelesen — und das bedeutet bereits etwas. Bevor Sie weitermachen, gibt es etwas, das ich Sie bitte zu sehen. Es dauert zwei Minuten."
+support_interrupt_btn: "Ich werde es lesen"
+support_interrupt_dismiss: "Jetzt nicht"
 buy_me_coffee: Kauf mir einen Kaffee
 nav_skip: Zum Hauptinhalt springen
 

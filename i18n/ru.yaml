@@ -2,7 +2,16 @@ nav_series: Серии
 nav_gallery: Галерея
 nav_whats_new: Новое
 nav_apps: "Приложения"
-nav_support: Поддержать проект
+nav_support: Поддержите меня
+nav_support_mobile: Поддержать
+nav_support_page: Поддержать эту миссию
+menu_asking_for_help: Я прошу о помощи
+support_prompt_text: "Вы прочитали три текста. Есть кое-что, что я хотела бы вам показать."
+support_prompt_btn: Читать
+support_interrupt_heading: "Прошу прощения за то, что останавливаю вас здесь."
+support_interrupt_body: "Вы читали — и это уже что-то значит. Прежде чем продолжить, есть кое-что, о чём я хочу вас попросить. Это займёт две минуты."
+support_interrupt_btn: "Я прочитаю"
+support_interrupt_dismiss: "Не сейчас"
 buy_me_coffee: Угостите меня кофе
 nav_skip: Перейти к основному содержанию
 
