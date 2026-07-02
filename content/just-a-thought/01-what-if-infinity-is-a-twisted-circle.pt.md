@@ -3,7 +3,7 @@ title: "Um círculo, torcido"
 series: "Apenas um Pensamento"
 part: 1
 date: 2026-07-02T00:00:00
-description: "O símbolo do infinito não significa que algo dura para sempre. E se significasse que algo completo foi simplesmente transformado?"
+description: "O símbolo do infinito não significa que algo dura para sempre. Significa que algo completo foi simplesmente transformado."
 ---
 
 ![∞](/images/symbol-infinity.svg)

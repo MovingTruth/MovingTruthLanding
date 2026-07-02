@@ -3,7 +3,7 @@ title: "一个圆，被扭曲"
 series: "只是一个想法"
 part: 1
 date: 2026-07-02T00:00:00
-description: "无限符号并不意味着某事永远持续下去。如果它意味着某个完整的东西只是被转化了呢？"
+description: "无限符号并不意味着某事永远持续下去。它意味着某个完整的东西只是被转化了。"
 ---
 
 ![∞](/images/symbol-infinity.svg)

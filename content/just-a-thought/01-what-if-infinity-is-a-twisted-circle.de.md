@@ -3,7 +3,7 @@ title: "Ein Kreis, verdreht"
 series: "Nur ein Gedanke"
 part: 1
 date: 2026-07-02T00:00:00
-description: "Das Unendlichkeitssymbol bedeutet nicht, dass etwas ewig andauert. Was wäre, wenn es bedeutete, dass etwas Ganzes einfach verwandelt wurde?"
+description: "Das Unendlichkeitssymbol bedeutet nicht, dass etwas ewig andauert. Es bedeutet, dass etwas Ganzes einfach verwandelt wurde."
 ---
 
 ![∞](/images/symbol-infinity.svg)

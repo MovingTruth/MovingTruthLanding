@@ -3,7 +3,7 @@ title: "Un cercle, tordu"
 series: "Juste une Pensée"
 part: 1
 date: 2026-07-02T00:00:00
-description: "Le symbole de l'infini ne signifie pas que quelque chose dure éternellement. Et s'il signifiait que quelque chose d'entier a simplement été transformé ?"
+description: "Le symbole de l'infini ne signifie pas que quelque chose dure éternellement. Il signifie que quelque chose d'entier a simplement été transformé."
 ---
 
 ![∞](/images/symbol-infinity.svg)

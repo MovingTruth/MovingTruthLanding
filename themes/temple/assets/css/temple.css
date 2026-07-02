@@ -1613,8 +1613,6 @@ body.fading .inner-content {
   color: var(--accent);
   text-decoration: none;
   font-style: italic;
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 1px;
   opacity: 0.85;
   transition: opacity 0.2s;
 }

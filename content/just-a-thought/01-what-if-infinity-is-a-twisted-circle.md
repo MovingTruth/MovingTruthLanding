@@ -3,7 +3,7 @@ title: "A Circle, Twisted"
 series: "Just a Thought"
 part: 1
 date: 2026-07-02T00:00:00
-description: "The infinity symbol doesn't mean something goes on forever. What if it means something whole has simply been transformed?"
+description: "The infinity symbol doesn't mean something goes on forever. It means something whole has simply been transformed."
 ---
 
 ![∞](/images/symbol-infinity.svg)
