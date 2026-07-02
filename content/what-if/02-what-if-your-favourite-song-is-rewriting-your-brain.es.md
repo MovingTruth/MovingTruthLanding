@@ -1,6 +1,6 @@
 ---
 title: "¿Y Si Tu Canción Favorita Está Reescribiendo Tu Cerebro?"
-series: "What If"
+series: "¿Y si?"
 part: 2
 date: 2026-06-21T00:00:00
 description: "No como metáfora. Literalmente. Y la pregunta sobre qué hemos estado alimentándonos todo este tiempo."

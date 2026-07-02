@@ -1,6 +1,6 @@
 ---
 title: "Et Si L'Histoire Dans Laquelle Tu Te Trouves Est Plus Longue Que Ce Chapitre ?"
-series: "What If"
+series: "Et si"
 part: 3
 date: 2026-06-26T00:00:00
 description: "Pas une affirmation religieuse. Pas un réconfort. Juste une question qui n'a pas de fond clair."

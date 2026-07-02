@@ -122,7 +122,7 @@
     if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeMenu();
+      if (e.key === 'Escape' && menuPanel.classList.contains('mt-menu-panel--open')) closeMenu();
     });
 
     // ── Random pulse on header support button ─────────────────

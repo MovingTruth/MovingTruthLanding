@@ -1,6 +1,6 @@
 ---
 title: "Was Wenn Die Geschichte, In Der Du Dich Befindest, Länger Ist Als Dieses Kapitel?"
-series: "What If"
+series: "Was wäre wenn"
 part: 3
 date: 2026-06-26T00:00:00
 description: "Kein religiöser Anspruch. Kein Trost. Nur eine Frage, die keinen klaren Boden hat."

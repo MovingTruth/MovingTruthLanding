@@ -1,6 +1,6 @@
 ---
 title: "¿Y Si La Historia En La Que Estás Es Más Larga Que Este Capítulo?"
-series: "What If"
+series: "¿Y si?"
 part: 3
 date: 2026-06-26T00:00:00
 description: "No es una afirmación religiosa. No es un consuelo. Solo una pregunta que no tiene un fondo claro."

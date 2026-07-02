@@ -2,7 +2,7 @@
 (function () {
 
   /* ── Auto-detect (runs on first visit, no stored preference) ── */
-  var stored = MT.get ? null : null; // MT may not be loaded yet; use localStorage directly
+  var stored = null;
   try { stored = localStorage.getItem('mt_lang'); } catch (e) {}
 
   if (!stored) {

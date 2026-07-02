@@ -1,6 +1,6 @@
 ---
 title: "¿Y Si el Billete de $2 Ya Sabía a Dónde Iba?"
-series: "What If"
+series: "¿Y si?"
 part: 4
 date: 2026-07-01T00:00:00
 description: "Se hizo una broma. Dos semanas después, llegó un billete. Tres personas lo movieron a través de una frontera para llegar a una sola persona que había dicho una sola cosa. Una pregunta sobre la moneda rara, el dinero visible y lo que arde cuando arde el dinero."

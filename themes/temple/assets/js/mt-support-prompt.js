@@ -23,19 +23,35 @@
       var el = document.createElement('div');
       el.className = 'mt-support-prompt';
       el.setAttribute('role', 'complementary');
-      el.innerHTML =
-        '<p class="mt-support-prompt__text">' + text + '</p>' +
-        '<div class="mt-support-prompt__actions">' +
-          '<a href="' + url + '" class="mt-support-prompt__btn">' + btn + '</a>' +
-          '<button class="mt-support-prompt__close" aria-label="Dismiss">&times;</button>' +
-        '</div>';
+
+      var textEl = document.createElement('p');
+      textEl.className = 'mt-support-prompt__text';
+      textEl.textContent = text;
+
+      var actions = document.createElement('div');
+      actions.className = 'mt-support-prompt__actions';
+
+      var linkEl = document.createElement('a');
+      linkEl.href = url;
+      linkEl.className = 'mt-support-prompt__btn';
+      linkEl.textContent = btn;
+
+      var closeEl = document.createElement('button');
+      closeEl.className = 'mt-support-prompt__close';
+      closeEl.setAttribute('aria-label', 'Dismiss');
+      closeEl.textContent = '×';
+
+      actions.appendChild(linkEl);
+      actions.appendChild(closeEl);
+      el.appendChild(textEl);
+      el.appendChild(actions);
 
       document.body.appendChild(el);
       requestAnimationFrame(function () {
         el.classList.add('mt-support-prompt--visible');
       });
 
-      el.querySelector('.mt-support-prompt__close').addEventListener('click', function () {
+      closeEl.addEventListener('click', function () {
         el.classList.remove('mt-support-prompt--visible');
         setTimeout(function () { el.remove(); }, 400);
       });
@@ -54,15 +70,36 @@
     overlay.className = 'mt-support-interrupt';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.innerHTML =
-      '<div class="mt-support-interrupt__box">' +
-        '<p class="mt-support-interrupt__heading">' + heading + '</p>' +
-        '<p class="mt-support-interrupt__body">' + body + '</p>' +
-        '<div class="mt-support-interrupt__actions">' +
-          '<a href="' + url + '" class="mt-support-interrupt__btn-go">' + btnGo + '</a>' +
-          '<button class="mt-support-interrupt__btn-deny">' + btnDeny + '</button>' +
-        '</div>' +
-      '</div>';
+
+    var box = document.createElement('div');
+    box.className = 'mt-support-interrupt__box';
+
+    var headingEl = document.createElement('p');
+    headingEl.className = 'mt-support-interrupt__heading';
+    headingEl.textContent = heading;
+
+    var bodyEl = document.createElement('p');
+    bodyEl.className = 'mt-support-interrupt__body';
+    bodyEl.textContent = body;
+
+    var actionsEl = document.createElement('div');
+    actionsEl.className = 'mt-support-interrupt__actions';
+
+    var goEl = document.createElement('a');
+    goEl.href = url;
+    goEl.className = 'mt-support-interrupt__btn-go';
+    goEl.textContent = btnGo;
+
+    var denyEl = document.createElement('button');
+    denyEl.className = 'mt-support-interrupt__btn-deny';
+    denyEl.textContent = btnDeny;
+
+    actionsEl.appendChild(goEl);
+    actionsEl.appendChild(denyEl);
+    box.appendChild(headingEl);
+    box.appendChild(bodyEl);
+    box.appendChild(actionsEl);
+    overlay.appendChild(box);
 
     document.body.appendChild(overlay);
     document.body.style.overflow = 'hidden';
@@ -77,9 +114,9 @@
       setTimeout(function () { overlay.remove(); }, 400);
     }
 
-    overlay.querySelector('.mt-support-interrupt__btn-deny').addEventListener('click', dismiss);
+    denyEl.addEventListener('click', dismiss);
     overlay.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') dismiss();
+      if (e.key === 'Escape') { e.stopPropagation(); dismiss(); }
     });
   }
 

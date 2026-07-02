@@ -54,7 +54,7 @@
   (function () {
     var THEME_KEY    = 'mt_theme';
     var REMEMBER_KEY = 'mt_theme_remember';
-    var seriesURL    = '{{ "series" | relURL }}';
+    var seriesURL    = {{ "series" | relURL | jsonify | safeJS }};
 
     function sGet(s, k) { try { return s.getItem(k); } catch (e) { return null; } }
     function sSet(s, k, v) { try { s.setItem(k, v); } catch (e) {} }

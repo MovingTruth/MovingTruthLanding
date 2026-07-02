@@ -824,6 +824,14 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
   padding: 3rem 2rem 5rem;
 }
 
+.inner-content img[src*="symbol-"] {
+  display: block;
+  margin: 2.5rem auto;
+  max-width: 160px;
+  height: auto;
+  opacity: 0.6;
+}
+
 .site-footer {
   text-align: center;
   padding: 2rem;

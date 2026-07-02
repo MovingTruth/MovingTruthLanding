@@ -1,6 +1,6 @@
 ---
 title: "Et Si Ta Chanson Préférée Réécrivait Ton Cerveau ?"
-series: "What If"
+series: "Et si"
 part: 2
 date: 2026-06-21T00:00:00
 description: "Pas comme une métaphore. Littéralement. Et la question de ce dont on s'est nourri tout ce temps."

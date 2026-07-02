@@ -1,6 +1,6 @@
 ---
 title: "Was Wenn Dein Lieblingslied Dein Gehirn Umschreibt?"
-series: "What If"
+series: "Was wäre wenn"
 part: 2
 date: 2026-06-21T00:00:00
 description: "Nicht als Metapher. Buchstäblich. Und die Frage, womit wir uns die ganze Zeit ernährt haben."

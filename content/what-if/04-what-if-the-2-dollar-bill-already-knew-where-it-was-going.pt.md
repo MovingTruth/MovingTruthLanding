@@ -1,6 +1,6 @@
 ---
 title: "E Se a Nota de $2 Já Soubesse Para Onde Estava Indo?"
-series: "What If"
+series: "E se"
 part: 4
 date: 2026-07-01T00:00:00
 description: "Uma piada foi feita. Duas semanas depois, uma nota chegou. Três pessoas a moveram através de uma fronteira para alcançar uma única pessoa que havia dito uma única coisa. Uma pergunta sobre moeda rara, dinheiro visível e o que queima quando o dinheiro queima."

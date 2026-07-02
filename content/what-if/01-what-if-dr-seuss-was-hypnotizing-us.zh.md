@@ -1,6 +1,6 @@
 ---
 title: "如果苏斯博士在催眠我们呢？"
-series: "What If"
+series: "如果"
 part: 1
 date: 2026-06-20T00:00:00
 description: "史上最受爱戴的儿童文学作家之一——以及一个没有人想到要问的问题。"

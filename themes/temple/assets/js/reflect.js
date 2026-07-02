@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (overlayContinue) {
         overlayContinue.style.display = 'none';
         overlayContinue.textContent = (window.MT_I18N || {}).blessing_continue || 'I receive this.';
-        overlayContinue.removeEventListener('click', onBlessingContinue);
       }
 
       if (overlay)      { overlay.style.display = 'flex'; overlay.focus(); }
@@ -97,17 +96,17 @@ document.addEventListener('DOMContentLoaded', function () {
       window.addEventListener('pagehide', function () { clearInterval(blessingInterval); }, { once: true });
     }
 
-    var bodyEndObserver = new IntersectionObserver(function (entries) {
+    var blessingBodyEndObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           if (blessingWrap) blessingWrap.style.display = 'flex';
-          bodyEndObserver.disconnect();
+          blessingBodyEndObserver.disconnect();
         }
       });
     }, { threshold: 0 });
 
-    var bodyEnd = document.getElementById('piece-body-end');
-    if (bodyEnd) bodyEndObserver.observe(bodyEnd);
+    var blessingBodyEnd = document.getElementById('piece-body-end');
+    if (blessingBodyEnd) blessingBodyEndObserver.observe(blessingBodyEnd);
 
     if (blessingBtn) {
       if (alreadyAccepted) {
@@ -189,8 +188,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }, { threshold: 0 });
 
-    var bodyEnd = document.getElementById('piece-body-end');
-    if (bodyEnd) closingEndObserver.observe(bodyEnd);
+    var closingBodyEnd = document.getElementById('piece-body-end');
+    if (closingBodyEnd) closingEndObserver.observe(closingBodyEnd);
     return;
   }
 

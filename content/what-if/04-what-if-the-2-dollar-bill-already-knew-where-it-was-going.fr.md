@@ -1,6 +1,6 @@
 ---
 title: "Et Si le Billet de 2 $ Savait Déjà Où Il Allait ?"
-series: "What If"
+series: "Et si"
 part: 4
 date: 2026-07-01T00:00:00
 description: "Une blague a été faite. Deux semaines plus tard, un billet est arrivé. Trois personnes l'ont fait traverser une frontière pour atteindre une seule personne qui avait dit une seule chose. Une question sur la monnaie rare, l'argent visible, et ce qui brûle quand l'argent brûle."

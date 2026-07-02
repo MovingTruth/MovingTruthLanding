@@ -1,6 +1,6 @@
 ---
 title: "如果你所在的故事比这一章更长呢？"
-series: "What If"
+series: "如果"
 part: 3
 date: 2026-06-26T00:00:00
 description: "不是宗教主张。不是安慰。只是一个没有清晰底部的问题。"

@@ -1,3 +1,3 @@
 {{ define "main" }}
-<script>window.location.replace({{ .Parent.Permalink | jsonify }});</script>
+<script>window.location.replace({{ .Parent.Permalink | jsonify | safeJS }});</script>
 {{ end }}

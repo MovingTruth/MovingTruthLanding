@@ -79,14 +79,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   unreadEntries.sort(function (a, b) { return b.date < a.date ? -1 : b.date > a.date ? 1 : 0; });
 
-  var html = '';
+  var frag = document.createDocumentFragment();
   unreadEntries.forEach(function (p) {
-    html += '<a href="' + p.url + '" class="new-item">'
-      + '<span class="new-item__series">' + p.series + '</span>'
-      + '<span class="new-item__dot">·</span>'
-      + '<span class="new-item__title">' + p.title + '</span>'
-      + '</a>';
+    var a = document.createElement('a');
+    a.href = p.url;
+    a.className = 'new-item';
+
+    var seriesSpan = document.createElement('span');
+    seriesSpan.className = 'new-item__series';
+    seriesSpan.textContent = p.series;
+
+    var dot = document.createElement('span');
+    dot.className = 'new-item__dot';
+    dot.textContent = '·';
+
+    var titleSpan = document.createElement('span');
+    titleSpan.className = 'new-item__title';
+    titleSpan.textContent = p.title;
+
+    a.appendChild(seriesSpan);
+    a.appendChild(dot);
+    a.appendChild(titleSpan);
+    frag.appendChild(a);
   });
 
-  container.innerHTML = html;
+  container.appendChild(frag);
 });

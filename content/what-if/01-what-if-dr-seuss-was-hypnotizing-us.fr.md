@@ -1,6 +1,6 @@
 ---
 title: "Et Si le Dr. Seuss Nous Hypnotisait ?"
-series: "What If"
+series: "Et si"
 part: 1
 date: 2026-06-20T00:00:00
 description: "L'un des auteurs pour enfants les plus aimés de l'histoire — et une question que personne n'a jamais pensé à poser."

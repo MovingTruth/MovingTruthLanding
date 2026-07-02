@@ -1,6 +1,6 @@
 ---
 title: "Was Wenn Dr. Seuss Uns Hypnotisiert Hat?"
-series: "What If"
+series: "Was wäre wenn"
 part: 1
 date: 2026-06-20T00:00:00
 description: "Einer der beliebtesten Kinderbuchautoren der Geschichte — und eine Frage, die niemand gestellt hat."

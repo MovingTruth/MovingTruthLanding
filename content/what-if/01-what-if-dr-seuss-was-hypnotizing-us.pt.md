@@ -1,6 +1,6 @@
 ---
 title: "E Se o Dr. Seuss Estivesse Nos Hipnotizando?"
-series: "What If"
+series: "E se"
 part: 1
 date: 2026-06-20T00:00:00
 description: "Um dos autores infantis mais amados da história — e uma pergunta que ninguém pensou em fazer."

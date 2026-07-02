@@ -1,4 +1,5 @@
 ---
+weight: 40
 title: "تباريك"
 description: "كلمات تُقال على العتبة. لمن يحتاجها."
 icon: "spiral"

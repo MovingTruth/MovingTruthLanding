@@ -1,6 +1,6 @@
 ---
 title: "Was Wäre, Wenn die 2-Dollar-Note Schon Wüsste, Wohin Sie Ging?"
-series: "What If"
+series: "Was wäre wenn"
 part: 4
 date: 2026-07-01T00:00:00
 description: "Ein Scherz wurde gemacht. Zwei Wochen später kam eine Note an. Drei Menschen bewegten sie über eine Grenze, um eine einzige Person zu erreichen, die eine einzige Sache gesagt hatte. Eine Frage über seltenes Geld, sichtbares Geld und darüber, was brennt, wenn Geld brennt."

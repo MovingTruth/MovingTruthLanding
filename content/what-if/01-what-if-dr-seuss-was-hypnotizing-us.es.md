@@ -1,6 +1,6 @@
 ---
 title: "¿Y Si el Dr. Seuss Nos Estaba Hipnotizando?"
-series: "What If"
+series: "¿Y si?"
 part: 1
 date: 2026-06-20T00:00:00
 description: "Uno de los autores infantiles más queridos de la historia — y una pregunta que nadie pensó en hacer."

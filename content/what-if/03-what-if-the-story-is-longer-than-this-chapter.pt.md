@@ -1,6 +1,6 @@
 ---
 title: "E Se A História Em Que Você Está For Mais Longa Do Que Este Capítulo?"
-series: "What If"
+series: "E se"
 part: 3
 date: 2026-06-26T00:00:00
 description: "Não é uma afirmação religiosa. Não é um consolo. Apenas uma pergunta que não tem um fundo claro."

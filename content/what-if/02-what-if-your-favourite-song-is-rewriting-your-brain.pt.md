@@ -1,6 +1,6 @@
 ---
 title: "E Se Sua Música Favorita Estiver Reescrevendo Seu Cérebro?"
-series: "What If"
+series: "E se"
 part: 2
 date: 2026-06-21T00:00:00
 description: "Não como metáfora. Literalmente. E a questão sobre o que temos nos alimentado o tempo todo."
