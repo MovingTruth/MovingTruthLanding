@@ -20,6 +20,11 @@ Fixes from a full deployment review (storage/cookie state bugs, dead navigation 
 - `.github/workflows/deploy.yml` — Pinned `hugo-version` to `0.163.1` (was `"latest"`), matching the locally installed version, so deploys are reproducible and don't silently pick up an unreviewed upstream Hugo release.
 - `CLAUDE.md` — Updated the `mt-storage.js` module description and the documented JS load order to match the above.
 
+## 2026-07-13
+
+- `CLAUDE.md` — Added the explicit Cowork OS inheritance chain and linked the canonical Moving Truth workspace guide so Claude Code receives the same identity, memory, and Orion context when opened directly in the site repository.
+- `AGENTS.md` — Added a concise Codex bridge that loads the Cowork OS and repository-specific site rules without duplicating them.
+
 ## 2026-06-23
 
 - `themes/temple/layouts/_default/list.html` — Back to Home on series listing pages (e.g. /blessings/, /moving-truth/) was still pointing to /. Changed to /series/. Missed in the previous navigation pass.

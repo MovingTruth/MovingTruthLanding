@@ -1,53 +1,99 @@
 {{ define "main" }}
 
+{{ $appleLogo := `<svg class="store-badge__logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>` }}
+{{ $playLogo := `<svg class="store-badge__logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9.25" stroke-width="1.4"/><path d="M9.8 7.8l6.2 4.2-6.2 4.2V7.8z" fill="currentColor" stroke="none"/></svg>` }}
+
+{{ if eq .Params.status "shipped" }}
+
 <div class="app-page">
 
   <div class="app-hero">
     <div class="app-icon-wrap">
-      <img class="app-icon" src="/images/inner-whisper-icon.png" alt="Inner Whisper app icon" />
+      <img class="app-icon" src="{{ .Params.icon }}" alt="{{ .Title }} app icon" />
     </div>
     <div class="app-hero__text">
-      <h1 class="app-name">Inner Whisper</h1>
-      <p class="app-tagline">A quiet space for words that find you.</p>
-      <a href="https://apps.apple.com/ca/app/inner-whisper/id6760204122" class="app-store-btn" target="_blank" rel="noopener">
-        <svg class="app-store-btn__logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-        </svg>
+      <h1 class="app-name">{{ .Title }}</h1>
+      <p class="app-tagline">{{ .Params.tagline }}</p>
+      {{ with .Params.appStoreURL }}
+      <a href="{{ . }}" class="app-store-btn" target="_blank" rel="noopener">
+        {{ $appleLogo | safeHTML }}
         <span class="app-store-btn__text">
           <small>Download on the</small>
           App Store
         </span>
       </a>
+      {{ end }}
     </div>
   </div>
 
   <div class="app-body">
-    <p>Each day opens with a moment. One quote — from philosophy, nature, leadership, or wherever you choose — placed quietly into the rhythm of your morning or your afternoon.</p>
-    <p>Not a feed. Not a list. A whisper.</p>
-    <p>Save what stays with you. Your favourites travel across your Apple devices. Notifications land when you want them, and quiet down when you don't. No account. Nothing stored that you don't choose.</p>
-    <p>Whether you're looking for perspective at the start of the day or a pause in the middle of it, Inner Whisper is a simple space for words that stick.</p>
+    {{ .Content }}
   </div>
 
+  {{ with .Params.screenshots }}
   <div class="app-screenshots">
     <div class="app-screenshot-row">
-      <img class="app-screenshot" src="/images/inner-whisper-1.jpg" alt="Inner Whisper — quote moment" loading="lazy" />
-      <img class="app-screenshot" src="/images/inner-whisper-2.jpg" alt="Inner Whisper — daily quote" loading="lazy" />
+      {{ range . }}
+      <img class="app-screenshot" src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+      {{ end }}
     </div>
   </div>
+  {{ end }}
 
   <div class="app-footer">
-    <a href="https://apps.apple.com/ca/app/inner-whisper/id6760204122" class="app-store-btn" target="_blank" rel="noopener">
-      <svg class="app-store-btn__logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-      </svg>
+    {{ with .Params.appStoreURL }}
+    <a href="{{ . }}" class="app-store-btn" target="_blank" rel="noopener">
+      {{ $appleLogo | safeHTML }}
       <span class="app-store-btn__text">
         <small>Download on the</small>
         App Store
       </span>
     </a>
-    <p class="app-footer__free">Free · iPhone &amp; iPad</p>
+    {{ end }}
+    {{ with .Params.priceNote }}<p class="app-footer__free">{{ . }}</p>{{ end }}
+    {{ with .Params.androidNote }}<p class="app-platform-note">{{ . }}</p>{{ end }}
   </div>
 
 </div>
+
+{{ else }}
+
+<div class="app-page app-page--pending">
+
+  <div class="app-hero app-hero--pending">
+    <div class="app-icon-wrap">
+      <img class="app-icon app-icon--large" src="{{ .Params.icon }}" alt="{{ .Title }} app icon" />
+    </div>
+    <div class="app-hero__text">
+      <span class="apps-index__badge apps-index__badge--inline">Coming Soon</span>
+      <h1 class="app-name">{{ .Title }}</h1>
+      <p class="app-tagline">{{ .Params.tagline }}</p>
+    </div>
+  </div>
+
+  <div class="app-body">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.formulaURL }}
+  <p class="app-formula-link-wrap"><a href="{{ . }}" class="app-formula-link" target="_blank" rel="noopener">See the formula →</a></p>
+  {{ end }}
+
+  <div class="app-footer">
+    <div class="store-badges">
+      <span class="store-badge store-badge--pending">
+        {{ $appleLogo | safeHTML }}
+        <span class="store-badge__text"><small>Coming soon on the</small>App Store</span>
+      </span>
+      <span class="store-badge store-badge--pending">
+        {{ $playLogo | safeHTML }}
+        <span class="store-badge__text"><small>Coming soon on</small>Google Play</span>
+      </span>
+    </div>
+  </div>
+
+</div>
+
+{{ end }}
 
 {{ end }}

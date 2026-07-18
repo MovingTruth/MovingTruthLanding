@@ -136,6 +136,7 @@
       {{ .Site.Title }}
     </a>
     <nav>
+      <a href="{{ "apps" | relLangURL }}">{{ i18n "nav_apps" }}</a>
       <a href="{{ "series" | relLangURL }}">{{ i18n "nav_series" }}</a>
       <a href="{{ "gallery" | relLangURL }}">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "new" | relLangURL }}">{{ i18n "nav_whats_new" }}</a>
@@ -182,6 +183,7 @@
 
     <nav class="mt-menu-nav" aria-label="Site navigation">
       <p class="mt-menu-section-label">{{ i18n "menu_navigate" }}</p>
+      <a href="{{ "apps" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_apps" }}</a>
       <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_home" }}</a>
       <a href="{{ "gallery" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_all_series" }}</a>

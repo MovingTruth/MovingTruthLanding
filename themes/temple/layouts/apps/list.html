@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="apps-index">
+  <h1 class="apps-index__heading">Apps</h1>
+
+  <div class="apps-index__grid">
+    {{ range .Pages.ByWeight }}
+    {{ $href := .Permalink }}
+    {{ $external := false }}
+    {{ with .Params.externalURL }}{{ $href = . }}{{ $external = true }}{{ end }}
+    <a href="{{ $href }}" class="apps-index__card"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+      {{ if eq .Params.status "coming-soon" }}<span class="apps-index__badge">Coming Soon</span>{{ end }}
+      <img class="apps-index__icon" src="{{ .Params.icon }}" alt="{{ .Title }} app icon" loading="lazy" />
+      <h2 class="apps-index__name">{{ .Title }}</h2>
+      <p class="apps-index__tagline">{{ .Params.tagline }}</p>
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

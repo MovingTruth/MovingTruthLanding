@@ -2004,10 +2004,175 @@ body.fading .inner-content {
   margin: 0;
 }
 
+.app-platform-note {
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin: 0.35rem 0 0;
+}
+
 @media (max-width: 480px) {
   .app-hero { flex-direction: column; gap: 1rem; }
   .app-icon { width: 80px; height: 80px; }
   .app-screenshot { max-width: 160px; }
+}
+
+/* ── APPS INDEX (/apps/) ──────────────────────────────────── */
+
+.apps-index {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.apps-index__heading {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 2rem;
+}
+
+.apps-index__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 560px) {
+  .apps-index__grid { grid-template-columns: 1fr; }
+}
+
+.apps-index__card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.apps-index__card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-dim);
+  transform: translateY(-2px);
+}
+
+.apps-index__icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  display: block;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+.apps-index__name {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.apps-index__tagline {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.apps-index__badge {
+  align-self: flex-start;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.apps-index__badge--inline {
+  margin-bottom: 0.6rem;
+}
+
+/* ── APP DETAIL PAGE: pending (coming-soon) variant ─────────── */
+
+.app-icon--large {
+  width: 120px;
+  height: 120px;
+  border-radius: 26px;
+}
+
+.app-hero--pending .app-hero__text { padding-top: 0; }
+
+.app-formula-link-wrap {
+  margin: -1rem 0 2rem;
+}
+
+.app-formula-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.app-formula-link:hover {
+  border-bottom-color: var(--accent);
+}
+
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+}
+
+.store-badge--pending {
+  border-style: dashed;
+}
+
+.store-badge__logo {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.store-badge__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.store-badge__text small {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 /* ── STANDALONE PAGES (About, etc.) ───────────────────────── */

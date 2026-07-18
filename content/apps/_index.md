@@ -1,4 +1,4 @@
 ---
 title: "Apps"
-type: apps
+menuOnly: true
 ---

@@ -1,6 +1,20 @@
 # MovingTruth — Site Rules (Orion)
 *Hugo static site. Custom "temple" theme. Published under Skylaur Roe.*
 
+## Inherited Context (Cowork OS)
+
+This repository lives outside `~/Dev/MelindaCoWorkOS/`, so Claude Code must import the
+Moving Truth context explicitly:
+
+@~/Dev/MelindaCoWorkOS/CLAUDE.md
+@~/Dev/MelindaCoWorkOS/MEMORY.md
+@~/Dev/MelindaCoWorkOS/Workspaces/MovingTruth/CLAUDE.md
+@~/Dev/MelindaCoWorkOS/Workspaces/MovingTruth/MEMORY.md
+@~/Dev/MelindaCoWorkOS/Workspaces/Developer/orion.md
+
+The canonical workspace/repository map is
+`~/Dev/MelindaCoWorkOS/Workspaces/MovingTruth/docs/WORKSPACE_GUIDE.md`.
+
 ---
 
 ## Local Development
