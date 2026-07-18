@@ -1,3 +1,10 @@
+// A reflect countdown can't resume from a bfcache restore (DOMContentLoaded doesn't
+// fire again, so the interval/started state below never re-initializes) — force a
+// reload so the page re-checks stored progress and rebuilds the timer cleanly.
+window.addEventListener('pageshow', function (e) {
+  if (e.persisted) window.location.reload();
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.piece-nav');
   if (!nav) return;
@@ -51,11 +58,16 @@ document.addEventListener('DOMContentLoaded', function () {
     var blessingWrap = document.getElementById('piece-blessing-wrap');
     var blessingBtn  = document.getElementById('piece-blessing-btn');
     var blessingInterval = null;
+    var blessingRunning = false;
 
     var alreadyAccepted = MT.get(storageKey);
 
     function showBlessingOverlay() {
-      if (blessingInterval) clearInterval(blessingInterval);
+      // Guard against double-invocation while a countdown is already running
+      // (e.g. rapid re-clicks) — still allows a later, legitimate re-acceptance
+      // once the current cycle finishes or the page is left.
+      if (blessingRunning) return;
+      blessingRunning = true;
 
       var i18n = window.MT_I18N || {};
       if (overlayTitle)       overlayTitle.textContent = i18n.blessing_title || 'Let it in.';
@@ -79,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (remaining <= 0) {
           clearInterval(blessingInterval);
           blessingInterval = null;
+          blessingRunning = false;
           MT.set(storageKey);
           MT.set('mt_' + series + '_reflected_' + currentPart);
           if (overlayTimer) overlayTimer.style.display = 'none';
@@ -89,11 +102,17 @@ document.addEventListener('DOMContentLoaded', function () {
           if (blessingWrap) blessingWrap.style.display = 'none';
           if (overlayContinue) {
             overlayContinue.style.display = '';
-            overlayContinue.addEventListener('click', function () { dismissOverlay(); }, { once: true });
+            overlayContinue.addEventListener('click', function () {
+              dismissOverlay();
+              setTimeout(function () { window.location.href = seriesPage; }, 600);
+            }, { once: true });
           }
         }
       }, 1000);
-      window.addEventListener('pagehide', function () { clearInterval(blessingInterval); }, { once: true });
+      window.addEventListener('pagehide', function () {
+        clearInterval(blessingInterval);
+        blessingRunning = false;
+      }, { once: true });
     }
 
     var blessingBodyEndObserver = new IntersectionObserver(function (entries) {
@@ -164,7 +183,10 @@ document.addEventListener('DOMContentLoaded', function () {
           if (closingWrapEl) closingWrapEl.style.display = 'none';
           if (overlayContinue) {
             overlayContinue.style.display = '';
-            overlayContinue.addEventListener('click', function () { dismissOverlay(); }, { once: true });
+            overlayContinue.addEventListener('click', function () {
+              dismissOverlay();
+              setTimeout(function () { window.location.href = seriesPage; }, 600);
+            }, { once: true });
           }
         }
       }, 1000);

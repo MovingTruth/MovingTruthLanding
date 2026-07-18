@@ -53,6 +53,19 @@ document.addEventListener('DOMContentLoaded', function () {
       if (e.key === 'Escape')      { closeLb(); return; }
       if (e.key === 'ArrowLeft')   { resetZoom(); goTo(current - 1); return; }
       if (e.key === 'ArrowRight')  { resetZoom(); goTo(current + 1); return; }
+      if (e.key === 'Tab') {
+        // Trap focus inside the lightbox while it's open.
+        var focusable = [lbPrev, lbClose, lbNext].filter(function (el) { return el && !el.disabled; });
+        if (!focusable.length) return;
+        var first = focusable[0];
+        var last  = focusable[focusable.length - 1];
+        var outside = !lb.contains(document.activeElement);
+        if (e.shiftKey) {
+          if (outside || document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+          if (outside || document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      }
     } else {
       if (e.key === 'ArrowLeft')  goTo(current - 1);
       if (e.key === 'ArrowRight') goTo(current + 1);

@@ -266,16 +266,17 @@
     interrupt_dismiss: {{ i18n "support_interrupt_dismiss" | jsonify | safeJS }}
   };
   </script>
-  {{ $theme    := resources.Get "js/mt-theme.js"           | minify | fingerprint }}
   {{ $storage  := resources.Get "js/mt-storage.js"         | minify | fingerprint }}
+  {{ $theme    := resources.Get "js/mt-theme.js"           | minify | fingerprint }}
   {{ $read     := resources.Get "js/mt-read.js"            | minify | fingerprint }}
   {{ $notice   := resources.Get "js/mt-notice.js"          | minify | fingerprint }}
   {{ $reflect  := resources.Get "js/reflect.js"            | minify | fingerprint }}
   {{ $progress := resources.Get "js/series-progress.js"    | minify | fingerprint }}
   {{ $support  := resources.Get "js/mt-support-prompt.js"  | minify | fingerprint }}
   {{ $lang     := resources.Get "js/mt-lang.js"            | minify | fingerprint }}
-  <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
+  {{/* mt-storage.js must load before mt-theme.js — mt-theme.js reads MT at the top level (before DOMContentLoaded) to apply the stored theme before first paint. */}}
   <script src="{{ $storage.Permalink }}"  integrity="{{ $storage.Data.Integrity }}"></script>
+  <script src="{{ $theme.Permalink }}"    integrity="{{ $theme.Data.Integrity }}"></script>
   <script src="{{ $read.Permalink }}"     integrity="{{ $read.Data.Integrity }}"></script>
   <script src="{{ $notice.Permalink }}"   integrity="{{ $notice.Data.Integrity }}"></script>
   <script src="{{ $reflect.Permalink }}"  integrity="{{ $reflect.Data.Integrity }}"></script>

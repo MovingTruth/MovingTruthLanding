@@ -2,38 +2,26 @@
   var THEME_KEY  = 'mt_theme';
   var REMEMBER_KEY = 'mt_theme_remember';
 
-  function storageGet(storage, key) {
-    try { return storage.getItem(key); } catch (e) { return null; }
-  }
-
-  function storageSet(storage, key, val) {
-    try { storage.setItem(key, val); } catch (e) {}
-  }
-
-  function storageRemove(storage, key) {
-    try { storage.removeItem(key); } catch (e) {}
-  }
-
   function applyTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
   }
 
   function getTheme() {
-    return storageGet(localStorage, THEME_KEY) || storageGet(sessionStorage, THEME_KEY);
+    return MT.getValue(THEME_KEY) || MT.getSessionValue(THEME_KEY);
   }
 
   function isRemembered() {
-    return !!storageGet(localStorage, REMEMBER_KEY);
+    return !!MT.getValue(REMEMBER_KEY);
   }
 
   function pickTheme(t, remember) {
-    storageSet(sessionStorage, THEME_KEY, t);
+    MT.setSessionValue(THEME_KEY, t);
     if (remember) {
-      storageSet(localStorage, THEME_KEY, t);
-      storageSet(localStorage, REMEMBER_KEY, '1');
+      MT.setValue(THEME_KEY, t);
+      MT.setValue(REMEMBER_KEY, '1');
     } else {
-      storageRemove(localStorage, THEME_KEY);
-      storageRemove(localStorage, REMEMBER_KEY);
+      MT.remove(THEME_KEY);
+      MT.remove(REMEMBER_KEY);
     }
     applyTheme(t);
   }
@@ -47,7 +35,7 @@
     // ── Theme picker (landing page only) ──────────────────────
     var picker = document.getElementById('mt-theme-picker');
     if (picker) {
-      var shouldShow = !storageGet(sessionStorage, THEME_KEY) && !isRemembered();
+      var shouldShow = !MT.getSessionValue(THEME_KEY) && !isRemembered();
 
       if (!shouldShow) {
         applyTheme(getTheme() || 'dark');
@@ -162,9 +150,9 @@
     if (changeLink) {
       changeLink.addEventListener('click', function (e) {
         e.preventDefault();
-        storageRemove(localStorage, THEME_KEY);
-        storageRemove(localStorage, REMEMBER_KEY);
-        storageRemove(sessionStorage, THEME_KEY);
+        MT.remove(THEME_KEY);
+        MT.remove(REMEMBER_KEY);
+        MT.removeSessionValue(THEME_KEY);
         window.location.href = changeLink.getAttribute('href');
       });
     }

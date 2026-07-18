@@ -2,8 +2,7 @@
 (function () {
 
   /* ── Auto-detect (runs on first visit, no stored preference) ── */
-  var stored = null;
-  try { stored = localStorage.getItem('mt_lang'); } catch (e) {}
+  var stored = MT.getValue('mt_lang');
 
   if (!stored) {
     var lang = (navigator.language || '').toLowerCase();
@@ -21,7 +20,7 @@
       var path = window.location.pathname;
       var alreadyOn = path === '/' + detected + '/' || path.indexOf('/' + detected + '/') === 0;
       if (!alreadyOn) {
-        try { localStorage.setItem('mt_lang', detected); } catch (e) {}
+        MT.setValue('mt_lang', detected);
         window.location.replace('/' + detected + '/');
         return;
       }
@@ -49,7 +48,7 @@
     /* Store language choice when user selects one */
     panel.querySelectorAll('[data-lang]').forEach(function (link) {
       link.addEventListener('click', function () {
-        try { localStorage.setItem('mt_lang', this.dataset.lang); } catch (e) {}
+        MT.setValue('mt_lang', this.dataset.lang);
       });
     });
   });
@@ -58,7 +57,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.mt-menu-lang-link[data-lang]').forEach(function (link) {
       link.addEventListener('click', function () {
-        try { localStorage.setItem('mt_lang', this.dataset.lang); } catch (e) {}
+        MT.setValue('mt_lang', this.dataset.lang);
       });
     });
   });

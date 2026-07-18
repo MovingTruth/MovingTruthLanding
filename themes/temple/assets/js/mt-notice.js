@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'Tab') { e.preventDefault(); if (btn) btn.focus(); }
   });
 
-  if (!MT.get('mt_noticed')) showNotice(true);
+  if (!MT.getSessionValue('mt_noticed')) showNotice(true);
 
   if (btn) {
     btn.addEventListener('click', function () {
-      MT.set('mt_noticed');
+      MT.setSessionValue('mt_noticed', '1');
       hideNotice();
     });
   }
@@ -46,8 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e) e.preventDefault();
     var msg = (window.MT_I18N || {}).reset_confirm || 'Reset all reading progress across every series? You\'ll start fresh.';
     if (!confirm(msg)) return;
+    // Only clear reading-progress keys (reflected/accepted/closing) — this button
+    // resets "reading progress", not language, theme, or the support-prompt state.
     MT.keysStartingWith('mt_').forEach(function (k) {
-      if (k !== 'mt_theme' && k !== 'mt_theme_remember') MT.remove(k);
+      if (k.indexOf('_reflected_') !== -1 || k.indexOf('_accepted_') !== -1 || k.indexOf('_closing') !== -1) {
+        MT.remove(k);
+      }
     });
     window.location.reload();
   }

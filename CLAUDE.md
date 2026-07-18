@@ -137,14 +137,14 @@ Each file has one job. Do not add responsibilities without documenting here.
 | File | Job |
 |------|-----|
 | `mt-theme.js` | Dark/light theme: read from storage, apply immediately, handle theme picker, hamburger menu, nav pulse, change-theme link |
-| `mt-storage.js` | Thin wrapper around `localStorage` / `sessionStorage`. Exposes `MT.get()`, `MT.set()`, `MT.remove()`. All JS modules use this — do not call `localStorage` directly. |
+| `mt-storage.js` | Thin wrapper around `localStorage` / `sessionStorage`, with a cookie fallback for both. Exposes `MT.get()/set()/remove()` (durable boolean flags, e.g. "has this piece been reflected"), `MT.getValue()/setValue()` (durable string values, e.g. theme/language), and `MT.getSessionValue()/setSessionValue()/removeSessionValue()` (cleared when the browser session actually ends, e.g. the first-visit notice). All JS modules use this — do not call `localStorage`/`sessionStorage` directly. |
 | `mt-notice.js` | "Before you begin" first-visit notice. Shows once per session. Reset progress button (menu and footer). |
 | `reflect.js` | All reflect/lock/unlock behaviour: inter-piece 30s timer, blessing mode, closing reflection mode. Depends on `MT` (mt-storage.js). Must load after mt-storage.js. |
 | `series-progress.js` | Tracks which pieces the reader has completed. Shows progress indicators on series index pages. |
 | `gallery.js` | Gallery lightbox behaviour. |
 | `audio.js` | Ambient audio (currently unused — `ambientAudio` is empty in hugo.toml). |
 
-**Load order in baseof.html:** mt-theme → mt-storage → mt-notice → reflect → series-progress. This order matters. reflect.js depends on `MT` being available.
+**Load order in baseof.html:** mt-storage → mt-theme → mt-notice → reflect → series-progress. This order matters — mt-theme.js reads `MT` at the top level (before DOMContentLoaded) to apply the stored theme before first paint, and reflect.js depends on `MT` being available too.
 
 ---
 
