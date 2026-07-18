@@ -1,5 +1,5 @@
 ---
-title: "¿Y Si el Dr. Seuss Nos Estaba Hipnotizando?"
+title: "¿Y Si el Dr. Seuss Sabía Exactamente Lo Que Estaba Haciendo?"
 series: "¿Y si?"
 part: 1
 date: 2026-06-20T00:00:00

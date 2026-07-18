@@ -1,5 +1,5 @@
 ---
-title: "What If Dr. Seuss Was Hypnotizing Us?"
+title: "What If Dr. Seuss Knew Exactly What He Was Doing?"
 series: "What If"
 part: 1
 date: 2026-06-20T00:00:00

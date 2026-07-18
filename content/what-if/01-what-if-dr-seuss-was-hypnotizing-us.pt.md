@@ -1,5 +1,5 @@
 ---
-title: "E Se o Dr. Seuss Estivesse Nos Hipnotizando?"
+title: "E Se o Dr. Seuss Soubesse Exatamente O Que Estava Fazendo?"
 series: "E se"
 part: 1
 date: 2026-06-20T00:00:00

@@ -1,5 +1,5 @@
 ---
-title: "Et Si le Dr. Seuss Nous Hypnotisait ?"
+title: "Et Si le Dr. Seuss Savait Exactement Ce Qu'il Faisait ?"
 series: "Et si"
 part: 1
 date: 2026-06-20T00:00:00
