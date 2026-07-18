@@ -54,3 +54,7 @@ Personne n'a forcé Narcisse à rester près de l'eau. Il l'a choisi, de la mêm
 Écho est toujours là-bas, quelque part au-delà de la lisière des arbres.
 
 Elle ne te donne simplement pas raison aussi vite.
+
+---
+
+*ChatGPT a atteint cent millions d'utilisateurs actifs mensuels en seulement deux mois après son lancement en novembre 2022 — rapporté par Reuters, citant une analyse d'UBS qui l'a qualifié d'application grand public la plus rapide à croître de l'histoire d'internet. Les chiffres pour la radio, la télévision et internet proviennent du graphique largement diffusé sur les cent millions d'utilisateurs. Le compte rendu d'OpenAI sur le retrait de la flagornerie de GPT-4o est publié directement sur openai.com, dans « Sycophancy in GPT-4o: What Happened and What We're Doing About It », le 29 avril 2025.*

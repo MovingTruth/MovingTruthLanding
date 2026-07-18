@@ -54,3 +54,7 @@ Nobody made Narcissus stay at the water. He chose it, the way anyone chooses wha
 Echo is still out there, somewhere past the tree line.
 
 She just doesn't agree with you nearly as fast.
+
+---
+
+*ChatGPT reached 100 million monthly active users within two months of its November 2022 launch — reported by Reuters, citing a UBS analysis calling it the fastest-growing consumer internet app in history. The radio, television, and internet adoption-speed figures come from the widely circulated hundred-million-users comparison chart. OpenAI's account of the GPT-4o sycophancy rollback is published directly at openai.com, in "Sycophancy in GPT-4o: What Happened and What We're Doing About It," April 29, 2025.*

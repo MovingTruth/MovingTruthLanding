@@ -53,3 +53,7 @@ Sein Pseudonym war Dr. Seuss.
 Wer war er also. Der Mann, der die Schlange für das TNT zeichnete. Oder der Mann, der vierzig Jahre lang darauf bestand, dass ein Mensch ein Mensch ist, ganz gleich wie klein.
 
 Vielleicht ist die ehrliche Antwort, dass er beides war, für immer, und das Zweite löscht das Erste nicht aus. Es bedeutet nur, dass er den Rest seines Lebens damit verbrachte, sich davon freizuschreiben.
+
+---
+
+*Die Karikatur „Waiting for the Signal From Home" vom 13. Februar 1942 und ihre zeitliche Nähe von nur sechs Tagen zur Executive Order 9066 (unterzeichnet am 19. Februar 1942) sind durch die National Archives dokumentiert und im Asia-Pacific Journal: Japan Focus analysiert. Geisels eigene Identifikation der Schildkröte Yertle mit Hitler ist in mehreren Interviews belegt, darunter eine Äußerung von 1987: „Yertle was Hitler or Mussolini." Die Widmung von Horton Hears a Who! (1954) an Mitsugi Nakamura, Dekan der Doshisha-Universität in Kyoto, folgte auf Geisels Japanreise 1953. Die Entscheidung von Dr. Seuss Enterprises vom 2. März 2021, sechs Titel — And to Think That I Saw It on Mulberry Street, If I Ran the Zoo, McElligot's Pool, On Beyond Zebra!, Scrambled Eggs Super! und The Cat's Quizzer — wegen rassistischer und verletzender Bildsprache nicht mehr zu veröffentlichen, wurde von der Associated Press berichtet.*

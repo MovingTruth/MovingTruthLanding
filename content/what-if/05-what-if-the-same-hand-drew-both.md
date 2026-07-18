@@ -53,3 +53,7 @@ His pen name was Dr. Seuss.
 So which one was he. The man who drew the line for the TNT. Or the man who spent forty years insisting a person is a person, no matter how small.
 
 Maybe the honest answer is that he was both, permanently, and the second one doesn't erase the first. It just means he spent the rest of his life trying to out-write it.
+
+---
+
+*The February 13, 1942 PM cartoon "Waiting for the Signal From Home" and its six-day proximity to Executive Order 9066 (signed February 19, 1942) are documented by the National Archives and analyzed in the Asia-Pacific Journal: Japan Focus. Geisel's own identification of Yertle the Turtle with Hitler is on record in multiple interviews, including a 1987 remark: "Yertle was Hitler or Mussolini." The dedication of Horton Hears a Who! (1954) to Mitsugi Nakamura, dean of Doshisha University in Kyoto, followed Geisel's 1953 visit to Japan. Dr. Seuss Enterprises' March 2, 2021 decision to cease publishing six titles — And to Think That I Saw It on Mulberry Street, If I Ran the Zoo, McElligot's Pool, On Beyond Zebra!, Scrambled Eggs Super!, and The Cat's Quizzer — for racist and insensitive imagery was reported by the Associated Press.*

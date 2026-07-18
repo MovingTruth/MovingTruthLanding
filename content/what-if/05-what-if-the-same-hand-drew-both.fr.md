@@ -53,3 +53,7 @@ Son nom de plume était Dr. Seuss.
 Alors, lequel était-il vraiment. L'homme qui a dessiné la file pour le TNT. Ou l'homme qui a passé quarante ans à répéter qu'une personne est une personne, aussi petite soit-elle.
 
 Peut-être que la réponse honnête est qu'il fut les deux, pour toujours, et que le second n'efface pas le premier. Cela signifie seulement qu'il a passé le reste de sa vie à essayer de s'en écrire loin.
+
+---
+
+*La caricature du 13 février 1942, « Waiting for the Signal From Home », et sa proximité de seulement six jours avec l'Executive Order 9066 (signé le 19 février 1942), sont documentées par les Archives nationales américaines et analysées dans l'Asia-Pacific Journal: Japan Focus. L'identification par Geisel lui-même de la tortue Yertle à Hitler est attestée dans plusieurs entretiens, dont une déclaration de 1987 : « Yertle was Hitler or Mussolini. » La dédicace de Horton Hears a Who! (1954) à Mitsugi Nakamura, doyen de l'université Doshisha à Kyoto, fait suite au voyage de Geisel au Japon en 1953. La décision de Dr. Seuss Enterprises, le 2 mars 2021, de cesser de publier six titres — And to Think That I Saw It on Mulberry Street, If I Ran the Zoo, McElligot's Pool, On Beyond Zebra!, Scrambled Eggs Super! et The Cat's Quizzer — en raison d'images racistes et blessantes, a été rapportée par l'Associated Press.*

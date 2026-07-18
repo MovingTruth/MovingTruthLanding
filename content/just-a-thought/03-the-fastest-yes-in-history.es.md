@@ -54,3 +54,7 @@ Nadie obligó a Narciso a quedarse en el agua. Él lo eligió, de la misma maner
 Eco sigue ahí afuera, en algún lugar más allá de la línea de árboles.
 
 Solo que no te da la razón ni la mitad de rápido.
+
+---
+
+*ChatGPT alcanzó cien millones de usuarios activos mensuales en apenas dos meses tras su lanzamiento en noviembre de 2022 — según Reuters, citando un análisis de UBS que lo calificó como la aplicación de consumo en internet de más rápido crecimiento en la historia. Las cifras de radio, televisión e internet provienen del gráfico ampliamente difundido sobre los cien millones de usuarios. El propio relato de OpenAI sobre la retirada de la sicofancia en GPT-4o está publicado directamente en openai.com, en "Sycophancy in GPT-4o: What Happened and What We're Doing About It", 29 de abril de 2025.*

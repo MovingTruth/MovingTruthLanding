@@ -54,3 +54,7 @@ Niemand hat Narziss gezwungen, am Wasser zu bleiben. Er hat es gewählt, so wie 
 Echo ist immer noch da draußen, irgendwo hinter der Baumgrenze.
 
 Sie stimmt dir nur nicht annähernd so schnell zu.
+
+---
+
+*ChatGPT erreichte hundert Millionen monatlich aktive Nutzer innerhalb von zwei Monaten nach seinem Start im November 2022 — berichtet von Reuters unter Berufung auf eine UBS-Analyse, die es als die am schnellsten wachsende Verbraucher-App im Internet aller Zeiten bezeichnete. Die Vergleichswerte für Radio, Fernsehen und Internet stammen aus der weit verbreiteten Grafik zu den hundert Millionen Nutzern. OpenAIs eigene Darstellung des Sycophancy-Rückzugs bei GPT-4o ist direkt auf openai.com veröffentlicht, unter dem Titel „Sycophancy in GPT-4o: What Happened and What We're Doing About It", 29. April 2025.*
