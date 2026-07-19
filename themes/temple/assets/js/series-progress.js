@@ -35,20 +35,29 @@ document.addEventListener('DOMContentLoaded', function () {
   // Skips sequential locking so all parts are accessible in any order (e.g. Blessings).
   var freeAccess = section.dataset.freeAccess === 'true';
 
+  // chainIntact tracks whether every part so far has genuinely been reflected in
+  // order. Checking only the immediate predecessor (as this used to) lets one
+  // out-of-order reflected flag — set by landing on a part directly, see
+  // reflect.js's gate — cascade forward and unlock everything after it forever.
+  // Requiring the full chain also self-heals: a stale reflected flag past a gap
+  // shows locked again next load, instead of needing a manual progress reset.
+  var chainIntact = true;
+
   cards.forEach(function (card) {
     var part = parseInt(card.dataset.part, 10);
     var key = 'mt_' + slug + '_reflected_' + part;
-    var prevKey = 'mt_' + slug + '_reflected_' + (part - 1);
     var isReflected = MT.get(key);
-    var prereqMet = freeAccess || part === 1 || MT.get(prevKey);
+    var prereqMet = freeAccess || part === 1 || chainIntact;
 
-    if (isReflected) {
+    if (isReflected && prereqMet) {
       reflected++;
       card.classList.add('part-card--reflected');
     } else if (!prereqMet) {
       card.classList.add('part-card--locked');
       card.removeAttribute('href');
     }
+
+    if (!isReflected) chainIntact = false;
   });
 
   if (reflected > 0) {

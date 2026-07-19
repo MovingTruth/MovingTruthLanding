@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var entry = entryPoint(target);
         if (entry.url !== target.url) {
           e.preventDefault();
+          var msg = document.querySelector('.new-page').dataset.redirectMsg;
+          if (msg) MT.setSessionValue('mt_redirect_notice', msg);
           window.location.href = entry.url;
         }
       });

@@ -53,10 +53,26 @@
   {{ end }}
 
   {{ $nextPiece := index (where .CurrentSection.Pages ".Params.part" (add .Params.part 1)) 0 }}
+  {{/*
+    mt-series-parts: this section's part->URL map, used by reflect.js to enforce
+    sequential reading. A static site has no server-side gate, so every part's URL
+    is directly reachable (search engines, shared links, bookmarks) regardless of
+    what the series-index page locks — this is the actual enforcement point.
+    Lets an out-of-order landing redirect in a single hop to the first unread part,
+    instead of cascading page-by-page through Previous links.
+  */}}
+  {{ if .Params.part }}
+  {{ $seriesParts := slice }}
+  {{ range .CurrentSection.Pages.ByParam "part" }}
+    {{ $seriesParts = $seriesParts | append (dict "part" .Params.part "url" .Permalink) }}
+  {{ end }}
+  <script type="application/json" id="mt-series-parts">{{ $seriesParts | jsonify | safeJS }}</script>
+  {{ end }}
   <nav class="piece-nav"
     data-part="{{ .Params.part }}"
-    data-series="{{ .CurrentSection.Slug }}"
+    data-series="{{ .Section }}"
     data-series-page="{{ "series" | relLangURL }}"
+    {{ if .CurrentSection.Params.freeAccess }}data-free-access="true"{{ end }}
     {{ if not $nextPiece }}data-final="true"{{ end }}
     {{ if .Params.closingReflection }}data-closing="true"{{ end }}
     {{ if .Params.blessing }}data-blessing="true"{{ end }}>

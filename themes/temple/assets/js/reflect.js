@@ -11,12 +11,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var series = nav.dataset.series;
   var currentPart = parseInt(nav.dataset.part, 10);
+  var freeAccess = nav.dataset.freeAccess === 'true';
   var isClosing = nav.dataset.closing === 'true';
   var isFinal = nav.dataset.final === 'true';
   var isBlessing = nav.dataset.blessing === 'true';
   var seriesPage = nav.dataset.seriesPage || '/series';
   var nextWrap = nav.querySelector('.piece-nav-next-wrap');
   var nextLink = nav.querySelector('.piece-nav-next--locked');
+
+  // ── SEQUENTIAL-READING GATE ─────────────────────────────────
+  // The series-index page can only hide/remove a link — it can't stop someone
+  // landing here directly (search engine, shared link, bookmark, typed URL).
+  // This is the real enforcement point. Finds the first unread part before this
+  // one and redirects there in a single hop, with a toast (shown by mt-storage.js
+  // on the landing page) explaining why.
+  if (!freeAccess && currentPart > 1) {
+    var partsEl = document.getElementById('mt-series-parts');
+    var parts = [];
+    if (partsEl) {
+      try { parts = JSON.parse(partsEl.textContent); } catch (e) {}
+    }
+    parts.sort(function (a, b) { return a.part - b.part; });
+    var entry = null;
+    for (var i = 0; i < parts.length; i++) {
+      if (parts[i].part >= currentPart) break;
+      if (!MT.get('mt_' + series + '_reflected_' + parts[i].part)) { entry = parts[i]; break; }
+    }
+    if (entry) {
+      MT.setSessionValue('mt_redirect_notice', (window.MT_I18N || {}).new_out_of_order || 'This series has a beginning. Taking you there.');
+      window.location.replace(entry.url);
+      return;
+    }
+  }
 
   if (!nextLink && !isClosing && !isFinal && !isBlessing) return;
 

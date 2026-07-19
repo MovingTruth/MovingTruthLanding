@@ -62,3 +62,28 @@ var MT = {
     document.cookie = key + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=Lax; Secure';
   }
 };
+
+// ── Redirect notice toast ──────────────────────────────────────
+// Anything that redirects a reader instead of honoring their click (the
+// sequential-reading gate in reflect.js, the out-of-order intercept in
+// mt-new.js) sets mt_redirect_notice before navigating. Shown once, here,
+// on whatever page the redirect lands on — decoupled from either caller
+// since the landing page is never the same file as the one that redirected.
+document.addEventListener('DOMContentLoaded', function () {
+  var msg = MT.getSessionValue('mt_redirect_notice');
+  if (!msg) return;
+  MT.removeSessionValue('mt_redirect_notice');
+
+  var toast = document.createElement('div');
+  toast.className = 'new-redirect-toast';
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(function () {
+    toast.classList.add('new-redirect-toast--visible');
+  });
+  setTimeout(function () {
+    toast.classList.remove('new-redirect-toast--visible');
+    setTimeout(function () { toast.remove(); }, 300);
+  }, 4000);
+});

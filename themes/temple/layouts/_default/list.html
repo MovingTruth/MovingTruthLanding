@@ -31,7 +31,7 @@
     part-card locking is handled entirely in series-progress.js — do not add locking logic here.
     part-card--reflected / part-card--locked classes are applied by JS at runtime.
   */}}
-  <section class="series-index" data-series="{{ .Slug }}"{{ if .Params.freeAccess }} data-free-access="true"{{ end }}>
+  <section class="series-index" data-series="{{ .Section }}"{{ if .Params.freeAccess }} data-free-access="true"{{ end }}>
     <div class="series-header">
       <h1 class="page-title">{{ .Title }}</h1>
       {{ with .Description }}<p class="series-description">{{ . }}</p>{{ end }}
