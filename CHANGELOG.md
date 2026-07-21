@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-21
+
+- `static/images/inner-sign-icon.png` — Replaced the Inner Sign app icon shown on MovingTruth.com with Robin's new gold elemental-circle artwork, exported as a 1024×1024 PNG for consistent app and web use.
+
 ## 2026-07-18
 
 Fixes from a full deployment review (storage/cookie state bugs, dead navigation code, memory leaks, minor security/accessibility hardening). Full findings in the review report.
