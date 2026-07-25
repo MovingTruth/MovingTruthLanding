@@ -39,6 +39,7 @@
     {{ if .Site.Params.showSubtitle }}
     <p class="ld-author">by {{ .Site.Params.author }}</p>
     {{ end }}
+    <p class="mt-build-stamp">{{ with .Site.Params.builddate }}Deployed {{ . }}{{ else }}Local build{{ end }}{{ with .Site.Params.buildsha }} · {{ . }}{{ end }}</p>
   </div>
 
   <script>

@@ -6,7 +6,7 @@
 
 ## 2026-07-25
 
-- `themes/temple/layouts/_default/baseof.html` and `.github/workflows/deploy.yml` — Added a subtle footer stamp to every page showing the Eastern Time deployment date and the deployed commit's short SHA. The values are injected by the production workflow, so the marker identifies the code actually built and published.
+- `themes/temple/layouts/_default/baseof.html`, `themes/temple/layouts/index.html`, and `.github/workflows/deploy.yml` — Added a subtle footer stamp to every page, including the doorway homepage, showing the Eastern Time deployment date and the deployed commit's short SHA. The values are injected by the production workflow, so the marker identifies the code actually built and published.
 - `content/log.md` and `themes/temple/layouts/log/single.html` — Added an unlisted, English-only `/log/` page that renders this canonical changelog directly. The page is excluded from search indexing and the sitemap so there is no second release record to maintain or public navigation entry to expose.
 - `themes/temple/assets/css/temple.css`, reflection templates, and `i18n/*.yaml` — Removed the final unused email/Substack subscription styles and translation strings. No subscription form or notice remains in the active site templates. Consolidated obsolete duplicate reflection-overlay keys onto the canonical blessing/closing translations and completed localized countdown suffixes so production builds no longer emit translation warnings.
 
