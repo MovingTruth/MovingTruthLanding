@@ -31,6 +31,7 @@ reflect_unlock_final: "Prenditi un momento. Il prossimo percorso è tuo da scegl
 reflect_ready: Ora non puoi più non saperlo.
 reflect_continue: Continua
 reflect_message: Ora non puoi più non saperlo.
+reflect_countdown_suffix: "s"
 
 blessing_title: Lascialo entrare.
 blessing_sub: Sei sostenuto.
@@ -85,8 +86,6 @@ series_begin: "Inizia →"
 series_parts:
   one: "1 parte"
   other: "{{ . }} parti"
-substack_label: "Sappi quando arriva qualcosa di nuovo."
-substack_placeholder: "La tua email"
 
 blessing_accept: Accetta questa benedizione
 blessing_free: Sono libero.

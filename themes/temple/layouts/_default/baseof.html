@@ -75,6 +75,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.tagline }}{{ end }}" />
+  {{ if .Params.noindex }}<meta name="robots" content="noindex, nofollow" />{{ end }}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:title" content="{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}" />
@@ -103,18 +104,7 @@
 <a href="#main-content" class="skip-link">{{ i18n "nav_skip" }}</a>
 
 <div id="mt-reflect-overlay" class="mt-reflect-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="mt-reflect-title" tabindex="-1"
-  data-unlock-final="{{ i18n "reflect_unlock_final" }}"
-  data-ready="{{ i18n "reflect_ready" }}"
-  data-seconds-suffix="{{ i18n "reflect_countdown_suffix" }}"
-  data-blessing-title="{{ i18n "reflect_blessing_title" }}"
-  data-blessing-sub="{{ i18n "reflect_blessing_sub" }}"
-  data-blessing-instruction="{{ i18n "reflect_blessing_instruction" }}"
-  data-blessing-ready="{{ i18n "reflect_blessing_ready" }}"
-  data-closing-title="{{ i18n "reflect_closing_title" }}"
-  data-closing-sub="{{ i18n "reflect_closing_sub" }}"
-  data-closing-instruction="{{ i18n "reflect_closing_instruction" }}"
-  data-closing-continue="{{ i18n "blessing_free" }}"
-  data-closing-ready="{{ i18n "reflect_closing_ready" }}">
+  data-seconds-suffix="{{ i18n "reflect_countdown_suffix" }}">
   <div class="mt-reflect-box">
     <p class="mt-reflect-title" id="mt-reflect-title">{{ i18n "reflect_title" }}</p>
     <p class="mt-reflect-sub">{{ i18n "reflect_sub" }}</p>
@@ -244,6 +234,7 @@
     <img src="/logo.png" alt="" class="site-footer-logo" aria-hidden="true" />
     <p>{{ .Site.Title }} &mdash; {{ .Site.Params.author }}</p>
     <p><a href="#" id="mt-show-notice" class="footer-link">{{ i18n "footer_how_works" }}</a> &nbsp;·&nbsp; <a href="{{ "choose" | relLangURL }}" id="mt-change-theme" class="footer-link">{{ i18n "footer_change_theme" }}</a> &nbsp;·&nbsp; <a href="{{ "support" | relLangURL }}" class="footer-link">{{ i18n "nav_support_page" }}</a> &nbsp;·&nbsp; <a href="https://paypal.me/SkylaurRoe" class="footer-link" target="_blank" rel="noopener">{{ i18n "buy_me_coffee" }}</a> &nbsp;·&nbsp; <a href="#" id="mt-reset-all" class="footer-link">{{ i18n "footer_reset" }}</a></p>
+    <p class="mt-build-stamp">{{ with .Site.Params.builddate }}Deployed {{ . }}{{ else }}Local build{{ end }}{{ with .Site.Params.buildsha }} · {{ . }}{{ end }}</p>
   </footer>
 
   <script>

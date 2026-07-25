@@ -31,15 +31,6 @@ reflect_unlock_final: "Nimm dir einen Moment. Der nächste Weg gehört dir."
 reflect_ready: Jetzt kannst du es nicht mehr nicht wissen.
 reflect_continue: Weiter
 reflect_countdown_suffix: "s"
-reflect_blessing_title: "Lass es herein."
-reflect_blessing_sub: "Du wirst gehalten."
-reflect_blessing_instruction: "Gib ihm dreißig Sekunden, um dich zu erreichen."
-reflect_blessing_ready: "Diese Segnung gehört dir."
-reflect_blessing_again: "Diese Segnung erneut annehmen"
-reflect_closing_title: "Lass es wirken."
-reflect_closing_sub: "Die Worte wurden gesprochen."
-reflect_closing_instruction: "Gib ihnen dreißig Sekunden."
-reflect_closing_ready: "Du bist frei."
 
 notice_title: Bevor du beginnst
 notice_body_1: Diese Geschichten sind dazu gedacht, der Reihe nach gelesen zu werden. Jede Serie ist ihr eigener Weg — du kannst jede Serie beginnen, wann du möchtest, aber innerhalb einer Serie folgst du den Teilen vom ersten an.
@@ -79,8 +70,6 @@ series_begin: "Beginnen →"
 series_parts:
   one: "1 Teil"
   other: "{{ . }} Teile"
-substack_label: "Erfahre, wenn etwas Neues ankommt."
-substack_placeholder: "Deine E-Mail"
 
 blessing_accept: Diese Segnung annehmen
 blessing_free: Ich bin frei.

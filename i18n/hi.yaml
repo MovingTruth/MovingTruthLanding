@@ -31,6 +31,7 @@ reflect_unlock_final: "एक क्षण लें। आपका अगल�
 reflect_ready: "अब आप उस अनजाने पल में वापस नहीं जा सकते।"
 reflect_continue: "जारी रखें"
 reflect_message: "अब आप उस अनजाने पल में वापस नहीं जा सकते।"
+reflect_countdown_suffix: " सेकंड"
 
 blessing_title: "इसे भीतर आने दें।"
 blessing_sub: "आपको थामा जा रहा है।"
@@ -85,8 +86,6 @@ series_begin: "शुरू करें →"
 series_parts:
   one: "1 भाग"
   other: "{{ . }} भाग"
-substack_label: "जब कुछ नया आए, जान जाएँ।"
-substack_placeholder: "आपका ईमेल"
 
 blessing_accept: "यह आशीर्वाद स्वीकार करें"
 blessing_free: "मैं मुक्त हूँ।"

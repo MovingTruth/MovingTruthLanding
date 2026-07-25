@@ -31,6 +31,7 @@ reflect_unlock_final: Take a moment. Your next path is yours to choose.
 reflect_ready: Now you can't unknow it.
 reflect_continue: Continue
 reflect_message: Now you can't unknow it.
+reflect_countdown_suffix: "s"
 
 blessing_title: Let it in.
 blessing_sub: You are being held.
@@ -85,8 +86,6 @@ series_begin: "Begin →"
 series_parts:
   one: "1 part"
   other: "{{ . }} parts"
-substack_label: "Know when something new arrives."
-substack_placeholder: "Your email"
 
 blessing_accept: Accept this blessing
 blessing_free: I am free.

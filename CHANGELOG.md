@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-07-25
+
+- `themes/temple/layouts/_default/baseof.html` and `.github/workflows/deploy.yml` — Added a subtle footer stamp to every page showing the Eastern Time deployment date and the deployed commit's short SHA. The values are injected by the production workflow, so the marker identifies the code actually built and published.
+- `content/log.md` and `themes/temple/layouts/log/single.html` — Added an unlisted, English-only `/log/` page that renders this canonical changelog directly. The page is excluded from search indexing and the sitemap so there is no second release record to maintain or public navigation entry to expose.
+- `themes/temple/assets/css/temple.css`, reflection templates, and `i18n/*.yaml` — Removed the final unused email/Substack subscription styles and translation strings. No subscription form or notice remains in the active site templates. Consolidated obsolete duplicate reflection-overlay keys onto the canonical blessing/closing translations and completed localized countdown suffixes so production builds no longer emit translation warnings.
+
+## 2026-07-24
+
+- `hugo.toml`, `content/**/*.it.md`, `content/**/*.nl.md`, `content/**/*.hi.md`, `i18n/*.yaml`, and the remaining gallery translations — Expanded MovingTruth.com to the same 14-language set used by the app family, completed all public content and interface translations, preserved Arabic right-to-left rendering, and removed silent English interface fallbacks.
+- `themes/temple/layouts/_default/baseof.html` — Changed both Apps navigation links to the canonical `apps.movingtruth.com` hub while preserving the visitor's selected language, including the `pt` → `pt-BR` and `zh` → `zh-Hans` mappings. Legacy local Apps routes now redirect to the hub or the corresponding individual app site.
+
 ## 2026-07-21
 
 - `static/images/inner-sign-icon.png` — Replaced the Inner Sign app icon shown on MovingTruth.com with Robin's new gold elemental-circle artwork, exported as a 1024×1024 PNG for consistent app and web use.

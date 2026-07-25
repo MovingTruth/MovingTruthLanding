@@ -31,6 +31,7 @@ reflect_unlock_final: 잠시 머무세요. 다음 길은 당신이 선택하는 
 reflect_ready: "이제 당신은 모른 척할 수 없습니다."
 reflect_continue: 계속
 reflect_message: "이제 당신은 모른 척할 수 없습니다."
+reflect_countdown_suffix: "초"
 
 blessing_title: 받아들이세요.
 blessing_sub: 당신은 보살핌을 받고 있습니다.
@@ -99,5 +100,3 @@ series_begin: "시작 →"
 series_parts:
   one: "1편"
   other: "{{ . }}편"
-substack_label: "새로운 글이 도착할 때 알려드릴게요."
-substack_placeholder: "이메일"

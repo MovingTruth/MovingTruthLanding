@@ -31,6 +31,7 @@ reflect_unlock_final: Neem een moment. Jouw volgende pad is aan jou om te kiezen
 reflect_ready: Nu kun je niet meer terug naar het niet-weten.
 reflect_continue: Doorgaan
 reflect_message: Nu kun je niet meer terug naar het niet-weten.
+reflect_countdown_suffix: "s"
 
 blessing_title: Laat het toe.
 blessing_sub: Je wordt gedragen.
@@ -85,8 +86,6 @@ series_begin: "Begin →"
 series_parts:
   one: "1 deel"
   other: "{{ . }} delen"
-substack_label: "Weet wanneer er iets nieuws bijkomt."
-substack_placeholder: "Je e-mailadres"
 
 blessing_accept: Ontvang deze zegen
 blessing_free: Ik ben vrij.

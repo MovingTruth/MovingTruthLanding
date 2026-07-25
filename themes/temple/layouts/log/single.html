@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<article class="standalone-page">
+  <div class="standalone-body">
+    {{ readFile "CHANGELOG.md" | markdownify }}
+  </div>
+</article>
+
+{{ end }}

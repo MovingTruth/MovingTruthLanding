@@ -31,15 +31,6 @@ reflect_unlock_final: "Возьми момент. Следующий путь т
 reflect_ready: Теперь ты не можешь это не знать.
 reflect_continue: Продолжить
 reflect_countdown_suffix: "с"
-reflect_blessing_title: "Впусти это."
-reflect_blessing_sub: "Ты в надёжных руках."
-reflect_blessing_instruction: "Дай ему тридцать секунд, чтобы достичь тебя."
-reflect_blessing_ready: "Это благословение твоё."
-reflect_blessing_again: "Принять это благословение снова"
-reflect_closing_title: "Дай ему работать."
-reflect_closing_sub: "Слова были произнесены."
-reflect_closing_instruction: "Дай им тридцать секунд."
-reflect_closing_ready: "Ты свободен."
 
 notice_title: Прежде чем начать
 notice_body_1: Эти истории написаны для последовательного чтения. Каждая серия — это собственный путь. Ты можешь начать любую серию в любое время, но внутри серии следуй частям с самой первой.
@@ -80,8 +71,6 @@ series_parts:
   one: "1 часть"
   few: "{{ . }} части"
   other: "{{ . }} частей"
-substack_label: "Узнавайте, когда появляется что-то новое."
-substack_placeholder: "Ваш email"
 
 blessing_accept: Принять это благословение
 blessing_free: Я свободен.

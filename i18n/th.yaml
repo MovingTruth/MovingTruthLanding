@@ -31,6 +31,7 @@ reflect_unlock_final: หยุดสักครู่ เส้นทางต
 reflect_ready: "ตอนนี้คุณไม่อาจแกล้งทำเป็นว่าไม่รู้แล้ว"
 reflect_continue: ดำเนินต่อ
 reflect_message: "ตอนนี้คุณไม่อาจแกล้งทำเป็นว่าไม่รู้แล้ว"
+reflect_countdown_suffix: " วินาที"
 
 blessing_title: ปล่อยให้มันเข้ามา
 blessing_sub: คุณได้รับการดูแล
@@ -99,5 +100,3 @@ series_begin: "เริ่ม →"
 series_parts:
   one: "1 ตอน"
   other: "{{ . }} ตอน"
-substack_label: "รับรู้เมื่อมีสิ่งใหม่มาถึง"
-substack_placeholder: "อีเมลของคุณ"

@@ -27,7 +27,10 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+          export HUGO_PARAMS_BUILDDATE="$(TZ=America/Toronto date +%Y-%m-%d)"
+          export HUGO_PARAMS_BUILDSHA="${GITHUB_SHA::7}"
+          hugo --minify
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

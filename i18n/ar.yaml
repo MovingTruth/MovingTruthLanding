@@ -31,6 +31,7 @@ reflect_unlock_final: خذ لحظة. مسارك التالي لك وحدك تخ�
 reflect_ready: "الآن لا يمكنك أن تتظاهر بأنك لا تعلم."
 reflect_continue: متابعة
 reflect_message: "الآن لا يمكنك أن تتظاهر بأنك لا تعلم."
+reflect_countdown_suffix: "ث"
 
 blessing_title: دعه يصل إليك.
 blessing_sub: أنت محاط بالرعاية.
@@ -99,5 +100,3 @@ series_begin: "ابدأ ←"
 series_parts:
   one: "جزء واحد"
   other: "{{ . }} أجزاء"
-substack_label: "اعرف متى يصل شيء جديد."
-substack_placeholder: "بريدك الإلكتروني"
