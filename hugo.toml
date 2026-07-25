@@ -73,6 +73,24 @@ defaultContentLanguageInSubdir = false
     weight = 11
     [languages.th.params]
       tagline = "คำถามที่พวกเราไม่เคยได้รับการสนับสนุนให้ถาม"
+  [languages.it]
+    label = "Italiano"
+    locale = "it-IT"
+    weight = 12
+    [languages.it.params]
+      tagline = "Domande che non siamo mai stati incoraggiati a fare."
+  [languages.nl]
+    label = "Nederlands"
+    locale = "nl-NL"
+    weight = 13
+    [languages.nl.params]
+      tagline = "Vragen die we nooit aangemoedigd werden om te stellen."
+  [languages.hi]
+    label = "हिन्दी"
+    locale = "hi-IN"
+    weight = 14
+    [languages.hi.params]
+      tagline = "सवाल जो हमें कभी पूछने के लिए प्रोत्साहित नहीं किया गया।"
 
 [params]
   author        = "Skylaur Roe"

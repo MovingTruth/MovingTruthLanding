@@ -90,3 +90,14 @@ mission_ask_3: أن تشكّك فيما تعلمه.
 mission_ask_4: أن تفحص ما ورثته.
 mission_ask_5: أن تقارن الأفكار بصدق.
 mission_ask_6: أن تتبع الأدلة والتجربة والتاريخ والحكمة أينما قادت.
+
+new_out_of_order: "لهذه السلسلة بداية. سنأخذك إليها."
+series_page_title: "السلاسل"
+series_page_intro: "كل سلسلة مسار. اختر من أين تبدأ."
+series_page_subtext: "يصل المزيد بانتظام. قد لا يكون ما تحتاج إليه موجودًا بعد — لكنه سيأتي."
+series_begin: "ابدأ ←"
+series_parts:
+  one: "جزء واحد"
+  other: "{{ . }} أجزاء"
+substack_label: "اعرف متى يصل شيء جديد."
+substack_placeholder: "بريدك الإلكتروني"

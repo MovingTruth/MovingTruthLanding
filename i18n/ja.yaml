@@ -94,3 +94,17 @@ mission_ask_3: あなたが知っていることに疑問を持つこと。
 mission_ask_4: あなたが受け継いだものを検討すること。
 mission_ask_5: 誠実さをもってアイデアを比較すること。
 mission_ask_6: 証拠、経験、歴史、知恵がどこへ導こうとも、それに従うこと。
+
+reflect_message: もう、知らなかった自分には戻れない。
+blessing_title: 心に迎えて。
+blessing_sub: あなたは支えられている。
+blessing_instruction: あなたに届くまで、30秒だけ委ねてください。
+blessing_continue: この祝福を受け取ります。
+blessing_done: この祝福はあなたのものです。
+blessing_accept_again: この祝福をもう一度受け取る
+closing_title: 言葉に働かせて。
+closing_sub: 言葉はもう届けられた。
+closing_instruction: 30秒だけ、そのまま受け止めてください。
+closing_continue: 私は自由です。
+closing_done: あなたは自由です。
+reset_confirm: "すべてのシリーズの読書進捗をリセットしますか？最初からやり直すことになります。"

@@ -95,3 +95,17 @@ mission_ask_3: De remettre en question ce que vous savez.
 mission_ask_4: D'examiner ce que vous avez hérité.
 mission_ask_5: De comparer les idées avec honnêteté.
 mission_ask_6: De suivre les preuves, l'expérience, l'histoire et la sagesse, où qu'elles mènent.
+
+reflect_message: Maintenant, vous ne pouvez plus ne pas le savoir.
+blessing_title: Laissez-la entrer.
+blessing_sub: Vous êtes soutenu.
+blessing_instruction: Accordez-lui trente secondes pour vous atteindre.
+blessing_continue: Je la reçois.
+blessing_done: Cette bénédiction est à vous.
+blessing_accept_again: Recevoir cette bénédiction à nouveau
+closing_title: Laissez ces mots agir.
+closing_sub: Les mots ont été prononcés.
+closing_instruction: Accordez-leur trente secondes.
+closing_continue: Je suis libre.
+closing_done: Vous êtes libre.
+reset_confirm: "Réinitialiser toute votre progression dans chaque série ? Vous recommencerez depuis le début."

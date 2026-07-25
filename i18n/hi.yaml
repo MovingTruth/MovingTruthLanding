@@ -1,0 +1,103 @@
+nav_series: श्रृंखला
+nav_gallery: गैलरी
+nav_whats_new: "नया क्या है"
+nav_apps: "ऐप्स"
+nav_support: "अपना समर्थन दिखाएँ"
+nav_support_mobile: समर्थन
+nav_support_page: "इस मिशन का समर्थन करें"
+menu_asking_for_help: "मैं सहायता माँग रहा हूँ"
+support_prompt_text: "आपने तीन रचनाएँ पढ़ ली हैं। कुछ है जो मैं आपको दिखाना चाहता हूँ।"
+support_prompt_btn: "इसे पढ़ें"
+support_interrupt_heading: "यहाँ आपको रोकने के लिए क्षमा चाहता हूँ।"
+support_interrupt_body: "आप पढ़ रहे हैं — और यह अपने आप में मायने रखता है। आगे बढ़ने से पहले, मुझे आपसे कुछ दिखाने का अनुरोध करना है। इसमें बस दो मिनट लगेंगे।"
+support_interrupt_btn: "मैं इसे पढ़ूँगा"
+support_interrupt_dismiss: "अभी नहीं"
+buy_me_coffee: "मुझे एक कॉफ़ी पिलाएँ"
+nav_skip: "मुख्य सामग्री पर जाएँ"
+
+menu_navigate: नेविगेशन
+menu_home: होम
+menu_all_series: "सभी शृंखलाएँ"
+menu_more: और
+menu_about: "इस साइट के बारे में"
+menu_from_creator: "रचनाकार की ओर से"
+menu_reset: "प्रगति रीसेट करें"
+
+reflect_title: "आपके भीतर कुछ यह पहले से जानता था।"
+reflect_sub: "वह हिस्सा जो आपको यहाँ ले आया।"
+reflect_instruction: "इसके साथ ठहरें। इसे अपने भीतर से गुज़रने दें।"
+reflect_unlock: "अगली रचना तब खुलेगी जब यह शून्य तक पहुँचेगा।"
+reflect_unlock_final: "एक क्षण लें। आपका अगला मार्ग आपका अपना चुनाव है।"
+reflect_ready: "अब आप उस अनजाने पल में वापस नहीं जा सकते।"
+reflect_continue: "जारी रखें"
+reflect_message: "अब आप उस अनजाने पल में वापस नहीं जा सकते।"
+
+blessing_title: "इसे भीतर आने दें।"
+blessing_sub: "आपको थामा जा रहा है।"
+blessing_instruction: "इसे आप तक पहुँचने के लिए तीस सेकंड दें।"
+blessing_continue: "यह मेरी स्वीकृति है।"
+blessing_done: "यह आशीर्वाद आपका है।"
+blessing_accept_again: "यह आशीर्वाद फिर से स्वीकार करें"
+
+closing_title: "इसे अपना काम करने दें।"
+closing_sub: "शब्द कहे जा चुके हैं।"
+closing_instruction: "उन्हें तीस सेकंड दें।"
+closing_continue: "मैं मुक्त हूँ।"
+closing_done: "आप मुक्त हैं।"
+
+reset_confirm: "क्या हर शृंखला में आपकी पूरी पढ़ने की प्रगति रीसेट करनी है? आप नए सिरे से शुरुआत करेंगे।"
+
+notice_title: "शुरू करने से पहले"
+notice_body_1: "ये कहानियाँ क्रम में पढ़े जाने के लिए लिखी गई हैं। हर शृंखला अपना अलग मार्ग है — आप किसी भी शृंखला को जब चाहें शुरू कर सकते हैं, लेकिन एक शृंखला के भीतर आपको पहली रचना से शुरू करना होगा।"
+notice_body_2: "जब आप किसी रचना के अंत तक पहुँचेंगे, तो आगे बढ़ने से पहले आपसे तीस सेकंड उसके साथ ठहरने को कहा जाएगा। एक बार जब आप पूरी शृंखला पढ़ लेंगे, तो आप कभी भी उसके किसी भी हिस्से पर वापस लौट सकते हैं।"
+notice_body_3: "आप जब चाहें अपनी प्रगति रीसेट करके इसे फिर से शुरू कर सकते हैं।"
+notice_btn: "मैं तैयार हूँ।"
+
+footer_how_works: "यह कैसे काम करता है"
+footer_change_theme: "थीम बदलें"
+footer_reset: "प्रगति रीसेट करें"
+
+new_added_heading: "पिछले 14 दिनों में जोड़ी गईं"
+new_unread_heading: "जिन्हें आपने अभी तक नहीं पढ़ा"
+new_loading: "आपका पठन इतिहास जाँचा जा रहा है…"
+new_nothing: "पिछले 14 दिनों में कुछ नया नहीं है — पर कुछ न कुछ हमेशा आने वाला है।"
+new_caught_up: "आप सबकुछ पढ़ चुके हैं।"
+new_back: "← शृंखला पर वापस जाएँ"
+new_out_of_order: "इस शृंखला की एक शुरुआत है। आपको वहाँ ले जाया जा रहा है।"
+new_today: आज
+new_yesterday: "बीता कल"
+new_days_ago: "{{ . }} दिन पहले"
+
+theme_dark: डार्क
+theme_light: लाइट
+theme_series: शृंखला
+theme_backbone: "रीढ़"
+theme_other: "अन्य मार्ग"
+theme_remember: "मेरी पसंद याद रखें"
+
+parts_all: "सभी भाग"
+series_all: "सभी शृंखलाएँ"
+
+series_page_title: "शृंखलाएँ"
+series_page_intro: "हर शृंखला एक मार्ग है। तय करें कि कहाँ से शुरू करना है।"
+series_page_subtext: "नियमित रूप से और भी आता रहता है। जिस चीज़ की आपको ज़रूरत है, वह अभी शायद मौजूद न हो — पर बन जाएगी।"
+series_begin: "शुरू करें →"
+series_parts:
+  one: "1 भाग"
+  other: "{{ . }} भाग"
+substack_label: "जब कुछ नया आए, जान जाएँ।"
+substack_placeholder: "आपका ईमेल"
+
+blessing_accept: "यह आशीर्वाद स्वीकार करें"
+blessing_free: "मैं मुक्त हूँ।"
+blessing_stay: "पास बने रहें"
+blessing_return: "शुरुआत पर लौटें"
+blessing_reset: "मेरी प्रगति रीसेट करें"
+
+mission_statement: "Moving Truth एक निमंत्रण है, कोई आदेश नहीं।"
+mission_ask_1: "हम आपसे हम पर विश्वास करने को नहीं कहते।"
+mission_ask_2: "हम आपसे जिज्ञासु बनने को कहते हैं।"
+mission_ask_3: "जो आप जानते हैं, उस पर सवाल उठाने को।"
+mission_ask_4: "जो आपको विरासत में मिला है, उसे जाँचने को।"
+mission_ask_5: "विचारों की ईमानदारी से तुलना करने को।"
+mission_ask_6: "प्रमाण, अनुभव, इतिहास और बुद्धि जहाँ भी ले जाएँ, वहाँ तक उनका अनुसरण करने को।"

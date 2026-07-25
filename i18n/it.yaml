@@ -1,0 +1,103 @@
+nav_series: Serie
+nav_gallery: Galleria
+nav_whats_new: "Novità"
+nav_apps: "App"
+nav_support: Mostra il tuo sostegno
+nav_support_mobile: Sostegno
+nav_support_page: Sostieni questa missione
+menu_asking_for_help: Sto Chiedendo Aiuto
+support_prompt_text: "Hai letto tre testi. C'è qualcosa che vorrei che tu vedessi."
+support_prompt_btn: Leggilo
+support_interrupt_heading: "Mi dispiace fermarti qui."
+support_interrupt_body: "Hai letto — e questo significa già qualcosa. Prima di continuare, c'è qualcosa che devo chiederti di vedere. Ci vorranno due minuti."
+support_interrupt_btn: "Lo leggerò"
+support_interrupt_dismiss: "Non ora"
+buy_me_coffee: Offrimi un caffè
+nav_skip: Vai al contenuto principale
+
+menu_navigate: Naviga
+menu_home: Home
+menu_all_series: Tutte le serie
+menu_more: Altro
+menu_about: Informazioni su questo sito
+menu_from_creator: Dalla creatrice
+menu_reset: Azzera i progressi
+
+reflect_title: Qualcosa in te lo sapeva già.
+reflect_sub: La parte che ti ha portato qui.
+reflect_instruction: Restaci. Lascia che ti attraversi.
+reflect_unlock: Il prossimo pezzo si sblocca quando questo raggiunge lo zero.
+reflect_unlock_final: "Prenditi un momento. Il prossimo percorso è tuo da scegliere."
+reflect_ready: Ora non puoi più non saperlo.
+reflect_continue: Continua
+reflect_message: Ora non puoi più non saperlo.
+
+blessing_title: Lascialo entrare.
+blessing_sub: Sei sostenuto.
+blessing_instruction: Dagli trenta secondi per raggiungerti.
+blessing_continue: Lo accolgo.
+blessing_done: Questa benedizione è tua.
+blessing_accept_again: Accetta di nuovo questa benedizione
+
+closing_title: Lascialo agire.
+closing_sub: Le parole sono state pronunciate.
+closing_instruction: Dai loro trenta secondi.
+closing_continue: Sono libero.
+closing_done: Sei libero.
+
+reset_confirm: "Azzerare tutti i progressi di lettura in ogni serie? Ricomincerai da capo."
+
+notice_title: Prima di iniziare
+notice_body_1: "Queste storie sono scritte per essere lette in ordine. Ogni serie è un percorso a sé — puoi iniziare qualsiasi serie quando vuoi, ma all'interno di una serie segui i pezzi a partire dal primo."
+notice_body_2: "Quando arrivi alla fine di un pezzo, ti verrà chiesto di restarci per trenta secondi prima di andare avanti. Una volta letta una serie per intero, sei libero di tornare a qualsiasi parte di essa in qualsiasi momento."
+notice_body_3: Puoi sempre azzerare i tuoi progressi e ricominciare.
+notice_btn: Sono pronto
+
+footer_how_works: Come funziona
+footer_change_theme: Cambia tema
+footer_reset: Azzera i progressi
+
+new_added_heading: Aggiunto negli ultimi 14 giorni
+new_unread_heading: "Non hai ancora letto"
+new_loading: Controllo la tua cronologia di lettura…
+new_nothing: Niente di nuovo negli ultimi 14 giorni — ma qualcosa sta sempre arrivando.
+new_caught_up: Sei aggiornato.
+new_back: "← Torna alle serie"
+new_out_of_order: "Questa serie ha un inizio. Ti ci porto."
+new_today: oggi
+new_yesterday: ieri
+new_days_ago: "{{ . }} giorni fa"
+
+theme_dark: Scuro
+theme_light: Chiaro
+theme_series: La Serie
+theme_backbone: La spina dorsale
+theme_other: Altri percorsi
+theme_remember: Ricorda la mia scelta
+
+parts_all: Tutte le parti
+series_all: Tutte le serie
+
+series_page_title: "Le Serie"
+series_page_intro: "Ogni serie è un percorso. Scegli da dove iniziare."
+series_page_subtext: "Arriva altro regolarmente. Ciò di cui hai bisogno potrebbe non esistere ancora — ma esisterà."
+series_begin: "Inizia →"
+series_parts:
+  one: "1 parte"
+  other: "{{ . }} parti"
+substack_label: "Sappi quando arriva qualcosa di nuovo."
+substack_placeholder: "La tua email"
+
+blessing_accept: Accetta questa benedizione
+blessing_free: Sono libero.
+blessing_stay: Resta vicino
+blessing_return: Torna all'inizio
+blessing_reset: Azzera i miei progressi
+
+mission_statement: Moving Truth è un invito, non un'istruzione.
+mission_ask_1: Non ti chiediamo di crederci.
+mission_ask_2: Ti chiediamo di diventare curioso.
+mission_ask_3: Di mettere in discussione ciò che sai.
+mission_ask_4: Di esaminare ciò che hai ereditato.
+mission_ask_5: Di confrontare le idee con onestà.
+mission_ask_6: Di seguire le prove, l'esperienza, la storia e la saggezza, ovunque conducano.

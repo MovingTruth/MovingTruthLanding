@@ -90,3 +90,14 @@ mission_ask_3: 당신이 아는 것에 의문을 품는 것.
 mission_ask_4: 당신이 물려받은 것을 살펴보는 것.
 mission_ask_5: 정직하게 생각을 비교하는 것.
 mission_ask_6: 증거와 경험, 역사와 지혜가 이끄는 곳으로 따라가는 것.
+
+new_out_of_order: "이 시리즈에는 시작이 있습니다. 그곳으로 안내할게요."
+series_page_title: "시리즈"
+series_page_intro: "각 시리즈는 하나의 길입니다. 어디서 시작할지 선택하세요."
+series_page_subtext: "새로운 글은 꾸준히 찾아옵니다. 지금 필요한 것이 아직 없을 수도 있지만, 곧 생길 것입니다."
+series_begin: "시작 →"
+series_parts:
+  one: "1편"
+  other: "{{ . }}편"
+substack_label: "새로운 글이 도착할 때 알려드릴게요."
+substack_placeholder: "이메일"

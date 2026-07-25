@@ -1,0 +1,103 @@
+nav_series: Series
+nav_gallery: Galerij
+nav_whats_new: "Wat is nieuw"
+nav_apps: "Apps"
+nav_support: Laat je steun zien
+nav_support_mobile: Steun
+nav_support_page: Steun deze missie
+menu_asking_for_help: Ik vraag om hulp
+support_prompt_text: "Je hebt drie stukken gelezen. Er is iets dat ik je graag wil laten zien."
+support_prompt_btn: Lees het
+support_interrupt_heading: "Het spijt me dat ik je hier moet ophouden."
+support_interrupt_body: "Je bent aan het lezen geweest — en dat betekent al iets. Voordat je verdergaat, is er iets waarvan ik je wil vragen het te zien. Het duurt twee minuten."
+support_interrupt_btn: "Ik lees het"
+support_interrupt_dismiss: "Niet nu"
+buy_me_coffee: Trakteer me op een koffie
+nav_skip: Ga naar de hoofdinhoud
+
+menu_navigate: Navigeren
+menu_home: Home
+menu_all_series: Alle series
+menu_more: Meer
+menu_about: Over deze site
+menu_from_creator: Van de maker
+menu_reset: Voortgang resetten
+
+reflect_title: Iets in jou wist dit al.
+reflect_sub: Het deel dat je hierheen bracht.
+reflect_instruction: Blijf erbij. Laat het door je heen bewegen.
+reflect_unlock: Het volgende stuk ontgrendelt zodra dit nul bereikt.
+reflect_unlock_final: Neem een moment. Jouw volgende pad is aan jou om te kiezen.
+reflect_ready: Nu kun je niet meer terug naar het niet-weten.
+reflect_continue: Doorgaan
+reflect_message: Nu kun je niet meer terug naar het niet-weten.
+
+blessing_title: Laat het toe.
+blessing_sub: Je wordt gedragen.
+blessing_instruction: Geef het dertig seconden om je te bereiken.
+blessing_continue: Ik ontvang dit.
+blessing_done: Deze zegen is van jou.
+blessing_accept_again: Ontvang deze zegen opnieuw
+
+closing_title: Laat het werken.
+closing_sub: De woorden zijn gesproken.
+closing_instruction: Geef ze dertig seconden.
+closing_continue: Ik ben vrij.
+closing_done: Je bent vrij.
+
+reset_confirm: "Alle leesvoortgang in elke serie resetten? Je begint opnieuw."
+
+notice_title: Voordat je begint
+notice_body_1: Deze verhalen zijn geschreven om in volgorde te worden gelezen. Elke serie is een eigen pad — je kunt elke serie beginnen wanneer je wilt, maar binnen een serie volg je de stukken vanaf het eerste.
+notice_body_2: Wanneer je het einde van een stuk bereikt, wordt je gevraagd er dertig seconden bij stil te staan voordat je verdergaat. Zodra je een serie helemaal hebt gelezen, kun je op elk moment naar elk deel ervan terugkeren.
+notice_body_3: Je kunt je voortgang altijd resetten en opnieuw beginnen.
+notice_btn: Ik ben er klaar voor
+
+footer_how_works: Hoe dit werkt
+footer_change_theme: Thema wijzigen
+footer_reset: Voortgang resetten
+
+new_added_heading: Toegevoegd in de afgelopen 14 dagen
+new_unread_heading: "Nog niet gelezen"
+new_loading: Je leesgeschiedenis wordt gecontroleerd…
+new_nothing: Niets nieuws in de afgelopen 14 dagen — maar er komt altijd iets aan.
+new_caught_up: Je bent helemaal bij.
+new_back: "← Terug naar series"
+new_out_of_order: "Deze serie heeft een begin. We brengen je erheen."
+new_today: vandaag
+new_yesterday: gisteren
+new_days_ago: "{{ . }} dagen geleden"
+
+theme_dark: Donker
+theme_light: Licht
+theme_series: De serie
+theme_backbone: Het fundament
+theme_other: Andere paden
+theme_remember: Onthoud mijn keuze
+
+parts_all: Alle delen
+series_all: Alle series
+
+series_page_title: "De series"
+series_page_intro: "Elke serie is een pad. Kies waar je wilt beginnen."
+series_page_subtext: "Er komt regelmatig meer bij. Iets wat je nodig hebt, bestaat misschien nog niet — maar het komt er."
+series_begin: "Begin →"
+series_parts:
+  one: "1 deel"
+  other: "{{ . }} delen"
+substack_label: "Weet wanneer er iets nieuws bijkomt."
+substack_placeholder: "Je e-mailadres"
+
+blessing_accept: Ontvang deze zegen
+blessing_free: Ik ben vrij.
+blessing_stay: Blijf dichtbij
+blessing_return: Terug naar het begin
+blessing_reset: Mijn voortgang resetten
+
+mission_statement: Moving Truth is een uitnodiging, geen instructie.
+mission_ask_1: We vragen je niet ons te geloven.
+mission_ask_2: We vragen je nieuwsgierig te worden.
+mission_ask_3: Om in twijfel te trekken wat je weet.
+mission_ask_4: Om te onderzoeken wat je hebt geërfd.
+mission_ask_5: Om ideeën eerlijk met elkaar te vergelijken.
+mission_ask_6: Om bewijs, ervaring, geschiedenis en wijsheid te volgen waarheen ze ook leiden.

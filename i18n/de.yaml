@@ -96,3 +96,17 @@ mission_ask_4: Das zu untersuchen, was Sie geerbt haben.
 mission_ask_5: Ideen ehrlich miteinander zu vergleichen.
 mission_ask_6: Beweisen, Erfahrungen, Geschichte und Weisheit zu folgen, wohin auch immer sie führen.
 new_gallery_heading: "Neu in der Galerie"
+
+reflect_message: Jetzt kannst du es nicht mehr nicht wissen.
+blessing_title: Lass es herein.
+blessing_sub: Du wirst gehalten.
+blessing_instruction: Gib ihm dreißig Sekunden, um dich zu erreichen.
+blessing_continue: Ich nehme es an.
+blessing_done: Dieser Segen gehört dir.
+blessing_accept_again: Diesen Segen erneut annehmen
+closing_title: Lass es wirken.
+closing_sub: Die Worte sind gesprochen.
+closing_instruction: Gib ihnen dreißig Sekunden.
+closing_continue: Ich bin frei.
+closing_done: Du bist frei.
+reset_confirm: "Den gesamten Lesefortschritt in allen Serien zurücksetzen? Du beginnst von vorn."
