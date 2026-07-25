@@ -130,13 +130,18 @@
   </div>
 </div>
 
+  {{ $appsLocale := .Language.Lang }}
+  {{ if eq $appsLocale "pt" }}{{ $appsLocale = "pt-BR" }}{{ end }}
+  {{ if eq $appsLocale "zh" }}{{ $appsLocale = "zh-Hans" }}{{ end }}
+  {{ $appsURL := cond (eq $appsLocale "en") "https://apps.movingtruth.com/" (printf "https://apps.movingtruth.com/%s/" $appsLocale) }}
+
   <header class="site-header">
     <a href="{{ "/" | relLangURL }}" class="site-logo">
       <img src="/logo.png" alt="" class="site-logo-img" aria-hidden="true" />
       {{ .Site.Title }}
     </a>
     <nav>
-      <a href="{{ "apps" | relLangURL }}">{{ i18n "nav_apps" }}</a>
+      <a href="{{ $appsURL }}">{{ i18n "nav_apps" }}</a>
       <a href="{{ "series" | relLangURL }}">{{ i18n "nav_series" }}</a>
       <a href="{{ "gallery" | relLangURL }}">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "new" | relLangURL }}">{{ i18n "nav_whats_new" }}</a>
@@ -183,7 +188,7 @@
 
     <nav class="mt-menu-nav" aria-label="Site navigation">
       <p class="mt-menu-section-label">{{ i18n "menu_navigate" }}</p>
-      <a href="{{ "apps" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_apps" }}</a>
+      <a href="{{ $appsURL }}" class="mt-menu-link">{{ i18n "nav_apps" }}</a>
       <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_home" }}</a>
       <a href="{{ "gallery" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_gallery" }}</a>
       <a href="{{ "series" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_all_series" }}</a>
