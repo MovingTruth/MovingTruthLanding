@@ -1203,6 +1203,14 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
 .piece-body h1 { font-size: 1.6rem; display: none; } /* H1 shown in header, not body */
 .piece-body h2 { font-size: 1.25rem; font-weight: 600; }
 
+.piece-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 4px;
+}
+
 /* ── PIECE NAVIGATION ─────────────────────────────────────── */
 
 .piece-nav {
