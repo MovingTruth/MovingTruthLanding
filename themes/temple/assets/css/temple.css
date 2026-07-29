@@ -1185,6 +1185,20 @@ body.inner { min-height: 100vh; display: flex; flex-direction: column; }
 .piece-body p { margin-bottom: 1.5rem; }
 .piece-body p:last-child { margin-bottom: 0; }
 
+.piece-body ul, .piece-body ol {
+  margin: 0 0 1.5rem;
+  padding-inline-start: 1.3rem;
+}
+.piece-body ul:last-child, .piece-body ol:last-child { margin-bottom: 0; }
+.piece-body li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+.piece-body li:last-child { margin-bottom: 0; }
+.piece-body li::marker {
+  color: var(--text-muted);
+}
+
 .piece-body hr {
   border: none;
   border-top: 1px solid var(--border);
