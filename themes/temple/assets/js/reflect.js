@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var i18n = window.MT_I18N || {};
       if (overlayTitle)       overlayTitle.textContent = i18n.blessing_title || 'Let it in.';
       if (overlaySub)         overlaySub.textContent = i18n.blessing_sub || 'You are being held.';
-      if (overlayInstruction) overlayInstruction.textContent = i18n.blessing_instruction || 'Give it thirty seconds to reach you.';
+      if (overlayInstruction) overlayInstruction.textContent = i18n.blessing_instruction || 'Give it a while to reach you.';
       if (overlayUnlock)      overlayUnlock.style.display = 'none';
       if (overlayReady)       overlayReady.style.display = 'none';
       if (overlayContinue) {
@@ -113,14 +113,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (overlay)      { overlay.style.display = 'flex'; overlay.focus(); }
-      if (overlayTimer) { overlayTimer.textContent = 30; overlayTimer.style.display = ''; }
+      if (overlayTimer) { overlayTimer.textContent = REFLECT_SEQUENCE[0]; overlayTimer.style.display = ''; }
 
-      var remaining = 30;
+      var blessingStep = 0;
       blessingInterval = setInterval(function () {
-        remaining -= 1;
-        if (overlayTimer) overlayTimer.textContent = remaining;
+        blessingStep += 1;
+        if (overlayTimer) overlayTimer.textContent = REFLECT_SEQUENCE[blessingStep];
 
-        if (remaining <= 0) {
+        if (blessingStep >= REFLECT_SEQUENCE.length - 1) {
           clearInterval(blessingInterval);
           blessingInterval = null;
           blessingRunning = false;
