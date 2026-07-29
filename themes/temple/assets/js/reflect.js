@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var duration = 30;
   var started = false;
 
+  // ── Per-piece reflect countdown display steps ─────────────────────────
+  // Same 1s tick cadence as the closing/blessing overlays (duration above),
+  // but the reader-facing count is this hand-set sequence rather than a
+  // plain linear 30→0, so the last stretch settles instead of just ticking.
+  var REFLECT_SEQUENCE = [10, 9, 8, 7, 6, 5, 4, 3, '2¾', 2, '1½', 1, '¼', 0];
+
   var d = overlay ? overlay.dataset : {};
   var suffix = d.secondsSuffix || 's';
 
@@ -299,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (started) return;
     started = true;
 
-    var remaining = duration;
+    var step = 0;
 
     var i18n = window.MT_I18N || {};
     if (overlayTitle) overlayTitle.textContent = i18n.reflect_title || 'Something in you already knew this.';
@@ -315,17 +321,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (overlay) { overlay.style.display = 'flex'; overlay.focus(); }
     if (overlayTimer) {
-      overlayTimer.textContent = remaining;
+      overlayTimer.textContent = REFLECT_SEQUENCE[step];
       overlayTimer.style.display = '';
     }
-    if (countdownEl) countdownEl.textContent = remaining + suffix;
+    if (countdownEl) countdownEl.textContent = REFLECT_SEQUENCE[step] + suffix;
 
     var interval = setInterval(function () {
-      remaining -= 1;
-      if (overlayTimer) overlayTimer.textContent = remaining;
-      if (countdownEl) countdownEl.textContent = remaining + suffix;
+      step += 1;
+      if (overlayTimer) overlayTimer.textContent = REFLECT_SEQUENCE[step];
+      if (countdownEl) countdownEl.textContent = REFLECT_SEQUENCE[step] + suffix;
 
-      if (remaining <= 0) {
+      if (step >= REFLECT_SEQUENCE.length - 1) {
         clearInterval(interval);
         unlock();
       }

@@ -47,10 +47,11 @@ closing_continue: Sono libero.
 closing_done: Sei libero.
 
 reset_confirm: "Azzerare tutti i progressi di lettura in ogni serie? Ricomincerai da capo."
+reset_confirm_series: "Azzerare i tuoi progressi in questa serie? Dovrai rileggerla di nuovo in ordine."
 
 notice_title: Prima di iniziare
 notice_body_1: "Queste storie sono scritte per essere lette in ordine. Ogni serie è un percorso a sé — puoi iniziare qualsiasi serie quando vuoi, ma all'interno di una serie segui i pezzi a partire dal primo."
-notice_body_2: "Quando arrivi alla fine di un pezzo, ti verrà chiesto di restarci per trenta secondi prima di andare avanti. Una volta letta una serie per intero, sei libero di tornare a qualsiasi parte di essa in qualsiasi momento."
+notice_body_2: "Quando arrivi alla fine di un pezzo, ti verrà chiesto di lasciarlo posare dentro di te per un momento prima di andare avanti. Una volta letta una serie per intero, sei libero di tornare a qualsiasi parte di essa in qualsiasi momento."
 notice_body_3: Puoi sempre azzerare i tuoi progressi e ricominciare.
 notice_btn: Sono pronto
 

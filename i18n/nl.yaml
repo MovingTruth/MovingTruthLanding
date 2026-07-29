@@ -47,10 +47,11 @@ closing_continue: Ik ben vrij.
 closing_done: Je bent vrij.
 
 reset_confirm: "Alle leesvoortgang in elke serie resetten? Je begint opnieuw."
+reset_confirm_series: "Je voortgang in deze serie resetten? Je moet alles opnieuw op volgorde lezen."
 
 notice_title: Voordat je begint
 notice_body_1: Deze verhalen zijn geschreven om in volgorde te worden gelezen. Elke serie is een eigen pad — je kunt elke serie beginnen wanneer je wilt, maar binnen een serie volg je de stukken vanaf het eerste.
-notice_body_2: Wanneer je het einde van een stuk bereikt, wordt je gevraagd er dertig seconden bij stil te staan voordat je verdergaat. Zodra je een serie helemaal hebt gelezen, kun je op elk moment naar elk deel ervan terugkeren.
+notice_body_2: Wanneer je het einde van een stuk bereikt, wordt je gevraagd het een tijdje in je te laten bezinken voordat je verdergaat. Zodra je een serie helemaal hebt gelezen, kun je op elk moment naar elk deel ervan terugkeren.
 notice_body_3: Je kunt je voortgang altijd resetten en opnieuw beginnen.
 notice_btn: Ik ben er klaar voor
 

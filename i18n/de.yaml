@@ -34,7 +34,7 @@ reflect_countdown_suffix: "s"
 
 notice_title: Bevor du beginnst
 notice_body_1: Diese Geschichten sind dazu gedacht, der Reihe nach gelesen zu werden. Jede Serie ist ihr eigener Weg — du kannst jede Serie beginnen, wann du möchtest, aber innerhalb einer Serie folgst du den Teilen vom ersten an.
-notice_body_2: Wenn du das Ende eines Teils erreichst, wirst du gebeten, dreißig Sekunden damit zu verweilen, bevor du weitermachst. Sobald du eine Serie durchgelesen hast, kannst du jederzeit zu jedem Teil zurückkehren.
+notice_body_2: Wenn du das Ende eines Teils erreichst, wirst du gebeten, es eine Weile in dir wirken zu lassen, bevor du weitermachst. Sobald du eine Serie durchgelesen hast, kannst du jederzeit zu jedem Teil zurückkehren.
 notice_body_3: Du kannst deinen Fortschritt jederzeit zurücksetzen und von vorne beginnen.
 notice_btn: Ich bin bereit
 
@@ -99,3 +99,4 @@ closing_instruction: Gib ihnen dreißig Sekunden.
 closing_continue: Ich bin frei.
 closing_done: Du bist frei.
 reset_confirm: "Den gesamten Lesefortschritt in allen Serien zurücksetzen? Du beginnst von vorn."
+reset_confirm_series: "Deinen Fortschritt in dieser Serie zurücksetzen? Du musst sie erneut der Reihe nach lesen."

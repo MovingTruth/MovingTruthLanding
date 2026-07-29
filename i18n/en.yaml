@@ -47,10 +47,11 @@ closing_continue: I am free.
 closing_done: You are free.
 
 reset_confirm: "Reset all reading progress across every series? You'll start fresh."
+reset_confirm_series: "Reset your progress for this series? You'll need to read through in order again."
 
 notice_title: Before you begin
 notice_body_1: These stories are written to be read in order. Each series is its own path — you can begin any series whenever you choose, but within a series you follow the pieces from the first.
-notice_body_2: When you reach the end of a piece, you'll be asked to sit with it for thirty seconds before moving on. Once you've read a series through, you're free to return to any part of it at any time.
+notice_body_2: When you reach the end of a piece, you'll be asked to let it sit with you for a while before moving on. Once you've read a series through, you're free to return to any part of it at any time.
 notice_body_3: You can always reset your progress and go through it again.
 notice_btn: I'm ready
 

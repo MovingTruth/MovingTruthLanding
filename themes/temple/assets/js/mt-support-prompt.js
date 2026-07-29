@@ -1,11 +1,21 @@
 (function () {
-  var THRESHOLD   = 3;
-  var PROMPT_KEY  = 'mt_support_prompted';
+  var THRESHOLD        = 3;  // first prompt after this many reflected pieces
+  var REPEAT_INTERVAL   = 8;  // then again every N reflected pieces after that
+  var LAST_PROMPT_KEY   = 'mt_support_last_prompted'; // durable value: reflected-count at the last prompt
 
   function countReflected() {
     return MT.keysStartingWith('mt_').filter(function (k) {
       return k.indexOf('_reflected_') !== -1;
     }).length;
+  }
+
+  function nextThreshold() {
+    var last = MT.getValue(LAST_PROMPT_KEY);
+    return last ? parseInt(last, 10) + REPEAT_INTERVAL : THRESHOLD;
+  }
+
+  function markPrompted(count) {
+    MT.setValue(LAST_PROMPT_KEY, String(count));
   }
 
   function i18n(key, fallback) {
@@ -120,24 +130,24 @@
     });
   }
 
-  // ── WRAP MT.set to catch readers who cross the threshold mid-session ─────
+  // ── WRAP MT.set to catch readers who cross a threshold mid-session ───────
   var _origSet = MT.set;
   MT.set = function (key) {
     _origSet.call(MT, key);
-    if (key === PROMPT_KEY) return;
-    if (key.indexOf('_reflected_') !== -1 && !MT.get(PROMPT_KEY)) {
-      if (countReflected() >= THRESHOLD) {
-        _origSet.call(MT, PROMPT_KEY);
+    if (key.indexOf('_reflected_') !== -1) {
+      var count = countReflected();
+      if (count >= nextThreshold()) {
+        markPrompted(count);
         showToast();
       }
     }
   };
 
-  // ── ON LOAD — check if already past threshold (existing reader) ──────────
+  // ── ON LOAD — check if already past the next threshold (existing reader) ─
   document.addEventListener('DOMContentLoaded', function () {
-    if (MT.get(PROMPT_KEY)) return;
-    if (countReflected() >= THRESHOLD) {
-      _origSet.call(MT, PROMPT_KEY);
+    var count = countReflected();
+    if (count >= nextThreshold()) {
+      markPrompted(count);
       showInterruption();
     }
   });

@@ -72,7 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var resetBtn = document.getElementById('reset-progress');
   if (resetBtn && reflected > 0) {
     resetBtn.addEventListener('click', function () {
-      if (!confirm('Reset your progress for this series? You\'ll need to read through in order again.')) return;
+      var msg = (window.MT_I18N || {}).reset_confirm_series || 'Reset your progress for this series? You\'ll need to read through in order again.';
+      if (!confirm(msg)) return;
       var reflectedPrefix = 'mt_' + slug + '_reflected_';
       var acceptedPrefix = 'mt_' + slug + '_accepted_';
       MT.keysStartingWith(reflectedPrefix).forEach(function (k) { MT.remove(k); });

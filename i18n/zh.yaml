@@ -32,7 +32,7 @@ reflect_continue: 继续
 
 notice_title: 开始之前
 notice_body_1: 这些故事是按顺序写的。每个系列都是独立的旅程——你可以随时开始任何系列，但在一个系列中，请从第一部分开始依次阅读。
-notice_body_2: 当你读完一个部分时，系统会请你静待三十秒再继续。一旦你读完整个系列，你可以随时回到其中任何一部分。
+notice_body_2: 当你读完一个部分时，会请你让它在心中停留片刻，再继续往下读。一旦你读完整个系列，你可以随时回到其中任何一部分。
 notice_body_3: 你随时可以重置进度，重新经历这段旅程。
 notice_btn: 我准备好了
 
@@ -98,3 +98,4 @@ closing_instruction: 给它们三十秒。
 closing_continue: 我自由了。
 closing_done: 你自由了。
 reset_confirm: "要重置所有系列的阅读进度吗？你将重新开始。"
+reset_confirm_series: "要重置这个系列的阅读进度吗？你需要按顺序重新阅读一遍。"
