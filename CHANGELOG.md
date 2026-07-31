@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-31
+
+- `themes/temple/layouts/index.html` — Removed the deployment date and commit marker from the doorway image page so the landing experience remains visually clean. The marker remains available on interior pages.
+
 ## 2026-07-25
 
 - `themes/temple/layouts/_default/baseof.html`, `themes/temple/layouts/index.html`, and `.github/workflows/deploy.yml` — Added a subtle footer stamp to every page, including the doorway homepage, showing the Eastern Time deployment date and the deployed commit's short SHA. The values are injected by the production workflow, so the marker identifies the code actually built and published.
