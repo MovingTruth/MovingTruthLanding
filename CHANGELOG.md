@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-04 (2)
+
+- `hugo.toml` — Set `markup.highlight.noClasses = false`. Hugo's default (`true`) bakes Chroma's syntax-highlighting colors into an inline `style="color:...;background-color:..."` on every fenced code block, which no stylesheet rule can override and which ignores the site's dark/light theme entirely. It happened to look correct in dark mode by coincidence (Chroma's fixed dark background is close to `--bg-card`) and was badly broken in light mode on the new `/craft/` page (dark box, near-black text — Robin caught this from a live screenshot after the previous deploy). With `noClasses = false`, Chroma emits a plain `class="chroma"` with no attached stylesheet, so code blocks fall through cleanly to `temple.css`'s theme-aware `.standalone-body pre`/`code` rules in both themes. Verified in the browser in both themes before redeploying.
+
 ## 2026-08-04
 
 - `content/craft.md`, `themes/temple/layouts/craft/single.html` — Added an English-only `/craft/` page, "Building Moving Truth," adapted from a standalone writeup of the platform's architecture (Markdown-first authoring, the AI-assisted editorial pipeline, the 14-language localization system, and the Hugo/GitHub Actions/GitHub Pages deploy path). The layout widens the standard `.standalone-page` column, adds an eyebrow/byline/read-time header, a "by the numbers" stats table, a source-link footer, and page-scoped `TechArticle` JSON-LD (the site's first structured-data block) so the page is legible to both readers and retrieval/AI-answer systems. Not translated into the other 13 languages — it documents the platform itself rather than reader content, matching the existing English-only precedent set by `content/log.md`.

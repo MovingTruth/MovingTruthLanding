@@ -92,6 +92,16 @@ defaultContentLanguageInSubdir = false
     [languages.hi.params]
       tagline = "सवाल जो हमें कभी पूछने के लिए प्रोत्साहित नहीं किया गया।"
 
+[markup]
+  [markup.highlight]
+    # Hugo's default (noClasses = true) bakes fixed hex colors into an inline
+    # style="..." on every fenced code block via Chroma, which no CSS rule can
+    # override and which ignores the dark/light theme entirely. noClasses =
+    # false makes Chroma emit plain classes instead; with no chroma.css
+    # included, code blocks fall through cleanly to temple.css's own
+    # .standalone-body pre/code rules, which are theme-aware.
+    noClasses = false
+
 [params]
   author        = "Skylaur Roe"
   tagline       = "Questions we were never encouraged to ask."
