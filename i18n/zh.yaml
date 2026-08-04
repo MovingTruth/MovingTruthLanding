@@ -20,8 +20,11 @@ menu_home: 首页
 menu_all_series: 所有系列
 menu_more: 更多
 menu_about: 关于本站
+menu_craft: 技术工艺
 menu_from_creator: 来自创作者
 menu_reset: 重置进度
+
+craft_view_source: 在 GitHub 上查看源码
 
 reflect_title: 你内心深处早已知晓。
 reflect_sub: 是那个将你带到这里的部分。

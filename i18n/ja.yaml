@@ -20,8 +20,11 @@ menu_home: ホーム
 menu_all_series: 全シリーズ
 menu_more: その他
 menu_about: このサイトについて
+menu_craft: 技術解説
 menu_from_creator: 作者より
 menu_reset: 進捗をリセット
+
+craft_view_source: GitHubでソースを見る
 
 reflect_title: あなたの中の何かがすでに知っていた。
 reflect_sub: あなたをここへ連れてきた部分が。

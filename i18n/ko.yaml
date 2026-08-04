@@ -20,8 +20,11 @@ menu_home: 홈
 menu_all_series: 모든 시리즈
 menu_more: 더 보기
 menu_about: 이 사이트 소개
+menu_craft: 기술 제작기
 menu_from_creator: 창작자로부터
 menu_reset: 진행 상황 초기화
+
+craft_view_source: GitHub에서 소스 보기
 
 reflect_title: 당신 안의 무언가가 이미 알고 있었습니다.
 reflect_sub: 당신을 여기로 이끈 그 부분.

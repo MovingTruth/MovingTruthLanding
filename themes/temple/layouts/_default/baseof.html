@@ -201,6 +201,11 @@
       <p class="mt-menu-section-label">{{ i18n "menu_more" }}</p>
       <a href="{{ "new" | relLangURL }}" class="mt-menu-link">{{ i18n "nav_whats_new" }}</a>
       <a href="{{ "about" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_about" }}</a>
+      {{/* The Craft document (content/craft.md) is English-only by design — a technical/
+           professional piece, not reader content — so it links by absolute path instead
+           of relLangURL, which would build "/es/craft/" etc. and 404 since no translated
+           page exists. */}}
+      <a href="/craft/" class="mt-menu-link">{{ i18n "menu_craft" }}</a>
       <a href="{{ "messages" | relLangURL }}" class="mt-menu-link">{{ i18n "menu_from_creator" }}</a>
       <a href="{{ "support" | relLangURL }}" class="mt-menu-link mt-menu-link--ask">{{ i18n "menu_asking_for_help" }}</a>
       <a href="https://paypal.me/SkylaurRoe" class="mt-menu-link mt-menu-coffee" target="_blank" rel="noopener">☕ {{ i18n "buy_me_coffee" }}</a>

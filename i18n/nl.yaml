@@ -20,8 +20,11 @@ menu_home: Home
 menu_all_series: Alle series
 menu_more: Meer
 menu_about: Over deze site
+menu_craft: Technisch Vakmanschap
 menu_from_creator: Van de maker
 menu_reset: Voortgang resetten
+
+craft_view_source: Bekijk de broncode op GitHub
 
 reflect_title: Iets in jou wist dit al.
 reflect_sub: Het deel dat je hierheen bracht.

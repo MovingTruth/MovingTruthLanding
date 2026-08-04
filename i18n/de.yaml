@@ -20,8 +20,11 @@ menu_home: Startseite
 menu_all_series: Alle Serien
 menu_more: Mehr
 menu_about: Über diese Seite
+menu_craft: Technisches Handwerk
 menu_from_creator: Von der Autorin
 menu_reset: Fortschritt zurücksetzen
+
+craft_view_source: Quellcode auf GitHub ansehen
 
 reflect_title: Ein Teil von dir wusste es bereits.
 reflect_sub: Der Teil, der dich hierher gebracht hat.

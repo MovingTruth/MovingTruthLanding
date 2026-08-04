@@ -20,8 +20,11 @@ menu_home: الرئيسية
 menu_all_series: جميع المتسلسلات
 menu_more: المزيد
 menu_about: عن هذا الموقع
+menu_craft: الحرفة التقنية
 menu_from_creator: من المؤلف
 menu_reset: إعادة تعيين التقدم
+
+craft_view_source: عرض المصدر على GitHub
 
 reflect_title: شيء فيك كان يعرف هذا بالفعل.
 reflect_sub: ذلك الجزء الذي أحضرك إلى هنا.

@@ -20,8 +20,11 @@ menu_home: होम
 menu_all_series: "सभी शृंखलाएँ"
 menu_more: और
 menu_about: "इस साइट के बारे में"
+menu_craft: "तकनीकी शिल्प"
 menu_from_creator: "रचनाकार की ओर से"
 menu_reset: "प्रगति रीसेट करें"
+
+craft_view_source: "GitHub पर स्रोत देखें"
 
 reflect_title: "आपके भीतर कुछ यह पहले से जानता था।"
 reflect_sub: "वह हिस्सा जो आपको यहाँ ले आया।"

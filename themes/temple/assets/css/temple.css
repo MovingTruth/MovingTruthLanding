@@ -2193,6 +2193,172 @@ body.fading .inner-content {
   font-weight: 600;
 }
 
+/* ── STANDALONE BODY — MARKDOWN ELEMENTS ──────────────────────
+   Headings, lists, quotes, inline/block code, and tables inside
+   .standalone-body. Previously unstyled because About/Support only
+   ever used paragraphs and bold text — the Craft document is the
+   first standalone page to use the rest of Markdown. ─────────── */
+
+.standalone-body h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2.75rem 0 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.standalone-body h2:first-child { margin-top: 0; }
+
+.standalone-body h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 2rem 0 0.8rem;
+}
+
+.standalone-body ul,
+.standalone-body ol {
+  margin: 0 0 1.2rem;
+  padding-left: 1.3rem;
+  color: var(--text);
+}
+
+.standalone-body li {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 0.4rem;
+}
+
+.standalone-body li::marker {
+  color: var(--accent);
+}
+
+.standalone-body a {
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+}
+
+.standalone-body a:hover {
+  text-decoration-color: var(--accent);
+}
+
+.standalone-body blockquote {
+  margin: 1.6rem 0;
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.standalone-body blockquote p { margin-bottom: 0.4rem; }
+.standalone-body blockquote p:last-child { margin-bottom: 0; }
+
+.standalone-body code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  color: var(--accent);
+}
+
+/* pre wraps a code block; overflow-x lets wide ASCII diagrams scroll
+   horizontally on narrow screens instead of breaking layout. */
+.standalone-body pre {
+  margin: 1.6rem 0;
+  padding: 1.2rem 1.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.standalone-body pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.standalone-body table {
+  width: 100%;
+  margin: 1.8rem 0;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.standalone-body th {
+  text-align: left;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--accent);
+  padding: 0.6rem 1rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.standalone-body td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+
+.standalone-body tr:last-child td { border-bottom: none; }
+
+/* ── CRAFT DOCUMENT (technical/professional page) ─────────────
+   Wider column than About/Support because this page carries
+   tables and code-block diagrams that need the extra room. ──── */
+
+.standalone-page.standalone-page--wide {
+  max-width: 760px;
+}
+
+.craft-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+.craft-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0.9rem 0 0;
+}
+
+.craft-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--border);
+}
+
+.craft-footer-link {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.craft-footer-link:hover { color: var(--accent); }
+
 /* ── INLINE ACTION BUTTON (Continue) ──────────────────────── */
 
 @keyframes continueGlow {

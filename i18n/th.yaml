@@ -20,8 +20,11 @@ menu_home: หน้าหลัก
 menu_all_series: ทุกชุดเรื่อง
 menu_more: เพิ่มเติม
 menu_about: เกี่ยวกับเว็บไซต์นี้
+menu_craft: งานฝีมือทางเทคนิค
 menu_from_creator: จากผู้สร้าง
 menu_reset: รีเซ็ตความคืบหน้า
+
+craft_view_source: ดูซอร์สโค้ดบน GitHub
 
 reflect_title: บางส่วนในตัวคุณรู้เรื่องนี้อยู่แล้ว
 reflect_sub: ส่วนที่นำคุณมาที่นี่

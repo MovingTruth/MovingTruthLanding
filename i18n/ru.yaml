@@ -20,8 +20,11 @@ menu_home: Главная
 menu_all_series: Все серии
 menu_more: Ещё
 menu_about: Об этом сайте
+menu_craft: Техническое мастерство
 menu_from_creator: От автора
 menu_reset: Сбросить прогресс
+
+craft_view_source: Смотреть исходный код на GitHub
 
 reflect_title: Что-то внутри тебя уже знало это.
 reflect_sub: Та часть, которая привела тебя сюда.

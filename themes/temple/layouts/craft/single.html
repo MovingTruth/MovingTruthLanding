@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+{{/*
+  craft/single.html: layout for the "Technical Craft" document (content/craft.md).
+  Reuses the .standalone-page pattern (About, Support) but widens the column and
+  adds an eyebrow/byline/read-time header, because this page carries tables and
+  code-block diagrams that need more room than narrow reading prose.
+*/}}
+<article class="standalone-page standalone-page--wide">
+  <header class="standalone-header craft-header">
+    <p class="craft-eyebrow">{{ i18n "menu_craft" }}</p>
+    <h1 class="standalone-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="craft-subtitle">{{ . }}</p>{{ end }}
+    <p class="standalone-date">{{ .Site.Params.author }} &middot; {{ .Date.Format "January 2006" }} &middot; {{ .ReadingTime }} min read</p>
+  </header>
+
+  <div class="standalone-body standalone-body--craft">
+    {{ .Content }}
+  </div>
+
+  {{/*
+    This document is English-only by design — it's a technical/professional piece
+    about the platform itself, not reader content, so (like the nav entry that
+    points here in baseof.html) its links use absolute paths rather than
+    relLangURL, which would 404 by assuming a translated page exists.
+  */}}
+  <footer class="craft-footer">
+    <a href="https://github.com/MovingTruth/MovingTruthLanding" target="_blank" rel="noopener" class="craft-footer-link">{{ i18n "craft_view_source" }}</a>
+    <a href="{{ "series" | relLangURL }}" class="craft-footer-link">{{ i18n "menu_all_series" }}</a>
+  </footer>
+</article>
+
+{{/*
+  TechArticle structured data for this page only (not baseof.html) — this is the
+  one page on the site written for search engines, LLM answer engines, and
+  technical/professional readers rather than the general audience. jsonify | safeJS
+  matches the escaping rule in CLAUDE.md for Go data passed into a <script> tag.
+*/}}
+<script type="application/ld+json">
+{{ (dict
+  "@context" "https://schema.org"
+  "@type" "TechArticle"
+  "headline" .Title
+  "description" .Description
+  "author" (dict "@type" "Person" "name" .Site.Params.author)
+  "publisher" (dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL)
+  "datePublished" (.Date.Format "2006-01-02")
+  "dateModified" (.Lastmod.Format "2006-01-02")
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "url" .Permalink
+  "inLanguage" "en"
+  "image" ("logo.png" | absURL)
+  ) | jsonify | safeJS }}
+</script>
+
+{{ end }}

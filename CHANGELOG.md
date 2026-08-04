@@ -4,6 +4,13 @@
 
 ---
 
+## 2026-08-04
+
+- `content/craft.md`, `themes/temple/layouts/craft/single.html` — Added an English-only `/craft/` page, "Building Moving Truth," adapted from a standalone writeup of the platform's architecture (Markdown-first authoring, the AI-assisted editorial pipeline, the 14-language localization system, and the Hugo/GitHub Actions/GitHub Pages deploy path). The layout widens the standard `.standalone-page` column, adds an eyebrow/byline/read-time header, a "by the numbers" stats table, a source-link footer, and page-scoped `TechArticle` JSON-LD (the site's first structured-data block) so the page is legible to both readers and retrieval/AI-answer systems. Not translated into the other 13 languages — it documents the platform itself rather than reader content, matching the existing English-only precedent set by `content/log.md`.
+- `themes/temple/assets/css/temple.css` — Added general Markdown-element styling under `.standalone-body` (h2/h3, lists, blockquotes, inline/block code, tables) that previously had no rules, since About/Support only ever used paragraphs and bold text. Added a `.standalone-page--wide` modifier and the `.craft-*` classes for the new page's header/footer chrome. Purely additive — no existing selectors changed.
+- `themes/temple/layouts/_default/baseof.html` — Added a "Technical Craft" entry to the hamburger menu's "More" section, between "About this site" and "From the Creator." Links by absolute path (`/craft/`) rather than `relLangURL`, since no translated page exists to link to in other locales — documented inline.
+- `i18n/*.yaml` (all 14 locales) — Added `menu_craft` (the nav label, translated into all locales even though the destination page is English-only, consistent with translating all site chrome) and `craft_view_source` (the page's "View the source on GitHub" footer link).
+
 ## 2026-07-31
 
 - `themes/temple/layouts/index.html` — Removed the deployment date and commit marker from the doorway image page so the landing experience remains visually clean. The marker remains available on interior pages.

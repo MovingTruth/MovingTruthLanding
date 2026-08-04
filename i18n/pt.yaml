@@ -20,8 +20,11 @@ menu_home: Início
 menu_all_series: Todas as séries
 menu_more: Mais
 menu_about: Sobre este site
+menu_craft: Artesanato Técnico
 menu_from_creator: Da criadora
 menu_reset: Redefinir progresso
+
+craft_view_source: Ver o código-fonte no GitHub
 
 reflect_title: Algo em você já sabia disso.
 reflect_sub: A parte que te trouxe até aqui.
