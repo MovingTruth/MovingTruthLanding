@@ -38,6 +38,8 @@ Divise n'importe quel nombre de la suite par celui qui le précède, et regarde 
 
 Le ratio cesse de vagabonder. Il se resserre sur un nombre précis et n'en bouge plus : 1,6180339887..., un nombre irrationnel qui porte son propre nom — φ, phi, « le nombre d'or ». Personne ne l'a introduit dans la suite exprès. Deux nombres, additionnés encore et encore, marchent vers lui d'eux-mêmes et ne le dépassent jamais beaucoup une fois arrivés.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Regarde maintenant un tournesol.

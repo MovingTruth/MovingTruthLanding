@@ -38,6 +38,8 @@ description: "ルール全体はひとつの文で言い表せる——どの数
 
 比率はさまようのをやめる。ある特定の数へと収束し、そこにとどまる：1.6180339887……、独自の名前を持つ無理数——φ、ファイ、「黄金比」。誰も意図してこの数列に組み込んだわけではない。二つの数が、何度も何度も足し合わされることで、ひとりでにそこへ向かって歩み寄り、たどり着いたあとは、大きく行き過ぎることはほとんどない。
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 では、ひまわりを見てみよう。

@@ -38,6 +38,8 @@ Dividi un numero qualsiasi della successione per quello che lo precede, e osserv
 
 Il rapporto smette di vagare. Si stringe su un numero preciso e vi resta: 1,6180339887..., un numero irrazionale con un nome tutto suo — φ, phi, "la sezione aurea". Nessuno l'ha inserito nella successione apposta. Due numeri, sommati ancora e ancora, camminano verso di esso da soli e, una volta arrivati, non lo superano quasi mai di molto.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Ora guarda un girasole.

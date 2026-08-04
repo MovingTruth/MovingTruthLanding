@@ -38,6 +38,8 @@ description: "पूरा नियम एक वाक्य में सम�
 
 अनुपात भटकना बंद कर देता है। यह एक निश्चित संख्या पर सिमट जाता है और वहीं टिका रहता है: 1.6180339887..., एक अपरिमेय संख्या जिसका अपना नाम है — φ, फ़ाई, "स्वर्णिम अनुपात"। किसी ने इसे जानबूझकर शृंखला में नहीं डाला। दो संख्याएँ, बार-बार जोड़ी जाकर, अपने-आप उसकी ओर चलती हैं, और वहाँ पहुँचने के बाद शायद ही कभी उससे बहुत आगे निकलती हैं।
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 अब एक सूरजमुखी को देखो।

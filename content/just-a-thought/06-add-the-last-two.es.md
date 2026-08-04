@@ -38,6 +38,8 @@ Divide cualquier número de la sucesión por el anterior, y observa qué ocurre:
 
 La razón deja de vagar. Se cierra sobre un número concreto y se queda ahí: 1,6180339887..., un número irracional con nombre propio — φ, fi, "la proporción áurea". Nadie lo introdujo en la sucesión a propósito. Dos números, sumados una y otra vez, caminan hacia él por sí solos y casi nunca lo sobrepasan mucho una vez que llegan.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Ahora mira un girasol.

@@ -38,6 +38,8 @@ description: "กฎทั้งหมดอยู่ในประโยคเ
 
 อัตราส่วนหยุดการเดินเตร่ มันเข้าใกล้ตัวเลขหนึ่งอย่างเฉพาะเจาะจงและอยู่ที่นั่น: 1.6180339887... ตัวเลขอตรรกยะที่มีชื่อเป็นของตัวเอง — φ ไฟ "อัตราส่วนทองคำ" ไม่มีใครใส่มันลงในลำดับโดยตั้งใจ ตัวเลขสองตัว ถูกบวกเข้าด้วยกันครั้งแล้วครั้งเล่า เดินเข้าหามันด้วยตัวเอง และแทบจะไม่เคยเลยไปไกลนักเมื่อมาถึง
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 ลองมองดูดอกทานตะวันสักดอก

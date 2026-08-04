@@ -38,6 +38,8 @@ Teile eine beliebige Zahl der Folge durch die davor, und sieh, was passiert:
 
 Das Verhältnis hört auf zu wandern. Es zieht sich auf eine bestimmte Zahl zusammen und bleibt dort: 1,6180339887..., eine irrationale Zahl mit eigenem Namen — φ, phi, "der Goldene Schnitt". Niemand hat ihn absichtlich in die Folge gelegt. Zwei Zahlen, immer wieder addiert, wandern von selbst darauf zu und schießen, einmal angekommen, kaum je weit darüber hinaus.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Schau dir jetzt eine Sonnenblume an.

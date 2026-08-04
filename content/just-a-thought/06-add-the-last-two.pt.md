@@ -38,6 +38,8 @@ Divida qualquer número da sequência pelo anterior, e observe o que acontece:
 
 A razão para de vagar. Ela se fecha sobre um número específico e ali permanece: 1,6180339887..., um número irracional com nome próprio — φ, fi, "a razão áurea". Ninguém a colocou na sequência de propósito. Dois números, somados repetidamente, caminham até ela sozinhos e quase nunca a ultrapassam muito depois de chegar.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Agora olhe para um girassol.

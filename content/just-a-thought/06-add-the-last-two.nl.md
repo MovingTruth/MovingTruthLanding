@@ -38,6 +38,8 @@ Deel een willekeurig getal in de rij door het getal ervoor, en kijk wat er gebeu
 
 De verhouding houdt op te zwerven. Ze sluit zich rond één bepaald getal en blijft daar: 1,6180339887..., een irrationaal getal met een eigen naam — φ, phi, "de gulden snede". Niemand heeft het er expres in gestopt. Twee getallen, keer op keer opgeteld, lopen er vanzelf naartoe en schieten er, eenmaal aangekomen, zelden ver overheen.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Kijk nu naar een zonnebloem.

@@ -38,6 +38,8 @@ description: "القاعدة كلها في جملة واحدة — كل رقم �
 
 تتوقف النسبة عن التذبذب. تنغلق على رقم محدد وتبقى عنده: 1.6180339887...، رقم غير نسبي له اسمه الخاص — φ، فاي، "النسبة الذهبية". لم يضعها أحد في المتتالية عن قصد. رقمان، يُجمعان مرارًا وتكرارًا، يسيران نحوها من تلقاء نفسيهما، ونادرًا ما يتجاوزانها كثيرًا بعد الوصول.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 انظر الآن إلى زهرة عباد الشمس.

@@ -38,6 +38,8 @@ Divide any number in the sequence by the one before it, and watch what happens:
 
 The ratio stops wandering. It closes in on one specific number and stays there: 1.6180339887..., an irrational number with its own name — φ, phi, "the golden ratio." Nobody put it into the sequence on purpose. Two numbers, added again and again, walk toward it on their own and never overshoot by much once they arrive.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 Now look at a sunflower.

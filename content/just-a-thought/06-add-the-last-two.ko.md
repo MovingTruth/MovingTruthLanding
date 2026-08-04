@@ -38,6 +38,8 @@ description: "규칙 전체는 한 문장에 담긴다 — 모든 수는 앞의 
 
 비율은 더 이상 방황하지 않는다. 하나의 특정한 수로 좁혀 들어가 그곳에 머문다: 1.6180339887..., 스스로의 이름을 가진 무리수 — φ, 파이, "황금비". 누구도 이것을 일부러 수열에 집어넣지 않았다. 두 수가, 거듭 더해지면서, 저절로 그것을 향해 걸어가고, 일단 도달하면 그것을 크게 넘어서는 일은 거의 없다.
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 이제 해바라기를 보라.

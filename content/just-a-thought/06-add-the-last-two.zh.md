@@ -38,6 +38,8 @@ description: "整条规则只需一句话——每个数都是前两个数之和
 
 这个比例不再游移。它收敛到一个特定的数，并停留在那里：1.6180339887……，一个拥有自己名字的无理数——φ，phi，"黄金比例"。没有人故意把它放进这个数列。两个数，一次又一次地相加，会自行朝它靠近，一旦到达，几乎不会再远远地越过它。
 
+![A rectangle divided into squares in Fibonacci proportions, with the spiral traced through their arcs. Diagram: Icey / Wikimedia Commons, public domain.](/images/fibonacci-spiral.svg)
+
 ---
 
 现在看看一朵向日葵。
