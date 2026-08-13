@@ -2523,15 +2523,23 @@ body.fading .inner-content {
   transform: rotate(45deg);
 }
 
-/* ── RESPONSIVE ───────────────────────────────────────────── */
+/* ── RESPONSIVE: HEADER (tablet + phone) ─────────────────────
+   iPads run ~768–1032px in portrait — well above the 640px phone
+   breakpoint below, so the header needs its own wider cutoff or
+   the full desktop nav + hamburger crowd into one row and wrap. */
 
-@media (max-width: 640px) {
-  .inner-content { padding: 2rem 1.2rem 4rem; }
+@media (max-width: 1100px) {
   .site-header { padding: 1rem 1.2rem; }
   .site-header nav a:not(.nav-support) { display: none; }
   .nav-support { padding: 0.3rem 0.6rem; }
   .nav-support-full { display: none; }
   .nav-support-short { display: inline; }
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .inner-content { padding: 2rem 1.2rem 4rem; }
   .part-card { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
   .part-number { font-size: 1.4rem; }
   .part-arrow { display: none; }
@@ -2941,12 +2949,12 @@ body.landing-split {
   color: var(--accent);
 }
 
-.mt-menu-link--active {
-  color: var(--accent);
+@media (max-width: 1100px) {
+  .mt-lang-switcher { display: none; }
 }
 
-@media (max-width: 640px) {
-  .mt-lang-switcher { display: none; }
+.mt-menu-link--active {
+  color: var(--accent);
 }
 
 /* ============================================================
