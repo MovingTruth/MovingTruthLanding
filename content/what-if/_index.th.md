@@ -3,4 +3,5 @@ weight: 20
 title: "แล้วถ้าหาก"
 description: "คำถามป่าเถื่อนที่สมบูรณ์แบบ ไม่มีคำตอบรวมอยู่ด้วย"
 icon: "book"
+freeAccess: true
 ---

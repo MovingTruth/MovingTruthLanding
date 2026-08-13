@@ -3,4 +3,5 @@ weight: 20
 title: "А что если"
 description: "Полностью сформированные дерзкие вопросы. Ответы не включены."
 icon: "book"
+freeAccess: true
 ---
