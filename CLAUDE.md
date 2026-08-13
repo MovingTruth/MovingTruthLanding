@@ -83,7 +83,6 @@ MovingTruth/
 │   ├── moving-truth/  — Moving Truth series pieces
 │   ├── what-if/       — What If series pieces
 │   ├── blessings/     — Blessings series pieces
-│   ├── are-you-free/  — Are You Free series pieces
 │   ├── gallery/       — Gallery images (menuOnly: true)
 │   ├── messages/      — Creator messages (menuOnly: true)
 │   └── _index.md      — Site landing page

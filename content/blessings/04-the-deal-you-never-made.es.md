@@ -1,10 +1,11 @@
 ---
 title: "El Trato Que Nunca Hiciste"
-series: "¿Eres Libre?"
-part: 1
+series: "Bendiciones"
+part: 4
 date: 2026-06-18T00:00:00
 description: "Una liberación a través del espejo."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 Has estado negociando.

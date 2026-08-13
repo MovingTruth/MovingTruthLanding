@@ -1,10 +1,11 @@
 ---
 title: "The Deal You Never Made"
-series: "Are You Free?"
-part: 1
+series: "Blessings"
+part: 4
 date: 2026-06-18T00:00:00
 description: "A release through the mirror."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 You have been trading.

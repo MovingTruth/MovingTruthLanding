@@ -1,10 +1,11 @@
 ---
 title: "你从未达成的协议"
-series: "你自由吗？"
-part: 1
+series: "祝福"
+part: 4
 date: 2026-06-18T00:00:00
 description: "通过镜子的解放。"
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 你一直在交易。

@@ -1,10 +1,11 @@
 ---
 title: "الصفقة التي لم تُبرمها"
-series: "هل أنت حر؟"
-part: 1
+series: "تباريك"
+part: 4
 date: 2026-06-18T00:00:00
 description: "تحرر عبر المرآة."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 لقد كنت تتاجر.

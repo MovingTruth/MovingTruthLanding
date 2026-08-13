@@ -1,10 +1,11 @@
 ---
 title: "당신이 한 적 없는 거래"
-series: "당신은 자유롭습니까?"
-part: 1
+series: "축복"
+part: 4
 date: 2026-06-18T00:00:00
 description: "거울을 통한 해방."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 당신은 거래해 왔습니다.

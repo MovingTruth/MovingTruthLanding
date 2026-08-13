@@ -1,10 +1,11 @@
 ---
 title: "O Acordo Que Você Nunca Fez"
-series: "Você É Livre?"
-part: 1
+series: "Bênçãos"
+part: 4
 date: 2026-06-18T00:00:00
 description: "Uma libertação através do espelho."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 Você tem negociado.

@@ -1,10 +1,11 @@
 ---
 title: "Le Marché Que Vous N'Avez Jamais Conclu"
-series: "Êtes-vous Libre ?"
-part: 1
+series: "Bénédictions"
+part: 4
 date: 2026-06-18T00:00:00
 description: "Une libération à travers le miroir."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 Vous avez négocié.

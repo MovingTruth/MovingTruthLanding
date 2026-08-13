@@ -1,10 +1,11 @@
 ---
 title: "De Deal Die Je Nooit Sloot"
-series: "Ben Je Vrij?"
-part: 1
+series: "Zegeningen"
+part: 4
 date: 2026-06-18T00:00:00
 description: "Een bevrijding door de spiegel."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 Je bent aan het handelen geweest.

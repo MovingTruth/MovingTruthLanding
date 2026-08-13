@@ -1,10 +1,11 @@
 ---
 title: "वह सौदा जो आपने कभी नहीं किया"
-series: "क्या आप स्वतंत्र हैं?"
-part: 1
+series: "आशीर्वाद"
+part: 4
 date: 2026-06-18T00:00:00
 description: "दर्पण से होकर एक मुक्ति।"
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 आप सौदेबाज़ी करते आए हैं।

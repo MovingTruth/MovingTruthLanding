@@ -1,10 +1,11 @@
 ---
 title: "Сделка, Которую Ты Никогда Не Заключал"
-series: "Вы Свободны?"
-part: 1
+series: "Благословения"
+part: 4
 date: 2026-06-18T00:00:00
 description: "Освобождение через зеркало."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 Ты торговал.

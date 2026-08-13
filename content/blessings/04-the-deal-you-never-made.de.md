@@ -1,10 +1,11 @@
 ---
 title: "Der Deal, Den Du Nie Gemacht Hast"
-series: "Bist Du Frei?"
-part: 1
+series: "Segnungen"
+part: 4
 date: 2026-06-18T00:00:00
 description: "Eine Befreiung durch den Spiegel."
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 Du hast gehandelt.

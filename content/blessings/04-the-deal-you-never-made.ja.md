@@ -1,10 +1,11 @@
 ---
 title: "あなたが決して結ばなかった取引"
-series: "あなたは自由ですか？"
-part: 1
+series: "祝福"
+part: 4
 date: 2026-06-18T00:00:00
 description: "鏡を通じた解放。"
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 あなたは取引をしてきた。

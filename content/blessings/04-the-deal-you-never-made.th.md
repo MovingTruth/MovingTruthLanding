@@ -1,10 +1,11 @@
 ---
 title: "ข้อตกลงที่คุณไม่เคยทำ"
-series: "คุณเป็นอิสระหรือเปล่า?"
-part: 1
+series: "พร"
+part: 4
 date: 2026-06-18T00:00:00
 description: "การปลดปล่อยผ่านกระจก"
-closingReflection: true
+blessing: true
+aliases: ["/are-you-free/01-the-deal-you-never-made/"]
 ---
 
 คุณกำลังแลกเปลี่ยน
