@@ -8,6 +8,8 @@ description: "Tom Thomson voer in juli 1917 Canoe Lake op en kwam niet terug. Ho
 
 *Een historische en op bewijs gebaseerde hypothese*
 
+![Tom Thomson, Early Spring, Canoe Lake, voorjaar 1917. Publiek domein.](/images/thomson-early-spring-canoe-lake.jpg)
+
 Een kano drijft ondersteboven op een stil meer.
 
 Twee mensen in een motorboot varen er op een zondagmiddag in juli langs. Ze hebben gehoord dat ergens een kano van zijn aanleglijn is losgeraakt. Ze stoppen niet. Op de terugweg willen ze hem meenemen.

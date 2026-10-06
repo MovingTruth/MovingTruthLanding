@@ -8,6 +8,8 @@ description: "Tom Thomson went out on Canoe Lake in July 1917 and did not come b
 
 *A historical and evidentiary hypothesis*
 
+![Tom Thomson, Early Spring, Canoe Lake, spring 1917. Public domain.](/images/thomson-early-spring-canoe-lake.jpg)
+
 A canoe is floating upside down on a quiet lake.
 
 Two people in a motorboat pass it on a Sunday afternoon in July. They've heard a canoe drifted loose from its moorings somewhere. They don't stop. They mean to pick it up on the way back.

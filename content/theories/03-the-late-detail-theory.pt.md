@@ -8,6 +8,8 @@ description: "Tom Thomson saiu para Canoe Lake em julho de 1917 e não voltou. Q
 
 *Uma hipótese histórica e evidencial*
 
+![Tom Thomson, Early Spring, Canoe Lake, primavera de 1917. Domínio público.](/images/thomson-early-spring-canoe-lake.jpg)
+
 Uma canoa flutua de cabeça para baixo num lago tranquilo.
 
 Duas pessoas num barco a motor passam por ela numa tarde de domingo em julho. Ouviram dizer que uma canoa se soltou das amarras em algum lugar. Não param. Pretendem recolhê-la no caminho de volta.

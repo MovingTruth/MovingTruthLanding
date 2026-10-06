@@ -8,6 +8,8 @@ description: "Tom Thomson은 1917년 7월 Canoe Lake로 나갔다가 돌아오�
 
 *역사적이고 증거에 기반한 가설*
 
+![Tom Thomson, 〈Early Spring, Canoe Lake〉, 1917년 봄. 퍼블릭 도메인.](/images/thomson-early-spring-canoe-lake.jpg)
+
 고요한 호수 위에 카누 한 척이 뒤집힌 채 떠 있다.
 
 7월의 어느 일요일 오후, 모터보트에 탄 두 사람이 그 곁을 지나간다. 어딘가에서 카누 한 척이 계류 줄에서 풀려났다는 이야기를 들었다. 그들은 멈추지 않는다. 돌아오는 길에 건질 생각이다.

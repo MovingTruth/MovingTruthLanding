@@ -8,6 +8,8 @@ description: "1917年7月，Tom Thomson划船驶入Canoe Lake，再也没有回�
 
 *一个历史与实证假说*
 
+![Tom Thomson，《Early Spring, Canoe Lake》，1917年春。公有领域。](/images/thomson-early-spring-canoe-lake.jpg)
+
 一艘独木舟倒扣着，漂在平静的湖面上。
 
 七月一个星期天下午，两个人乘着汽艇从它旁边经过。他们听说某处有艘独木舟挣脱了系绳。他们没有停下，打算返程时再把它带走。

@@ -8,6 +8,8 @@ description: "Tom Thomson fuhr im Juli 1917 auf den Canoe Lake hinaus und kehrte
 
 *Eine historische und beweisgestützte Hypothese*
 
+![Tom Thomson, Early Spring, Canoe Lake, Frühjahr 1917. Gemeinfrei.](/images/thomson-early-spring-canoe-lake.jpg)
+
 Ein Kanu treibt umgedreht auf einem stillen See.
 
 Zwei Menschen in einem Motorboot fahren an einem Sonntagnachmittag im Juli daran vorbei. Sie haben gehört, irgendwo habe sich ein Kanu von seiner Vertäuung gelöst. Sie halten nicht an. Auf dem Rückweg wollen sie es mitnehmen.

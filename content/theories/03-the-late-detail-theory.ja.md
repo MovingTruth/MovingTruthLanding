@@ -8,6 +8,8 @@ description: "Tom Thomsonは1917年7月、Canoe Lakeへ出て戻りませんで�
 
 *歴史的・実証的仮説*
 
+![Tom Thomson《Early Spring, Canoe Lake》1917年春。パブリックドメイン。](/images/thomson-early-spring-canoe-lake.jpg)
+
 静かな湖に、カヌーが逆さまに浮かんでいます。
 
 7月の日曜の午後、モーターボートに乗った二人がそのそばを通ります。どこかで係留を離れたカヌーが流されていると聞いていました。二人は止まりません。帰りに拾うつもりです。

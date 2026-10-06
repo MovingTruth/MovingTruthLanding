@@ -8,6 +8,8 @@ description: "Tom Thomson est parti sur Canoe Lake en juillet 1917 et n'est pas 
 
 *Une hypothèse historique et évidentielle*
 
+![Tom Thomson, Early Spring, Canoe Lake, printemps 1917. Domaine public.](/images/thomson-early-spring-canoe-lake.jpg)
+
 Un canoë flotte à l'envers sur un lac tranquille.
 
 Deux personnes à bord d'un bateau à moteur passent près de lui un dimanche après-midi de juillet. Elles ont entendu dire qu'un canoë s'était détaché de ses amarres quelque part. Elles ne s'arrêtent pas. Elles comptent le récupérer au retour.
