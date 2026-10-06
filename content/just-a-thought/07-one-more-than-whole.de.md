@@ -1,6 +1,6 @@
 ---
 title: "Eins Mehr Als Ganz"
-series: "Just a Thought"
+series: "Nur ein Gedanke"
 part: 7
 date: 2026-08-21T00:00:00
 description: "Woher die Angst vor der Dreizehn wirklich kommt, warum sie nie universell war, und was ein Schildkrötenpanzer und ein Nachthimmel schon immer gezählt haben."

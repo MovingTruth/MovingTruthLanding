@@ -1,6 +1,6 @@
 ---
 title: "Un de Plus Que le Compte"
-series: "Just a Thought"
+series: "Juste une Pensée"
 part: 7
 date: 2026-08-21T00:00:00
 description: "D'où vient vraiment la peur du treize, pourquoi elle n'a jamais été universelle, et ce que la carapace d'une tortue et un ciel nocturne comptaient depuis toujours."

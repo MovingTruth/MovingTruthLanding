@@ -1,6 +1,6 @@
 ---
 title: "Eén Meer Dan Heel"
-series: "Just a Thought"
+series: "Gewoon een Gedachte"
 part: 7
 date: 2026-08-21T00:00:00
 description: "Waar de angst voor het getal dertien vandaan komt, waarom die angst nooit universeel was, en wat een schildpadschild en een nachtelijke hemel al die tijd al telden."

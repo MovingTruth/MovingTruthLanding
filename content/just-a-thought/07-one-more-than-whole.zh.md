@@ -1,6 +1,6 @@
 ---
 title: "多出的那一个"
-series: "Just a Thought"
+series: "只是一个想法"
 part: 7
 date: 2026-08-21T00:00:00
 description: "十三为何让人畏惧,这份恐惧其实从不是普世的——龟壳与夜空,其实一直都在数着同一件事。"

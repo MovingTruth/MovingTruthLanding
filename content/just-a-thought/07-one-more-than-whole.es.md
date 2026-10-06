@@ -1,6 +1,6 @@
 ---
 title: "Uno Más Que Completo"
-series: "Just a Thought"
+series: "Solo un Pensamiento"
 part: 7
 date: 2026-08-21T00:00:00
 description: "De dónde viene realmente el temor al trece, por qué nunca fue universal, y qué contaban en realidad el caparazón de una tortuga y un cielo nocturno."

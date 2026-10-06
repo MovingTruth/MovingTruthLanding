@@ -1,6 +1,6 @@
 ---
 title: "Um a Mais Que o Todo"
-series: "Just a Thought"
+series: "Apenas um Pensamento"
 part: 7
 date: 2026-08-21T00:00:00
 description: "De onde realmente vem o medo do treze, por que ele nunca foi universal, e o que o casco de uma tartaruga e um céu noturno já contavam há muito tempo."

@@ -1,6 +1,6 @@
 ---
 title: "Uno di Più"
-series: "Just a Thought"
+series: "Solo un Pensiero"
 part: 7
 date: 2026-08-21T00:00:00
 description: "Da dove viene davvero la paura del tredici, perché non è mai stata universale, e cosa contavano da sempre il guscio di una tartaruga e un cielo notturno."
